@@ -1,0 +1,75 @@
+---
+interface Image {
+  src: string;
+  caption?: string;
+}
+export interface Props {
+  collection?: Image[];
+  type?: string;
+}
+
+const { collection = [], type = "" } = Astro.props;
+---
+
+<div class={`image-group${type ? " use-slot" : ""}`}>
+  {
+    collection.map(({ src, caption = "" }) => {
+      return (
+        <div class={`container ${type}`}>
+          <img src={src} />
+          {!!caption.length && <span>{caption}</span>}
+        </div>
+      );
+    })
+  }
+  {
+    !!type.length && (
+      <div class="side-content">
+        <slot />
+      </div>
+    )
+  }
+</div>
+<style>
+  .image-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6em 0;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .use-slot {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: clamp(100%/ (3 + 1) + 0.1%, 300px, 100%);
+    align-items: center;
+  }
+  .container + .side-content {
+    flex-direction: row;
+  }
+  .side-content {
+    font-size: 0.85em;
+    line-height: var(--spacing-level-4);
+    /* background-color: orange; */
+  }
+  .container.detail {
+    flex: 1 0 50%;
+  }
+  .container span {
+    padding: 1rem 2rem;
+    font-size: 0.75em;
+    color: var(--colour-soft);
+  }
+  img {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3))
+      drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+  }
+</style>

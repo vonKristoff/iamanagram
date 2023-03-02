@@ -1,0 +1,102 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Projects</a></li>
+          <li><strong>aurasatz@onetel.com</strong></li>
+        </ul>
+      </nav>
+      <div id="title">AURA SATZ</div>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+<style>
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #efefef;
+    margin: 0 var(--spacing-level-3);
+  }
+  body {
+    margin: 0 auto;
+    max-width: var(--width-page);
+  }
+  header {
+    display: flex;
+    padding: var(--spacing-level-4);
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    list-style: none;
+    margin-left: 2em;
+  }
+  nav li:first-child {
+    margin-left: 0;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--width-article);
+    margin-bottom: var(--spacing-level-1);
+  }
+</style>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+  }
+  :root {
+    --colour-soft: #666;
+    --width-section: 70ch;
+    --width-article: 1024px;
+    --width-page: 1280px;
+    --spacing-level-1: 6em;
+    --spacing-level-2: 3em;
+    --spacing-level-3: 2em;
+    --spacing-level-4: 1.5em;
+  }
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  section:first-child {
+    margin-top: var(--spacing-level-2);
+  }
+  section {
+    max-width: var(--width-section);
+    margin: auto;
+    line-height: var(--spacing-level-4);
+  }
+  p {
+    background-colour: grey;
+  }
+  .side-content h3:first-child {
+    margin-top: 0;
+  }
+  .side-content h2:first-child {
+    margin-top: 0;
+  }
+  .side-content h4:first-child {
+    margin-top: 0;
+  }
+</style>

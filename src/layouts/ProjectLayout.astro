@@ -1,0 +1,41 @@
+---
+import MainHeader from "./MainHeader.astro";
+export interface Props {
+  title: string;
+  subtitle: string;
+  meta1: string;
+  meta2: string;
+}
+const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
+---
+
+<MainHeader title={title}>
+  <header>
+    <h1>{title}</h1>
+    {!!subtitle && <h2>{subtitle}</h2>}
+    {
+      !!meta1 && (
+        <div class="flex-header">
+          <h4>{meta1}</h4>
+          <h4>{meta2}</h4>
+        </div>
+      )
+    }
+  </header>
+  <article>
+    <slot />
+  </article>
+</MainHeader>
+<style>
+  header {
+    margin: auto;
+    max-width: var(--width-section);
+  }
+  .flex-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  h4:last-child {
+    color: var(--colour-soft);
+  }
+</style>

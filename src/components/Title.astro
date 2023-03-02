@@ -1,0 +1,42 @@
+---
+export interface Props {
+  date?: string;
+  title?: string;
+  subtitle?: string;
+}
+const { date, title, subtitle } = Astro.props;
+---
+
+<section>
+  <heading>
+    <!-- <div class="spacer"></div> -->
+    {!!title && <h3>{title}</h3>}
+    {!!date && <p>{date}</p>}
+  </heading>
+  {!!subtitle && <h4>{subtitle}</h4>}
+  <slot />
+</section>
+
+<style>
+  heading {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    color: mediumslateblue;
+    gap: 1em;
+  }
+  .spacer {
+    flex: 1 4 150px;
+    background-color: blueviolet;
+  }
+  h3 {
+    flex: 1 2 800px;
+  }
+  p {
+    flex: 1 1.5 200px;
+  }
+  h4 {
+    margin-top: 0;
+    color: mediumslateblue;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import MainHeader from "../layouts/MainHeader.astro";
+import Thumbnail from "../components/Thumbnail.astro";
+const projectList = await getCollection("projects");
+---
+
+<MainHeader title="AURA SATZ">
+	<!-- <div class="notice">
+		{projectList.map((item) => <li>{JSON.stringify(item)}</li>)}
+	</div> -->
+	<div class="projects">
+		{
+			projectList.map((item) => {
+				return (
+					<Thumbnail
+						src={item.data.thumbnail}
+						title={item.data.title}
+						slug={item.slug}
+					/>
+				);
+			})
+		}
+	</div>
+	<!-- <p>bleow is a glob from directory</p>
+		{posts.map((item) => <li>{JSON.stringify(item)}</li>)} -->
+</MainHeader>
+<style>
+	.notice {
+		word-break: break-all;
+		margin: var(--spacing-level-2) auto;
+		background-color: blueviolet;
+		padding: var(--spacing-level-4);
+		color: wheat;
+		line-height: 3ch;
+	}
+	.projects {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	}
+</style>

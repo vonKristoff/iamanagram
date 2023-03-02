@@ -1,0 +1,121 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+const { data } = await getProps("beatriz-ferreyra");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    collection={[
+      {
+        src: "BF door.jpg",
+        caption:
+          "Aura Satz, 'Making a Diagonal with Music / Hacer Una Diagonal con la Musica', film still, 2019",
+      },
+    ]}
+  />
+  <section>
+    A short film about the Argentine electroacoustic composer Beatriz Ferreyra,
+    an original pioneer of early musique concrete alongside Pierre Schaeffer
+    during the '50s and '60s. Here she discusses her 'sound hunting' recording
+    techniques, and other thoughts on sound montage and spatialization.
+    Featuring creaking doors, barking dogs and rainbow hands.
+  </section>
+  <Image
+    collection={[
+      {
+        src: "BeatrizRainbowHands.jpg",
+        caption:
+          "Aura Satz, 'Making a Diagonal with Music / Hacer Una Diagonal con la Musica', film still, 2019",
+      },
+    ]}
+  />
+  <Blockquote title="Credits" type="inline">
+    <li><strong>Featuring Beatriz Ferreyra</strong></li>
+    <li><strong>Directed and edited by Aura Satz</strong></li>
+    <li>DOP: Sam Williams</li>
+    <li>Music: Beatriz Ferreyra</li>
+    <li>Dubbing Mix: Gernot Fuhrmann</li>
+    <li>English Subtitles: Aura Satz</li>
+    Special thanks to Jo Langton
+  </Blockquote>
+  <Title
+    date="4 Feb - 27 March 2022"
+    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
+    subtitle="Showing as part of 'She Recalibrates'"
+  >
+    <p>
+      Aura Satz's film and sound works are made in conversation and use dialogue
+      as both method and subject matter. The works included in this show are
+      part of a long-standing interest in compositional practices, in particular
+      those of women in electronic and electroacoustic music. In addition to
+      three film-sound portraits, the exhibition includes a series of drawings
+      centred on early modular synthesizer compositional practices by women.
+    </p>
+    <p>
+      In Z Gallery programme, Aura Satz presents the films 'Oramics: Atlantis
+      Anew,' 'Little Doorways to Paths Not Yet Take' and 'Hacer una diagonal con
+      la musica,' three works based on three pioneers in the field of electronic
+      music. 'She Recalibrates' (2018) are a series of drawin fine-tuning the
+      sound in a listening feedback loop.
+    </p>
+    <p>
+      *Hacer una diagonal con la musica*. 2019. 10 min. A short film about
+      Argentine electroacoustic composer Beatriz Ferreyra, a pioneer of musique
+      concrete together with Pierre Schaeffer during the 1950s and 1960s. Here
+      she discusses her 'sound hunting' recording techniques, and other thoughts
+      on sound montage and spatialization, illustrated through onomatopoeia and
+      dynamic hand gestures. In the key opening scene, Ferreyra is seen
+      listening to the miniscule creaks produced by a door, expanding the simple
+      binary of open vs closed to encompass an entire sound universe, an
+      expanded bandwidth of what can be heard and how we might listen.
+    </p>
+    <p>
+      *Oramics: Atlantis Anew*. 2011. 7 min. Conceived as an artist's film that
+      pays tribute to Daphne Oram, pioneer of British electronic music and
+      co-founder of the BBC Radiophonic Workshop in 1958, the film depicts a
+      close encounter with her unique Oramics machine invention, housed in the
+      Science Museum in London.
+    </p>
+    <p>
+      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
+      earlier films about women composers and inventors of electronic music,
+      this short film offers an intimate look into the studio of American
+      composer Laurie Spiegel (b. 1945). Renowned for her electronic music
+      compositions and algorithmic composition software, the film also reveals
+      all manner of musical and technological paraphernalia, ranging from sheet
+      music to DIY inventions and collections of quirky toys. The soundtrack
+      features electronic music composed by Spiegel and Laurie's voiceover
+      reflecting on electronic music and the process of composing.
+    </p>
+    <p>
+      The* Z Gallery* (Z for zinema, cinema in Basque) programme is neither a
+      season of films nor an exhibition. It is a project that constructs an
+      intermediate space from which to reflect on and draw attention to works by
+      artists making the leap into the cinematographic field as well as
+      filmmakers exploring the exhibition format. It is a programme arising from
+      the determined gesture of thinking about the moving image in the museum. A
+      programme that aims to bring to the public authors interested in searching
+      for new narrative forms by questioning the genres that historically
+      categorise cinematographic language.
+    </p>
+    <p>
+      Curator: Garbine Ortega. Catalogue includes newly commissioned essays by
+      Jo Hutton and Xabier Erkizia.
+    </p>
+    <Link
+      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
+      label="artium.eus"
+    />
+  </Title>
+  <Title
+    date="22 Jan - 2 Feb 2020"
+    title="World Premiere, screening as part of Bright Future Shorts"
+    subtitle="IFFR (International Film Festival Rotterdam)"
+  />
+</ProjectLayout>

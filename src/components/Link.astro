@@ -1,0 +1,26 @@
+---
+export interface Props {
+  url: string;
+  label?: string;
+  external?: boolean;
+}
+
+const { url, label, external = true } = Astro.props;
+---
+
+<a href={url} target={external ? "_blank" : "_self"}>
+  {label && label}
+  <slot />
+</a>
+
+<style>
+  a {
+    color: darkmagenta;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  a:visited {
+    color: darkmagenta;
+  }
+</style>
