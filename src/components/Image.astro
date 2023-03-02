@@ -16,7 +16,7 @@ const { collection = [], type = "" } = Astro.props;
     collection.map(({ src, caption = "" }) => {
       return (
         <div class={`container ${type}`}>
-          <img src={src} />
+          <img src={`/projects/${src}`} />
           {!!caption.length && <span>{caption}</span>}
         </div>
       );
