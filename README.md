@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Aura Satz
 
 ```
 npm create astro@latest -- --template basics
