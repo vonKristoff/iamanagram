@@ -15,10 +15,10 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
     {!!subtitle && <h2>{subtitle}</h2>}
     {
       !!meta1 && (
-        <div class="flex-header">
+        <>
           <h4>{meta1}</h4>
           <h4>{meta2}</h4>
-        </div>
+        </>
       )
     }
   </header>
@@ -27,15 +27,18 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
   </article>
 </MainHeader>
 <style>
+  h1 {
+    color: var(--colour-violet);
+  }
+  h2 {
+    color: var(--colour-dark);
+  }
   header {
     margin: auto;
     max-width: var(--width-section);
   }
-  .flex-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  h4:last-child {
-    color: var(--colour-soft);
+  header h4:last-child {
+    text-align: right;
+    margin-bottom: 0;
   }
 </style>

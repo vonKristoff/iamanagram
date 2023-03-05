@@ -3,17 +3,25 @@ export interface Props {
   url: string;
   label?: string;
   external?: boolean;
+  inline?: boolean;
 }
 
-const { url, label, external = true } = Astro.props;
+const { url, label, external = true, inline = true } = Astro.props;
 ---
 
-<a href={url} target={external ? "_blank" : "_self"}>
+<a
+  href={url}
+  class={inline ? "" : "as-block"}
+  target={external ? "_blank" : "_self"}
+>
   {label && label}
   <slot />
 </a>
 
 <style>
+  .as-block {
+    display: block;
+  }
   a {
     color: darkmagenta;
   }

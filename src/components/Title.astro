@@ -8,35 +8,42 @@ const { date, title, subtitle } = Astro.props;
 ---
 
 <section>
-  <heading>
-    <!-- <div class="spacer"></div> -->
-    {!!title && <h3>{title}</h3>}
-    {!!date && <p>{date}</p>}
-  </heading>
-  {!!subtitle && <h4>{subtitle}</h4>}
-  <slot />
+  <div class="spacing">
+    <heading>
+      <!-- <div class="spacer"></div> -->
+      {!!title && <h3>{title}</h3>}
+      {!!date && <p class="date">{date}</p>}
+    </heading>
+    {!!subtitle && <h4>{subtitle}</h4>}
+    <slot />
+  </div>
 </section>
 
 <style>
   heading {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    color: mediumslateblue;
+    color: #1a2e3b;
     gap: 1em;
+  }
+  .spacing {
+    margin: var(--spacing-level-4) 0;
+    border-top: var(--spacing-level-3) dotted #e5e5e5;
   }
   .spacer {
     flex: 1 4 150px;
-    background-color: blueviolet;
   }
   h3 {
     flex: 1 2 800px;
   }
-  p {
+  p.date {
     flex: 1 1.5 200px;
+    text-align: right;
+    color: var(--colour-soft);
+    font-size: var(--size-smaller);
   }
   h4 {
     margin-top: 0;
-    color: mediumslateblue;
+    color: #403578;
   }
 </style>
