@@ -1,0 +1,103 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+import Video from "../../components/Video.astro";
+const { data } = await getProps("tone-transitions");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    collection={[
+      {
+        src: "Radigue Tone Transmissions.jpg",
+        caption: "Aura Satz, Tone Transmissions , 2020",
+      },
+    ]}
+  />
+  <section>
+    <p>
+      This sound piece draws inspiration from telephony and wave transmission as
+      a prompt to talk about circuits of communication, drones and a
+      compositional approach to sustained notes, interference patterns, tuning
+      and deep listening. Following on from a previous iteration of this project
+      for telephone which included composers Pauline Oliveros and Laurie
+      Spiegel, here Satz has invited composer Eliane Radigue to weave together
+      long-term conversations and compositional relationships with harpist
+      Rhodri Davies and violist Julia Eckhardt. Eliane Radigue (b 1932) is known
+      for her minimal electronic drone compositions produced on a large modular
+      synthesizer. Recorded during lockdown via telephone and skype calls, this
+      piece addresses Radigue's shift from electronic music to the recent
+      acoustic works she has devised since 2000, and the transmission of music
+      via conversation, mental images, living scores: non-notational sound
+      images. Structured as a dialogic composition, the piece both documents and
+      enacts a conversation about transmission and the circuitry of musical
+      communication.
+    </p>
+    <p>Available to listen here:</p>
+    <Link
+      url="https://crossedlines.co.uk/tone-transmissions/"
+      label="crossedlines.co.uk"
+      inline={false}
+    />
+
+    <Link
+      url="https://blog.sciencemuseum.org.uk/the-exchange/"
+      label="blog.sciencemuseum.org.uk"
+    />
+  </section>
+  <Title
+    date="11 Sep 2020 - 11 Sep 2021"
+    title="Shown as part of the Science Museum and Crossed Wires online exhibition:"
+    subtitle="The Exchange"
+  >
+    <p>
+      From fears of eavesdropping on the party line to alarm at rising rates of
+      'nomophobia', the telephone taps into some of the key social, cultural and
+      political concerns of the modern and contemporary age. But in what ways
+      can bringing together art and technology help us to understand the role of
+      the telephone in how we talk and listen across cultures?
+    </p>
+
+    <p>
+      Created for the Science Museum Group as part of the Crossed Lines project,
+      a diverse group of artists were commissioned to explore the role of the
+      telephone in cultural production and reception. Inspired by objects in the
+      Science Museum Group Collection, The Exchange features art, poetry and
+      spoken word by novelist and journalist Will Self, artist Maya Chowdhry,
+      beatboxer Danny Ladwa, poets Lisa Kelly, Serge Neptune, Nadia Nadarajah
+      and DL Williams, and sound artist Aura Satz.
+    </p>
+
+    <p>
+      Commissioned during the COVID-19 pandemic, and reflecting a turn towards
+      calling in lockdown, the project takes inspiration from a long history of
+      creative engagement with the telephone: musicians, writers and artists
+      from Mark Twain to Lady Gaga have turned to the apparatus as way of
+      investigating notions of intimacy, voice, mobility, power and desire.
+    </p>
+
+    <p>
+      But by responding directly to objects in the collection - including an
+      undersea cable, a manual switchboard, and a rotary dial - these artists
+      not only open up ways of interacting with our cultural heritage, but also
+      think through how, where and why communication takes place. In so doing,
+      the project demonstrates the value of fostering exchange between
+      technology and the arts in order to remember our pasts and imagine our
+      possible futures.
+    </p>
+  </Title>
+  <Blockquote title="Credits" type="inline">
+    <li><strong>Featuring Beatriz Ferreyra</strong></li>
+    <li><strong>Directed and edited by Aura Satz</strong></li>
+    <li>DOP: Sam Williams</li>
+    <li>Music: Beatriz Ferreyra</li>
+    <li>Dubbing Mix: Gernot Fuhrmann</li>
+    <li>English Subtitles: Aura Satz</li>
+    Special thanks to Jo Langton
+  </Blockquote>
+</ProjectLayout>

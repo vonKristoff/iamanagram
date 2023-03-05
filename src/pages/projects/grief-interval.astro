@@ -1,0 +1,103 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+import Video from "../../components/Video.astro";
+const { data } = await getProps("grief-interval");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    collection={[
+      {
+        src: "Grief Interval film still3 copy.jpg",
+        caption:
+          "'The Grief Interval' film still, (Fiddler's Ferry in Warrington, currently decommissioned) 2021",
+      },
+    ]}
+  />
+  <section>
+    <p>
+      Aura Satz collaborates with electroacoustic composer Sarah Davachi to
+      sonically haunt a decommissioned coal fired power station. Weaving eerie
+      aural warning and mourning, the project summons the possibility of the
+      pause in a landscape of looming ecological emergency.
+    </p>
+    <p>
+      The audiovisual will be broadcast on Saturday 10 July 2021 at
+      andfestival.org.uk/live, and available to watch online until Sunday 11
+      July.
+    </p>
+    <p>
+      Following the premiere, writer Harry Sword (author of '<Link
+        label="Monolithic Undertow: In Search of Sonic Oblivion"
+        url="https://www.whiterabbitbooks.co.uk/white-rabbit-news/2020/08/07/harry-sword-brings-monolithic-undertow-to-white-rabbit/"
+      />') joins Aura Satz and Sarah Davachi in a conversation to reflect on the
+      film, their processes and projects.
+    </p>
+    <Link
+      inline={false}
+      url="https://www.andfestival.org.uk/events/the-grief-interval/"
+      label="andfestival.org.uk/events/the-grief-interval"
+    />
+    <Link
+      url="https://www.andfestival.org.uk/artists/aura-satz/"
+      label="andfestival.org.uk/artists/aura-satz"
+    />
+  </section>
+  <Image
+    collection={[
+      {
+        src: "Grief Interval film still1.jpg",
+        caption: "'The Grief Interval' film still, 2021",
+      },
+    ]}
+  />
+  <Title
+    date="2 - 10 October 2021"
+    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
+    subtitle="Showing as part of 'She Recalibrates'"
+  >
+    <Link
+      url="https://norient-festival.com/The-Grief-Interval"
+      label="norient-festival.com/The-Grief-Interval"
+    />
+  </Title>
+  <Title date="7-10 April 2022" title="Rewire festival" subtitle="the Hague">
+    <Link
+      url="https://www.rewirefestival.nl/artist/shorts-aura-satz"
+      label="rewirefestival.nl/artist/shorts-aura-satz"
+    />
+  </Title>
+  <Title
+    date="19 June 2022"
+    title="The London Contemporary Music Festival (LCMF)"
+    subtitle="Woolwich Works"
+  >
+    <Link url="https://lcmf.co.uk/" label="lcmf.co.uk/" />
+  </Title>
+  <Title
+    date="14 Jan 2023"
+    title="Norient Festival"
+    subtitle="Kellerkino Moviemento, Bern"
+  >
+    <Link
+      url="https://norient-festival.com/The-Grief-Interval"
+      label="norient-festival.com/The-Grief-Interval"
+    />
+  </Title>
+  <Video url="https://player.vimeo.com/video/569436365" />
+  <Blockquote title="Credits" type="inline">
+    <li><strong>Featuring Beatriz Ferreyra</strong></li>
+    <li><strong>Directed and edited by Aura Satz</strong></li>
+    <li>DOP: Sam Williams</li>
+    <li>Music: Beatriz Ferreyra</li>
+    <li>Dubbing Mix: Gernot Fuhrmann</li>
+    <li>English Subtitles: Aura Satz</li>
+    Special thanks to Jo Langton
+  </Blockquote>
+</ProjectLayout>
