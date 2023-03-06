@@ -70,7 +70,7 @@ const { title } = Astro.props;
     position: absolute;
     content: "";
     border-radius: 50%;
-    background-color: crimson;
+    background-color: var(--colour-crimson);
     width: 15em;
     height: 15em;
     filter: blur(2em);
@@ -84,6 +84,7 @@ const { title } = Astro.props;
     box-sizing: border-box;
   }
   :root {
+    --colour-crimson: crimson;
     --colour-violet: darkslateblue;
     --colour-dark: #1a2e3b;
     --colour-soft: #666;
@@ -109,6 +110,9 @@ const { title } = Astro.props;
     max-width: var(--width-section);
     margin: auto;
     line-height: var(--spacing-level-4);
+  }
+  h4 {
+    color: var(--colour-crimson);
   }
   p {
     color: var(--colour-dark);

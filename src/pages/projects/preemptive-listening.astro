@@ -1,0 +1,83 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+const { data } = await getProps("preemptive-listening");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    src="Preemptive Listening 16mm still5.jpg"
+    caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
+  />
+  <section>
+    <p>
+      'Preemptive Listening (part 1: The Fork in the Road)' is a short 16mm film
+      which serves as part 1 of a larger research project on sonic obedience and
+      disobedience through the trope of the siren. It posits the siren's loud
+      glissando wail as a conditioned and learned signal, one that can
+      potentially be perceptually and musically rewired. For this first chapter
+      of the project, Lebanese trumpet improviser Mazen Kerbaj has composed a
+      new siren sound using circular breathing, alongside the actor and activist
+      Khalid Abdalla's account of the siren as the emblematic sound of
+      resistance, oppression, and lost futures during the Arab Spring. Shot on
+      16mm, the film is literally driven by its soundtrack, as the voice becomes
+      a beacon, activating emergency rotating lights.
+    </p>
+  </section>
+  <Blockquote title="Credits" type="inline">
+    <li><strong>Featuring Beatriz Ferreyra</strong></li>
+    <li><strong>Directed and edited by Aura Satz</strong></li>
+    <li>DOP: Sam Williams</li>
+    <li>Music: Beatriz Ferreyra</li>
+    <li>Dubbing Mix: Gernot Fuhrmann</li>
+    <li>English Subtitles: Aura Satz</li>
+    Special thanks to Jo Langton
+  </Blockquote>
+  <Image
+    src="Preemptive Listening 16mm still1.jpg"
+    caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
+  />
+  <h4>Exhibitions</h4>
+  <Title
+    date="7 Nov-21 Dec 2018"
+    title="'Listen, Recalibrate'"
+    subtitle="Solo show at Fridman Gallery, New York"
+  >
+    <p>
+      Exhibition catalogue with essays by Christoph Cox, David Crowley, Barbara
+      London, and Aura Satz in conversation with David Toop.
+    </p>
+    <Link
+      url="https://www.fridmangallery.com/aura-satz"
+      label="fridmangallery.com"
+    />
+    <Link
+      url="https://www.fridmangallery.com/listen-recalibrate"
+      label="fridmangallery.com/listen-recalibrate"
+    />
+  </Title>
+
+  <Title
+    date="19-22 Sep 2019"
+    title="'Preemptive Listening', film and sound installation"
+    subtitle="Gunpowder Magazine, Berwick Film and Media Arts Festival, Berwick upon Tweed"
+  >
+    <p>
+      An expanded version of the 16mm short film featuring the voice of Khalid
+      Abdalla and the trumpet by Mazen Kerbaj, this iteration installed in an
+      old Gunpowder Magazine, embeds further sound elements from the project.
+      Including Elaine Mitchener (voice), Laurie Spiegel (electronica), Anton
+      Lukoszevieze (cello), Maja Ratkje (voice), Nick Hallett (voice and
+      electronica), Rhodri Davies (harp), and Steve Goodman (electronica).
+    </p>
+    <Link
+      url="https://www.bfmaf.org/programme/2019/exhibitions/preemptive-listening-part-1-the-fork-in-the-road"
+      label="bfmaf.org/programme"
+    />
+  </Title>
+</ProjectLayout>

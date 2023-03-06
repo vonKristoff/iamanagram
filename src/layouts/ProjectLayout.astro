@@ -16,7 +16,7 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
     {
       !!meta1 && (
         <>
-          <h4>{meta1}</h4>
+          <h4 class="meta-1">{meta1}</h4>
           <h4>{meta2}</h4>
         </>
       )
@@ -40,5 +40,14 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
   header h4:last-child {
     text-align: right;
     margin-bottom: 0;
+  }
+  header h1 {
+    margin-bottom: 0;
+  }
+  header h2 {
+    margin-top: 0.25em;
+  }
+  .meta-1 {
+    color: var(--colour-crimson);
   }
 </style>

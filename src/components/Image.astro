@@ -4,16 +4,19 @@ interface Image {
   caption?: string;
 }
 export interface Props {
+  src?: string;
+  caption?: string;
   collection?: Image[];
   type?: string;
 }
 
-const { collection = [], type = "" } = Astro.props;
+const { collection = [], src, caption = "", type = "" } = Astro.props;
+const images: Image[] = !!src ? [{ src, caption }] : collection;
 ---
 
 <div class={`image-group${type ? " use-slot" : ""}`}>
   {
-    collection.map(({ src, caption = "" }) => {
+    images.map(({ src, caption = "" }) => {
       return (
         <div class={`container ${type}`}>
           <img src={`/projects/${src}`} />
