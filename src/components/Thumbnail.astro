@@ -25,15 +25,15 @@ const { src, slug, title } = Astro.props;
     width: inherit;
     height: inherit;
   }
+  @media (max-width: 500px) {
+    a {
+      padding: 1em;
+    }
+  }
   .project-thumbnail {
     display: flex;
     position: relative;
     flex-direction: column;
-  }
-  @media (max-width: 500px) {
-    .project-thumbnail {
-      padding: 1em;
-    }
   }
   .project-title {
     opacity: 0.6;
