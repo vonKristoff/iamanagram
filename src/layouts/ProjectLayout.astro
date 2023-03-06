@@ -18,7 +18,7 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
         !!meta1 && (
           <>
             <h4 class="meta-1">{meta1}</h4>
-            <h4>{meta2}</h4>
+            <h4 class="meta-2">{meta2}</h4>
           </>
         )
       }
@@ -42,9 +42,10 @@ const { title, subtitle, meta1, meta2 = "" } = Astro.props as Props;
     margin: auto;
     max-width: var(--width-section);
   }
-  header h4:last-child {
+  .meta-2 {
     text-align: right;
     margin-bottom: 0;
+    font-size: var(--size-smaller);
   }
   header h1 {
     margin-bottom: 0;
