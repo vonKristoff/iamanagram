@@ -24,6 +24,7 @@ const { src, slug, title } = Astro.props;
     padding: 0;
     width: inherit;
     height: inherit;
+    position: relative;
   }
   @media (max-width: 500px) {
     a {
@@ -32,7 +33,6 @@ const { src, slug, title } = Astro.props;
   }
   .project-thumbnail {
     display: flex;
-    position: relative;
     flex-direction: column;
   }
   .project-title {
