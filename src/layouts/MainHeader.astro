@@ -16,7 +16,7 @@ const { title } = Astro.props;
       <nav>
         <ul>
           <li><a href="/">Projects</a></li>
-          <li><strong>aurasatz@onetel.com</strong></li>
+          <li class="email"><strong>aurasatz@onetel.com</strong></li>
         </ul>
       </nav>
       <div id="title">AURA SATZ</div>
@@ -64,6 +64,11 @@ const { title } = Astro.props;
   }
   @media (hover: hover) {
     nav li:last-child {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    .email {
       display: none;
     }
   }
