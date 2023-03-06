@@ -30,6 +30,11 @@ const { src, slug, title } = Astro.props;
     position: relative;
     flex-direction: column;
   }
+  @media (max-width: 500px) {
+    .project-thumbnail {
+      padding: 0.25em;
+    }
+  }
   .project-title {
     opacity: 0.6;
     font-size: var(--size-smaller);
