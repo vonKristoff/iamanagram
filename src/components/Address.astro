@@ -26,7 +26,7 @@ const {
 } = Astro.props;
 ---
 
-<aside class="address">
+<aside class={`address ${type}`}>
   {!!name && <li class="title">{name}</li>}
   {!!contact && <li>{contact}</li>}
   {!!address1 && <li>{address1}</li>}
@@ -55,5 +55,11 @@ const {
   .title {
     font-weight: bold;
     margin-bottom: 0.25em;
+  }
+  .margin-top {
+    margin-top: 1em;
+  }
+  .margin-bottom {
+    margin-bottom: 1em;
   }
 </style>
