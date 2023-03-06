@@ -28,7 +28,7 @@ const { src, slug, title } = Astro.props;
   }
   @media (max-width: 520px) {
     a {
-      padding: 1em;
+      padding: 2em;
     }
   }
   .project-thumbnail {
@@ -45,7 +45,6 @@ const { src, slug, title } = Astro.props;
   .thumbnail-container {
     filter: grayscale(1);
     transition: 0.7s filter ease-in;
-    flex: 1 1 100%;
   }
   .thumbnail-container:hover {
     filter: grayscale(0);
@@ -68,10 +67,10 @@ const { src, slug, title } = Astro.props;
     object-fit: cover;
     aspect-ratio: 1/1;
   }
-  @media (max-width: 520px) {
+  /* @media (max-width: 520px) {
     .thumbnail-container:before,
     img {
       height: calc(100vw - 6em);
     }
-  }
+  } */
 </style>
