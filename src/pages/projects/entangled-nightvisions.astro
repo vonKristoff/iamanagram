@@ -1,0 +1,95 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+import Video from "../../components/Video.astro";
+const { data } = await getProps("entangled-nightvisions");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    src="Entangled Nightvisions small.jpg"
+    caption="Aura Satz, 'Entangled Nightvisions', film still, 2017"
+  />
+  <section>
+    <p>
+      Philosopher Johnny Golding ruminates on a formative childhood experience,
+      when her father brought home an early prototype of night vision he was
+      working on for the American Military 'Project Eyeglass', for ARPA
+      (Advanced Research Projects Agency). Shot using corrupted night vision
+      footage, the film explores Johnny's interest in quantum physics,
+      entanglement and her philosophy of Radical Matter.
+    </p>
+  </section>
+  <h4>Screenings</h4>
+  <Title
+    date="24th Jan - 4th Feb 2018"
+    title="World Premiere at the International Film Festival Rotterdam, Rotterdam"
+    subtitle=""
+  >
+    <Link url="https://iffr.com/en/films-2018" label="iffr.com" />
+    <Link
+      inline={false}
+      url="https://iffr.com/en/2018/films/entangled-nightvisions"
+      label="iffr.com/en/2018/films/entangled-nightvisions"
+    />
+  </Title>
+  <Title
+    date="3-7 May 2018"
+    title="Screening at Alchemy Film and Moving Image Festival, Hawick, Scotland"
+    subtitle=""
+  >
+    <Link
+      url="https://alchemyfilmfestival.org.uk/2018/investigations/"
+      label="alchemyfilmfestival.org.uk"
+    />
+  </Title>
+  <h4>Exhibitions and performances:</h4>
+
+  <Title
+    date="20 - 22 July 2018, Opening on July 19 at 6pm"
+    title="'The Surface of the Sun'"
+    subtitle="Group show at Contemporary Art Museum of Estonia (EKKM), Tallin"
+  >
+    <p>
+      Including Peggy Ahwesh, Basma Alsharif, Stephanie Comilang, Annabelle
+      Craven-Jones, Elise Florenty & Marcel Turkowsky, Saskia Holmkvist, Sam
+      Keogh, Hanne Lippard, Maha Maamoun, Agnieszka Polska, Aura Satz. Curated
+      by Erik Martinson.
+    </p>
+    <p>
+      Remote viewing is a form of extrasensory perception: a receptive
+      individual projects or travels out of their body to a place, object or
+      time unknown to them, reporting back as a kind of psychic reconnaissance.
+      This practice was part of the CIA's Stargate Project, begun in the 1970s,
+      that sought to competitively instrumentalize psychic research during the
+      Cold War. The subject of one of these experiments would be handed a sealed
+      envelope, from the test's monitor, that contained a location and time. The
+      monitor then verbally directed the subject to specific coordinates, asking
+      for reports and drawings of what was seen and encountered. Any place and
+      time was possible, even The Surface of the Sun.
+    </p>
+    <p>
+      As a concept, remote viewing can be positioned as a portal across time,
+      history and personal experience. The speculative nature of this practice
+      is equally a departure point for fictional intermingling. In this vein,
+      events not lived first hand, or at all, can be reconfigured as malleable
+      objects moving through time, newly and differently encountered. The works
+      presented in the The Surface of the Sun will travel through signal,
+      stopping by fleetingly, leaving their echoes.
+    </p>
+    <Link
+      url="http://www.ekkm.ee/naitused/the-surface-of-the-sun/"
+      label="ekkm.ee"
+    />
+    <Address
+      type="margin-top"
+      name="Contemporary Art Museum of Estonia (EKKM)"
+      address1="Pohja pst. 35, Tallinn, 10415"
+    />
+  </Title>
+</ProjectLayout>
