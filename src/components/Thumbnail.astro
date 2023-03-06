@@ -69,6 +69,7 @@ const { src, slug, title } = Astro.props;
     aspect-ratio: 1/1;
   }
   @media (max-width: 520px) {
+    .thumbnail-container:before,
     img {
       height: calc(100vw - 6em);
     }
