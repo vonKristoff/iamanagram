@@ -52,12 +52,9 @@ const images: Image[] = !!src ? [{ src, caption }] : collection;
     flex: clamp(100%/ (3 + 1) + 0.1%, 300px, 100%);
     align-items: center;
   }
-  .container + .side-content {
-    flex-direction: row;
-  }
   @media (max-width: 520px) {
-    .container + .side-content {
-      flex-direction: column;
+    .use-slot {
+      flex-wrap: wrap;
     }
   }
   .side-content {
