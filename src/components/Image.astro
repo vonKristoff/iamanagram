@@ -55,6 +55,11 @@ const images: Image[] = !!src ? [{ src, caption }] : collection;
   .container + .side-content {
     flex-direction: row;
   }
+  @media (max-height: 520px) {
+    .container + .side-content {
+      flex-direction: column;
+    }
+  }
   .side-content {
     font-size: var(--size-smaller);
     line-height: var(--spacing-level-4);
