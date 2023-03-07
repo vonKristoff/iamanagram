@@ -1,10 +1,10 @@
 ---
 export interface Props {
-  type?: "inline" | "list";
+  type: "inline" | "list";
   title?: string;
 }
 
-const { type = "", title = "" } = Astro.props;
+const { type, title = "" } = Astro.props;
 ---
 
 <aside class={type}>
