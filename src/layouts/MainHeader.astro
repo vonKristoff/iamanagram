@@ -62,12 +62,7 @@ const { title } = Astro.props;
   nav li strong {
     color: var(--colour-violet);
   }
-  @media (hover: hover) {
-    nav li:last-child {
-      display: none;
-    }
-  }
-  @media (max-width: 500px) {
+  @media (max-width: var(--width-mobile)) {
     .email {
       display: none;
     }
@@ -115,6 +110,7 @@ const { title } = Astro.props;
     --width-section: 70ch;
     --width-article: 1024px;
     --width-page: 1280px;
+    --width-mobile: 520px;
     --spacing-level-1: 6em;
     --spacing-level-2: 3em;
     --spacing-level-3: 2em;

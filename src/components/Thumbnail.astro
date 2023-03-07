@@ -27,7 +27,7 @@ const { src, slug, title, related = false } = Astro.props;
     height: inherit;
     position: relative;
   }
-  @media (max-width: 520px) {
+  @media (max-width: var(--width-mobile)) {
     a {
       margin: 0.5em;
     }

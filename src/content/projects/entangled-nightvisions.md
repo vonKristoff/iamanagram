@@ -5,6 +5,6 @@ meta1:
 meta2:
 date: 12/2/23
 image: the Future Waters film still 2.jpg
-thumbnail: onomatopoeic.jpg
+thumbnail: entangled.jpg
 related: []
 ---

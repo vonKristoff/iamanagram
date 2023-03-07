@@ -7,6 +7,6 @@ gallery: Sonic Acts Festival
 exhibition: Amsterdam, 15-16 October 2022
 date: 12/2/23
 image: the Future Waters film still 2.jpg
-thumbnail: anechoic.jpg
+thumbnail: BeatrizRainbowHands.jpg
 related: []
 ---
