@@ -3,12 +3,13 @@ export interface Props {
   src: string;
   slug: string;
   title: string;
+  related: boolean;
 }
 
-const { src, slug, title } = Astro.props;
+const { src, slug, title, related = false } = Astro.props;
 ---
 
-<div class="project-thumbnail">
+<div class={`project-thumbnail ${related ? "related" : ""}`}>
   <a href={`/projects/${slug}`}>
     <div class="thumbnail-container">
       <img src={`/projects/_thumbnails/${src}`} />
@@ -35,12 +36,18 @@ const { src, slug, title } = Astro.props;
     display: flex;
     flex-direction: column;
   }
+  .project-thumbnail.related {
+    flex-direction: column-reverse;
+  }
   .project-title {
     opacity: 0.6;
     font-size: var(--size-smaller);
     color: var(--colour-soft);
     text-align: center;
     margin-top: 1em;
+  }
+  .project-thumbnail.related .project-title {
+    min-height: 3em;
   }
   .thumbnail-container {
     filter: grayscale(1);
@@ -67,10 +74,4 @@ const { src, slug, title } = Astro.props;
     object-fit: cover;
     aspect-ratio: 1/1;
   }
-  /* @media (max-width: 520px) {
-    .thumbnail-container:before,
-    img {
-      height: calc(100vw - 6em);
-    }
-  } */
 </style>

@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import { getProps } from "../helpers/utils";
+import Thumbnail from "./Thumbnail.astro";
+export interface Props {
+  slugs: string[];
+}
+const projectList = await getCollection("projects");
+const { slugs } = Astro.props;
+const related = projectList.filter((project) => {
+  return slugs.includes(project.slug);
+});
+---
+
+<h4>Related</h4>
+<div class="related-wrapper">
+  {
+    related.map(({ slug, data }) => (
+      <Thumbnail
+        related={true}
+        src={data.thumbnail}
+        title={data.title}
+        slug={slug}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .related-wrapper {
+    display: flex;
+  }
+</style>

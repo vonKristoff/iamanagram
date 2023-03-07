@@ -8,5 +8,5 @@ exhibition: Amsterdam, 15-16 October 2022
 date: 12/2/23
 image: the Future Waters film still 2.jpg
 thumbnail: betweenbullet.jpg
-related: []
+related: ['grief-interval', 'future-waters', 'dark-matter-radio']
 ---
