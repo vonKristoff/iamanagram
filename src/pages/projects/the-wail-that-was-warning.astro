@@ -1,0 +1,119 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { getProps } from "../../helpers/utils";
+import Image from "../../components/Image.astro";
+import Address from "../../components/Address.astro";
+import Blockquote from "../../components/Blockquote.astro";
+import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
+const { data } = await getProps("the-wail-that-was-warning");
+---
+
+<ProjectLayout {...data}>
+  <Image
+    src="wail.jpg"
+    caption="Aura Satz, 'The Wail That Was Warning', film still, 2017"
+  />
+  <Title
+    date="30 Nov 2017"
+    title="'The Institute of Signals and Noise and The Wail that Was Warning'"
+    subtitle="Aura Satz and David Toop, London Review Bookshop, London"
+  >
+    <p>
+      Aura Satz and David Toop will be performing in the intimate downstairs
+      venue at the Bookshop. Between noise and signals, alarms and dial tones,
+      sirens and whistles, wails and howls, masked language and hidden voices,
+      the evening's improvisations will uncover a variety of sound textures,
+      anecdotes, calls to attention, imperatives and doubts.
+    </p>
+    <Address
+      name="The London Review Bookshop"
+      address1="14 Bury Place"
+      address2="London WC1A 2JL"
+      tel="+44 (0) 20 7269 9030"
+    />
+    <p>LRB BLOG, a conversation between Aura Satz and David Toop</p>
+    <Link
+      url="https://www.londonreviewbookshop.co.uk/events/2017/11/the-institute-of-signals-and-noise-and-the-wail-that-was-warning-aura-satz-and-david-toop"
+      label="londonreviewbookshop.co.uk"
+    />
+  </Title>
+  <Image
+    src="WailThatWasWarning SATZ1.jpg"
+    caption="Aura Satz, 'The Wail That Was Warning', Installation view, Fridman Gallery, NY, 2018"
+  />
+
+  <Title
+    date="7 Nov - 21 Dec 2018"
+    title="'Listen, Recalibrate'"
+    subtitle="Solo show at Fridman Gallery, New York"
+  >
+    <p>
+      <strong>The Wail That Was Warning</strong> (2018) is a sound sculpture in which
+      five hand-cranked sirens are daisy-chained, each tuned to a different RPM to
+      generate a spectrum of sounds that oscillates between a growl, a moan, a howl,
+      a wail, a scream and a siren. The siren's ambiguous temporality, warning of
+      future dangers and mourning of tragedies past, is enmeshed with its non-human
+      associations, recalling different affective qualities of animal or non-verbal
+      communication. The sculpture gives rise to different possible readings of the
+      siren, beyond a simple call to attention or a marker of civil (dis)obedience.
+      Exhibition catalogue with essays by Christoph Cox, David Crowley, Barbara London,
+      and Aura Satz in conversation with David Toop.
+    </p>
+    <Link
+      url="https://www.fridmangallery.com/listen-recalibrate"
+      label="fridmangallery.com/listen-recalibrate"
+    />
+  </Title>
+  <Image
+    src="Satz_Wail_That_Was_Warning.jpg"
+    caption="Aura Satz, 'The Wail That Was Warning', Installation view, Sharjah Art Foundation, Sharjah, 2020"
+  />
+  <Title
+    date="26 June - 26 September 2020"
+    title="'Art in the Age of Anxiety'"
+    subtitle="Group show at Sharjah Art Foundation, Sharjah, curated by Omar Kholeif"
+  >
+    <p>
+      Curated by SAF Director of Collections and Senior Curator Omar Kholeif,
+      Art in the Age of Anxiety brings together a global group of contemporary
+      artists to explore the ways everyday devices, technologies and digital
+      networks have altered our collective consciousness. The exhibition
+      presents more than 60 works spanning sculpture, prints, video, virtual
+      reality, robotics and algorithmic programs developed by more than 30
+      international artists. Art in the Age of Anxiety conjures the bombardment
+      of information, misinformation, emotion, deception and secrecy that
+      invades online and offline life in the age of digital technology. It aims
+      to illuminate the 'post-digital' condition - the manners and behaviours
+      found in a world altered by the rise of digital technologies - and posits
+      speculations for our future. The exhibition represents the culmination of
+      more than a decade of research on the subject by Kholeif, who has
+      previously curated internationally touring exhibitions such as I Was
+      Raised on the Internet (MCA Chicago, 2018) and Electronic Superhighway
+      (Whitechapel Gallery, 2016) and authored and edited seven books on the
+      subject, including You Are Here: Art After the Internet (HOME and Space,
+      2018) and Goodbye, World! Looking at Art in the Digital Age (Sternberg
+      Press, 2018).
+    </p>
+
+    <p>
+      Participating artists: Lawrence Abu Hamdan - Cory Arcangel - Jeremy Bailey
+      - Wafaa Bilal - James Bridle - Antoine Catala - Douglas Coupland - Thomson
+      & Craighead - Simon Denny - Aleksandra Domanovic - Constant Dullaart -
+      Electronic Disturbance Theater - Cao Fei - Oliver Laric - Lynn Hershman
+      Leeson - Rafael Lozano-Hemmer - Eva and Franco Mattes - Joshua Nathanson -
+      Katja Novitskova - Trevor Paglen - Jon Rafman - Tabor Robak - Pamela
+      Rosenkranz - Aura Satz - Bogosi Sekhukhuni - Jenna Sutela - UVA - Siebren
+      Versteeg - Andrew Norman Wilson - Guan Xiao - YOUNG-HAE CHANG HEAVY
+      INDUSTRIES
+    </p>
+    <Link
+      url="http://sharjahart.org/sharjah-art-foundation/exhibitions/art-in-the-age-of-anxiety"
+      label="sharjahart.org/art-in-the-age-of-anxiety"
+    />
+    <Link
+      url="http://sharjahart.org/sharjah-art-foundation/projects/wail-that-was-warning-2018"
+      label="sharjahart.org/wail-that-was-warning-2018"
+    />
+  </Title>
+</ProjectLayout>
