@@ -8,9 +8,9 @@ const collection = defineCollection({
     meta2: z.string().nullable().optional(),
     gallery: z.string().optional(),
     exhibition: z.string().optional(),
-    image: z.string(),
     thumbnail: z.string(),
-    related: z.array(z.string())
+    related: z.array(z.string()),
+    category: z.array(z.string()),
   })
 })
 export const collections = {
