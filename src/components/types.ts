@@ -9,4 +9,5 @@ export interface LayoutProps {
   date: string;
   thumbnail: string;
   related: [];
+  category: string[];
 }

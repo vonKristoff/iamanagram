@@ -1,5 +1,5 @@
 ---
-const { title } = Astro.props;
+const { title, omit = null } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,11 +15,38 @@ const { title } = Astro.props;
     <header>
       <nav>
         <ul>
-          <li><a href="/">Projects</a></li>
-          <li class="email"><strong>aurasatz@onetel.com</strong></li>
+          {
+            omit !== "films" && (
+              <li>
+                <a href="/films">Films</a>
+              </li>
+            )
+          }
+          {
+            omit !== "soundworks" && (
+              <li>
+                <a href="/soundworks">Soundworks</a>
+              </li>
+            )
+          }
+          {
+            omit !== "performances" && (
+              <li>
+                <a href="/performances">Performances</a>
+              </li>
+            )
+          }
+          {
+            omit !== "other" && (
+              <li>
+                <a href="/other">Other</a>
+              </li>
+            )
+          }
+          <!-- <li class="email"><strong>aurasatz@onetel.com</strong></li> -->
         </ul>
       </nav>
-      <div id="title">AURA SATZ</div>
+      <a class="no-underline" href="/"><div id="title">AURA SATZ</div></a>
     </header>
     <main>
       <slot />
@@ -76,6 +103,9 @@ const { title } = Astro.props;
   #title {
     position: relative;
     font-size: 1.5em;
+  }
+  a.no-underline {
+    text-decoration: none;
   }
   #title:before {
     position: absolute;

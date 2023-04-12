@@ -19,6 +19,16 @@ const { src, slug, title, related = false } = Astro.props;
     <span>{title}</span>
   </div>
 </div>
+<script>
+  import { initalise } from "../helpers/anagram";
+  const list = document.querySelectorAll(".project-thumbnail");
+  list.forEach((node) => {
+    const action = initalise(node, "project-title");
+    node.addEventListener("mouseover", () => {
+      action();
+    });
+  });
+</script>
 <style>
   a {
     margin: 0;
@@ -45,6 +55,7 @@ const { src, slug, title, related = false } = Astro.props;
     color: var(--colour-soft);
     text-align: center;
     margin-top: 1em;
+    min-height: 2.5em;
   }
   .project-thumbnail.related .project-title {
     min-height: 4em;
@@ -75,3 +86,4 @@ const { src, slug, title, related = false } = Astro.props;
     aspect-ratio: 1/1;
   }
 </style>
+<!-- radial-gradient(circle,rgba(239,239,239,.125) 35%,rgba(255,255, 255,.5) 55%,rgba(1, 1, 1,1) 70%) -->

@@ -9,4 +9,5 @@ date: 12/2/23
 image: the Future Waters film still 2.jpg
 thumbnail: automamusic.jpg
 related: []
+category: ['films']
 ---

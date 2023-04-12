@@ -25,16 +25,20 @@ export const manageAnimation = () => {
   return [getId, reset, setId] as const
 }
 
-export function initalise($el: any) {
-  const target = $el.innerText.split('')
-  const animate = anagramise($el, target)
+export function initalise($el: any, focus: string) {
+  const t = Object.values($el.children).find(({ className }) => {
+    const options = className.split(' ')
+    return options.includes(focus)
+  })
+  const target = t.innerText.split('')
+  const animate = anagramise(t, target)
   const useAnimationHook = manageAnimation()
   return () => {
     const [getId, reset, setId] = useAnimationHook
     if (!getId()) setId(requestAnimationFrame((time) => animate(time, reset)))
   }
 }
-const framerate = (speed = 30) => {
+const framerate = (speed) => {
   let elapsed = 0
   let prev = 0
   return (timestamp: number) => {
@@ -51,7 +55,7 @@ const framerate = (speed = 30) => {
 // runs on frame
 export function anagramise(el: any, tgt: string[]) {
   let current = 0
-  const nextRender = framerate(30)
+  const nextRender = framerate(20)
   const animate = (j: number, reset: () => void) => {
     if (nextRender(j)) {
       el.innerHTML = unscramble(tgt, current)

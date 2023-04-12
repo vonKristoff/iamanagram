@@ -8,7 +8,7 @@ const { date, title, subtitle } = Astro.props;
 ---
 
 <section>
-  <div class="spacing">
+  <div class="spacing nice-border">
     <heading>
       <!-- <div class="spacer"></div> -->
       {!!title && <h3>{title}</h3>}
@@ -29,7 +29,20 @@ const { date, title, subtitle } = Astro.props;
   .spacing {
     margin: var(--spacing-level-4) 0;
     border-top: var(--spacing-level-3) dotted #e5e5e5;
+    position: relative;
   }
+  .nice-border {
+    border-style: dotted;
+    border-color: whitesmoke;
+    border-image: url("/circle.svg") 34 21 round;
+    -webkit-border-image: url("/circle.svg") 20% stretch;
+    border-image-slice: 50% 30%;
+    border-image-repeat: round;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
   .spacer {
     flex: 1 4 150px;
   }
