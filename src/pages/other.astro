@@ -1,0 +1,9 @@
+---
+import MainHeader from "../layouts/MainHeader.astro";
+import Projects from "../components/Projects.astro";
+const current = "other";
+---
+
+<MainHeader title={`AURA SATZ - ${current}`} omit={current}>
+  <Projects page={current} />
+</MainHeader>

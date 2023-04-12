@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import MainHeader from "../layouts/MainHeader.astro";
+const projectList = await getCollection("projects");
+---
+
+<MainHeader title="AURA SATZ">
+	<!-- <div class="notice">
+		{projectList.map((item) => <li>{JSON.stringify(item)}</li>)}
+	</div> -->
+	<div class="projects">
+		{
+			projectList.map((item) => {
+				return <li>{item.data.title}</li>;
+			})
+		}
+	</div>
+</MainHeader>
+<script>
+	import { initalise } from "../helpers/anagram";
+	const list = document.querySelectorAll(".projects li");
+	list.forEach((node) => {
+		const action = initalise(node);
+		node.addEventListener("mouseover", () => {
+			action();
+		});
+	});
+</script>
+<style>
+	.notice {
+		word-break: break-all;
+		margin: var(--spacing-level-2) auto;
+		background-color: blueviolet;
+		padding: var(--spacing-level-4);
+		color: wheat;
+		line-height: 3ch;
+	}
+	.projects {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+		margin: 0 var(--spacing-level-3);
+		margin-top: var(--spacing-level-2);
+	}
+	.projects li {
+		background-color: goldenrod;
+		list-style: none;
+	}
+</style>
+<style is:global>
+	span.hmm {
+		background-color: red;
+	}
+</style>
