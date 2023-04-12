@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import Thumbnail from "./Thumbnail.astro";
+export interface Props {
+  page?: string;
+}
+const GROUP = [
+  "installation",
+  "sculptures",
+  "drawings",
+  "photographs",
+  "other",
+];
+const projectList = await getCollection("projects");
+const { page } = Astro.props;
+const filterByPage = page === "other" ? GROUP : [page];
+---
+
+<div class="projects">
+  {
+    projectList
+      .filter((item: any) => {
+        if (!page) return item;
+        return filterByPage
+          .filter((group) => item.data.category.includes(group))
+          .pop();
+      })
+      .map((item: any) => {
+        return (
+          <Thumbnail
+            src={item.data.thumbnail}
+            title={item.data.title}
+            slug={item.slug}
+          />
+        );
+      })
+  }
+</div>
+<style>
+  .projects {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 var(--spacing-level-3);
+    margin-top: var(--spacing-level-2);
+  }
+</style>
