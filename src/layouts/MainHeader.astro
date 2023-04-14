@@ -78,6 +78,7 @@ const { title, omit = null } = Astro.props;
   }
   nav ul {
     display: flex;
+    flex-wrap: wrap;
   }
   nav li {
     list-style: none;
@@ -176,14 +177,3 @@ const { title, omit = null } = Astro.props;
     margin-top: 0;
   }
 </style>
-
-<script defer>
-  import { initalise } from "../helpers/anagram";
-  const list = document.querySelectorAll(".project-thumbnail");
-  list.forEach((node) => {
-    const action = initalise(node, "project-title");
-    node.addEventListener("mouseover", () => {
-      action();
-    });
-  });
-</script>
