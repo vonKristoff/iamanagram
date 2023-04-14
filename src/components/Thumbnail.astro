@@ -19,16 +19,6 @@ const { src, slug, title, related = false } = Astro.props;
     <span>{title}</span>
   </div>
 </div>
-<script>
-  import { initalise } from "../helpers/anagram";
-  const list = document.querySelectorAll(".project-thumbnail");
-  list.forEach((node) => {
-    const action = initalise(node, "project-title");
-    node.addEventListener("mouseover", () => {
-      action();
-    });
-  });
-</script>
 <style>
   a {
     margin: 0;
