@@ -46,7 +46,9 @@ const { title, omit = null } = Astro.props;
           <!-- <li class="email"><strong>aurasatz@onetel.com</strong></li> -->
         </ul>
       </nav>
-      <a class="no-underline" href="/"><div id="title">AURA SATZ</div></a>
+      <a class="nav-flex no-underline" href="/"
+        ><div id="title">AURA SATZ</div></a
+      >
     </header>
     <main>
       <slot />
@@ -76,6 +78,9 @@ const { title, omit = null } = Astro.props;
     align-items: center;
     justify-content: space-between;
   }
+  nav {
+    flex: 0 0.5 auto;
+  }
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +106,11 @@ const { title, omit = null } = Astro.props;
     max-width: calc(var(--width-article) + var(--spacing-level-2));
     margin-bottom: var(--spacing-level-1);
   }
+  .nav-flex {
+    flex: 0 0.5 auto;
+  }
   #title {
+    text-align: right;
     position: relative;
     font-size: 1.5em;
   }
