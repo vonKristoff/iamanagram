@@ -45,8 +45,8 @@ const filterByPage = page === "other" ? GROUP : [page];
     margin-top: var(--spacing-level-2);
   }
 </style>
-<script>
-  import { initalise } from "../helpers/anagram";
+<script type="module">
+  import { initalise } from "../src/helpers/anagram";
   const list = document.querySelectorAll(".project-thumbnail");
   list.forEach((node) => {
     const action = initalise(node, "project-title");
