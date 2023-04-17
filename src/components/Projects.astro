@@ -46,7 +46,7 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 </style>
 <script type="module">
-  import { initalise } from "../src/helpers/anagram";
+  import { initalise } from "/anagram";
   const list = document.querySelectorAll(".project-thumbnail");
   list.forEach((node) => {
     const action = initalise(node, "project-title");
