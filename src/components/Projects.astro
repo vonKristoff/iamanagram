@@ -46,10 +46,11 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 </style>
 <script type="module">
-  import { initalise } from "./anagram.ts";
+  import { initalise } from "../../public/anagram";
   const list = document.querySelectorAll(".project-thumbnail");
   list.forEach((node) => {
     const action = initalise(node, "project-title");
+    console.log(node);
     node.addEventListener("mouseover", () => {
       action();
     });
