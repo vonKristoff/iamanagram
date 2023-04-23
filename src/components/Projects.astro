@@ -155,10 +155,10 @@ const filterByPage = page === "other" ? GROUP : [page];
 
   const list = document.querySelectorAll(".project-thumbnail");
   list.forEach((node) => {
-    const action = initalise(node, "project-title");
-    console.log(node);
-    // node.addEventListener("mouseover", () => {
-    //   action();
-    // });
+    let action = null;
+    node.addEventListener("mouseover", () => {
+      if (!action) action = initalise(node, "project-title");
+      action();
+    });
   });
 </script>
