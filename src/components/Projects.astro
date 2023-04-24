@@ -153,12 +153,14 @@ const filterByPage = page === "other" ? GROUP : [page];
     return animate;
   }
 
-  const list = document.querySelectorAll(".project-thumbnail");
-  list.forEach((node) => {
-    let action = null;
-    node.addEventListener("mouseover", () => {
-      if (!action) action = initalise(node, "project-title");
-      action();
+  if (typeof MouseEvent === "function") {
+    const list = document.querySelectorAll(".project-thumbnail");
+    list.forEach((node) => {
+      let action = null;
+      node.addEventListener("mouseover", () => {
+        if (!action) action = initalise(node, "project-title");
+        action();
+      });
     });
-  });
+  }
 </script>
