@@ -75,7 +75,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     "z",
   ];
 
-  function unscramble(target: string[], i: number) {
+  function unscramble(target, i) {
     const jumbled = target.map((char) => {
       if (char === " ") return char;
       return aplhabet[Math.floor(Math.random() * aplhabet.length)];
@@ -96,16 +96,16 @@ const filterByPage = page === "other" ? GROUP : [page];
       cancelAnimationFrame(currentId);
       currentId = 0;
     };
-    const setId = (uid: number) => {
+    const setId = (uid) => {
       currentId = uid;
     };
     const getId = () => {
       return currentId;
     };
-    return [getId, reset, setId] as const;
+    return [getId, reset, setId];
   };
 
-  function initalise($el: any, focus: string) {
+  function initalise($el, focus) {
     const t = Object.values($el.children).find(({ className }) => {
       const options = className.split(" ");
       return options.includes(focus);
@@ -122,7 +122,7 @@ const filterByPage = page === "other" ? GROUP : [page];
   const framerate = (speed) => {
     let elapsed = 0;
     let prev = 0;
-    return (timestamp: number) => {
+    return (timestamp) => {
       if (!timestamp) {
         elapsed = 0;
         prev = 0;
@@ -134,10 +134,10 @@ const filterByPage = page === "other" ? GROUP : [page];
     };
   };
   // runs on frame
-  function anagramise(el: any, tgt: string[]) {
+  function anagramise(el, tgt) {
     let current = 0;
     const nextRender = framerate(20);
-    const animate = (j: number, reset: () => void) => {
+    const animate = (j, reset) => {
       if (nextRender(j)) {
         el.innerHTML = unscramble(tgt, current);
         current++;
