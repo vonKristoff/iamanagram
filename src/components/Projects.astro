@@ -158,6 +158,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     let action = {};
     list.forEach((node, index) => {
       action[index] = null;
+      console.log(node, index);
       node.addEventListener("mouseover", () => {
         if (!action[index]) action[index] = initalise(node, "project-title");
         action[index]();
