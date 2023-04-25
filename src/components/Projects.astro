@@ -153,12 +153,11 @@ const filterByPage = page === "other" ? GROUP : [page];
     return animate;
   }
 
-  if ("ontouchstart" in document.documentElement) {
+  if (!("ontouchstart" in document.documentElement)) {
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node) => {
       let action = null;
       node.addEventListener("mouseover", () => {
-        node.innerText += "a";
         if (!action) action = initalise(node, "project-title");
         action();
       });
