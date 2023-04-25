@@ -155,13 +155,14 @@ const filterByPage = page === "other" ? GROUP : [page];
 
   if (!("ontouchstart" in document.documentElement)) {
     const list = document.querySelectorAll(".project-thumbnail");
-    list.forEach((node) => {
-      let action = null;
-      node.innerText += "node";
-      // node.addEventListener("mouseover", () => {
-      //   if (!action) action = initalise(node, "project-title");
-      //   action();
-      // });
+    let action = {};
+    list.forEach((node, index) => {
+      action[index] = null;
+      node.addEventListener("mouseover", () => {
+        if (!action[index]) action[index] = initalise(node, "project-title");
+        action[index]();
+      });
     });
+    console.log(action);
   }
 </script>
