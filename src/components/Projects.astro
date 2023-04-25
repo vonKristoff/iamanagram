@@ -153,9 +153,9 @@ const filterByPage = page === "other" ? GROUP : [page];
     return animate;
   }
 
+  let action = {};
   if (!("ontouchstart" in document.documentElement)) {
     const list = document.querySelectorAll(".project-thumbnail");
-    let action = {};
     list.forEach((node, index) => {
       action[index] = null;
       console.log(node.innerText, index);
