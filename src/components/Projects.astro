@@ -153,7 +153,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     return animate;
   }
 
-  if (typeof MouseEvent === "function") {
+  if (typeof onpointerenter === "object") {
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node) => {
       let action = null;
