@@ -157,10 +157,11 @@ const filterByPage = page === "other" ? GROUP : [page];
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node) => {
       let action = null;
-      node.addEventListener("mouseover", () => {
-        if (!action) action = initalise(node, "project-title");
-        action();
-      });
+      node.innerText += "node";
+      // node.addEventListener("mouseover", () => {
+      //   if (!action) action = initalise(node, "project-title");
+      //   action();
+      // });
     });
   }
 </script>
