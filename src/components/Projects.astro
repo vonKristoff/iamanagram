@@ -163,6 +163,6 @@ const filterByPage = page === "other" ? GROUP : [page];
         action[index]();
       });
     });
-    console.log(action);
+    setTimeout(() => console.log(action), 1000);
   }
 </script>
