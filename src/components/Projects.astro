@@ -154,14 +154,15 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 
   let action = {};
-  if (!("ontouchstart" in document.documentElement)) {
+  if ("ontouchstart" in document.documentElement) {
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node, index) => {
       action[index] = null;
       node.addEventListener("mouseover", () => {
-        if (!action[node.innerText])
-          action[node.innerText] = initalise(node, "project-title");
-        action[node.innerText]();
+        node.innerText += "mobile";
+        // if (!action[node.innerText])
+        //   action[node.innerText] = initalise(node, "project-title");
+        // action[node.innerText]();
       });
     });
   }
