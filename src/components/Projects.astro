@@ -154,8 +154,9 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 
   let action = {};
-  if (!"ontouchstart" in document.documentElement) {
-    const list = document.querySelectorAll(".project-thumbnail");
+  if ("ontouchstart" in document.documentElement) {
+    const target = ".thumbnail-container"; // ".project-thumbnail"
+    const list = document.querySelectorAll(target);
     list.forEach((node, index) => {
       action[index] = null;
       node.addEventListener("mouseover", () => {
