@@ -154,7 +154,7 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 
   let action = {};
-  if ("ontouchstart" in document.documentElement) {
+  if (!"ontouchstart" in document.documentElement) {
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node, index) => {
       action[index] = null;
