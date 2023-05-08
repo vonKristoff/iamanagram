@@ -154,16 +154,16 @@ const filterByPage = page === "other" ? GROUP : [page];
   }
 
   let action = {};
-  if ("ontouchstart" in document.documentElement) {
+  if (!("ontouchstart" in document.documentElement)) {
     const target = ".thumbnail-container"; // ".project-thumbnail"
     const list = document.querySelectorAll(target);
     list.forEach((node, index) => {
       action[index] = null;
       node.addEventListener("mouseover", () => {
-        node.innerText += "mobile";
-        // if (!action[node.innerText])
-        //   action[node.innerText] = initalise(node, "project-title");
-        // action[node.innerText]();
+        // node.innerText += "mobile";
+        if (!action[node.innerText])
+          action[node.innerText] = initalise(node, "project-title");
+        action[node.innerText]();
       });
     });
   }
