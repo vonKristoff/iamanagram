@@ -115,6 +115,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     const useAnimationHook = manageAnimation();
     return () => {
       const [getId, reset, setId] = useAnimationHook;
+      console.log(getId());
       if (!getId())
         setId(requestAnimationFrame((time) => animate(time, reset)));
     };
@@ -136,7 +137,7 @@ const filterByPage = page === "other" ? GROUP : [page];
   // runs on frame
   function anagramise(el, tgt) {
     let current = 0;
-    const nextRender = framerate(20);
+    const nextRender = framerate(50);
     const animate = (j, reset) => {
       if (nextRender(j)) {
         el.innerHTML = unscramble(tgt, current);
@@ -159,7 +160,6 @@ const filterByPage = page === "other" ? GROUP : [page];
     list.forEach((node, index) => {
       action[index] = null;
       node.addEventListener("mouseover", () => {
-        // node.innerText += "mobile";
         if (!action[node.innerText])
           action[node.innerText] = initalise(node, "project-title");
         action[node.innerText]();
