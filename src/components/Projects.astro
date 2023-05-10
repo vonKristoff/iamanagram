@@ -114,6 +114,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     const animate = anagramise(t, target);
     const useAnimationHook = manageAnimation();
     return () => {
+      let over = false;
       const [getId, reset, setId] = useAnimationHook;
       console.log(getId());
       if (getId() === 0) {
@@ -161,7 +162,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node, index) => {
       action[index] = null;
-      node.addEventListener("mouseover", () => {
+      node.addEventListener("mouseenter", () => {
         if (!action[node.innerText])
           action[node.innerText] = initalise(node, "project-title");
         action[node.innerText]();
