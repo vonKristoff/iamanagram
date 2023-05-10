@@ -116,7 +116,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     return () => {
       const [getId, reset, setId] = useAnimationHook;
       console.log(getId());
-      if (getId() !== 0) {
+      if (getId() === 0) {
         console.log("go");
         setId(requestAnimationFrame((time) => animate(time, reset)));
       }
