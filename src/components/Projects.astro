@@ -113,14 +113,14 @@ const filterByPage = page === "other" ? GROUP : [page];
     const target = t.innerText.split("");
     const animate = anagramise(t, target);
     const useAnimationHook = manageAnimation();
-    return () => {
-      let over = false;
+    // let over = false;
+    return (key) => {
       const [getId, reset, setId] = useAnimationHook;
-      console.log(getId());
-      if (getId() === 0) {
-        console.log("go");
-        setId(requestAnimationFrame((time) => animate(time, reset)));
-      }
+      // if (!over) {
+      requestAnimationFrame((time) => animate(time, key));
+      // setId(true);
+      // over = true;
+      // }
     };
   }
   const framerate = (speed) => {
@@ -141,16 +141,16 @@ const filterByPage = page === "other" ? GROUP : [page];
   function anagramise(el, tgt) {
     let current = 0;
     const nextRender = framerate(50);
-    const animate = (j, reset) => {
+    const animate = (j, key) => {
       if (nextRender(j)) {
         el.innerHTML = unscramble(tgt, current);
         current++;
         nextRender(0);
       }
       if (current <= tgt.length) {
-        requestAnimationFrame((t) => animate(t, reset));
+        requestAnimationFrame((t) => animate(t, key));
       } else {
-        reset();
+        action[key].over = false;
         current = 0;
       }
     };
@@ -161,11 +161,15 @@ const filterByPage = page === "other" ? GROUP : [page];
   if (!("ontouchstart" in document.documentElement)) {
     const list = document.querySelectorAll(".project-thumbnail");
     list.forEach((node, index) => {
-      action[index] = null;
+      action[node.innerText] = {
+        fn: initalise(node, "project-title"),
+        over: false,
+      };
       node.addEventListener("mouseenter", () => {
-        if (!action[node.innerText])
-          action[node.innerText] = initalise(node, "project-title");
-        action[node.innerText]();
+        if (!action[node.innerText].over) {
+          action[node.innerText].over = true;
+          action[node.innerText].fn(node.innerText);
+        }
       });
     });
   }

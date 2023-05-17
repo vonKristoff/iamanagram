@@ -185,10 +185,21 @@ const { title, omit = null } = Astro.props;
   .side-content h4:first-child {
     margin-top: 0;
   }
+  .thumbnail-container {
+    transition: all 3s;
+  }
   .thumbnail-container:before {
+    transition: all 3s;
     background: radial-gradient(
       circle,
-      rgba(239, 239, 239, 0) 20%,
+      rgba(239, 239, 239, 0) 10%,
+      rgba(239, 239, 239, 1) 70%
+    );
+  }
+  .thumbnail-container:hover::before {
+    background: radial-gradient(
+      circle,
+      rgba(239, 239, 239, 0) 40%,
       rgba(239, 239, 239, 1) 70%
     );
   }
