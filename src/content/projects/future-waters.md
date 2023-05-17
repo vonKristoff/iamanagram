@@ -1,5 +1,5 @@
 ---
-title: The Future Waters of the storm surge..
+title: The Future Waters of the storm surge
 subtitle: A film featuring sound by BJ Nilsen
 meta1: Sonic Acts Festival
 meta2: Amsterdam, 15-16 October 2022

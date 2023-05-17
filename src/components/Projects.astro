@@ -82,7 +82,7 @@ const filterByPage = page === "other" ? GROUP : [page];
     });
     // return [...jumbled.slice(0, target.length - i), ...target.slice(-i, -1)].join('')
     const title = [
-      ...target.slice(0, i),
+      ...target.slice(0, i + 1),
       ...jumbled.slice(0, target.length - i),
     ].join("");
     return `<span class="hmm">${title.substring(0, i)}</span>${title.substring(
@@ -166,6 +166,7 @@ const filterByPage = page === "other" ? GROUP : [page];
         over: false,
       };
       node.addEventListener("mouseenter", () => {
+        console.log(node.innerText);
         if (!action[node.innerText].over) {
           action[node.innerText].over = true;
           action[node.innerText].fn(node.innerText);
