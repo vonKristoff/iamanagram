@@ -166,7 +166,6 @@ const filterByPage = page === "other" ? GROUP : [page];
         over: false,
       };
       node.addEventListener("mouseenter", () => {
-        console.log(node.innerText);
         if (!action[node.innerText].over) {
           action[node.innerText].over = true;
           action[node.innerText].fn(node.innerText);
