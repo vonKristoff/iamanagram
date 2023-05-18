@@ -140,7 +140,7 @@ const filterByPage = page === "other" ? GROUP : [page];
   // runs on frame
   function anagramise(el, tgt) {
     let current = 0;
-    const nextRender = framerate(50);
+    const nextRender = framerate(20);
     const animate = (j, key) => {
       if (nextRender(j)) {
         el.innerHTML = unscramble(tgt, current);
