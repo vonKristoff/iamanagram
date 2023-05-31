@@ -58,7 +58,7 @@ const { title, omit = null } = Astro.props;
 <style>
   html {
     font-family: system-ui, sans-serif;
-    background-color: rgb(232, 221, 229);
+    background-color: var(--colour-base);
     /* #efefef; */
     max-width: 100vw;
     overflow-x: hidden;
@@ -143,6 +143,7 @@ const { title, omit = null } = Astro.props;
     box-sizing: border-box;
   }
   :root {
+    --colour-base: rgb(232, 221, 229);
     --colour-crimson: crimson;
     --colour-violet: darkslateblue;
     --colour-dark: #1a2e3b;
@@ -194,14 +195,14 @@ const { title, omit = null } = Astro.props;
     background: radial-gradient(
       circle,
       rgba(232, 221, 229, 0) 10%,
-      rgba(232, 221, 229, 1) 70%
+      var(--colour-base) 70%
     );
   }
   .thumbnail-container:hover::before {
     background: radial-gradient(
       circle,
       rgba(232, 221, 229, 0) 40%,
-      rgba(232, 221, 229, 1) 70%
+      var(--colour-base) 70%
     );
   }
 </style>
