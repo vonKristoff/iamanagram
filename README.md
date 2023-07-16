@@ -1,40 +1,69 @@
 # Aura Satz
 
-```
-npm create astro@latest -- --template basics
-```
+> WIP: Outline guide to maintaining this project. 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of your site, you'll see the following folders and files:
 
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   └── projects/
+│				*.jpg 				// place all images used here
+│   		└── _thumbs/
+│						*.jpg 		// place home page project thumbs here
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── *.astro 	// used to create consistant HTML
+│   └── content/
+│   		└── projects/
+│   			└── [projectname].md		// key meta data for project*
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       └── [pagename].astro 			// core site pages
+│   		└── projects/
+│       	└── [projectname].astro // project pages*
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
 Any static assets, like images, can be placed in the `public/` directory.
+
+## Manage a project page
+
+Projects will dynamically build themselves into their respective locations when the following steps are followed:
+
+`src/content/projects/projectname` filename must match its page layout counterpart: `src/pages/projects/projectname` for them to be enabled and embedded into the site.
+
+
+
+Goto `templates/meta` and `templates/page` respectively and copy the blank contents to get started on a new project page, that you can create in the expected location.
+
+Create a new file using the Github IDE.
+
+```
+---
+title: The Future Waters of the storm surge..
+subtitle: A film featuring sound by BJ Nilsen
+date: 12/2/23
+thumbnail: JoanArc.jpg // place in public/_thumbnails
+related: [] // use any existing <projectname>
+category: ['films'] // add more tags if you like
+---
+```
+
+
+
+
+
+
+
+## Using Github (create | update)
+
+
+
+
 
 ## 🧞 Commands
 
@@ -49,7 +78,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# iamanagram
