@@ -6,9 +6,8 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
-
-const { data } = await getProps("little-doorways-to-paths-not-yet-taken");
-// const data = props?.data ? props.data : {};
+const pagename = import.meta.url.split("/").pop().slice(0, -6);
+const { data } = await getProps(pagename);
 ---
 
 <ProjectLayout {...data}>
