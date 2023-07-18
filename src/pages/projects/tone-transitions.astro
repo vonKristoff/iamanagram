@@ -8,7 +8,7 @@ import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
 import Video from "../../components/Video.astro";
 const pagename = import.meta.url.split("/").pop().slice(0, -6);
-const data = await getProps(pagename);
+const { data } = await getProps(pagename);
 ---
 
 <ProjectLayout {...data}>
