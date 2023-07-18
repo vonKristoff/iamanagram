@@ -6,11 +6,12 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
-const pagename = import.meta.url.split("/").pop().slice(0, -6);
-const data = await getProps(pagename);
+
+const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
+const data = props?.data ? props.data : {};
 ---
 
-<ProjectLayout {...data?.data}>
+<ProjectLayout {...data}>
   <Image
     src="wail.jpg"
     caption="Aura Satz, 'The Wail That Was Warning', film still, 2017"
