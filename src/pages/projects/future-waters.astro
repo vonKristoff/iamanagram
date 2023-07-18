@@ -5,7 +5,8 @@ import Image from "../../components/Image.astro";
 import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
-const { data } = await getProps("future-waters");
+const pagename = import.meta.url.split("/").pop().slice(0, -6);
+const { data } = await getProps(pagename);
 const image1 = [
   {
     src: "fw-film-still 3.jpg",

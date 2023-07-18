@@ -6,7 +6,8 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
-const { data } = await getProps("beatriz-ferreyra");
+const pagename = import.meta.url.split("/").pop().slice(0, -6);
+const { data } = await getProps(pagename);
 ---
 
 <ProjectLayout {...data}>
@@ -16,11 +17,11 @@ const { data } = await getProps("beatriz-ferreyra");
   />
   <section>
     <p>
-    A short film about the Argentine electroacoustic composer Beatriz Ferreyra,
-    an original pioneer of early musique concrete alongside Pierre Schaeffer
-    during the '50s and '60s. Here she discusses her 'sound hunting' recording
-    techniques, and other thoughts on sound montage and spatialization.
-    Featuring creaking doors, barking dogs and rainbow hands.
+      A short film about the Argentine electroacoustic composer Beatriz
+      Ferreyra, an original pioneer of early musique concrete alongside Pierre
+      Schaeffer during the '50s and '60s. Here she discusses her 'sound hunting'
+      recording techniques, and other thoughts on sound montage and
+      spatialization. Featuring creaking doors, barking dogs and rainbow hands.
     </p>
   </section>
   <Image
