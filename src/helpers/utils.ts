@@ -3,7 +3,7 @@ import { LayoutProps } from '../components/types'
 interface Data {
   data: LayoutProps
 }
-export async function getProps(target: string) {
+export const getProps = async (target: string) => {
   const projectList = await getCollection("projects");
   return projectList.find(({ slug }) => slug === target) as Data
 }
