@@ -7,8 +7,7 @@ import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
 
-console.log(pagename);
-const props = (await getProps(pagename)) || { data: null };
+const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
 ---
 
 <ProjectLayout {...props}>
