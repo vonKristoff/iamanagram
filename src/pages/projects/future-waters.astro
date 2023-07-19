@@ -6,7 +6,7 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 
-const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
+const props = await getProps(import.meta.url);
 const image1 = [
   {
     src: "fw-film-still 3.jpg",
