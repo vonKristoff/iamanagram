@@ -8,5 +8,6 @@ export async function getProps(target: string): Promise<any> {
   const [pagename] = target.split('/').pop()?.split('.') || ''
   const projectList = await getCollection("projects");
   const result = projectList.find(({ slug }) => slug === pagename)
+  console.log(pagename, result)
   return result ? result.data : {}
 }
