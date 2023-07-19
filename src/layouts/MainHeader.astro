@@ -188,9 +188,20 @@ const { title, omit = null } = Astro.props;
   .side-content h4:first-child {
     margin-top: 0;
   }
+  .thumbnail-container {
+    overflow: hidden;
+  }
+
+  .thumbnail-container img {
+    transition: all 0.4s ease-out;
+    scale: 1.15;
+  }
+  .thumbnail-container:hover img {
+    scale: 1;
+  }
 
   .thumbnail-container:before {
-    transition: all 0.3s;
+    z-index: 1;
     background: radial-gradient(
       circle,
       rgba(232, 221, 229, 0) 50%,
