@@ -7,11 +7,10 @@ import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
 
-const pagename = import.meta.url.split("/").pop().slice(0, -6);
-const { data } = await getProps(pagename);
+const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
 ---
 
-<ProjectLayout {...data}>
+<ProjectLayout {...props}>
   <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
   <section>
     <p>

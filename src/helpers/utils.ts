@@ -1,10 +1,11 @@
 import { getCollection } from "astro:content";
 import type { LayoutProps } from '../components/types';
 
-interface Data {
-  data: LayoutProps
+type Data = {
+  data: LayoutProps | null
 }
-export async function getProps(target: string) {
+export async function getProps(target: string): Promise<any> {
   const projectList = await getCollection("projects");
-  return projectList.find(({ slug }) => slug === target) as Data
+  const result = projectList.find(({ slug }) => slug === target)
+  return result ? result.data : {}
 }

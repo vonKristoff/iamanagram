@@ -5,8 +5,8 @@ import Image from "../../components/Image.astro";
 import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
-const pagename = import.meta.url.split("/").pop().slice(0, -6);
-const { data } = await getProps(pagename);
+
+const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
 const image1 = [
   {
     src: "fw-film-still 3.jpg",
@@ -22,7 +22,7 @@ const image1 = [
 ];
 ---
 
-<ProjectLayout {...data}>
+<ProjectLayout {...props}>
   <section>
     Continuing her work as artist in residence at the Ear Institute, UCL London,
     Aura will develop a new intimate, immersive sound sculpture that will create

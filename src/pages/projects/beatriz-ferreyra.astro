@@ -6,11 +6,11 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
-const pagename = import.meta.url.split("/").pop().slice(0, -6);
-const { data } = await getProps(pagename);
+
+const props = await getProps(import.meta.url.split("/").pop().slice(0, -6));
 ---
 
-<ProjectLayout {...data}>
+<ProjectLayout {...props}>
   <Image
     src="BF door.jpg"
     caption="Aura Satz, 'Making a Diagonal with Music / Hacer Una Diagonal con la Musica', film still, 2019"
