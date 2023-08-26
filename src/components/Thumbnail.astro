@@ -41,13 +41,14 @@ const { src, slug, title, related = false } = Astro.props;
   }
   .project-title {
     opacity: 0.6;
-    font-size: var(--size-smaller);
-    color: var(--colour-violet);
+    font-size: inherit;
+    color: var(--colour-hard-green); /* var(--colour-violet); */
     text-align: center;
     margin-top: 1em;
     min-height: 2.5em;
     pointer-events: none;
-    cursor: hand;
+    cursor: pointer;
+    font-family: monospace;
   }
   .project-thumbnail.related .project-title {
     min-height: 4em;
