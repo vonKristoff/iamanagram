@@ -12,21 +12,26 @@ const related = projectList.filter((project) => {
 });
 ---
 
-<h3>Related</h3>
-<div class="related-wrapper">
-  {
-    related.map(({ slug, data }) => (
-      <Thumbnail
-        related={true}
-        src={data.thumbnail}
-        title={data.title}
-        slug={slug}
-      />
-    ))
-  }
+<div class="related-spacing">
+  <h3>Related</h3>
+  <div class="related-wrapper">
+    {
+      related.map(({ slug, data }) => (
+        <Thumbnail
+          related={true}
+          src={data.thumbnail}
+          title={data.title}
+          slug={slug}
+        />
+      ))
+    }
+  </div>
 </div>
 
 <style>
+  .related-spacing {
+    margin-top: var(--spacing-level-2);
+  }
   .related-wrapper {
     display: flex;
     align-items: flex-start;
