@@ -7,7 +7,7 @@ export function unscramble(target: string[], i: number) {
   })
   // return [...jumbled.slice(0, target.length - i), ...target.slice(-i, -1)].join('')
   const title = [...target.slice(0, i), ...jumbled.slice(0, target.length - i)].join('')
-  return `<span class="hmm">${title.substring(0, i)}</span>${title.substring(i)}`
+  return `<span class="hmm">${title.substring(0, i)}</span><span class="crimson">${title.substring(i)}</span>`
 }
 
 export const manageAnimation = () => {

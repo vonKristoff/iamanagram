@@ -1,5 +1,5 @@
 ---
-const { title, omit = null } = Astro.props;
+const { title, bg = null, omit = null } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ const { title, omit = null } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class={bg ? "alt" : ""}>
     <header>
       <nav>
         <ul>
@@ -57,6 +57,7 @@ const { title, omit = null } = Astro.props;
 </html>
 <style>
   html {
+    font-size: 18px;
     font-family: system-ui, sans-serif;
     background-color: var(--colour-base);
     /* #efefef; */
@@ -69,6 +70,9 @@ const { title, omit = null } = Astro.props;
     /* margin: 0 var(--spacing-level-3); */
     /* max-width: var(--width-page); */
     overflow-x: hidden;
+  }
+  body.alt {
+    background-color: var(--colour-soft-violet);
   }
   header {
     width: 100%;
@@ -139,15 +143,20 @@ const { title, omit = null } = Astro.props;
 </style>
 
 <style is:global>
+  .project-title .hmm {
+    color: red;
+  }
   * {
     box-sizing: border-box;
   }
   :root {
     --colour-epic: #e5e8dd;
     --colour-crimson: crimson;
+    --colour-red-burn: #bd6565;
     --colour-violet: darkslateblue;
     --colour-dark: #1a2e3b;
     --colour-soft: #666;
+    --colour-soft-violet: #eee6f3;
     --colour-soft-white: #ccc;
     --colour-soft-green: rgb(255 253 241);
     --colour-hard-green: #081b19;
@@ -177,6 +186,9 @@ const { title, omit = null } = Astro.props;
   }
   h4 {
     color: var(--colour-crimson);
+  }
+  h3 {
+    color: var(--colour-red-burn);
   }
   p {
     color: var(--colour-dark);

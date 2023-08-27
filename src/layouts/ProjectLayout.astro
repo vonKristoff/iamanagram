@@ -7,6 +7,7 @@ export interface Props {
   meta1?: string;
   meta2?: string;
   related?: [];
+  bg?: boolean;
 }
 const {
   title,
@@ -14,10 +15,11 @@ const {
   meta1,
   meta2 = "",
   related = [],
+  bg = false,
 } = Astro.props as Props;
 ---
 
-<MainHeader title={title}>
+<MainHeader title={title} bg={bg}>
   <div class="page">
     <header>
       <h1>{title}</h1>

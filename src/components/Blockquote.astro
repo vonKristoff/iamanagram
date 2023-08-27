@@ -8,7 +8,7 @@ const { type, title = "" } = Astro.props;
 ---
 
 <aside class={type}>
-  {!!title && <h4>{title}</h4>}
+  {!!title && <h3>{title}</h3>}
   <blockquote class={type}>
     <slot />
   </blockquote>
@@ -19,7 +19,7 @@ const { type, title = "" } = Astro.props;
     font-size: var(--size-smaller);
     color: var(--colour-soft);
     max-width: var(--width-article);
-    border-left: 0.5em solid #ddd;
+    border-left: 0.5em solid var(--colour-red-burn);
     padding-left: var(--spacing-level-2);
     line-height: var(--spacing-level-4);
   }

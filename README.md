@@ -2,39 +2,45 @@
 
 > WIP: Outline guide to maintaining this project. 
 
+### How to build
 
+Goto https://github.com/vonKristoff/iamanagram whereby you have access to make direct edits to the source, by committing the changes. Once done, the site's hosting service will go ahead and publish the changes, where you will be able to see the updates within ~30 secs.
 
+**Page Layout, Content and assets**
 
-## 🚀 Project Structure
+* `/public/projects`
 
-Inside of your site, you'll see the following folders and files:
+Directly upload your images for your projects here.
+
+* `/src/content/project/[page-name].md`
+
+This will hold the project's metadata (*.md) that will configure the following:
 
 ```
-/
-├── public/
-│   └── projects/
-│				*.jpg 				// place all images used here
-│   		└── _thumbs/
-│						*.jpg 		// place home page project thumbs here
-├── src/
-│   ├── components/
-│   │   └── *.astro 	// used to create consistant HTML
-│   └── content/
-│   		└── projects/
-│   			└── [projectname].md		// key meta data for project*
-│   └── pages/
-│       └── [pagename].astro 			// core site pages
-│   		└── projects/
-│       	└── [projectname].astro // project pages*
+---
+title: 
+subtitle: 
+date: 12/2/23 (currently any format tbc)
+thumbnail: *.jpg // place in public/_thumbnails
+related: ['page-name'] // use any existing <projectname>
+category: ['films'] // add more tags if you like
+---
 ```
+
+* `/src/pages/projects/[page-name].astro`
+
+Consider these files as your `*.html` pages, where you will semantically add all of your actual page content and layout.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+
 
 ## Manage a project page
 
 Projects will dynamically build themselves into their respective locations when the following steps are followed:
 
-`src/content/projects/projectname` filename must match its page layout counterpart: `src/pages/projects/projectname` for them to be enabled and embedded into the site.
+💡 Metadata `src/content/projects/same-project-name.md` filename **must** match its page layout counterpart: `src/pages/projects/same-project-name.astro` 
+Otherwise they won't be enabled and embedded into the site's home pages.
 
 
 
@@ -59,13 +65,7 @@ category: ['films'] // add more tags if you like
 
 
 
-## Using Github (create | update)
-
-
-
-
-
-## 🧞 Commands
+## 🧞 Developer Commands
 
 All commands are run from the root of the project, from a terminal:
 
