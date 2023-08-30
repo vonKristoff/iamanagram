@@ -1,8 +1,8 @@
 ---
 title: Between The Bullet And The Hole
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: Film installation and lenticular prints
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: betweenbullet.jpg
 related: []
 category: ['films']
 ---
