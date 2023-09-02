@@ -22,7 +22,7 @@ Otherwise found in the directory as: `/public/projects/my-file-1`
 
 However there is nothing stopping you from doing this:
 ```
-<Image src="_thumnails/my-file-2" />
+<Image src="_thumbnails/my-file-2" />
 ```
 Otherwise found in the directory as: `/public/projects/_thumbnails/my-file-2`
 
