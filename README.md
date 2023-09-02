@@ -6,6 +6,24 @@
 
 Goto https://github.com/vonKristoff/iamanagram whereby you have access to make direct edits to the source, by committing the changes. Once done, the site's hosting service will go ahead and publish the changes, where you will be able to see the updates within ~30 secs.
 
+## Images
+*Upload your images to the following directories*
+* home pages: `/public/projects/_thumbnails`
+* project pages: `/public/projects`
+
+Using the `<Image />` component on a `project-page.astro`
+The image `src` root points to `/public/projects`
+```
+<Image src="my-file-1" />
+```
+Otherwise found in the directory as: `/public/projects/my-file-1`
+---
+However there is nothing stopping you from doing this:
+```
+<Image src="_thumnails/my-file-2" />
+```
+Otherwise found in the directory as: `/public/projects/_thumbnails/my-file-2`
+
 **Page Layout, Content and assets**
 
 * `/public/projects`
