@@ -3,7 +3,7 @@ const collection = defineCollection({
   schema: z.object({
     title: z.string(),
     subtitle: z.string(),
-    date: z.string(),
+    date: z.any(),
     meta1: z.string().nullable().optional(),
     meta2: z.string().nullable().optional(),
     gallery: z.string().optional(),
