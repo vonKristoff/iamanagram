@@ -17,14 +17,16 @@ The image `src` root points to `/public/projects`
 <Image src="my-file-1" />
 ```
 Otherwise found in the directory as: `/public/projects/my-file-1`
+
 ---
+
 However there is nothing stopping you from doing this:
 ```
-<Image src="_thumnails/my-file-2" />
+<Image src="_thumbnails/my-file-2" />
 ```
 Otherwise found in the directory as: `/public/projects/_thumbnails/my-file-2`
 
-**Page Layout, Content and assets**
+## Page Layout, Content and assets
 
 * `/public/projects`
 
@@ -79,7 +81,7 @@ category: ['films'] // add more tags if you like
 
 
 
-
+*todo - add netlify URL here*
 
 
 
