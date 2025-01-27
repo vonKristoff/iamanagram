@@ -1,8 +1,8 @@
 ---
 title: Sound Seam
-subtitle: subtitle needed
+subtitle: ...
 date: 12/2/23
-thumbnail: JoanArc.jpg
+thumbnail: soundseam.jpg
 related: []
 category: ['films']
 ---

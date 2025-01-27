@@ -32,8 +32,15 @@ const images: Image[] = !!src ? [{ src, caption }] : collection;
       </div>
     )
   }
+  {!src && caption &&
+  (
+    <figcaption>{caption}</figcaption>
+  )}
 </div>
 <style>
+  figcaption {
+    font-size: small;
+  }
   .image-group {
     display: flex;
     justify-content: center;

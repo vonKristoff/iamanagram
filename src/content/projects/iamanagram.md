@@ -1,8 +1,8 @@
 ---
 title: I Am Anagram
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: ...
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: iamanagram.jpg
 related: []
 category: ['performances']
 ---

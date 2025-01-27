@@ -11,45 +11,50 @@ const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
-  <section>
-    <p>
-      A short film about the Argentine electroacoustic composer Beatriz
-      Ferreyra, an original pioneer of early musique concrete alongside Pierre
-      Schaeffer during the '50s and '60s.
-    </p>
-  </section>
+  <Image src="DSC00133.jpg" caption="Aura Satz, Universal Language film still, 16mm film" />
   <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
+  date="7.30pm 26th May 2012"
+  title="The film will be performed with a live sound-to-light voice-over at the Barbican cinema on the as part of Bauhaus film season."
+  subtitle="Barbican Cinema"
   >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
+  
+  <p>Universal language: A Lost Manifesto is a short 16mm film which looks at universal language and its various manifestations through abstract film, optical sound on film, phonetics, short-hand, ways of writing sound, and drawn sound animation. The film draws on two mysteriously missing utopian endeavours: the lost film by Moholy-Nagy, 'Sound ABC' (1932), and his attempt to create a grapho-phonetic writing, an opto-acoustic alphabet, as well as the lost manifesto document of Hans Richter and Viking Eggeling, 'Universal Language' (1920). The performance will involve a live voice over which converts sound to light signals, as well as a filmic kinetic sculpture in homage to Moholy Nagy’s ‘Light-space-modulator’.</p>
+  
+  <p>To view a brief excerpt follow this link on the Barbican Centre's youtube channel:</p>
+  
+  <p><Link url="http://www.youtube.com/watch?v=y62fw92q7FY" label="Watch here"></Link></p>
+  
+  Cinema 1<br>
+  Barbican Centre<br>
+  Silk Street<br>
+  London EC2Y 8DS<br>
+  Box Office: 020 7638 8891<br>
+  <Link url="http://www.barbican.org.uk/artgallery/event-detail.asp?id=13416" label="Event detail"></Link>
   </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+  <Image collection={[
+    {
+      src: "DSC00159.jpg"
+    },
+    {
+      src: "DSC00169.jpg"
+    },
+  ]} caption="Aura Satz, Universal Language film still, optigan disc"></Image>
+  <section>
+    <h4>Credits</h4>
+    Filmed, directed and scripted by Aura Satz<br>
+
+Super16 DP Boyd Skinner<br>
+
+Rostrum camera animation Aura Satz<br>
+
+Edited with Alia Syed<br>
+
+Special thanks to Len Thornton, James Holcombe and No.w.here<br>
+
+Sound to light device construction Mike Blow<br>
+
+Kinetic Film sculpture construction Mihai Rusu<br>
+
+Funded by Arts Council England
+</section>
 </ProjectLayout>

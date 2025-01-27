@@ -1,8 +1,8 @@
 ---
-title: The Future Waters of the storm surge..
-subtitle: A film featuring sound by BJ Nilsen
+title: AUTOMAMUSIC
+subtitle: ...
 date: 12/2/23
-thumbnail: JoanArc.jpg
+thumbnail: automamusic.jpg
 related: []
 category: ['films']
 ---

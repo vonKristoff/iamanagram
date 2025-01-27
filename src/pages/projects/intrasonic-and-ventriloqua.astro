@@ -6,50 +6,70 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
+import Compact from "../../components/compact.astro";
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
+  <Image src="ventriloqua2.jpg" caption="Aura Satz, Ventriloqua, 2003-4, photo Karni Arieli" />
   <section>
-    <p>
-      A short film about the Argentine electroacoustic composer Beatriz
-      Ferreyra, an original pioneer of early musique concrete alongside Pierre
-      Schaeffer during the '50s and '60s.
-    </p>
-  </section>
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
+    <p>Originally performed at the final stages of Aura Satz's pregnancy in 2003, 'Ventriloqua' is a video-performance of a one-off event in which the musician Anna Piva played the electromagnetic waves of her belly using a theremin. A truly literal ventriloquist act of 'belly-speaking', the artist was transformed into a musical instrument, an antenna, a medium, through which an otherworldly voice was transmitted. Like an immobile tableaux vivant or an anatomical wax model, the body became a vessel, a mouthpiece through which the disembodied voice appeared re-embodied. One body placed within another body, speaking and spoken through, producing abstract musical utterances which might predict the future, although destined to remain in an amniotic amnesia.</p>
+    
+    <h5>4 March 2004</h5>
+    <h4>Screening performance at FACT (Centre for Film, Art & Creative Technology) as part of A Variety Night of Ventriloquism</h4>
+    
+    
+    <p>With performances and talks by Ken Campbell, Andrew Hubbard, Aura Satz and Lindsay Seers.</p>
+    <Compact title="FACT (Centre for Film, Art & Creative Technology)" type="address">
+      
+      88 Wood Street<br>
+      Liverpool L1 4DQ<br>
+      T: +44 (0)151 7074450<br>
+      Email: info@fact.co.uk<br>
+      www.fact.co.uk</Compact>
+      
+      <p>Stills and the accompanying text of ‘Ventriloqua’ as performed at FACT (Centre for Film, Art & Creative Technology) in Liverpool (2004) feature as artist’s pages and the cover image of Performance Research, (9.3. On Generation), and was included in the touring feature film DRIFT (see below).</p>
+      
+      <p>Ventriloqua was re-enacted in 2006 at the Freemason's Temple of the Great Eastern Hotel, in London, an exclusive evening of performance featuring Marisa Carnesky, Serena Korda, Aura Satz, Tai Shani, and Lindsay Seers.</p>
+    </section>
+    <Title
+    date="Various UK artists, 2004-2005, Duration: 90 min"
+    title="Screened as part of DRIFT"
+    subtitle="Curated by Iliyana Nedkova, Initiated and produced by New Media Scotland">
+    
+    <p>Premiered as part of Black Box strand of the 58th Edinburgh International Film Festival (2004), and launch of a DRIFT booklet with programmes notes and essays by Iliyana Nedkova and Shane Danielsen, Director of Edinburgh International Film Festival. From September 2004 touring across the UK and internationally.</p>
+    <p>Screenings include British Council, Belgrade, Serbia; The Museum of Voivodina as part of 8thVideomedeja Festival, Novi Sad, Serbia; An Tuireann Arts Centre, Isle of Skye (2004-5).</p>
+    
+    <p>A hand-picked collection of short digital films and videos by UK artists and film-makers interested in sound art, noise, acoustics and experimental music. Over 90 minutes featuring 18 films revealing the cinematic relationship of sound and image. DRIFT features artists' films and videos by Victoria Clare Bernie, Chris Bowman, Rob Kennedy, Kelly Richardson, Holger Mohaupt, Susanne Ramsenthaler, Aura Satz, Paddy Kernohan, Richard Ashrowan, Alexander Hamilton, Shannon Tofts, Simon Tricker, Peter Collis, Emily Richardson, Susan Black, Ian Helliwell, John Butler, Jayne Parker, John Carson and Michelle Deignan.</p>
+    
+    <p>Part of DRIFT – a project established by New Media Scotland in 1999 as an ongoing exploration of sound art and experimental music, including radio broadcasts, moving image, publications and occasional live events. More information about DRIFT at www.mediascot.org/drift.</p>
+    
+    <p>Initiated and produced by New Media Scotland, Edinburgh. Supported by the LUX, London and Edinburgh International Film Festival. Funded by the Scottish Arts Council and Daniel Langlois Foundation for Art, Science and Technology.</p>
   </Title>
+  <Image collection={[{src:"i1.jpg"}, {src:"i2.jpg"}]} caption="Aura Satz, Intrasonic, 2005. Photo Hugo Munoz" />
+  
   <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+  date="10 September 2005"
+  title="INTRASONIC was awarded the Special Prize at the First International Prize for Performance"
+  subtitle="">
+  <p>Presented at the Centrale di Fies (Dro), in collaboration with the Galleria Civica di Arte Contemporanea di Trento, Italy, on the</p>
+  
+  <p>Jury: Marina Abramovic (performance artist), Sabine Folie (curator of the Kunsthalle, Vienna), Renato Barilli (art critic and lecturer), Andrea Lissoni (Xing Gallery, Milan), Fabio Cavallucci (Galleria Civica d'Arte Contemporanea, Trento) and Barbara Boninsegna (Centrale di Fies, Dro).</p>
+  
+  <p>Intrasonic folds inwards into the body's intra-uterine space by employing a theremin, and expands outwards, as the body extricates itself from the coffin-like cavity of a grand piano.</p>
+  
+  <p>Part 1: A musician plays the electromagnetic waves of a pregnant body using a theremin. Referencing ventriloquism, as in 'belly-speaking', the body becomes a musical instrument, an antenna, a medium, through which a pre-verbal, pre-vocal otherworldly voice is transmitted. (See above for an earlier incarnation of this project, entitled 'Ventriloqua').</p>
+  <p>Part 2: A performer unplucks himself free from the entangled web of the chords of a grand piano, like a frantic Houdini. The eviscerated piano is vandalised to become a labyrinthine mess of impossible sounds. The choreography and music collapse into one single act of escapology.</p>  
+  <Compact type="address">
+    Centrale Fies<br>
+    Loc. Fies 1<br>
+    Dro (Trento)<br>
+    Italy<br>
+    Tel: 0464/504700<br>
+    info@centralefies.it<br>
+    www.centralefies.it
+  </Compact>
+</Title>
+<Image collection={[{src: "p1.jpg"}, {src:"p2.jpg"}]} caption="Aura Satz, Intrasonic, 2005. Photo Hugo Munoz" />
 </ProjectLayout>

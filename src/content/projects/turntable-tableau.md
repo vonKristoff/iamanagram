@@ -1,8 +1,8 @@
 ---
-title: Turntable Tableau & Talking Book
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+title: Turntable Tableau
+subtitle: Talking Book Ventriloquist Act
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: turntabletableau.jpg
 related: []
 category: ['soundworks', 'perfomances']
 ---

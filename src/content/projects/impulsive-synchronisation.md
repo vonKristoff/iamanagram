@@ -1,8 +1,8 @@
 ---
 title: Impulsive Synchronisation
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: A filmic sound installation by Aura Satz
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: impulsive.jpg
 related: []
 category: ['films', 'other']
 ---

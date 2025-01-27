@@ -1,8 +1,8 @@
 ---
 title: Kepler's Trial
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: A film for opera
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: Kepler.jpg
 related: []
 category: ['other']
 ---

@@ -1,8 +1,10 @@
 ---
 title: Glissolalia
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: SOUNDTRAP III ( BEACONSFIELD COMMISSION 2008)
+meta1: SOUND INSTALLATION
+meta2: 27 JUNE - 20 JULY 2008
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: glissolalia.jpg
 related: []
 category: ['soundworks']
 ---

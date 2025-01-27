@@ -6,50 +6,132 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
+import Compact from "../../components/compact.astro";
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
+  <Image src="LittleDoorwaysSATZ-1-1.jpg" caption="Aura Satz, 'Little Doorways to Paths Not Yet Taken', 2016" />
   <section>
     <p>
-      A short film about the Argentine electroacoustic composer Beatriz
-      Ferreyra, an original pioneer of early musique concrete alongside Pierre
-      Schaeffer during the '50s and '60s.
+      Following on from Satz's previous films on electronic music composers and inventors, this short film provides an intimate view of the studio of American composer Laurie Spiegel (b 1945). Known for her electronic-music compositions and her algorithmic composition software, the film also reveals all manner of music and technology paraphernalia, from music scores to DIY inventions and quirky toy collections. The soundtrack features electronic music composed by Spiegel, and Laurie's voiceover musing on electronic music and the compositional process.
     </p>
+    <h3>Exhibitions</h3>
   </section>
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
-  </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+  <Title date="29 Sep 2018 - 08 March 2019" title="'Mappe Sonore'" subtitle="Three-person exhibition at KunstRaum Goethe-Institut, Rome">
+Micol Assael, Christina Kubisch and Aura Satz
+<p>'Mappe sonore,' cosi si chiama la mostra che inaugurea il prossimo 29 settembre 2018 al Kunstraum Goethe, lo spazio interdisciplinare del Goethe-Institut di Roma. A tentare di dare concretezza visiva alle onde sonore, a creare visioni e nuovi immaginari, sono tre artiste fra le piu interessanti protagoniste della scena della sound art contemporanea: Micol Assaal, Christina Kubisch, Aura Satz. Tre artiste che sono anche l'esempio di una tendenza preponderante nel mondo dell'arte: rendere visibile qualcosa che in apparenza si nasconde, dare fisicita ad elementi pensati da sempre come intangibili. Suono e scienza applicata, strumenti fai da te, software e algoritmi, le opere in mostra aspirano a dare forma all'invisibile, un compito che oggi riesce grazie anche alla nascita di tecnologie e intelligenze artificiali sempre piu evolute. Con incontri, perfomance e workshop, saranno approfonditi i sempre piu labili confini tra reale e virtuale e come questi incidono sulla nostra percezione del reale influenzando la nostra vita e gli spazi fisici in cui viviamo.</p>
+<Compact title="Goethe-Institut Rom" type="address">
+Via Savoia 13/15<br>
+00198 Roma<br>
+Tel: +39 06 8440051<br>
+Email: info-rom@goethe.de<br>
+https://www.goethe.de/ins/it/it/sta/rom/ver/krg/map.html
+</Compact>
+</Title>
+
+<Title date="4 Feb - 27 March 2022" title="Showing as part of 'She Recalibrates'" subtitle="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz">
+
+<p>Aura Satz's film and sound works are made in conversation and use dialogue as both method and subject matter. The works included in this show are part of a long-standing interest in compositional practices, in particular those of women in electronic and electroacoustic music. In addition to three film-sound portraits, the exhibition includes a series of drawings centred on early modular synthesizer compositional practices by women.</p>
+<p>In Z Gallery programme, Aura Satz presents the films 'Oramics: Atlantis Anew,' 'Little Doorways to Paths Not Yet Take' and 'Hacer una diagonal con la musica,' three works based on three pioneers in the field of electronic music. 'She Recalibrates' (2018) are a series of drawin fine-tuning the sound in a listening feedback loop.</p>
+<p>*Hacer una diagonal con la musica*. 2019. 10 min. A short film about Argentine electroacoustic composer Beatriz Ferreyra, a pioneer of musique concrete together with Pierre Schaeffer during the 1950s and 1960s. Here she discusses her 'sound hunting' recording techniques, and other thoughts on sound montage and spatialization, illustrated through onomatopoeia and dynamic hand gestures. In the key opening scene, Ferreyra is seen listening to the miniscule creaks produced by a door, expanding the simple binary of open vs closed to encompass an entire sound universe, an expanded bandwidth of what can be heard and how we might listen.</p>
+<p>*Oramics: Atlantis Anew*. 2011. 7 min. Conceived as an artist's film that pays tribute to Daphne Oram, pioneer of British electronic music and co-founder of the BBC Radiophonic Workshop in 1958, the film depicts a close encounter with her unique Oramics machine invention, housed in the Science Museum in London.</p>
+<p>*Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's earlier films about women composers and inventors of electronic music, this short film offers an intimate look into the studio of American composer Laurie Spiegel (b. 1945). Renowned for her electronic music compositions and algorithmic composition software, the film also reveals all manner of musical and technological paraphernalia, ranging from sheet music to DIY inventions and collections of quirky toys. The soundtrack features electronic music composed by Spiegel and Laurie's voiceover reflecting on electronic music and the process of composing.</p>
+<p>The* Z Gallery* (Z for zinema, cinema in Basque) programme is neither a season of films nor an exhibition. It is a project that constructs an intermediate space from which to reflect on and draw attention to works by artists making the leap into the cinematographic field as well as filmmakers exploring the exhibition format. It is a programme arising from the determined gesture of thinking about the moving image in the museum. A programme that aims to bring to the public authors interested in searching for new narrative forms by questioning the genres that historically categorise cinematographic language.</p>
+<p>Curator: Garbine Ortega. Catalogue includes newly commissioned essays by Jo Hutton and Xabier Erkizia.</p>
+<p>https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery https://artium.eus/en/activities/item/61328-conversacion-con-aura-satz</p>
+<p>Interview in Elemmental Magazine https://elemmental.com/2022/02/18/aura-satz-entrevista/</p>
+</Title>
+<section>
+  <h3>Screenings</h3>
+  <h5>26 June 2016</h5>
+<h4>'Deep Minimalism' festival, Southbank, London</h4>
+<strong>Friday 24 June 2016 - Sunday 26 June 2016</strong>
+<p>A weekend celebrating music that takes its time, which envelops the listener in deep sound and leaves space for contemplation, curated by Southbank Centre Artist in Residence Oliver Coates.</p>
+
+<p>Explore tonal beauty and meditative listening with music by Laurie Spiegel, Pauline Oliveros and Eliane Radigue. We invite you to bring a cushion or a mat, and lie on the floor to hear music from composers including Laurie Spiegel. Emerging in the New York new music scene of the 1970s, Spiegel pre-dates many significant composers as a pioneer of electronic, algorithmic music. Experience a selection of her works and see a new film about the composer, created by artist Aura Satz, which is premiered at this performance.</p>
+<p>Amid the Baroque architecture of St John's Smith Square, Sound Intermedia diffuse her works for contemplative listening.</p>
+<p>Written for and with trailblazing harpist Rhodri Davies, who performs it here, OCCAM I marked Eliane Radigue's move away from synthesizer and tape composition into the mesmerizing acoustic possibilities of instrumental music. He performs using two bows, which allow the harp to develop a deep tonal sustain.</p>
+<p>Edmund Finnis makes music from melodic figures and patterns. These allude to rich landscapes of effervescent sound, in this work for viola, violin, cello and electronics. Soloists from the London Contemporary Orchestra and violinist Daniel Pioro interpret Finnis' exquisite lines that hang suspended in the air, heightening our perception of fine details and heart rending beauty.</p>
+<p>Hear Catherine Lamb's String Quartet, which returns due to popular demand, 18 months after its premiere. It creates cascades of shimmering harmonics through delicate manipulation of tuning, which hover, glowing in the concert space.</p>
+<p>Pauline Oliveros, a composer who has inspired generations of listeners to go deeper into the mysteries of sound, is present through the festival and here joins us on stage. The Vocal Constructivists, who are eloquent collaborative interpreters of Oliveros' work, present her Lullaby for Daisy Pauline, a work for singers and a chorus of taped cicadas and frogs.</p>
+<p>This is followed by a rare and unusual opportunity to take part in a massed participation performance of Tuning Meditation, led by Pauline herself. Under Pauline's direction the audience and choir create a polyphony of sound, finely tuned to each other and to this extraordinary moment.</p>
+<p>Meredith Monk's Dawn from the soundtrack to her film Book of Days closes the festival. This short choral piece unfurls, using vocal melismas and a repeating ground bass to approach a sense of euphoria.</p>
+
+<p>http://www.southbankcentre.co.uk/whatson/festivals-series/deep</p>
+<p>http://www.southbankcentre.co.uk/whatson/deep-minimalism-sunday-pass-95209</p>
+
+ 
+
+<h5>3rd Sep 2016</h5>
+<h4>'Fort Process' festival, Newhaven Fort, East Sussex</h4>
+<p>Fort Process is an expansive multi­disciplinary music and arts festival that takes place in the evocative spaces of Newhaven Fort in East Sussex. After a very well-received debut in 2014 the festival is back for a second edition, with an extensive programme featuring site-specific sound installations, international musicians, talks, films, poetry and workshops.</p>
+
+<p>The Fort Process experience is quite unlike any other: half the festival-goers are hidden underground, making their way through a warren of tunnels to listen to performances in eerie chambers and bolt holes. Meanwhile, above ground the other half are roaming in and out of gun emplacements, radio shacks and laboratories on the fort's ramparts.</p>
+
+<p>Built in 1860, Newhaven Fort is an alluring site, rich in human and natural history. After being decommissioned as a military facility the fort has undergone neglect and subsequent restoration, with many of the features of its inner architecture remaining intact, including the rumoured ghost in the Caponier. Built physically into the geology of the South Downs, it gives it a unique perspective of Newhaven town and the hills and sea of the area.</p>
+
+<p>http://fortprocess.co.uk/aura-satz/</p>
+
+ 
+
+<h5>5-16th Oct 2016</h5>
+<h4>Shortlisted for LES NOUVEAUX ALCHIMISTES, 45th Festival du Nouveau Cinema, Montreal</h4>
+ 
+
+<p>http://2016.nouveaucinema.ca/en/films/little-doorways-to-paths-not-yet-taken</p>
+
+ 
+
+<h5>2nd Nov 2016</h5>
+<h4>Screening at Fridman Gallery, New York</h4>
+ 
+
+<p>Fridman Gallery presents a program of short films by Aura Satz, in conjunction with her exhibition Aura Satz - Her Marks, a Measure, on view at the gallery through November 5. The films explore the various relationships between sound and visual phenomena, such as color, geometric shapes, movement, synchronicity and repetition.</p>
+
+<p>http://www.fridmangallery.com/aura-satz</p>
+
+ 
+
+<h5>2nd Nov 2016</h5>
+<h4>Screening as part of book launch at Showroom Gallery, London</h4>
+ 
+
+<p>An evening launch of Colloquium: Sound Art - Music published by Zero Books in September 2016, edited by Thomas Gardner and Salome Voegelin, with contributions from Allen S Weiss, Nye Parry, David Toop, Volkmar Klien, Aura Satz, Leigh Landy, Cathy Lane, Simon Emmerson, Claudia Molitor and Kathy Hinde, with a postscript by Kate Lacey. The launch will feature a performance by Thomas Gardner, David Mollin and Salome Voegelin, practising the relationship between sound and music with words, movements, numbers and cello, and a screening of Aura Satz's film Little Doorways to Paths Not Yet Taken (2016), about composer Laurie Spiegel's musing on electronic music and the compositional process.</p>
+
+<p>http://www.theshowroom.org/events/colloquium-sound-art-music-book-launch-performance-and-screening</p>
+
+ 
+
+<h5>20th Nov 2016</h5>
+<h4>GWYL NAWR FESTIVAL, Midday- 11pm, Volcano Theatre, Swansea</h4>
+ 
+
+<p>The first edition of a new concert and film series in West Wales will feature Aura Satz, The Swansea Laptop Orchestra, Clive Bell, and more. A new event series in support of local refugee causes starts up in West Wales in November called GWyl Nawr festival. NAWR (meaning NOW in Welsh) is a new multidisciplinary concert series in Swansea of 'experimental music, free improvisation, film, lo-fi, free jazz, sound art, alternative folk and new music,' declares the festival, which was convened by Rhodri Davies, Jenn Kirby, Rose Linn-Pearl and Dan Linn-Pearl. 'The aim is to offer an open and reflective space for an audience to experience new music in a welcoming and intimate setting.' The line-up of this first edition features Wire contributor Clive Bell, Douglas Benford, Kevin Chan, Euros Childs, Matt Collier, Rhodri Davies, Medi Evans, GINKO, ANi GLASS, Ian Holloway, Adam Howell, Simon Kilshaw, Jenn Kirby, Matthew Lovett, John Rowley, Aura Satz, Swansea Laptop Orchestra, Richard Thomas, Ian Watson, and others. The festival's film programme includes David Garner's Between The Stammer And Le Mot Juste and Call And Response, Helen Petts's Solo Soprano, and various Aura Satz works such as Oramics: Atlantis Anew and Little Doorways To Paths Not Yet Taken.</p>
+
+<p>http://www.thewire.co.uk/news/44186/swansea-all-dayer-in-support-of-refugees</p>
+
+ 
+
+<h5>23-25 Aug 2019</h5>
+<h4>Mini retrospective screening at Jupiter Rising at JupiterArtland, Scotland</h4>
+<p>http://www.jupiterrising.art/archive/2019</p>
+ 
+
+<h5>2 - 10 October 2021</h5>
+<h4>Artist Special Focus screenings and live performance as part of VideoEx, Experimental film & Video Festival Zurich</h4>
+<p>https://videoex.ch/videoex/festival-2021/programm-2021/artist-focus-aura-satz/</p>
+<p>https://videoex.ch/videoex/festival-2021/programm-2021/expanded-cinema-and-live-acts/aura-satz-performance/</p>
+<h5>7-10 April 2022</h5>
+<h4>Rewire festival, the Hague</h4>
+<p>https://www.rewirefestival.nl/event/rewire-2022</p>
+<p>https://www.rewirefestival.nl/artist/shorts-aura-satz</p>
+ 
+
+<h5>9 Dec 2022</h5>
+<h4>Screening as part of Mono-Poly, curated by Debris Facility and Liquid Architecture, Melbourne.</h4>
+<p>https://liquidarchitecture.org.au/events/mega-phone-mono-poly</p>
+ 
+</section>
 </ProjectLayout>

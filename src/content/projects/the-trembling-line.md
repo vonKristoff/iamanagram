@@ -1,8 +1,8 @@
 ---
 title: The Trembling Line
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: Film and multi-channel sound installation
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: anechoic.jpg
 related: []
 category: ['films', 'other']
 ---

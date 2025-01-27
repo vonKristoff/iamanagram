@@ -1,8 +1,8 @@
 ---
 title: Little Doorways To Paths Not Yet Taken
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: An intimate view of the studio of American composer Laurie Spiegel
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: laurie.jpg
 related: []
 category: ['films']
 ---

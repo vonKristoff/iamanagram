@@ -1,8 +1,8 @@
 ---
 title: Joan The Woman - With Voice
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: Still film with voice
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: JoanArc.jpg
 related: []
 category: ['other']
 ---

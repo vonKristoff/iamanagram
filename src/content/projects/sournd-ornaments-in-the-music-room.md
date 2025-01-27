@@ -1,8 +1,8 @@
 ---
 title: Sound Ornaments In The Music Room
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: a film by AURA SATZ
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: soundornaments.jpg
 related: []
 category: ['films']
 ---

@@ -1,8 +1,8 @@
 ---
 title: Spiral Sound Coil
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: Sound Sculpture
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: spiralsound.jpg
 related: []
 category: ['soundworks']
 ---

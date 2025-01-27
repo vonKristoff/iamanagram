@@ -1,8 +1,8 @@
 ---
 title: Duet
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: Aura would like to thank Mihai Rusu, Danielle Chinn, Miranda Gavin, and the London Consortium
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: duet.jpg
 related: []
 category: ['perfomances']
 ---

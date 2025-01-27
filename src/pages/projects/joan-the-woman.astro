@@ -6,50 +6,70 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
+import Compact from "../../components/compact.astro";
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
+  <Image src="Satz-Joan of Arc-with voice.jpg" caption="Aura Satz, fragment of 'Joan the Woman- with Voice', 2013" />
   <section>
-    <p>
-      A short film about the Argentine electroacoustic composer Beatriz
-      Ferreyra, an original pioneer of early musique concrete alongside Pierre
-      Schaeffer during the '50s and '60s.
-    </p>
+    <p>Joan the Woman - With Voice are a series of three photographic lightboxes which relate to cinematic representations of Joan of Arc in early colour film. Within the lightboxes are embedded sounds composed and performed by Norwegian vocalist Maja Ratkje, to counter both the silence of the original film, as well as the Inquisition's challenging and final silencing of the voice of Joan of Arc, and the three voices she allegedly heard.</p>
+<p>Cecile B. deMille's silent feature 'Joan the Woman' (1916), bizarrely starring opera singer Geraldine Farrar, is mostly monochrome except for the culminating flame sequence in which Joan of Arc is burned at the stake. This remarkable orange coloured climax was the first ever use of the Handschiegl colour technology, a semi-automatic stenciling process, which removed the painstaking labour of hand-tinting and hand-stencilling which had characterised the introduction of colour in the film industry up until then. The repetitive, menial and dexterous task of adding colour frame by frame was mostly relegated to female labour, and some film factories such as the Pathe laboratory in Vincennes employed hundreds of women for colour printing. The addition of colour onto black and white stock often created layers of abstraction, accentuating the body's disappearance in shimmering instances of flames, explosions, puffs of smoke and magical disappearance acts. Colour, added by invisible female hands, frequently served to subsume the film's actresses into a realm of abstraction. Joan's hands are only just discernable from the dense layering of smoke, flame, and colour.</p>
+<p>An essay by Prof. Esther Leslie can be downloaded here</p>
+
+<Compact type="thanks">
+  <p>Special thanks to Maja Ratkje, Marina Warner, the George Eastman Collection, David Pierce at Prizma, Joshua Yumibe, Sarah Street, and Ian Christie.</p>
+  <p>Aura Satz would also like to thank Jackie and Peter Stewart, Cinenova, Electra, Metro Imaging and Simon Quinn for their support of the additional works in the exhibition.</p>
+</Compact>
   </section>
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
+  <Title date="1st November - 7th December 2013" title="'Colour Opponent Process'" subtitle="Solo exhibition at Paradise Row Gallery">
+    <Compact type="address">
+    74a Newman Street<br>
+    London W1T 3DB<br>
+    T: +44 (0)20 7636 9355<br>
+    info@paradiserow.com<br>
+    http://www.paradiserow.com/exhibitions/95/
+  </Compact>
+    <p>21 November 2013 7pm</p>
+    <p>Aura Satz will be conversation with Prof. Esther Leslie discussing abstraction, colour, and the contributions of female labour to the early colour film industry, at Paradise Row Gallery.</p>
+    
+    <p>Esther Leslie is Professor in Political Aesthetics, Birkbeck, University of London and author of Hollywood Flatlands: Animation, Critical Theory and the Avant garde (2002), Synthetic Worlds: Nature, Art and the Chemical Industry, (2005), Walter Benjamin (2007).</p>
+    
+    <p>Free but booking essential rsvp@paradiserow.com</p>
+    http://www.paradiserow.com/news/134/
   </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+  <Title date="22 January - 2 February 2014" title="'Post-Script' group exhibition curated by Edwin Carels, Rotterdam" subtitle="43rd edition Rotterdam Film Festival">
+    <p>Screenings as part if the ‘Signals Regained’ programme</p>
+    <p>The ghost of arthouse classics haunts the De Gouvernestraat. Inspired by the history of cinema, using the latter as an ingredient for new images and stories. With work by Keith Sandborn, Pablo Sigg, Mark Rappaport, Aura Satz, Jelena Vanoverbeek, Jasper Rigole and Mika Taanila.</p>
+    <Compact type="address">
+    Daily, 12:00-18:00, De Gouvernestraat, Gouvernestraat 133, free admission.<br>
+    http://www.filmfestivalrotterdam.com/en/events/post-script8/<br>
+    http://www.filmfestivalrotterdam.com/en/films/joan-the-woman-with-voice/
+  </Compact>
+  
+  </Title>
+  <Title date="14 March - 19 April 2014" title="'Colour Opponent Process'" subtitle="Solo show at Gallery 44, Centre for Contemporary Photography, Toronto">
+    <p>To coincide with the Images Festival, Toronto 10-19th April 2014</p>
+    <Compact type="address">
+    401 Richmond St W, 120<br>
+    Toronto, ON, M5V 3A8 CANADA<br>
+    P 416. 979.3941 / F 416.979.1695<br>
+    info@gallery44.org<br>
+    Hours: Tuesday - Saturday, 11am to 5pm<br>
+    <br>
+    http://www.gallery44.org/satz<br>
+    http://www.imagesfestival.com/festival.php?news_id=165
+  </Compact>
+  </Title>
+  <Title date="15 June - 1 Sep 2019" title="'Fire: Flashes to Ashes in British Art 1692-2019'" subtitle="group exhibition at The Royal West of England Academy (RWA), Bristol">
+    <p>A major exhibition tracing the representation of fire in British art across the last four centuries; exploring the symbolism and meaning the element has had for artists throughout history. In turns destructive and creative, fearsome and fascinating, fire is a subject loaded with symbolism, ritual and emotion. Unsurprisingly, the subject of fire has drawn in artists throughout the ages. This exhibition will examine how artists' approaches have changed over time, recording historical, religious, domestic or natural events as well as exploring fire as a material phenomenon informed by contemporary themes and issues.</p>
+    <p>Fire will include significant artists such as J.M.W. Turner, Joseph Wright of Derby, William Blake, John Martin, Stanley Spencer, Wilhelmina Barnes-Graham, Eric Ravilious, Jeremy Deller, Tim Shaw, Susan Hiller, David Nash, Douglas Gordon and Cornelia Parker.</p>
+    <p>An exhibition catalogue will be available.</p>
+    <Compact type="address">
+    The Royal West of England Academy<br>
+    Queens Road Clifton, Bristol, BS8 1PX<br>
+    https://shop.rwa.org.uk/collections/events/products/fire-flashes-to-ashes-in-british-art-1692-2019
+  </Compact>
+  </Title>
 </ProjectLayout>

@@ -7,6 +7,7 @@ import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
 import Video from "../../components/Video.astro";
+import Compact from "../../components/compact.astro";
 
 const props = await getProps(import.meta.url);
 ---
@@ -83,13 +84,15 @@ const props = await getProps(import.meta.url);
     />
   </Title>
   <Video url="https://player.vimeo.com/video/569436365" />
-  <Blockquote title="Credits" type="inline">
-    <li><strong>Featuring Beatriz Ferreyra</strong></li>
-    <li><strong>Directed and edited by Aura Satz</strong></li>
-    <li>DOP: Sam Williams</li>
-    <li>Music: Beatriz Ferreyra</li>
-    <li>Dubbing Mix: Gernot Fuhrmann</li>
-    <li>English Subtitles: Aura Satz</li>
+  <section>
+  <Compact title="Credits" type="credit">
+    <strong>Featuring Beatriz Ferreyra</strong><br>
+    <strong>Directed and edited by Aura Satz</strong><br>
+    DOP: Sam Williams<br>
+    Music: Beatriz Ferreyra<br>
+    Dubbing Mix: Gernot Fuhrmann<br>
+    English Subtitles: Aura Satz<br>
     Special thanks to Jo Langton
-  </Blockquote>
+  </Compact>
+</section>
 </ProjectLayout>

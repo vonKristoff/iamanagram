@@ -6,7 +6,7 @@ meta2: Amsterdam, 15-16 October 2022
 gallery: Sonic Acts Festival
 exhibition: Amsterdam, 15-16 October 2022
 date: 12/2/23
-thumbnail: betweenbullet.jpg
+thumbnail: the Future Waters film still 1.jpg
 related: ['grief-interval', 'future-waters', 'dark-matter-radio']
 category: ['films']
 ---

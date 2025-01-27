@@ -5,118 +5,50 @@ import Image from "../../components/Image.astro";
 import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
+import Title from "../../components/Title.astro";
 
 const props = await getProps(import.meta.url);
 const image1 = [
   {
     src: "fw-film-still 3.jpg",
-    caption:
-      "Aura Satz, Spiral Sound Coil - in the studio, 2010. Photo: Paul Winch-Furness",
   },
-  {
-    src: "spiralsounddrawing.jpg",
-    caption:
-      "Aura Satz, Spiral Sound Coil - in the studio, 2010. Photo: Paul Winch-Furness",
-  },
-  { src: "fw-film-still 3.jpg" },
+  { src: "the Future Waters film still 2(1).jpg" },
 ];
 ---
 
 <ProjectLayout {...props}>
   <section>
-    Continuing her work as artist in residence at the Ear Institute, UCL London,
-    Aura will develop a new intimate, immersive sound sculpture that will create
-    a physical and psychoacoustic sonic experience whereby visitors will be
-    encouraged to place their head inside the sculpture itself. Like a giant
-    hearing trumpet or an automaton ear, the horn appears to tune into the vast
-    library of past sounds that is the air.
-    <p>
-      The multi-channel soundtrack outputs in a spiral sequence, thus echoing
-      the rotating technology of wax cylinder sound recordings. Similarly, the
-      narrative voicover explores the idea of memory being like a wax cylinder,
-      a 'mystic writing-pad' of sorts, a blank slate onto which memories leave
-      their trace and personal history is recorded. For the musical composition
-      Aura has revisited and re-composed some of the original recordings made as
-      a result of her Soundtrap III commission for Beaconsfield in Vauxhall,
-      Glissolalia.
-    </p>
-    This new composition includes excerpts of the psychoacoustic illusion of a Shepard
-    tone, the theremin played by Lydia Kavina and voices by the barbershop quartet
-    Hunky Dory (Jackie Driscoll, Lolly Thomas, Ceejai Seaman, and Barbara Thompson).
-    Spiral Sound Coil explores the ever-shifting site of sound, and offers a powerfully
-    disorienting acoustic experience.
-  </section>
-  <Image collection={image1} />
-  <section>
-    Commissioned by Jerwood Space Aura would like to thank Bradford Backus and
-    Thorsten Marquardt at the Ear Institute; Beaconsfield Gallery and in
-    particular David Crawforth; Lydia Kavina; Jackie Driscoll, Lolly Thomas,
-    Ceejai Seaman, and Barbara Thompson; Dave Hunt for his sound advice; and
-    Sarah Williams.
-  </section>
-  <Image
-    collection={[
-      {
-        src: "spiralsounddrawing.jpg",
-        caption:
-          "Aura would like to thank Bradford Backus and Thorsten Marquardt at the Ear Institute",
-      },
-    ]}
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
-  <Blockquote title="Presenters:" type="inline">
-    <li>Musical Knot (Satz, 2009) for Music Box</li>
-    <li>
-      Cheep Imitation (Kolkowski, 2004-9) for Serinette, Stroh Violin, Piccolo &
-      Gramophone
-    </li>
-    <li>Etüde Kwic & Kwoc (Heisig) Phonola Solo</li>
-    <li>Palindromes (Satz, 2008) for 2 Rolmonicas</li>
-    <li>Cellogram (James Tenney, 1971) Solo Stroh Cello</li>
-    <li>Toccata (Conlon Nancarrow 1935) for Stroh Violin and Phonola</li>
-    <li>Talking Books (Satz, 2009)</li>
-    <li>La marche du Roy + La même marche plus (trad.) for Solo Serinette</li>
-    <li>
-      Fadograph (Lukoszevieze, 2009) for Pianola (Phonola), Alto flute & Stroh
-      Cello
-    </li>
-    <li>
-      Ah! Sweet Mystery of Life (Victor Herbert, 1910) arranged for Tanzbär &
-      Musical Saw
-    </li>
-    <li>
-      Channeling (Kolkowski/Pschenitschnikova) for Bass flute and Gramophone
-      Horn
-    </li>
-    <li>Playasax Duet (Satz, 2009)</li>
-    <li>Weather Effects (Kolkowski, 2001) for Stroh Violin & Gramophone</li>
-    <li>
-      Sache mit Hz und Verstand (Kolkowski, 2003-9) for 2 Gramophones & Ensemble
-    </li>
-    <li>Heislvertonungen (Heisig) Phonola & Voice (Part 7 with Ensemble)</li>
-    <li>Study #21 Canon X (Nancarrow, 1948)</li>
-  </Blockquote>
-  <section>
-    <h3>7 Dec 2022</h3>
-    <h3>Screening at Kino Moviemento, Berlin as part of Kontraklang</h3>
-    Films and music by Olivia Block, Gunilla Skold Feiler & Dror Feiler, Martin Grutter
-    & Aron Kitzig, Christian Kesten, Patricia Martínez & Luis Paris, Makiko Nishikaze,
-    Michiko Ogawa & Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz &
-    BJ Nilsen
-    <Link
-      url="https://kontraklang.de/concert/movie-night-nr-2/"
-      label="link to kontraklang"
-    />
-  </section>
+    <p>Aura Satz collaborates with field recordist and electronic music composer BJ Nilsen to explore a wall of sirens framed within a storm surge barrier in the Netherlands. Measuring nearly eight kilometres in length, the Oosterscheldekering barrier, serving also as a bridge, is a special dam that connects the Zeeland islands of Schouwen-Duiveland and Noord-Beveland. The siren is embedded within this preventive architecture, an integral part of a complex web of infrastructures that imagine future threats. The sound of this siren forges an invisible line across an unstable horizon, speaking to the centrifugal chaos of storms to come.</p>
 
-  <Image
+https://sonicacts.com/biennial/biennial-2022/programme/preemptive-listening<br>
+https://sonicacts.com/news/news-futurewatersofthestormsurgepremiere
+  </section>
+  <Image collection={image1} caption="Aura Satz, Spiral Sound Coil - in the studio, 2010. Photo: Paul Winch-Furness" />
+  <Image src="the Future Waters film still 1.jpg" caption="The Future Waters of the Storm Surge, film still, 2022" />
+<Title date="7 Dec 2022" title="Screening at Kino Moviemento, Berlin as part of Kontraklang">
+<p>Films and music by Olivia Block, Gunilla Skold Feiler & Dror Feiler, Martin Grutter & Aron Kitzig, Christian Kesten, Patricia Martínez & Luis Paris, Makiko Nishikaze, Michiko Ogawa & Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz & BJ Nilsen</p>
+
+https://kontraklang.de/concert/movie-night-nr-2/
+ 
+
+<h4>CREDITS:</h4>
+
+Directed, written and edited by Aura Satz<br>
+Music and site specific field recordings by BJ Nilsen<br>
+Drone operator Veerdonk Visuals<br>
+Produced by LONO studio<br>
+Production Assistant Erika Roux<br>
+Sonic Acts Researcher Victoria Douka-Doukopoulou<br>
+Colour grading Misha Kim<br>
+Special Thanks to Eric Vander Weegen and staff at Oosterscheldekering; Maud Seuntjens and Anne van Waveren at Sonic Acts<br>
+The film is commissioned by Sonic Acts
+
+
+</Title>
+  
+
+
+  <!-- <Image
     type="detail"
     collection={[{ src: "the Future Waters film still 1.jpg" }]}
   >
@@ -126,13 +58,6 @@ const image1 = [
     & Aron Kitzig, Christian Kesten, Patricia Martínez & Luis Paris, Makiko Nishikaze,
     Michiko Ogawa & Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz &
     BJ Nilsen
-  </Image>
-  <section>
-    Continuing her work as artist in residence at the Ear Institute, UCL London,
-    Aura will develop a new intimate, immersive sound sculpture that will create
-    a physical and psychoacoustic sonic experience whereby visitors will be
-    encouraged to place their head inside the sculpture itself. Like a giant
-    hearing trumpet or an automaton ear, the horn appears to tune into the vast
-    library of past sounds that is the air.
-  </section>
+  </Image> -->
+
 </ProjectLayout>

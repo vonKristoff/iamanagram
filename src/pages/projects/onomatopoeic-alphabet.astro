@@ -6,50 +6,161 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
-
+import Compact from "../../components/compact.astro";
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="<<IMAGE.jpg>>" caption="<<CAPTION>>" />
+  <Image src="chladni.jpg" caption="Aura Satz, Film still, Onomatopoeic Alphabet, 2010" />
   <section>
-    <p>
-      A short film about the Argentine electroacoustic composer Beatriz
-      Ferreyra, an original pioneer of early musique concrete alongside Pierre
-      Schaeffer during the '50s and '60s.
-    </p>
+    <p>Onomatopoeic Alphabet is short film centred around a Chladni Plate, a scientific instrument invented by Ernst Chladni, the 'father of acoustics', to visualise sound vibrations. </p>
+    <p>The film explores nodal figures, sound patterns and symmetry, and uses a sine wave generator as a musical instrument. Each sound effectively produces a moving image and inspires the viewer to read the abstract imagery as not only a sound wave, notation or graphic score, but as a true representation of what is being heard. Much like an unknown hieroglyphic code, graphic shorthand or Rorschach inkblots, the images provoke unexpected associations concerning the shape of sound and the graphic systems of language and communication. </p>
+    <p>The film looks like a musical score of sorts, as well as a bizarre ever-changing alphabet that morphs like an organic living being in response to the changing audio-visuals. The film engages in a reflexive and reversible relationship between image and sound, cause and effect, the indexical trace and the symbolic code. The graphic sequences evoke utopian ideas around the possibility of universal language, a system of signs decipherable by all.</p>
+
+<Compact type="credit">
+Onomatopoeic Alphabet was written, directed, filmed, recorded and edited by Aura Satz<br>
+Sine wave music and voiceover by Aura Satz<br>
+Featuring voice artist Mikhail Karikis<br>
+Dubbing mix by Gernot Fuhrmann<br>
+</Compact>
+<Compact type="thanks">
+<p>Aura Satz would like to thanks Mikhail Karikis, Danielle Chin, Prokit, Chris Pierce, and Raf Gasak.</p>
+</Compact>
+
   </section>
   <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
+    date="2-18 Dec 2010"
+    title="ONOMATOPOEIC ALPHABET and AEIOU were originally commissioned by VIVID and were shown as part of the exhibition 'LANGUAGE'"
+    subtitle=""
   >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
+<p>An international selection of moving image, exhibition, discussion and print which explored the constructs of language and meaning from far reaching cultural perspectives. The exhibition spanned film which reflected the post-Structuralist theories of the 1970s to documented actions and contemporary works newly commissioned by VIVID. In response to a subject of such historical depth the exhibition incorporated a range of approaches from Iranian artist Barbad Golshiri's direct and political challenge to the language of spiritual authority to Gary Hill's stretching out of the possibilities for image as language and the physicality of sound. Artists included: John Adams, William Burroughs, Barbad Golshiri, Gary Hill, Valerie Mrejen, Aura Satz, Guy Sherwin, Margaret Tait, and Olivier Zabat.</p>
+<p>A screening and events programme ran throughout, including screenings from Video Data Bank's John Smith Anthology, Valerie Mrejen, Pork and Milk (2004), Marcia Jarmel and Ken Schneider, Speaking in Tongues (2009) and Samuel Beckett, Not I (1975).</p>
+<p>VIVID also commissioned a performance by artist Aura Satz on the 17th Dec 2010; using a Chladni plate, some tuning forks, and other such contraptions, Satz performed an annotated, illustrated, fragmented talk on sound, its visualisation, and the utopian belief in a universal alphabet.</p>
+<p>Alongside the film Onomatopoeic Alphabet, Aura Satz presents AEIOU, a small multi-channel sound sculpture using hearing trumpets, and featuring voice artist Mikhail Karikis. Inspired by research indicating that each vowel corresponds to an instrinsic pitch, each trumpet emits a differente vowel sound, creating unusual overtones and beats.</p>
+<Compact type="address" title="VIVID">
+  140 Heath Mill Lane<br>
+Birmingham B9 4AR<br>
+Tel: +44 (0) 121 766 7876<br>
+Fax: +44 (0) 871 251 0747<br>
+Email: info@vivid.org.uk<br>
+www.vivid.org.uk
+</Compact>
   </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+  <Image src="hearingtrumpetsAuraSatz.jpg" caption="Aura Satz, AEIOU Sketch, 2010" />
+  <Image collection={[{src:"AEIOUatvivid.jpg"}, {src:"AEIOUsculpture_000.jpg"}]} caption="Installation of 'AEIOU' and 'Onomatopoeic Alphabet' at VIVID, photo Oona Luras Wiggan" />
+<Title date="5 August - 3 September 2011" title="AEIOU was included in the group exhibition 'In Search of Alchemic Times'" subtitle="curated by Cecilia Wee">
+
+  <p>Artists: Aura Satz, Charlesworth, Lewandowski & Mann, Jennifer Walshe, Liliane Lijn, Nathan Witt, Peter Lewis and Makiko Nagaya, Rowena Harris, Steven Ounanian, Tom Badley, Unrealised Projects.</p>
+  
+  <p>Thursday - Saturday 12-6pm Wednesdays by appointment</p>
+  <Compact type="address">
+  235 Brompton Road<br>
+  London SW3 2EP<br>
+  email: cecilia@ceciliawee.com<br>
+  email: info@insearchofalchemictimes.com<br>
+  tel: 07527 640 419<br>
+  www.insearchofalchemictimes.com
+</Compact>
+</Title>
+<Title date="4–7 May 2012, performance on the 5th May 2pm" title="Onomatopoeic Alphabet included in the group exhibition 'The Sight of Sound'" subtitle="Deutsche Bank VIP Lounge, Frieze Art Fair">
+<p>Wherever we are, what we hear is mostly noise. When we ignore it, it disturbs us. When we listen to it, we find it fascinating.  </p>
+
+<p>Group exhibition including John Cage, Christian Marclay, Jorge Macchi, Jenny C. Jones, David Ellis and Aura Satz.</p>
+<p>Selected works feature artists from the Deutsche Bank Collection who reference music in a variety of ways:  as a structural or notational device, a vehicle for chance and improvisation, or as a social platform for communicating identity.  These artists from different generations share a trajectory of using musical forms as a source and framework. The theme underscores Deutsche Bank’s global commitment to supporting art and music, and promoting cultural advancement through the intersecting worlds of ideas and practices.</p>
+<p>The historical influence of musical sound on visual artists is immeasurable, but its effect upon form, process, and conceptual art has clearly become more prevalent in modern times.  From Piet Mondrian’s painting, “Broadway Boogie Woogie,” his homage to jazz, to John Cage and Nam June Paik’s experiments with performance-driven work, to real-time musical interactions via satellite, video and digital interfaces, the relationship between the aural and visual arts are continually shape-shifting.  </p>
+
+<p>Frieze Art Fair on Randall's Island, Manhattan</p>
+www.friezenewyork.com
+</Title>
+ 
+<Title date="23 January - 3 February 2013" title="'Soundfigures' exhibition" subtitle="Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam curated by Edwin Carels">
+
+Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics (2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube, an acoustic device that visualises sound as a standing wave of small flames, with music by Steven Severin (of Siouxsie and the Banshees).
+<Compact type="address" title="Blaak 10 Gallery">
+Witte de Withstraat 7<br>
+3012 BL Rotterdam<br>
+The Netherlands<br>
+<br>
+https://iffr.com/en/2013/films/soundfigures<br>
+https://iffr.com/en/persons/aura-satz
+</Compact>
+</Title>
+<section>
+  <h3>Screenings</h3>
+  <h5>3-7 October 2013</h5>
+<h4>Screened at the 51st New York Film Festival, 'Views from the Avant-garde', curated by Mark McElhatten</h4>
+
+<p>Our popular yearly touchstone for experimental film returns with 45 programs in glorious Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura Satz, Lois Patino, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.</p>
+<Compact type="address">
+The Film Society of Lincoln Center<br>
+70 Lincoln Center Plaza<br>
+New York, NY 10023-6595<br>
+<br>
+http://www.filmlinc.com/films/on-sale/program-i-aura-satz<br>
+http://www.filmlinc.com/nyff2013<br>
+http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant
+</Compact>
+ 
+
+<h5>13 May 2015</h5>
+<h4>'Soundfigures: Films by Aura Satz'</h4>
+<p>A selection of films by Aura Satz, DIM Cinema, Vancouver Cinametheque, programmed by Michele Smith</p>
+
+<p>(Near) extinct technologies make sound visible in this program of shorts by London-based artist Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni Plate, a device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley dancers, form intricate patterns in response to changing sound frequencies, their shapes recalling the utopian quest for a 'pure,' onomatopoeic alphabet. Wax cylinder recordings combine with modern scientific instruments to animate a text by Rainer Maria Rilke on the possibility of hearing the dead by playing their skulls with a gramophone needle. A Ruben's Tube translates a histrionic voice-over into a standing wave of small flames, provoking unexpected associations, from the biblical burning bush to various acts of ventriloquism in pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn compositions by its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the Technicolor era. Chromatic distortions in early colour-film tests are revealed through the eyes of the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and experimental filmmaker Lis Rhodes encode their voices as abstract light patterns on 16mm mono and 35mm stereo filmstrips in a collaborative exploration of sound-image synchronicity.</p>
+<Compact type="address">
+DIM Cinema<br>
+The Cinematheque<br>
+1131 Howe St.<br>
+Vancouver BC<br>
+Canada<br>
+http://www.dimcinema.ca/soundfigures-films-aura-satz
+</Compact>
+ 
+
+<h5>18 Feb 2016</h5>
+<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at Whitechapel Gallery, London</h4>
+ 
+
+<p>Aura Satz presents the UK premiere of 'Between the Bullet and the Hole', her latest short film which examines the role of women in ballistic research, early computing and pattern perception in warfare. Presented alongside her works focusing on memory, notation, encryption and gender, the event also features an in conversation with special guests Morgan Quaintance and David Alan Grier.</p>
+<Compact type="address">
+Whitechapel Gallery<br>
+77-82 Whitechapel High St<br>
+London E1 7QX<br>
+http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/
+</Compact>
+ 
+
+<h5>24 March 2016</h5>
+<h4>'In and Out of Synch' an evening of films and sound with Aura Satz presented by Liquid Architecture and Gertrude Contemporary</h4>
+ 
+
+<p>Satz presents works that explore the relationship between esoteric technologies (Chladni plate, Rubens' tube, theremin, mechanical music machines, phonographs, dial tones, drawn/optical sound) and the human body (heightened perception, sensory disorientation, psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed by Q&A with Joel Stern.</p>
+<Compact type="address">
+Gertrude Contemporary<br>
+200 Gertrude St, Fitzroy<br>
+Melbourne VIC 3065<br>
+Australia<br>
+https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch https://liquidarchitecture.org.au/events/aura-satz-talk<br>
+http://www.gertrude.org.au/
+</Compact>
+ 
+
+<h5>7th March 2017</h5>
+<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
+ 
+
+<p>Followed by Q&A with Chris Paul Daniels</p>
+<Compact type="address">
+HOME Manchester<br>
+2 Tony Wilson Place<br>
+Manchester M15 4FN<br>
+https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br>
+Part of: Artist Talks https://homemcr.org/event/artist-talks/
+</Compact>
+ 
+
+<p>An article on Chladni patterns by Aura Satz appears in Cabinet magazine, "Shapes with the Sound of Their Own Making, The many resonances of the Chladni plate", 24 Hours, Issue 44 Winter 2011/12</p>
+
+
+</section>
 </ProjectLayout>

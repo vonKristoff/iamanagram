@@ -116,8 +116,11 @@ const { title, bg = null, omit = null } = Astro.props;
   }
   #title {
     text-align: right;
-    position: relative;
+    position: fixed;
+    right: 1.5em;
+    top: 1em;
     font-size: 1.5em;
+    z-index: 1;
   }
   a.no-underline {
     text-decoration: none;
@@ -155,7 +158,9 @@ const { title, bg = null, omit = null } = Astro.props;
     --colour-red-burn: #bd6565;
     --colour-violet: darkslateblue;
     --colour-dark: #1a2e3b;
+    --colour-dark2: #1a3b24;
     --colour-soft: #666;
+    --colour-slate: slategray;
     --colour-soft-violet: #eee6f3;
     --colour-soft-white: #ccc;
     --colour-soft-green: rgb(255 253 241);
@@ -183,15 +188,24 @@ const { title, bg = null, omit = null } = Astro.props;
     max-width: var(--width-section);
     margin: auto;
     line-height: var(--spacing-level-4);
+    color: var(--colour-dark2);
+  }
+  hgroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  h5 {
+    color: var(--colour-violet);
   }
   h4 {
     color: var(--colour-crimson);
   }
   h3 {
     color: var(--colour-red-burn);
+    font-size: x-large;
   }
   p {
-    color: var(--colour-dark);
+    color: var(--colour-dark2);
   }
   .side-content h3:first-child {
     margin-top: 0;

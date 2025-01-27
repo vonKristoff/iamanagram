@@ -1,8 +1,8 @@
 ---
 title: Onomatopoeic Alphabet
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: A short film centred around a Chladni Plate
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: onomatopoeic.jpg
 related: []
 category: ['films']
 ---

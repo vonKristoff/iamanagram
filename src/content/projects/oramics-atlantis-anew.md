@@ -1,8 +1,8 @@
 ---
 title: "Oramics: Atlantis Anew"
-subtitle: A soundwork featuring Eliane Radigue, Rhodri Davies and Julia Eckhardt
+subtitle: a film by AURA SATZ
 date: 12/2/23
-thumbnail: ToneTransmissions.jpg
+thumbnail: oramics.jpg
 related: []
 category: ['films']
 ---
