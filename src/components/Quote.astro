@@ -1,0 +1,27 @@
+---
+export interface Props {
+  cite?: string;
+}
+const { cite } = Astro.props;
+---
+<blockquote>
+  <div class="quote">
+    <slot />
+  </div>
+  {cite && (<cite>{cite}</cite>)}
+</blockquote>
+
+<style>
+  blockquote {
+    .quote {
+      color: var(--colour-violet);
+      font-size: larger;
+      line-height: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    cite {
+      font-size: smaller;
+     color: var(--colour-crimson)
+    }
+  }
+</style>
