@@ -6,21 +6,65 @@ import Address from "../../components/Address.astro";
 import Blockquote from "../../components/Blockquote.astro";
 import Link from "../../components/Link.astro";
 import Title from "../../components/Title.astro";
+import Compact from "../../components/compact.astro";
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="AutomaticEnsemble.jpg" caption="" />
+  <Image collection={[{ src: "playasax.jpg"}, { src: "pianola.jpg"}, { src: "strohviolin.jpg"}]} caption="Images from Aura Satz's series of drawings 'Automamusic', 2008" />
   <section>
-    <p>The Automatic Ensemble will premiere in Switzerland at 'Museumsnacht 2009'</p>
-
-<p>16 January 2009 - 21pm and 22:30pm, Church of St Leonhard (Leonhardskirche), Basel</p>
-<p>18 January 2009 - 11am, Museum of Music Automatons, Seewen</p>
+    <h3>The Automatic Ensemble will premiere in Switzerland at 'Museumsnacht 2009'</h3>
+    
+    <h5>16 January 2009 - 21pm and 22:30pm, Church of St Leonhard (Leonhardskirche), Basel</h5>
+<h5>18 January 2009 - 11am, Museum of Music Automatons, Seewen</h5>
 <p>Using a mixture of mechanically amplified and automatic instruments and machines, the 'Automatic Ensemble' explores their visual and sonic potential through a multiplicity of compositions and improvisations. The instrumentation combines original historical artefacts with those reconstructed and newly invented. There is a particular emphasis on the visual performance of playing/operating these mechanical musical devices, which reflect on that particular historical moment in which sound is becoming detached from its original source and performative agency is in the process of removing itself. Thus performers appear to produce music in a manner parallel to the Automatic Writing of Spiritualist mediums and the Surrealists, performing sound as if from without rather than from within.</p>
 
 <p>Aura Satz's film Automamusic was shot at the Museum of Music Automatons, and led to the concept of the 'Automatic Ensemble', in collaboration with Aleks Kolkowski.</p>
-  </section>
+<p>The film will be screened throughout the evenings</p>
+<Compact type="credit" title="The AUTOMATIC ENSEMBLE are:">
+  Wolfgang Heisig - phonola (Berlin)<br>
+Aleks Kolkowski - stroh violin, musical saw, gramophone & phonograph (London)<br>
+Anton Lukoszevieze - stroh cello (Norwich)<br>
+Natalia Pschenitschnikova - flutes, piccolo (Berlin/Moscow)<br>
+Martin Riches - serinette (Berlin)<br>
+Aura Satz - rolmonica, playasax, tanzbär, music box, musical saw (London)
+</Compact>
+</section>
+<Image src="AutomaticEnsemble.jpg" caption="" />
+<section>
+  <Compact type="thanks" title="Programme">
+Musical Knot (Satz, 2009) for Music Box<br>
+Cheep Imitation (Kolkowski, 2004-9) for Serinette, Stroh Violin, Piccolo & Gramophone<br>
+Etüde Kwic & Kwoc (Heisig) Phonola Solo<br>
+Palindromes (Satz, 2008) for 2 Rolmonicas<br>
+Cellogram (James Tenney, 1971) Solo Stroh Cello<br>
+Toccata (Conlon Nancarrow 1935) for Stroh Violin and Phonola<br>
+Talking Books (Satz, 2009)<br>
+La marche du Roy + La même marche plus (trad.) for Solo Serinette<br>
+Fadograph (Lukoszevieze, 2009) for Pianola (Phonola), Alto flute & Stroh Cello<br>
+Ah! Sweet Mystery of Life (Victor Herbert, 1910) arranged for Tanzbär & Musical Saw<br>
+Channeling (Kolkowski/Pschenitschnikova) for Bass flute and Gramophone Horn<br>
+Playasax Duet (Satz, 2009)<br>
+Weather Effects (Kolkowski, 2001) for Stroh Violin & Gramophone<br>
+Sache mit Hz und Verstand (Kolkowski, 2003-9) for 2 Gramophones & Ensemble<br>
++<br>
+Heislvertonungen (Heisig) Phonola & Voice (Part 7 with Ensemble)<br>
+Study #21 Canon X (Nancarrow, 1948)
+  </Compact>
+</section>
+<Image collection={[{ src: "AleksKolkowski.jpg"}, { src: "serinette_small.jpg"}]} caption="Aleks Kolkowski, Stroh Violin & Martin Riches, Serinette (photo Roman M�rz)" />
+<section>
+  <Compact type="address" title="Museum für Musikautomaten">
+Sammlung Dr.h c. H. Weiss-Stauffacher<br>
+Bollhübel 1<br>
+4206 Seewen<br>, Switzerland
+Tel. +41 61 915 98 80<br>
+Fax +41 61 915 98 90<br>
+E-Mail: musikautomat<br>en@bak.admin.ch
+>>landesmuseen.ch >>museumsnacht.ch<br>
+  </Compact>
+</section>
 
   <!-- <Address
     name="Museum für Musikautomaten"
