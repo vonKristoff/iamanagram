@@ -1,63 +1,61 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="Tatton visual score-1.jpg" caption="" />
-  <section>
-    Tatton Park Biennal
-12 May - 30 September 2012
-Tatton Park Biennal
-Tatton Park
-Knutsford
-Cheshire WA16 6QN
-Tel +44 (0)1625 374400
-info@tattonparkbiennial.org
-www.tattonparkbiennial.org
+	<Image src="Tatton visual score-1.jpg" caption="" />
+	<section>
+		Tatton Park Biennal 12 May - 30 September 2012 Tatton Park Biennal Tatton Park Knutsford
+		Cheshire WA16 6QN Tel +44 (0)1625 374400 info@tattonparkbiennial.org www.tattonparkbiennial.org
 
- 
+		<p>
+			Commissioned as a site-specific response to the Mansion for the 3rd Tatton Park Biennal
+			'Flights of Fancy', 'Sound Ornaments in the Music Room' transforms the varied patterns and
+			ornamentations in the Music Room, Library, on the harpsichord and square piano into a filmic
+			notation of sorts. Hypnotic sequences of geometric and biomorphic forms will hover between
+			indecipherable abstraction and a musical script. Extended close-up tracking shots of the
+			elaborate ornaments will create a visual score, to which composer Larry Goves will create a
+			new musical composition. Working with the expertise of Professor Jeanice Brooks from the
+			University of Southampton, the project draws inspiration from one of Tatton's previous
+			residents, Elizabeth Sykes (1777-1853), and her vast collection of music.
+		</p>
+	</section>
 
-<p>Commissioned as a site-specific response to the Mansion for the 3rd Tatton Park Biennal 'Flights of Fancy', 'Sound Ornaments in the Music Room' transforms the varied patterns and ornamentations in the Music Room, Library, on the harpsichord and square piano into a filmic notation of sorts. Hypnotic sequences of geometric and biomorphic forms will hover between indecipherable abstraction and a musical script. Extended close-up tracking shots of the elaborate ornaments will create a visual score, to which composer Larry Goves will create a new musical composition. Working with the expertise of Professor Jeanice Brooks from the University of Southampton, the project draws inspiration from one of Tatton's previous residents, Elizabeth Sykes (1777-1853), and her vast collection of music.</p>
-  </section>
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
-  </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+	<Title
+		date="29 September 2012 4.30pm"
+		title="'Visual Score' Tatton Park Biennal special closing performance"
+		subtitle="Programme curated by Jeanice Brooks, University of Southampton"
+	>
+		<p>
+			Jane Chapman, contemporary harpsichordist extraordinaire, joins forces with guitarist Tom
+			McKinney, pianist Harvey Davies and the Ensemble Pleyel for an extravagant ending to the 2012
+			Tatton Park Biennial, Flights of Fancy. Taking inspiration from the Music Room installation by
+			Biennial artist Aura Satz, the musicians treat the entire house as sounding frame for an
+			exploration of new and old musical fantasy. The programme features 'Visual Score', a new
+			collaboration between Jane Chapman and Aura Satz, and world premieres of works by composers
+			Larry Goves and Leo Grant, as well as eighteenth-century music from Tatton Park's outstanding
+			historic musical collection.
+		</p>
+		http://events.tattonpark.org.uk/
+	</Title>
+	<section>
+		<h5>14 March - 19 April 2014</h5>
+		<h4>'Visual Score' was included in the Group exhibition 'Pre owned: Looks Good Man'</h4>
+		curated by Morgan Quaintance<br />
+
+		Cell Project Space, London<br />
+		258 Cambridge Heath Rd<br />
+		London E2 9DA<br />
+		Tel 020 7241 3600<br />
+		<br />
+		http://cellprojects.org/pre-owned-looks-good-man
+	</section>
 </ProjectLayout>

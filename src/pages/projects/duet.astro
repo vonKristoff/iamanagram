@@ -1,53 +1,58 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="hearingtrumpets.jpg" caption="Photos of live performance by Miranda Gavin" />
-  <Image src="barbicanduet2.jpg" caption="Photos of live performance by Miranda Gavin" />
-  <Image src="barbicanduet1.jpg" caption="Photos of live performance by Miranda Gavin" />
-  <Image src="stroboscopichypnosishorn.jpg" caption="Photos of live performance by Miranda Gavin" />
-  
-  <section>
-   
-    
-  </section>
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>Duet performance
-      17th March 2011
-      New filmic performance works using acoustic devices such as a Chladni plate, a flame manometre, stroboscopic records and vintage self-hypnosis tracks.
-      Barbican Gallery, London
-      Silk Street, London EC2Y 8DS
-      020 7638 4141
-      www.barbican.org.uk</p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
-  </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+	<Image src="hearingtrumpets.jpg" caption="Photos of live performance by Miranda Gavin" />
+	<Title title="Duet performance" date="17th March 2011">
+		<p>
+			New filmic performance works using acoustic devices such as a Chladni plate, a flame
+			manometre, stroboscopic records and vintage self-hypnosis tracks.
+		</p><br />
+		Barbican Gallery, London<br />
+		Silk Street, London EC2Y 8DS<br />
+		020 7638 4141<br />
+		www.barbican.org.uk<br />
+		Duet performance<br />
+
+		<p>
+			Aura Satz's Duets are brief conversations with acoustic devices that explore sound
+			visualisation, amplification, and reproduction.
+		</p>
+
+		<p>
+			Part 1. Vocal performance using a sound sculpture with hearing trumpets, emitting the 5 vowels
+			sounds to create harmonies and overtones.
+		</p>
+		The sound sculpture features the voice of Mikhail Karikis.
+
+		<p>Part 2. Spoken word with a flame manometre.</p>
+		This acoustic device is a primitive oscillator of sorts, demonstrating pressure variations in sound
+		through the stroboscopic reflection of a flame in a rotating mirror.
+
+		<p>Part 3. Performance with Chladni plate.</p>
+		This acoustic device visualises the vibration patterns created by different sound frequencies.
+
+		<p>Part 4. An interlude on a self-playing accordion.</p>
+
+		<p>
+			Part 5. Evoking visual echoes between pre-cinematic devices, the stroboscopic modes of the
+			turntable, Brion Gysin's flickering dream machine and the microscopic views of record grooves,
+			the performance uses a vintage self-hypnosis recording to induce a mesmeric mindset.
+		</p>
+	</Title>
+
+	<Image src="barbicanduet2.jpg" caption="Photos of live performance by Miranda Gavin" />
+	<Image src="barbicanduet1.jpg" caption="Photos of live performance by Miranda Gavin" />
+	<Image src="stroboscopichypnosishorn.jpg" caption="Photos of live performance by Miranda Gavin" />
+
+	<section></section>
 </ProjectLayout>

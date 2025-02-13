@@ -1,40 +1,184 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="anechoic chamber ISVR.jpg" caption="Aura Satz, 'The Absorbing Wall', 2015" />
-  <section>
-    <p>The film and sound installation The Trembling Line explores visual and acoustic echoes between decipherable musical gestures and abstract patterning, orchestral swells and extreme high-speed slow-motion close-ups of strings and percussion. It features a score by Leo Grant and a multichannel audio system by the Institute of Sound and Vibration Research, University of Southampton.</p>
-    
-    <p>Violin bows appear as angular lines cutting across the screen in rhythmic sequences, like a swarm of insects or windmills. Strings vibrate, unsettled in a state of continuous oscillation. Formal continuities are drawn out between throbbing slowed-down vibrations and real-time musical sequences, as the trembling pace of a tremolo becomes a relentless pulse. The multi-channel speaker array is devised as an intimate sound spatialisation system in which each element of sound can be pried apart and reconfigured, to create a dynamically disorienting sonic experience. It features small swarms of sounds, amplified as they gush though the sphere, intricate musical gestures travelling in circular and counterpoint patterns, and dense surges of tremolo rolling across the acoustic range. The sound sphere recalls an inverted fly's compound eye, which turns inwards onto the listener. It becomes the inside of a musical instrument, an acoustic envelope or cage of sorts, through which viewers are invited to experience the film and generate cross-sensory connections and counterpoints between the sound and the visuals.</p>
-  </section>
-  <Title
-  date="3 Dec 2015 - 23 Jan 2016"
-  title="'The Trembling Line'"
-  subtitle="Solo exhibition at John Hansard Gallery, Southampton"
-  >
-  <p>The Trembling Line is an exhibition of works by Aura Satz exploring acoustics, vibration, sound visualisation and musical gesture with an aim to wrest the space between sound and image, to see how far these can be stretched apart before they fold back into one another. The title, The Trembling Line, refers in part to the basic principle of vibration, a disturbance of equilibrium, such as the stimulated of motion and sound through friction, but also to the possibility of challenging static notation systems and destabilizing the experience of seeing and hearing.</p>
-  
-  <p>The centrepiece of the show is the film and sound installation The Trembling Line, which explores visual and acoustic echoes between decipherable musical gestures and abstract patterning, orchestral swells and extreme slow-motion close-ups of strings and percussion. It features a score by Leo Grant and a multichannel audio system by the Institute of Sound and Vibration Research, University of Southampton.</p>
-  
-  <p>The exhibition includes a series of photographs, The Absorbing Wall (2015), based on an anechoic chamber, and five closely inter-connected films: Vocal Flame (2012); Oramics: Atlantis Anew (2011); Onomatopoeic Alphabet (2010); Theremin (2009); Automamusic (2008). Some of the works address the visualisation of sound as a morphing language in which patterns of sand, salt or fire correspond to sounds in unexpected ways. Others address gesture-less mechanical music or the compelling gesturality of a theremin, a sensitive instrument that is played without physical contact, merely by waving hands in its proximity, affecting the sounds produced by the electromagnetic field.</p>
-  
-  <p>Satz is also interested in female figures that are largely excluded from mainstream historical discourse, in an ongoing engagement with the question of women's contributions to labour, technological invention and scientific knowledge. Oramics: Atlantis Anew centres on the invention of a new sound-generating machine and correlated notation system invented by British electronic music pioneer Daphne Oram in 1957. Using principles of drawn-sound (the inverse of the other works which look at sound visualisation), Oram invented a system for sonifying graphic shapes and creating a new language of unheard electronic sounds. Similarly, Vocal Flame addresses popular manifestations of the female disembodied voice, visualised as a wave of flames using an acoustic device known as a 'Rubens' Tube'.</p>
-  
-  <p>The Absorbing Wall provides an acoustic vacuum, a silent nexus separating the various films. Five photographic stills of the ISVR's large anechoic chamber convey a visual patterning of sound-absorbing elements, positioned in off-kilter angles that break away from the geometric regularity typically associated with the space.</p>
-  
-  <p>The Absorbing Wall is dedicated to the memory of Stuart Croft.</p>
-  
-</Title>
-<Image src="john-hansard-gallery-aura-satz-exhibition-billboard.jpg" caption="Installation view at John Hansard gallery, 2015-2016" />
+	<Image src="anechoic chamber ISVR.jpg" caption="Aura Satz, 'The Absorbing Wall', 2015" />
+	<section>
+		<p>
+			The film and sound installation The Trembling Line explores visual and acoustic echoes between
+			decipherable musical gestures and abstract patterning, orchestral swells and extreme
+			high-speed slow-motion close-ups of strings and percussion. It features a score by Leo Grant
+			and a multichannel audio system by the Institute of Sound and Vibration Research, University
+			of Southampton.
+		</p>
 
+		<p>
+			Violin bows appear as angular lines cutting across the screen in rhythmic sequences, like a
+			swarm of insects or windmills. Strings vibrate, unsettled in a state of continuous
+			oscillation. Formal continuities are drawn out between throbbing slowed-down vibrations and
+			real-time musical sequences, as the trembling pace of a tremolo becomes a relentless pulse.
+			The multi-channel speaker array is devised as an intimate sound spatialisation system in which
+			each element of sound can be pried apart and reconfigured, to create a dynamically
+			disorienting sonic experience. It features small swarms of sounds, amplified as they gush
+			though the sphere, intricate musical gestures travelling in circular and counterpoint
+			patterns, and dense surges of tremolo rolling across the acoustic range. The sound sphere
+			recalls an inverted fly's compound eye, which turns inwards onto the listener. It becomes the
+			inside of a musical instrument, an acoustic envelope or cage of sorts, through which viewers
+			are invited to experience the film and generate cross-sensory connections and counterpoints
+			between the sound and the visuals.
+		</p>
+	</section>
+	<Title
+		date="3 Dec 2015 - 23 Jan 2016"
+		title="'The Trembling Line'"
+		subtitle="Solo exhibition at John Hansard Gallery, Southampton"
+	>
+		<p>
+			The Trembling Line is an exhibition of works by Aura Satz exploring acoustics, vibration,
+			sound visualisation and musical gesture with an aim to wrest the space between sound and
+			image, to see how far these can be stretched apart before they fold back into one another. The
+			title, The Trembling Line, refers in part to the basic principle of vibration, a disturbance
+			of equilibrium, such as the stimulated of motion and sound through friction, but also to the
+			possibility of challenging static notation systems and destabilizing the experience of seeing
+			and hearing.
+		</p>
+
+		<p>
+			The centrepiece of the show is the film and sound installation The Trembling Line, which
+			explores visual and acoustic echoes between decipherable musical gestures and abstract
+			patterning, orchestral swells and extreme slow-motion close-ups of strings and percussion. It
+			features a score by Leo Grant and a multichannel audio system by the Institute of Sound and
+			Vibration Research, University of Southampton.
+		</p>
+
+		<p>
+			The exhibition includes a series of photographs, The Absorbing Wall (2015), based on an
+			anechoic chamber, and five closely inter-connected films: Vocal Flame (2012); Oramics:
+			Atlantis Anew (2011); Onomatopoeic Alphabet (2010); Theremin (2009); Automamusic (2008). Some
+			of the works address the visualisation of sound as a morphing language in which patterns of
+			sand, salt or fire correspond to sounds in unexpected ways. Others address gesture-less
+			mechanical music or the compelling gesturality of a theremin, a sensitive instrument that is
+			played without physical contact, merely by waving hands in its proximity, affecting the sounds
+			produced by the electromagnetic field.
+		</p>
+
+		<p>
+			Satz is also interested in female figures that are largely excluded from mainstream historical
+			discourse, in an ongoing engagement with the question of women's contributions to labour,
+			technological invention and scientific knowledge. Oramics: Atlantis Anew centres on the
+			invention of a new sound-generating machine and correlated notation system invented by British
+			electronic music pioneer Daphne Oram in 1957. Using principles of drawn-sound (the inverse of
+			the other works which look at sound visualisation), Oram invented a system for sonifying
+			graphic shapes and creating a new language of unheard electronic sounds. Similarly, Vocal
+			Flame addresses popular manifestations of the female disembodied voice, visualised as a wave
+			of flames using an acoustic device known as a 'Rubens' Tube'.
+		</p>
+
+		<p>
+			The Absorbing Wall provides an acoustic vacuum, a silent nexus separating the various films.
+			Five photographic stills of the ISVR's large anechoic chamber convey a visual patterning of
+			sound-absorbing elements, positioned in off-kilter angles that break away from the geometric
+			regularity typically associated with the space.
+		</p>
+
+		<p>The Absorbing Wall is dedicated to the memory of Stuart Croft.</p>
+	</Title>
+	<Image
+		src="john-hansard-gallery-aura-satz-exhibition-billboard.jpg"
+		caption="Installation view at John Hansard gallery, 2015-2016"
+	/>
+
+	<section>
+		<h5>28-29 April 2018</h5>
+		<h4>Binaural version installed as part of F(T) festival, hosted at Radialsystem V, Berlin</h4>
+		<p>
+			f(t) stands for 'function of time' (Zeitfunktion). The two day festival will highlight
+			alternative concepts of time in music: irregular metres, miniatures, works of gargantuan
+			duration, idiosyncratic patterns, new practices for historic instruments and obsolete media,
+			humanised machine time, mechanised improvisation, space-time relations in close proximity and
+			at vast distance... and much more.
+		</p>
+
+		<p>
+			The festival will feature a densely programmed concert schedule in Radialsystem V's main
+			halls, as well as special formats and installations in its more intimate upstairs studios. A
+			mechanical player piano will be set up in the foyer, thus providing five distinct spaces for
+			concerts, DJ sets, music performances and audiovisual installations for the audience to
+			explore.
+		</p>
+
+		<p>
+			The programme features artists from eleven nations and of diverse artistic backgrounds,
+			including electronic musicians, bands, baroque and new music instrumentalists, improvisors,
+			DJs and visual artists. Highlights include performances by Shackleton, members of Ensemble
+			Modern, Rrose and SOS Gunver Ryberg. Several premieres will be performed, including
+			commissioned works by Stefan Goldmann and KiNK. Further world and German premieres include
+			works by Cory Arcangel, Elektro Guzzi & Margret Koll and Aura Satz.
+		</p>
+
+		Radialsystem V<br />
+		Holzmarktstr. 33, 10243 Berlin, Germany<br />
+		+49 30 28878850<br />
+		https://www.ftfestival.org/about<br />
+		https://radialsystem.de/?lang=en<br />
+		https://radialsystem.de/programme/48628/169357/?lang=en
+
+		<h5>3-4 Feb 2023</h5>
+		<h4>
+			Exhibition of 'The Trembling Line' as part of Strom festival for electronic music at Berliner
+			Philharmoniker, Berlin
+		</h4>
+		<p>
+			Including Aura Satz, Blawan, Hauschka + Kai Angermann, Juan Atkins, MARCEL DETTMANN, Nidia,
+			Studio Robert Henke pres. CBM 8032 AV, transformed acoustix (members of Berliner
+			Philharmoniker + Simon Stockhausen), Stefan Goldmann, upsammy, Wolfgang Voigt pres. GAS
+		</p>
+
+		https://www.berliner-philharmoniker.de/strom/
+
+		<h3>CREDITS:</h3>
+		Directed, edited, and filmed by Aura Satz<br />
+		Soundtrack composed by Leo Grant<br />
+		Shot with support-in-kind from ILIad, University of Southampton. Thanks to Stephen Caspar and Joe
+		Brett. High-speed sequences shot with Quench Studios.<br />
+		Funded by a Leverhulme Award and John Hansard Gallery, with support from ISVR and the Music Department,
+		University of Southampton.<br />
+		ISVR collaboration and sphere construction coordinated by Dr Filippo Maria Fazi<br />
+		ISVR team: Dr Filippo Maria Fazi, Dr Dylan Menzies, Dr Andreas Franck, Dr Marcos Simon Galvez, Mr
+		Michael Cousins, Mr Diego Murillo Gomez, Miss Alicia Alonso-Carrillo and Dr Matthew Wright as acoustic
+		research consultant.<br />
+		Speaker array construction: Ian Watson<br />
+		Music Department collaboration coordinated by Jeanice Brooks<br />
+		String Players: Kanon Miyashita, Kath Roberts, Hannah Preston, Jessica Lawless<br />
+		Viola: Dr Thomas Irvine<br />
+		Cello: Cerys Beesley, Manikka Marchant<br />
+		Double Bass: Paul Cox
+
+		<p>
+			The Trembling Line is the result of Aura Satz's year as Artist-in-Residence at the University
+			of Southampton, funded by The Leverhulme Trust and the university. The residency represents an
+			innovative collaboration between the artist, the Department of Music and the Institute of
+			Sound and Vibration Research (ISVR) that explores the conceptual translations between
+			different art-forms, acoustics and technologies, and reflects ongoing exchanges between the
+			composers, performers and acoustic engineering staff and students.
+		</p>
+
+		John Hansard Gallery<br />
+		University of Southampton<br />
+		Highfield<br />
+		Southampton SO17 1BJ<br />
+		T +44 (0)23 8059 2158<br />
+		F +44 (023) 8059 4192<br />
+		E info@hansardgallery.org.uk<br />
+		http://www.jhg.art/event-detail/199-aura-satz-the-trembling-line/
+	</section>
 </ProjectLayout>

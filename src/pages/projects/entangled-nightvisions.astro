@@ -1,97 +1,162 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
-import Video from "../../components/Video.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+import Video from '../../components/Video.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image
-    src="Entangled Nightvisions small.jpg"
-    caption="Aura Satz, 'Entangled Nightvisions', film still, 2017"
-  />
-  <section>
-    <p>
-      Philosopher Johnny Golding ruminates on a formative childhood experience,
-      when her father brought home an early prototype of night vision he was
-      working on for the American Military 'Project Eyeglass', for ARPA
-      (Advanced Research Projects Agency). Shot using corrupted night vision
-      footage, the film explores Johnny's interest in quantum physics,
-      entanglement and her philosophy of Radical Matter.
-    </p>
-    <h3>Screenings</h3>
-  </section>
-  <Title
-    date="24th Jan - 4th Feb 2018"
-    title="World Premiere at the International Film Festival Rotterdam, Rotterdam"
-    subtitle=""
-  >
-    <Link url="https://iffr.com/en/films-2018" label="iffr.com" />
-    <Link
-      inline={false}
-      url="https://iffr.com/en/2018/films/entangled-nightvisions"
-      label="iffr.com/en/2018/films/entangled-nightvisions"
-    />
-  </Title>
-  <Title
-    date="3-7 May 2018"
-    title="Screening at Alchemy Film and Moving Image Festival, Hawick, Scotland"
-    subtitle=""
-  >
-    <Link
-      url="https://alchemyfilmfestival.org.uk/2018/investigations/"
-      label="alchemyfilmfestival.org.uk"
-    />
-  </Title>
-<section>
-  <h3>Exhibitions / performances</h3>
-</section>
-  <Title
-    date="20 - 22 July 2018, Opening on July 19 at 6pm"
-    title="'The Surface of the Sun'"
-    subtitle="Group show at Contemporary Art Museum of Estonia (EKKM), Tallin"
-  >
-    <p>
-      Including Peggy Ahwesh, Basma Alsharif, Stephanie Comilang, Annabelle
-      Craven-Jones, Elise Florenty & Marcel Turkowsky, Saskia Holmkvist, Sam
-      Keogh, Hanne Lippard, Maha Maamoun, Agnieszka Polska, Aura Satz. Curated
-      by Erik Martinson.
-    </p>
-    <p>
-      Remote viewing is a form of extrasensory perception: a receptive
-      individual projects or travels out of their body to a place, object or
-      time unknown to them, reporting back as a kind of psychic reconnaissance.
-      This practice was part of the CIA's Stargate Project, begun in the 1970s,
-      that sought to competitively instrumentalize psychic research during the
-      Cold War. The subject of one of these experiments would be handed a sealed
-      envelope, from the test's monitor, that contained a location and time. The
-      monitor then verbally directed the subject to specific coordinates, asking
-      for reports and drawings of what was seen and encountered. Any place and
-      time was possible, even The Surface of the Sun.
-    </p>
-    <p>
-      As a concept, remote viewing can be positioned as a portal across time,
-      history and personal experience. The speculative nature of this practice
-      is equally a departure point for fictional intermingling. In this vein,
-      events not lived first hand, or at all, can be reconfigured as malleable
-      objects moving through time, newly and differently encountered. The works
-      presented in the The Surface of the Sun will travel through signal,
-      stopping by fleetingly, leaving their echoes.
-    </p>
-    <Link
-      url="http://www.ekkm.ee/naitused/the-surface-of-the-sun/"
-      label="ekkm.ee"
-    />
-    <Address
-      type="margin-top"
-      name="Contemporary Art Museum of Estonia (EKKM)"
-      address1="Pohja pst. 35, Tallinn, 10415"
-    />
-  </Title>
+	<Image
+		src="Entangled Nightvisions small.jpg"
+		caption="Aura Satz, 'Entangled Nightvisions', film still, 2017"
+	/>
+	<section>
+		<p>
+			Philosopher Johnny Golding ruminates on a formative childhood experience, when her father
+			brought home an early prototype of night vision he was working on for the American Military
+			'Project Eyeglass', for ARPA (Advanced Research Projects Agency). Shot using corrupted night
+			vision footage, the film explores Johnny's interest in quantum physics, entanglement and her
+			philosophy of Radical Matter.
+		</p>
+		<h3>Screenings</h3>
+	</section>
+	<Title
+		date="24th Jan - 4th Feb 2018"
+		title="World Premiere at the International Film Festival Rotterdam, Rotterdam"
+		subtitle=""
+	>
+		<Link url="https://iffr.com/en/films-2018" label="iffr.com" />
+		<Link
+			inline={false}
+			url="https://iffr.com/en/2018/films/entangled-nightvisions"
+			label="iffr.com/en/2018/films/entangled-nightvisions"
+		/>
+	</Title>
+	<Title
+		date="3-7 May 2018"
+		title="Screening at Alchemy Film and Moving Image Festival, Hawick, Scotland"
+		subtitle=""
+	>
+		<Link
+			url="https://alchemyfilmfestival.org.uk/2018/investigations/"
+			label="alchemyfilmfestival.org.uk"
+		/>
+	</Title>
+	<section>
+		<h3>Exhibitions / performances</h3>
+	</section>
+	<Title
+		date="20 - 22 July 2018, Opening on July 19 at 6pm"
+		title="'The Surface of the Sun'"
+		subtitle="Group show at Contemporary Art Museum of Estonia (EKKM), Tallin"
+	>
+		<p>
+			Including Peggy Ahwesh, Basma Alsharif, Stephanie Comilang, Annabelle Craven-Jones, Elise
+			Florenty & Marcel Turkowsky, Saskia Holmkvist, Sam Keogh, Hanne Lippard, Maha Maamoun,
+			Agnieszka Polska, Aura Satz. Curated by Erik Martinson.
+		</p>
+		<p>
+			Remote viewing is a form of extrasensory perception: a receptive individual projects or
+			travels out of their body to a place, object or time unknown to them, reporting back as a kind
+			of psychic reconnaissance. This practice was part of the CIA's Stargate Project, begun in the
+			1970s, that sought to competitively instrumentalize psychic research during the Cold War. The
+			subject of one of these experiments would be handed a sealed envelope, from the test's
+			monitor, that contained a location and time. The monitor then verbally directed the subject to
+			specific coordinates, asking for reports and drawings of what was seen and encountered. Any
+			place and time was possible, even The Surface of the Sun.
+		</p>
+		<p>
+			As a concept, remote viewing can be positioned as a portal across time, history and personal
+			experience. The speculative nature of this practice is equally a departure point for fictional
+			intermingling. In this vein, events not lived first hand, or at all, can be reconfigured as
+			malleable objects moving through time, newly and differently encountered. The works presented
+			in the The Surface of the Sun will travel through signal, stopping by fleetingly, leaving
+			their echoes.
+		</p>
+		<Link url="http://www.ekkm.ee/naitused/the-surface-of-the-sun/" label="ekkm.ee" />
+		<Address
+			type="margin-top"
+			name="Contemporary Art Museum of Estonia (EKKM)"
+			address1="Pohja pst. 35, Tallinn, 10415"
+		/>
+	</Title>
+	<section>
+		<hr />
+		<h5>10 Nov 2018</h5>
+		<p>
+			Film screening with live sound-to-light voiceover performance as part of 'Data as Nature'
+			opening, Jing'an Sculpture Park, Shanghai Nature as Data brings together a series of works
+			that offer opportunities to unpack and understand the immense amount of material we experience
+			through digital technologies and interfaces every day. Through this exhibition we will show
+			artwork that explores how human beings are analysing and enquiring into nature using digital
+			and analogue technologies, to produce artworks that allow us to see nature in new and
+			illuminating ways. Nature as Data includes works by artists who are interpreting data from
+			nature, this includes how artists are collecting data from nature and creating exciting,
+			captivating work that allows us to engage and understand. Other artists are creating new data,
+			gathering material, and producing fascinating and perplexing artworks that attempt to unravel
+			the impact data and technology, and our part in participating with it, are having on ourselves
+			and humanity. Artists in the exhibition include: Anne Haaning, Patrick Hough, boredomresearch,
+			Lawrence Lek, Larry Achiampong, David Blandy, Sebastian Buerkner, Semiconductor, Suki Chan and
+			Ursula Mayer.
+		</p>
+		<p>
+			For the opening on 22 September, acid technoise artist, Ewa Justka will play a set as part of
+			the opening of Data as Nature. On 10 November, artist Aura Satz will give a performance as
+			part of the second opening of the exhibition, to coincide with the opening of Shanghai
+			Biennale.
+		</p>
+
+		<p>Exhibition openings: 5pm, 22 September 2018 // 5pm, 10 November 2018</p>
+
+		<p>Jing'an Sculpture Park's venue, 128 Shimen Er Lu, near Beijing Xi Lu</p>
+		<p>
+			The exhibition takes place as part of Jing'an International Sculpture Project, and is a
+			collaboration between videoclub and International Art + Science Research Institute in
+			Shanghai.
+		</p>
+
+		http://videoclub.org.uk/nature-as-data/
+
+		<h5>13th Dec 2019</h5>
+		<h4>A---Z curates 'Gaze to the UNKNOWN' at Mimosa House, London</h4>
+		<p>Part 1 - Visible & Invisible - 13th of Dec. 6.30-9pm</p>
+		<p>Part 2 - Morphing and Transformation - 19th of Dec. 6.30-9pm</p>
+
+		<p>
+			Murat Adash / Vasiliki Antonopoulou / Johann Arens / Matt Carter / Joel Chan / Hans
+			Diernberger & Will Saunders / Tobias Gremmler / Babara Hammer/ Karolina Lebek / Zoe Marden /
+			Aura Satz / Peter Spanjer / Rehana Zamann / Mathis Hang Zhang
+		</p>
+
+		<p>
+			Gaze to the UNKNOWN focusing on Bodies and Sexualities - A---Z presents a special two evenings
+			of screenings and performances - A Collaboration with Mimosa House to celebrate Tomaso Binga's
+			work with contemporary practices, looking at moving image works and live performances. The
+			Unknown projects have unfolded in several acts, through discussions, performances,
+			installations and screening counteracting homogenization & imperialist historicizing - how do
+			we create a platform to question and defy the norm? What are the options, solutions & human
+			representations we can explore for new possibilities? The screenings are a reflection on
+			current shared interests: in the gaze on the 'other' and its representation, its definition
+			for new possibilities. The works presented explore the ideas of future bodies, the empowerment
+			in deconstructed narratives, alternative (hi)stories. Exploring artistic practices and
+			knowledge exchange through presentations, screenings and discussion A---Z aims at opening up
+			to a large audience by sharing discursive practices in order to deconstruct preconceived ideas
+			on race, gender identities and the so-called history in terms of power relationship.
+		</p>
+
+		www.abc-z.org https://mimosahouse.co.uk/
+
+		<p>These events are free but booking is essential:</p>
+
+		https://www.eventbrite.co.uk/e/gaze-to-the-unknown-part-1-visible-invisible-13th-of-dec-630-9pm-tickets-82832743967
+		https://www.facebook.com/events/2575059945956086/
+		https://www.eventbrite.co.uk/e/gaze-to-the-unknown-part-2-morphing-and-transformation-19th-dec-630-9pm-tickets-82833494211
+		https://www.facebook.com/events/491653498227671/
+	</section>
 </ProjectLayout>

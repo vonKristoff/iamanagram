@@ -1,98 +1,96 @@
 ---
 interface Image {
-  src: string;
-  caption?: string;
+	src: string;
+	caption?: string;
 }
 export interface Props {
-  src?: string;
-  caption?: string;
-  collection?: Image[];
-  type?: string;
+	src?: string;
+	caption?: string;
+	collection?: Image[];
+	type?: string;
 }
 
-const { collection = [], src, caption = "", type = "" } = Astro.props;
-const triplyte = collection.length === 3
+const { collection = [], src, caption = '', type = '' } = Astro.props;
+const triplyte = collection.length === 3;
 const images: Image[] = !!src ? [{ src, caption }] : collection;
 ---
 
-<div class={`image-group${type ? " use-slot" : ""} ${triplyte ? "triplit": ""}`}>
-  {
-    images.map(({ src, caption = "" }) => {
-      return (
-        <div class={`container ${type}`}>
-          <img src={`/projects/${src}`} />
-          {!!caption.length && <span>{caption}</span>}
-        </div>
-      );
-    })
-  }
-  {
-    !!type.length && (
-      <div class="side-content">
-        <slot />
-      </div>
-    )
-  }
-  {!src && caption &&
-  (
-    <figcaption>{caption}</figcaption>
-  )}
+<div class={`image-group${type ? ' use-slot' : ''} ${triplyte ? 'triplit' : ''}`}>
+	{
+		images.map(({ src, caption = '' }) => {
+			return (
+				<div class={`container ${type}`}>
+					<img src={`/projects/${src}`} />
+					{!!caption.length && <span>{caption}</span>}
+				</div>
+			);
+		})
+	}
+	{
+		!!type.length && (
+			<div class="side-content">
+				<slot />
+			</div>
+		)
+	}
+	{!src && caption && <figcaption>{caption}</figcaption>}
 </div>
 <style>
-  figcaption {
-    font-size: small;
-  }
-  .image-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 6em 0;
-    gap: 1em;
-    flex-wrap: wrap;
-  }
-  .use-slot {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex: clamp(100% / (3 + 1) + 0.1%, 300px, 100%);
-    align-items: center;
-  }
-  .triplit {
-    .container {
-      flex: unset;
-      width: 30%;
-    }
-    figcaption {
-      width: 100%;
-      text-align: center;
-    }
-  }
-  @media (max-width: var(--width-mobile)) {
-    .use-slot {
-      flex-wrap: wrap;
-    }
-  }
-  .side-content {
-    font-size: var(--size-smaller);
-    line-height: var(--spacing-level-4);
-    /* background-color: orange; */
-  }
-  .container.detail {
-    flex: 1 0 50%;
-  }
-  .container span {
-    padding: 1rem 2rem;
-    font-size: 0.75em;
-    color: var(--colour-soft);
-  }
-  img {
-    width: 100%;
-    max-height: 65vh;
-    object-fit: contain;
-    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3))
-      drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
-  }
+	figcaption {
+		font-size: small;
+		width: 100%;
+		text-align: center;
+	}
+	.image-group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 6em 0;
+		gap: 1em;
+		flex-wrap: wrap;
+	}
+	.use-slot {
+		flex-wrap: nowrap;
+		align-items: flex-start;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex: clamp(100% / (3 + 1) + 0.1%, 300px, 100%);
+		align-items: center;
+	}
+	.triplit {
+		.container {
+			flex: unset;
+			width: 30%;
+		}
+		figcaption {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	@media (max-width: var(--width-mobile)) {
+		.use-slot {
+			flex-wrap: wrap;
+		}
+	}
+	.side-content {
+		font-size: var(--size-smaller);
+		line-height: var(--spacing-level-4);
+		/* background-color: orange; */
+	}
+	.container.detail {
+		flex: 1 0 50%;
+	}
+	.container span {
+		padding: 1rem 2rem;
+		font-size: 0.75em;
+		color: var(--colour-soft);
+	}
+	img {
+		width: 100%;
+		max-height: 65vh;
+		object-fit: contain;
+		filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+	}
 </style>

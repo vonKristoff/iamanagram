@@ -1,40 +1,215 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="AuraSatzVocalFlame.jpg" caption="Aura Satz, Vocal Flame, 2012" />
-  <section>
-    <p>Vocal Flame is fiery sound sculpture using a Ruben's Tube, an acoustic device which visualizes sound as a standing wave of small flames. The soundtrack that animates the flickering flames features a histrionic voice-over, exploring the various embodiments of ventriloquized voices in popular culture, particularly the female voice in film. The voiceover conjures narratives of a biblical burning bush, a self-consuming flame alphabet, the moulded vocal training of My Fair Lady and the acousmatic notion of a voice without source, hidden behind a veil or curtain. Working through Radar's theme of the performing object from the perspective of the implicit ventriloquism of making an object speak, Vocal Flame aims to expose the malleability, violence and porosity of vocal manipulation.</p>
+	<Image src="AuraSatzVocalFlame.jpg" caption="Aura Satz, Vocal Flame, 2012" />
+	<section>
+		<p>
+			Vocal Flame is fiery sound sculpture using a Ruben's Tube, an acoustic device which visualizes
+			sound as a standing wave of small flames. The soundtrack that animates the flickering flames
+			features a histrionic voice-over, exploring the various embodiments of ventriloquized voices
+			in popular culture, particularly the female voice in film. The voiceover conjures narratives
+			of a biblical burning bush, a self-consuming flame alphabet, the moulded vocal training of My
+			Fair Lady and the acousmatic notion of a voice without source, hidden behind a veil or
+			curtain. Working through Radar's theme of the performing object from the perspective of the
+			implicit ventriloquism of making an object speak, Vocal Flame aims to expose the malleability,
+			violence and porosity of vocal manipulation.
+		</p>
 
-<p>Devised and scripted by Aura Satz, voiceover performed by vocalist Jennifer Walshe and music composed by musician, composer, and founding Siouxie and the Banshees member Steven Severin.</p>
+		<p>
+			Devised and scripted by Aura Satz, voiceover performed by vocalist Jennifer Walshe and music
+			composed by musician, composer, and founding Siouxie and the Banshees member Steven Severin.
+		</p>
 
-<p>Excerpt of Aura Satz - Vocal Flame from The Wire Magazine on Vimeo.</p>
-  </section>
-  <Title
-    date="10 March 2012"
-    title="RADAR contemporary arts programme, Loughborough University Music Centre"
-    subtitle="Commissioned by RADAR contemporary arts programme, Loughborough University Music Centre"
-  >
-  Loughborough University<br>
-  Loughborough<br>
-  Leicestershire<br>
-  LE11 3TU<br>
-  Tel: 01509 222 881<br>
-  Email: radar.info@lboro.ac.uk<br>
+		<p>Excerpt of Aura Satz - Vocal Flame from The Wire Magazine on Vimeo.</p>
+	</section>
+	<Title
+		date="10 March 2012"
+		title="RADAR contemporary arts programme, Loughborough University Music Centre"
+		subtitle="Commissioned by RADAR contemporary arts programme, Loughborough University Music Centre"
+	>
+		Loughborough University<br />
+		Loughborough<br />
+		Leicestershire<br />
+		LE11 3TU<br />
+		Tel: 01509 222 881<br />
+		Email: radar.info@lboro.ac.uk<br />
 
-    <Link
-      url="http://www.arts.lboro.ac.uk/radar/project/object_theatre_spring_2012/aura_satz/"
-      label="arts.lboro.ac.uk"
-    />
-  </Title>
-  
+		<Link
+			url="http://www.arts.lboro.ac.uk/radar/project/object_theatre_spring_2012/aura_satz/"
+			label="arts.lboro.ac.uk"
+		/>
+	</Title>
+	<Title
+		date="23 January - 3 February 2013"
+		title="'Soundfigures' exhibition"
+		subtitle="Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam curated by Edwin Carels"
+	>
+		<p>
+			Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks
+			at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the
+			Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos
+			characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses
+			microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying
+			music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics
+			(2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of
+			hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube,
+			an acoustic device that visualises sound as a standing wave of small flames, with music by
+			Steven Severin (of Siouxsie and the Banshees).
+		</p>
+		<br />
+		Blaak 10 Gallery<br />
+		Witte de Withstraat 7<br />
+		3012 BL Rotterdam<br />
+		The Netherlands
+		<br />
+		https://iffr.com/en/2013/films/soundfigures<br />
+		https://iffr.com/en/persons/aura-satz
+	</Title>
+	<Title
+		date="10 July -1 August 2020"
+		title="'Euphonia', online group show curated by Diana Policarpo, Hangar, Lisbon"
+		subtitle=""
+	>
+		<p>
+			This exhibition follows the development of sound as an artistic medium. It presents a resource
+			of collected audio works by artists and composers keen to unearth creation techniques, who
+			explore music and the use of sound in relation to gender, speech synthesis, D.I.Y instrument
+			making, immersion and embodiment. In 1844, astronomer and engineer Joseph Faber created the
+			first "vocoder", a talking head mechanical device called The Ghostly Voice and later onknown
+			as The Euphonia. It did not merely record the spoken word and then reproduced it, but actually
+			synthesized speech mechanically. Faber reportedly spent over 25 years developing this automata
+			and it was constructed with several different mechanisms and instruments: a piano, bellows and
+			a mechanical replica of the human and vocal organs. This decade saw the emergence of
+			artificial life in a flurry of attempts to simulate the animal and human bodies. The Euphonia
+			was exhibited for the first time in New York in 1846 and inspired many engineers at the time,
+			including Alexander Graham Bell who created the first practical telephone in 1876. The
+			exhibition brings together sound works that resonate with the earlier devices from the 19th
+			Century aforementioned and share concerns of transmission, vocal mutation and affective
+			tonality through improvisation.
+		</p>
+
+		<p>
+			Artists include Aura Satz, Diana Policarpo, Jenna Sutela, Muyassar Kurdi, Raw Forest, Vuduvum.
+		</p>
+		https://hangar.com.pt/online/euphonia/
+	</Title>
+
+	<section>
+		<h2>Screenings:</h2>
+
+		<h5>3-7 October 2013</h5>
+		<h4>
+			Screened at the 51st New York Film Festival, 'Views from the Avant-garde', curated by Mark
+			McElhatten
+		</h4>
+
+		<p>
+			Our popular yearly touchstone for experimental film returns with 45 programs in glorious
+			Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's
+			slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura
+			Satz, Lois Patino, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes
+			to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema
+			that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.
+		</p>
+
+		The Film Society of Lincoln Center<br />
+		70 Lincoln Center Plaza<br />
+		New York, NY 10023-6595<br />
+		<br />
+		http://www.filmlinc.com/films/on-sale/program-i-aura-satz<br />
+		http://www.filmlinc.com/nyff2013<br />
+		http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant
+
+		<h5>13 May 2015</h5>
+		<h4>'Soundfigures: Films by Aura Satz'</h4>
+		<p>
+			A selection of films by Aura Satz, DIM Cinema, Vancouver Cinametheque, programmed by Michele
+			Smith
+		</p>
+
+		<p>
+			(Near) extinct technologies make sound visible in this program of shorts by London-based
+			artist Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni
+			Plate, a device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley
+			dancers, form intricate patterns in response to changing sound frequencies, their shapes
+			recalling the utopian quest for a 'pure,' onomatopoeic alphabet. Wax cylinder recordings
+			combine with modern scientific instruments to animate a text by Rainer Maria Rilke on the
+			possibility of hearing the dead by playing their skulls with a gramophone needle. A Ruben's
+			Tube translates a histrionic voice-over into a standing wave of small flames, provoking
+			unexpected associations, from the biblical burning bush to various acts of ventriloquism in
+			pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn compositions by
+			its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of
+			a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the
+			Technicolor era. Chromatic distortions in early colour-film tests are revealed through the
+			eyes of the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and
+			experimental filmmaker Lis Rhodes encode their voices as abstract light patterns on 16mm mono
+			and 35mm stereo filmstrips in a collaborative exploration of sound-image synchronicity.
+		</p>
+
+		DIM Cinema<br />
+		The Cinematheque<br />
+		1131 Howe St.<br />
+		Vancouver BC<br />
+		Canada<br />
+		http://www.dimcinema.ca/soundfigures-films-aura-satz
+
+		<h5>18 Feb 2016</h5>
+		<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at Whitechapel Gallery, London</h4>
+
+		<p>
+			Aura Satz presents the UK premiere of 'Between the Bullet and the Hole', her latest short film
+			which examines the role of women in ballistic research, early computing and pattern perception
+			in warfare. Presented alongside her works focusing on memory, notation, encryption and gender,
+			the event also features an in conversation with special guests Morgan Quaintance and David
+			Alan Grier.
+		</p>
+
+		Whitechapel Gallery<br />
+		77-82 Whitechapel High St<br />
+		London E1 7QX<br />
+		http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/
+
+		<h5>24 March 2016</h5>
+		<h4>
+			'In and Out of Synch' an evening of films and sound with Aura Satz presented by Liquid
+			Architecture and Gertrude Contemporary
+		</h4>
+
+		<p>
+			Satz presents works that explore the relationship between esoteric technologies (Chladni
+			plate, Rubens' tube, theremin, mechanical music machines, phonographs, dial tones,
+			drawn/optical sound) and the human body (heightened perception, sensory disorientation,
+			psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed
+			by Q&A with Joel Stern.
+		</p>
+
+		Gertrude Contemporary<br />
+		200 Gertrude St, Fitzroy<br />
+		Melbourne VIC 3065<br />
+		Australia<br />
+		https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br />
+		https://liquidarchitecture.org.au/events/aura-satz-talk<br />
+		http://www.gertrude.org.au/
+
+		<h5>7th March 2017</h5>
+		<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
+
+		<p>Followed by Q&A with Chris Paul Daniels</p>
+
+		HOME Manchester<br />
+		2 Tony Wilson Place<br />
+		Manchester M15 4FN<br />
+		https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br />
+		Part of: Artist Talks https://homemcr.org/event/artist-talks/
+	</section>
 </ProjectLayout>

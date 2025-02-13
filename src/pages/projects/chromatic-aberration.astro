@@ -1,32 +1,184 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="chromatic aberration SATZ-1.jpg" caption="Aura Satz, 'Chromatic Aberration' film still, 2014" />
-  <section>
-    <p>
-      Chromatic Aberration is a film installation which explores the early technologies of colour filmmaking drawn from the archives of George Eastman House, Rochester, New York. Featuring vibrant close-ups of eyes from fledgling archival experiments in colour film, Chromatic Aberration turns the cinematic lens in on itself: from the prosthetic recording eye of the camera, to an evocation of the abstract inner screen of one's eyelids.
+	<Image
+		src="chromatic aberration SATZ-1.jpg"
+		caption="Aura Satz, 'Chromatic Aberration' film still, 2014"
+	/>Chromatic Aberration is a film installation which explores the early technologies of colour
+	filmmaking drawn from the archives of George Eastman House, Rochester, New York. Featuring vibrant
+	close-ups of eyes from fledgling archival experiments in colour film, Chromatic Aberration turns
+	the cinematic lens in on itself: from the prosthetic recording eye of the camera, to an evocation
+	of the abstract inner screen of one's eyelids.
+	<section>
+		<p>
+			Satz has drawn inspiration from a scene in Powell and Pressberger's 1946 film 'A Matter of
+			Life and Death', where the transition from the reality of colour to the black and white of the
+			afterworld is conveyed from the viewpoint of David Niven's eyelid, from inside the body,
+			behind the eyes. Early 1920s colour film footage - mainly tests shots featuring members of
+			George Eastman's family as well as Hollywood stars of the time - is shot in such a way so as
+			to reveal the inherent chromatic fringing, distortion and misalignment. Using specialist
+			equipment at the BFI National Archive, London, the footage is reworked through the use of
+			extreme close-up and magnification, honing in on the eyes. The installation evokes an imagined
+			abstract colour world, a flickering eyelid trapped in a mechanical peephole. The eye shimmers
+			between dreamy reverie, curiosity, terror, defiance and awe, recalling the blurry effect of
+			looking at a bright light followed by the image-burn on the retina, a series of after-colours
+			under and onto the closed eyelid. Chromatic Aberration is a film installation which explores
+			the early technologies of colour filSoundtrack composed by Scanner.rge Eastman House,
+			Rochester, New York. Featuring vibrant close-ups of eyes from fledgling archival experiments
+			in colour film, Chromatic AbeDP Tim Sidellnematic lens in on itself: from the prosthetic
+			recording eye of the camera, to an evocation of the abstract inner screen of one's eyelids.
+			Sound Recordist Gernot Fuhrmann Special thanks to James Layton and Ryan Conrath at George
+			Eastman House; David Gurney, Ulrich Ruedel, and Kieron Webb at the BFI National Archives. Satz
+			has drawn inspiration from a scene in Powell and Pressberger's 1946 film 'A Matter of
+			Chromatic Aberration was commissioned by Tyneside Cinema with the participation of George
+			Eastman House, and support-in-kind from the BFI National Archive. Commissioned and curated by
+			Elisabetta Fabrizi. afterworld is conveyed from the viewpoint of David Niven's eyelid, from
+			inside the body, behind the eyes. Early 1920s colour film footage - mainly tests shots
+			featuring members of George Eastman's family as well as Hollywood stars of the time - is shot
+			in such a way so as to reveal the inherent chromatic fringing, distortion and misalignment.
+			Using specialist equipment at the BFI National Archive, London, the footage is reworked
+			through the use of extreme close-up and magnification, honing in on the eyes. The installation
+			evokes an imagined abstract colour world, a flickering eyelid trapped in a mechanical
+			peephole. The eye shimmers between dreamy reverie, curiosity, terror, defiance and awe,
+			recalling the blurry effect of looking at a bright light followed by the image-burn on the
+			retina, a series of after-colours under and onto the closed eyelid.
+		</p>
 
-      Satz has drawn inspiration from a scene in Powell and Pressberger's 1946 film 'A Matter of Life and Death', where the transition from the reality of colour to the black and white of the afterworld is conveyed from the viewpoint of David Niven's eyelid, from inside the body, behind the eyes. Early 1920s colour film footage - mainly tests shots featuring members of George Eastman's family as well as Hollywood stars of the time - is shot in such a way so as to reveal the inherent chromatic fringing, distortion and misalignment. Using specialist equipment at the BFI National Archive, London, the footage is reworked through the use of extreme close-up and magnification, honing in on the eyes. The installation evokes an imagined abstract colour world, a flickering eyelid trapped in a mechanical peephole. The eye shimmers between dreamy reverie, curiosity, terror, defiance and awe, recalling the blurry effect of looking at a bright light followed by the image-burn on the retina, a series of after-colours under and onto the closed eyelid.
-      
-      Soundtrack composed by Scanner.
-      
-      DP Tim Sidell
-      
-Sound Recordist Gernot Fuhrmann
+		<p>Soundtrack composed by Scanner.</p>
 
-Special thanks to James Layton and Ryan Conrath at George Eastman House; David Gurney, Ulrich Ruedel, and Kieron Webb at the BFI National Archives.
+		<p>DP Tim Sidell</p>
 
-Chromatic Aberration was commissioned by Tyneside Cinema with the participation of George Eastman House, and support-in-kind from the BFI National Archive. Commissioned and curated by Elisabetta Fabrizi.
+		<p>Sound Recordist Gernot Fuhrmann</p>
 
-<Image src="chromatic aberrationSATZ2.jpg" caption="Aura Satz, 'Chromatic Aberration' film still, 2014" />
+		<p>
+			Special thanks to James Layton and Ryan Conrath at George Eastman House; David Gurney, Ulrich
+			Ruedel, and Kieron Webb at the BFI National Archives.
+		</p>
 
+		<p>
+			Chromatic Aberration was commissioned by Tyneside Cinema with the participation of George
+			Eastman House, and support-in-kind from the BFI National Archive. Commissioned and curated by
+			Elisabetta Fabrizi.
+		</p>
+
+		<Image
+			src="chromatic aberrationSATZ2.jpg"
+			caption="Aura Satz, 'Chromatic Aberration' film still, 2014"
+		/>
+		<Title
+			date="22 October - 23 November 2014"
+			title="Chromatic Aberration"
+			subtitle="Solo show at The Gallery, Tyneside Cinema Newcastle upon Tyne, curated by Elisabetta Fabrizi"
+		>
+			https://www.tynesidecinema.co.uk/whats-on/art/past-programme/2014/chromatic-aberrationhttp://www.tynesidecinemagallery.co.uk/pdf/aurasatzresource.pdf
+			Aura Satz in conversation with Prof. Sarah Street<br />
+			Wed 29 October 2014, 18:00<br />
+			Aura Satz will be in conversation with Prof. Sarah Street to discuss Chromatic Aberration and their
+			shared interest in early colour film.<br />
+			https://www.tynesidecinema.co.uk/whats-on/art/past-programme/2014/aura-satz-in-conversation<br
+			/>
+
+			Artist Interview: https://vimeo.com/109113466
+		</Title>
+
+		Solo show at George Eastman House, Rochester, New York
+		<Title date="24 January - 26 April 2015" title="Eyelids Leaking Light" subtitle="">
+			900 East Avenue, Rochester, NY 14607<br />
+			Tel (585) 271-3361<br />
+			https://www.eastman.org/aura-satz-eyelids-leaking-light<br />
+			Interview with Ryan Conrath: https://www.eastman.org/interview-artist-aura-satz
+		</Title>
+
+		<Title
+			date="4-31 May 2015"
+			title="Solo presentation at Projection Space Suburban, Rotterdam"
+			subtitle=""
+		>
+			'Doorway for Natalie Kalmus' 4 - 17 May 2015 'Chromatic Aberration' 18 - 31 May 2015<br />
+			http://www.suburban-ps.nl/start/?portfolio=doorway-for-natalie-kalmus-aura-satz-4-17-may<br />
+			5 - 28 Oct 2016<br />
+			'Eyelids Leaking Light'<br />
+			Solo show at Clifford Gallery, Hamilton, New York<br />
+
+			http://merz.colgate.edu/fall_2016/kogut-satz/index.html
+		</Title>
+
+		<h3>Screenings:</h3>
+		<h5>21 Jan - 1 Feb 2015</h5>
+		<h4>Screening as part of the 44th International Film Festival Rotterdam</h4>
+
+		https://iffr.com/en/2015/films/chromatic-aberration
+		<h5>22 - 26 April 2015</h5>
+		<h4>Screening at EMAF, European Media Art Festival, Osnabrueck</h4>
+
+		http://2015.emaf.de/files/emaf_film_web.pdf
+		<h5>13 May 2015</h5>
+		<h4>Mini-retrospective screenings at DIM CINEMA, at The Cinematheque, Vancouver</h4>
+		http://www.dimcinema.ca/soundfigures-films-aura-satz<br />
+		http://www.thecinematheque.ca/dim/soundfigures-films-by-aura-satz
+		<h5>5 - 13 June 2015</h5>
+		<h4>
+			Screening as part of Vanguard Competition at Filmadrid, International Film Festival, Madrid
+		</h4>
+
+		http://filmadrid.com/2015/<br />
+		https://issuu.com/filmadrid/docs/cat__logo_filmadrid_2015_para_web
+		<h5>18 - 27th June 2015</h5>
+		<h4>
+			Winner of Best Vanguard Film Competition in Lima Independiente International Film Festival
+			2015, Lima
+		</h4>
+
+		http://limaindependiente.com.pe/limaindependiente2015/fronteras.html
+		<h5>4 - 12 July 2015</h5>
+		<h4>
+			Screening as part of Experimental Competition in 23rd Curtas Vila do Conde International Film
+			Festival, Lisbon
+		</h4>
+
+		http://festival.curtas.pt/pesquisa/film/?id=2015139
+		<h5>7-18 October 2015</h5>
+		<h4>
+			Screening as part of FNC Lab Competition at the 44th Festival du Nouveau Cinema, Montreal,
+			Canada
+		</h4>
+
+		http://2015.nouveaucinema.ca/en/films/chromatic-aberration
+		<h5>16 October 2015</h5>
+		<h4>Screening as part of the 59th BFI London Film Festival BFI Southbank, NFT3, London</h4>
+
+		https://whatson.bfi.org.uk/LFF/Online/default.aspBOparam::WScontent::loadArticle::permalink=stuffoffilm
+		<h5>27 October - 1 November 2015</h5>
+		<h4>
+			Screening as part of the Fascinations Competition at the 19th Jihlava International
+			Documentary Film Festival, Jihlava, Czech Republic
+		</h4>
+
+		http://www.dokument-festival.com/database/movie/21842%7CChromatic-Aberration
+		<h5>12 - 17 November 2015</h5>
+		<h4>
+			Screening as part of the International Competition at the 17th International Film Festival
+			Bratislava
+		</h4>
+
+		http://www.iffbratislava.com/<br />
+		http://bratislavaiff.sk/en/directors/aura-satz/
+
+		<h5>11-17 November 2016</h5>
+		<h4>
+			Screening as part of the 18th International Film Festival Bratislava, 'Lexicon-Colour' section
+		</h4>
+
+		http://www.bratislavaiff.sk/en/films/chromatic-aberration-2/
+	</section></ProjectLayout
+>

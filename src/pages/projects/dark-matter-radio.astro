@@ -1,127 +1,111 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
-import Video from "../../components/Video.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+import Video from '../../components/Video.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image
-    collection={[
-      {
-        src: "Dark Matter Radio.jpg",
-        caption:
-          "Aura Satz, 'Tuning Interference: Dark Matter Radio', multi channel sound installation, 2019",
-      },
-    ]}
-  />
-  <section>
-    <p>
-      Tuning Interference on a Dark Matter Radio is a 10-channel sound
-      installation which draws on the current quest to find the frequency of a
-      dark matter wave. The project is inspired by the description of one of
-      many Dark Matter research initiatives, as 'a radio that looks for a radio
-      station, but we don't know its frequency. We turn the knob slowly while
-      listening. Ideally we will hear a tone when the frequency is right.'
-      Continuing Satz's investigations into sound as a trope for attending to
-      the unsettled and unsettling, the project uses tuning and ever-changing
-      recalibration as a compositional approach. In an echo of the open-ended
-      and hypothetical state of current research, the project deliberately
-      allows for patterns of interference and dissonance. The focus is on the
-      fluctuating dynamic feedback loop between experimental listening,
-      apprehending, and potential deciphering, as we reach towards the
-      unfamiliar and unknown. The installation features a contained sonic
-      environment in the shape of a ring that translates current Dark Matter
-      simulations into sound patterns. The piece generates psychoacoustic
-      effects in the listeners, exploring sonic equivalents of interference and
-      collision through beat frequencies and other diffractive qualities which
-      shift according to the listener's location. The listener becomes a radio
-      dial of sorts, as the ears move through the soundscape microtuning with
-      each adjustment. In between each of the 10 spherical speakers there are
-      small VU metres, trembling to echo a volatile, dynamic and ever-changing
-      frequency field, though what exactly is being measured is uncertain.
-    </p>
-    <p>
-      Nearby hangs a photo of Vera Rubin (1928-2016). Rubin was an American
-      astronomer who discovered the galaxy rotation problem, providing evidence
-      of the existence of dark matter. Here she is seen looking through a
-      spectrograph mounted on the end of the telescope, recording an image of
-      the spectrum (colors) of a small section of a galaxy. The image is framed
-      inside a fresnel lens, generating a diffractive pattern emanating from the
-      centre.
-    </p>
-    <p>
-      The project is the result of a collaboration between Aura Satz and
-      cosmologists/astrophysicists Prof. Malcolm Fairbairn (Kings College
-      London), Prof. David J. E. Marsh (Goettingen University) and audio
-      engineer/music AI specialist Dr. David Ronan. Commissioned by the Science
-      Gallery London, with support in kind from Gallo Acoustics. Built by Open
-      Format. Original image of Vera Rubin, reproduced courtesy of Department of
-      Terrestrial Magnetism, Carnegie Institution for Science.
-    </p>
-  </section>
-  <Image
-    collection={[
-      {
-        src: "SATZ VeraRubin.jpg",
-        caption: "Aura Satz, 'Vera Rubin's Irrefutable Evidence', 2019",
-      },
-    ]}
-  />
-  <section>
-    <h3>Exhibtions</h3>
-    <Title
-      date="6 June – 26 August 2019"
-      title="'Dark Matter: 95% of the Universe is Missing'"
-      subtitle="Science Gallery London, group show"
-    >
-      <p>
-        In summer 2019, Science Gallery London will explore the elusive building
-        blocks of the Universe with DARK MATTER, a free exhibition and events
-        season combining art, physics and philosophy, and drawing on the latest
-        research from the Faculty of Natural & Mathematical Sciences at King's
-        College London. Exhibition highlights include an immersive animation
-        installation by Andy Holden which reflects on the physics of a cartoon
-        landscape, developed with Professor John Ellis from the Department of
-        Physics at King's College London; translucent spider webs which mimic
-        the structure of dark matter in the universe by Tomas Saraceno; a new
-        installation translating dark matter simulations into sound patterns by
-        Aura Satz, in collaboration with Professor Malcolm Fairbairn from the
-        Department of Physics at King's College London; and; perpetually
-        changing liquid crystal paintings by Agnieszka Kurant which will
-        transform according to the 'energy' of social media feeds around the
-        world. Curated by Sandra Ross.
-      </p>
-      <Address
-        name="Science Gallery London"
-        address1="Great Maze Pond"
-        address2="London SE1 9GU"
-      />
-    </Title>
-    <Link
-      url="https://london.sciencegallery.com/seasons/dark-matter"
-      label="london.sciencegallery.com"
-      inline={false}
-    />
-    <Link
-      url="https://london.sciencegallery.com/seasons/dark-matter/exhibition/tuning-interference-dark-matter-radio"
-      label="tuning-interference-dark-matter-radio"
-    />
-  </section>
-
-  <Blockquote title="Credits" type="inline">
-    <li><strong>Featuring Beatriz Ferreyra</strong></li>
-    <li><strong>Directed and edited by Aura Satz</strong></li>
-    <li>DOP: Sam Williams</li>
-    <li>Music: Beatriz Ferreyra</li>
-    <li>Dubbing Mix: Gernot Fuhrmann</li>
-    <li>English Subtitles: Aura Satz</li>
-    Special thanks to Jo Langton
-  </Blockquote>
+	<Image
+		collection={[
+			{
+				src: 'Dark Matter Radio.jpg',
+				caption:
+					"Aura Satz, 'Tuning Interference: Dark Matter Radio', multi channel sound installation, 2019"
+			}
+		]}
+	/>
+	<section>
+		<p>
+			Tuning Interference on a Dark Matter Radio is a 10-channel sound installation which draws on
+			the current quest to find the frequency of a dark matter wave. The project is inspired by the
+			description of one of many Dark Matter research initiatives, as 'a radio that looks for a
+			radio station, but we don't know its frequency. We turn the knob slowly while listening.
+			Ideally we will hear a tone when the frequency is right.' Continuing Satz's investigations
+			into sound as a trope for attending to the unsettled and unsettling, the project uses tuning
+			and ever-changing recalibration as a compositional approach. In an echo of the open-ended and
+			hypothetical state of current research, the project deliberately allows for patterns of
+			interference and dissonance. The focus is on the fluctuating dynamic feedback loop between
+			experimental listening, apprehending, and potential deciphering, as we reach towards the
+			unfamiliar and unknown. The installation features a contained sonic environment in the shape
+			of a ring that translates current Dark Matter simulations into sound patterns. The piece
+			generates psychoacoustic effects in the listeners, exploring sonic equivalents of interference
+			and collision through beat frequencies and other diffractive qualities which shift according
+			to the listener's location. The listener becomes a radio dial of sorts, as the ears move
+			through the soundscape microtuning with each adjustment. In between each of the 10 spherical
+			speakers there are small VU metres, trembling to echo a volatile, dynamic and ever-changing
+			frequency field, though what exactly is being measured is uncertain.
+		</p>
+		<p>
+			Nearby hangs a photo of Vera Rubin (1928-2016). Rubin was an American astronomer who
+			discovered the galaxy rotation problem, providing evidence of the existence of dark matter.
+			Here she is seen looking through a spectrograph mounted on the end of the telescope, recording
+			an image of the spectrum (colors) of a small section of a galaxy. The image is framed inside a
+			fresnel lens, generating a diffractive pattern emanating from the centre.
+		</p>
+		<p>
+			The project is the result of a collaboration between Aura Satz and
+			cosmologists/astrophysicists Prof. Malcolm Fairbairn (Kings College London), Prof. David J. E.
+			Marsh (Goettingen University) and audio engineer/music AI specialist Dr. David Ronan.
+			Commissioned by the Science Gallery London, with support in kind from Gallo Acoustics. Built
+			by Open Format. Original image of Vera Rubin, reproduced courtesy of Department of Terrestrial
+			Magnetism, Carnegie Institution for Science.
+		</p>
+	</section>
+	<Image
+		collection={[
+			{
+				src: 'SATZ VeraRubin.jpg',
+				caption: "Aura Satz, 'Vera Rubin's Irrefutable Evidence', 2019"
+			}
+		]}
+	/>
+	<section>
+		<h3>Exhibtions</h3>
+		<Title
+			date="6 June – 26 August 2019"
+			title="'Dark Matter: 95% of the Universe is Missing'"
+			subtitle="Science Gallery London, group show"
+		>
+			<p>
+				In summer 2019, Science Gallery London will explore the elusive building blocks of the
+				Universe with DARK MATTER, a free exhibition and events season combining art, physics and
+				philosophy, and drawing on the latest research from the Faculty of Natural & Mathematical
+				Sciences at King's College London. Exhibition highlights include an immersive animation
+				installation by Andy Holden which reflects on the physics of a cartoon landscape, developed
+				with Professor John Ellis from the Department of Physics at King's College London;
+				translucent spider webs which mimic the structure of dark matter in the universe by Tomas
+				Saraceno; a new installation translating dark matter simulations into sound patterns by Aura
+				Satz, in collaboration with Professor Malcolm Fairbairn from the Department of Physics at
+				King's College London; and; perpetually changing liquid crystal paintings by Agnieszka
+				Kurant which will transform according to the 'energy' of social media feeds around the
+				world. Curated by Sandra Ross.
+			</p>
+			<Address name="Science Gallery London" address1="Great Maze Pond" address2="London SE1 9GU" />
+		</Title>
+		<Link
+			url="https://london.sciencegallery.com/seasons/dark-matter"
+			label="london.sciencegallery.com"
+			inline={false}
+		/>
+		<Link
+			url="https://london.sciencegallery.com/seasons/dark-matter/exhibition/tuning-interference-dark-matter-radio"
+			label="tuning-interference-dark-matter-radio"
+		/>
+		<Blockquote title="Credits" type="inline">
+			<li><strong>Featuring Beatriz Ferreyra</strong></li>
+			<li><strong>Directed and edited by Aura Satz</strong></li>
+			<li>DOP: Sam Williams</li>
+			<li>Music: Beatriz Ferreyra</li>
+			<li>Dubbing Mix: Gernot Fuhrmann</li>
+			<li>English Subtitles: Aura Satz</li>
+			Special thanks to Jo Langton
+		</Blockquote>
+	</section>
 </ProjectLayout>

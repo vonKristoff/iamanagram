@@ -1,57 +1,370 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="accordion.jpg" caption="Automamusic, film still by Aura Satz, Cibachrome print, 2008" />
-  <section>
-    <p>
-      A short extract of 'Automamusic' the film is now available online at The Wire: Adventures in Modern Music, to coincide with the cross-platform interview in the September 2010 issue.
-    </p>
-    <p>Aura Satz's 'Automamusic' project has at its core a film about mechanical music. Intricate views of self-playing violins, accordions, drums, pianolas, and orchestrions are offset by scenes in which floating musical instruments are played by invisible hands. The film highlights the similarities between the beginnings of musical reproduction in the 19th century and spiritualist invocations of the dead through sound. 'Automamusic' breathes the ghost back into the machine, inhabiting the figurative space between sound and source, when music had not yet become abstracted into the grooves of the gramophone record. In addition to the series of hand-printed cibachrome photographs which recall spiritualist photography, the project includes drawings inspired by early patents for mechanical or hybrid musical instruments (small selection online here).</p>
+	<Image
+		src="accordion.jpg"
+		caption="Automamusic, film still by Aura Satz, Cibachrome print, 2008"
+	/>
+	<section>
+		<p>
+			A short extract of 'Automamusic' the film is now available online at The Wire: Adventures in
+			Modern Music, to coincide with the cross-platform interview in the September 2010 issue.
+		</p>
+		<p>
+			Aura Satz's 'Automamusic' project has at its core a film about mechanical music. Intricate
+			views of self-playing violins, accordions, drums, pianolas, and orchestrions are offset by
+			scenes in which floating musical instruments are played by invisible hands. The film
+			highlights the similarities between the beginnings of musical reproduction in the 19th century
+			and spiritualist invocations of the dead through sound. 'Automamusic' breathes the ghost back
+			into the machine, inhabiting the figurative space between sound and source, when music had not
+			yet become abstracted into the grooves of the gramophone record. In addition to the series of
+			hand-printed cibachrome photographs which recall spiritualist photography, the project
+			includes drawings inspired by early patents for mechanical or hybrid musical instruments
+			(small selection online here).
+		</p>
 
-      <p>The film 'Automamusic' was developed with support from Film and Video Umbrella, funded by Arts Council England and Artsadmin, with kind assistance from Film London Artist's Moving Image Network and a special thanks to the Museum of Music Automatons, Seewen, Switzerland.</p>
-  </section>
-  <Image src="banjo.jpg" caption="Automamusic, film still by Aura Satz, Cibachrome print, 2008" />
-  <!-- <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      <i>Little Doorways to Paths Not Yet Taken</i>. 2016. 8 min. Following
-      Satz's earlier films about women composers and inventors of electronic
-      music, this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
-  </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  /> -->
+		<p>
+			The film 'Automamusic' was developed with support from Film and Video Umbrella, funded by Arts
+			Council England and Artsadmin, with kind assistance from Film London Artist's Moving Image
+			Network and a special thanks to the Museum of Music Automatons, Seewen, Switzerland.
+		</p>
+	</section>
+	<Image src="banjo.jpg" caption="Automamusic, film still by Aura Satz, Cibachrome print, 2008" />
+
+	<h3>Exhibitions:</h3>
+	<Title
+		date="8 July - 16 August 2008, Preview 9th July 6-9pm"
+		title="Aura Satz, solo exhibition at Artprojx Space"
+		subtitle="Weds 16 July 6.30-8.30pm"
+	>
+		<p>
+			Andrew Renton (art critic/curator and Director of the Curatorial Programme, Goldsmiths
+			University) in conversation with Aura Satz on the withdrawal of authorship in relation to
+			sound, sound technology and sound art, with live mechanical music performance by Aura Satz.
+		</p>
+
+		Artprojx Space<br />
+		53 Beauchamp Place<br />
+		London SW3 1NY<br />
+		Tel: 020 7584 0717 or info@artprojxspace.com<br />
+		www.artprojxspace.com<br />
+	</Title>
+
+	<Title
+		date="5 August - 3 September 2011"
+		title="Automamusic photographs included in the group exhibition IN SEARCH OF ALCHEMIC TIMES"
+		subtitle=""
+	>
+		<p>
+			Artists: Aura Satz, Charlesworth, Lewandowski & Mann, Jennifer Walshe, Liliane Lijn, Nathan
+			Witt, Peter Lewis and Makiko Nagaya, Rowena Harris, Steven Ounanian, Tom Badley, Unrealised
+			Projects.
+		</p>
+		Curated by Cecilia Wee. Thursday - Saturday 12-6pm<br />
+		Wednesdays by appointment<br />
+		<br />
+		235 Brompton Road<br />
+		London SW3 2EP<br />
+		email: cecilia@ceciliawee.com<br />
+		email: info@insearchofalchemictimes.com<br />
+		tel: 07527 640 419<br />
+		www.insearchofalchemictimes.com
+	</Title>
+
+	<Title
+		date="4–7 May 2012"
+		title="Group exhibition 'The Sight of Sound', Deutsche Bank VIP Lounge, Frieze Art Fair"
+		subtitle="performance on the 5th May 2pm"
+	>
+		<p>
+			Wherever we are, what we hear is mostly noise. When we ignore it, it disturbs us. When we
+			listen to it, we find it fascinating.
+		</p>
+
+		John Cage<br />
+		Group exhibition including John Cage, Christian Marclay, Jorge Macchi, Jenny C. Jones, David Ellis
+		and Aura Satz.<br />
+		<p>
+			Selected works feature artists from the Deutsche Bank Collection who reference music in a
+			variety of ways: as a structural or notational device, a vehicle for chance and improvisation,
+			or as a social platform for communicating identity. These artists from different generations
+			share a trajectory of using musical forms as a source and framework. The theme underscores
+			Deutsche Bank’s global commitment to supporting art and music, and promoting cultural
+			advancement through the intersecting worlds of ideas and practices.
+		</p>
+		The historical influence of musical sound on visual artists is immeasurable, but its effect upon
+		form, process, and conceptual art has clearly become more prevalent in modern times. From Piet Mondrian’s
+		painting, “Broadway Boogie Woogie,” his homage to jazz, to John Cage and Nam June Paik’s experiments
+		with performance-driven work, to real-time musical interactions via satellite, video and digital
+		interfaces, the relationship between the aural and visual arts are continually shape-shifting.
+		<br />
+		Frieze Art Fair on Randall's Island, Manhattan<br />
+		www.friezenewyork.com
+	</Title>
+
+	<Title
+		date="23 January - 3 February 2013"
+		title="'Soundfigures' exhibition"
+		subtitle="Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam curated by Edwin Carels"
+	>
+		<p>
+			Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks
+			at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the
+			Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos
+			characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses
+			microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying
+			music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics
+			(2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of
+			hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube,
+			an acoustic device that visualises sound as a standing wave of small flames, with music by
+			Steven Severin (of Siouxsie and the Banshees).
+		</p>
+
+		Blaak 10 Gallery<br />
+		Witte de Withstraat 7<br />
+		3012 BL Rotterdam<br />
+		The Netherlands<br />
+		<br />
+		https://iffr.com/en/2013/films/soundfigures<br />
+		https://iffr.com/en/persons/aura-satz
+	</Title>
+
+	<Title
+		date="15 February - 11 May 2014"
+		title="'BOOSTER - Art Sound Machine'"
+		subtitle="Group exhibition curated by Nik Nowak in conjunction with Marta Herford, Herford Germany"
+	>
+		<p>
+			From the barrel organ and the ghetto blaster to the large speaker vehicles at parades or
+			demonstrations, right up to acoustic warfare - regardless of the context in which mobile sound
+			systems are used, we are directly impacted by their equally fascinating and threatening
+			effect. The exhibition "BOOSTER" inquires into the cultural significance of these
+			constructions and their use in the creative arts. Since the start of the 20th century, artists
+			have been producing breathtaking sound machines, again and again stretching the boundaries
+			between different disciplines. The special combination of sculpture, movement and sound takes
+			the visitor into a world that addresses many different senses at once: whether as fragile
+			mechanisms or monumental objects, the mobile sound sculptures generate a pulsating world of
+			(sub)cultural spheres in a choreography of gentle tones and high-volume sounds.
+		</p>
+		<p>
+			Against a background of spectacular installations and sculptures, the exhibition also traces
+			the global roots of mobile sound systems.
+		</p>
+
+		<p>
+			Artists: AUDINT / Toby Heys und Steve Goodman, Massimo Bartolini, Lothar Baumgarten, Benjamin
+			Binder, Katie Callan, Janet Cardiff & George Bures Miller, Tamara Grcic, Mark Leckey, Olaf
+			Mooij, Nomadic Sound System / Ben Newland, Nik Nowak, Tintin Patrone, Aura Satz, Wolfgang
+			Tillmans, Jean Tinguely, and more.
+		</p>
+
+		Marta Herford<br />
+		Goebenstr. 2-10<br />
+		32052 Herford<br />
+		Tel +49 5221 9944300<br />
+		Germany<br />
+		www.marta-herford.de
+	</Title>
+
+	<Title
+		date="13 April - 27 August 2017"
+		title="'As Above, So below: Portals, Visions, Spirits & Mystics'"
+		subtitle="Group exhibition at IMMA (Irish Museum of Modern Art), Dublin"
+	>
+		<p>
+			Including Hilma af Klint | Kenneth Anger | David Beattie | Nora Berman | Annie Besant |
+			Agnieszka Brzezanska | Alan Butler | James Lee Byars | Cameron | Marcus Coates | Ira Cohen |
+			Ithell Colquhoun | Matt Copson | Stephan Doitschinoff | Hayden Dunham | Stephen Dunne | Susan
+			Hiller | Koo Jeong A. | Alejandro Jodorowsky | Wassily Kandinsky | Rachid Koraichi | Emma Kunz
+			| Frantisek Kupka | Paul Laffoley | Liliane Lijn | Linder | Josiah McElheny | Steve McQueen |
+			Henri Michaux | Pascale Montandon-Jodorowsky | Padraic E. Moore (curatorial advisor) | Bruce
+			Nauman | Austin Osman Spare | Sigmar Polke | The Propeller Group | Patrick Pye | John Russell
+			| Eoghan Ryan | Aura Satz | Suzanne Treister | Grace Weir, amongst others. Curated by Sam
+			Thorne and Rachael Thomas.
+		</p>
+
+		<p>
+			A fully-illustrated book is published to accompany the exhibition which features contributions
+			from Erik Davis, Jennifer Higgie, Alejandro Jodorowsky and Pascale Montandon-Jodorowsky, Dr
+			Tina Kinsella, Linder, Hans Ulrich Obrist, Rachael Thomas, Sam Thorne and Maurice Tuchman,
+			amongst others. Price €20 available to buy from the IMMA shop.
+		</p>
+
+		Irish Museum of Modern Art<br />
+		Royal Hospital Kilmainham<br />
+		Military Rd, Kilmainham<br />
+		Dublin 8, Ireland<br />
+		http://www.imma.ie/en/page_237202.htm<br />
+	</Title>
+	<section>
+		<h3>Screenings</h3>
+		<h5>23 January 2008</h5>
+		<h4>Screened with a talk by Aura Satz at the Photographer's Gallery</h4>
+		The Photographer's gallery<br />
+		6-8 Newport Street<br />
+		London WC2H 7HY<br />
+		Free, booking recommended<br />
+		www.photonet.org.uk
+
+		<h5>6 June 2008</h5>
+		<h4>
+			Automamusic was screened as part of Late at Tate Britain: Rehang Artprojx Presents... STILL
+			FILM
+		</h4>
+		<p>
+			A selection of artist's films with a sculptural sensibility. The films share a fixed camera
+			gaze, an inherent quality and lingering effect despite their simplicity. Including films by
+			Matt Calderwood, Ryan Gander, Michael Nyman, Aura Satz, Richard Wilson. Compilation selected
+			by David Gryn, Artprojx.
+		</p>
+
+		Tate Britain Auditorium<br />
+		Millbank<br />
+		London (England) SW1P 4RG<br />
+		tel +44 (0)20 7887 8000<br />
+		fax +44 (0)20 7887 8008<br />
+		Free, tickets available on the night, no bookings taken<br />
+		www.tate.org.uk/britain/eventseducation/latetatebritain/14333.htm
+
+		<h5>16-18 January 2009</h5>
+		<h4>
+			Screened as part of Museumsnacht, Museum for Music Automatons, Seewen, Switzerland, and Museum
+			of Music, Basel
+		</h4>
+		<p>
+			Also as part of Museumsnacht the Automatic Ensemble will premiere at the Church of St.
+			Leonhard (Basel) and the Museum for Music Automatons (Seewen)
+		</p>
+
+		Museum for Musikautomaten,<br />
+		Sammlung Dr.h c. H. Weiss-Stauffacher<br />
+		Bollhobel 1<br />
+		4206 Seewen, Switzerland<br />
+		Tel. +41 61 915 98 80<br />
+		Fax +41 61 915 98 90<br />
+		E-Mail: musikautomaten@bak.admin.ch<br />
+		www.landesmuseen.ch<br />
+		www.museumsnacht.ch
+
+		<h5>4 & 5 March 2009</h5>
+		<h4>Screened as part of Artprojx Presents... STILL FILM at Site Gallery, Sheffield</h4>
+		<p>
+			A selection of artist's films with a sculptural sensibility. The films share a fixed camera
+			gaze, an inherent quality and lingering effect despite their simplicity. Including films by
+			Matt Calderwood, Louise Camrass, Andrew Cross, Ryan Gander, William Hunt, Michael Nyman, Aura
+			Satz, Richard Wilson.
+		</p>
+		Compilation selected by David Gryn, Artprojx. Site Gallery<br />
+		1 Brown Street<br />
+		Sheffield S1 2BS<br />
+		Tel:+44 (0)114 281 2077<br />
+		Fax:+44 (0)114 281 2078<br />
+		Email: info@sitegallery.org<br />
+		www.sitegallery.org<br />
+		www.artprojx.com
+
+		<h5>9 May 2009 16.00-23.00pm</h5>
+		<h4>Screened as part of SonicRecycler5</h4>
+		<p>Reduce, Re-use, Recycle</p>
+		<p>
+			A unique evening of provocative, entertaining and experimental music, presented by Sprawl,
+			Brentford Recycling Action Group and Watermans. SonicRecycler5, the fifth in an annual series,
+			is an event showcasing the many different strands of eclectic ideas in music, and promoting
+			recycling concepts. With performers, DJ's, films, stalls and interactive presentations, it's a
+			packed evening of radical sounds in a lovely Thameside venue, overlooking Kew Gardens - Think:
+			Reduce, Re-use, Recycle.
+		</p>
+		Films by Aleks Kolkowski & Aura Satz will be shown from 3pm to 4pm at the Musical Museum Watermans
+		Artcentre<br />
+		40 High Street, Brentford<br />
+		London, TW8 0DS<br />
+		www.sprawl.org.uk<br />
+		www.musicalmuseum.co.uk
+
+		<h5>22 - 31 May 2009</h5>
+		<h4>
+			Screened as part of Artprojx presents OPERA & STILL-FILM, LOOP festival, Barcelona, Spain
+		</h4>
+		<p>
+			OPERA is a selection of films by contemporary artists who have utilised, investigated and
+			celebrated opera and contemporary classical music. Including films by Alice Anderson, Martha
+			Colburn, Haris Epaminonda, Karen Knorr, Rut Blees Luxemburg, Tania Mouraud, Michelle Naismith,
+			Mariele Neudecker, Jayne Parker, Sophy Rickett, Susanne Winterling.
+		</p>
+		<p>
+			STILL FILM is a selection of artist's films with a sculptural sensibility. Including films by
+			Matt Calderwood, Louise Camrass, Andrew Cross, Ryan Gander, William Hunt, Michael Nyman, Aura
+			Satz, Richard Wilson.
+		</p>
+		Compilations selected by David Gryn, Artprojx.
+		<br />
+		Espai Liceu<br />
+		Rambla, 51-59<br />
+		Barcelona, Spain<br />
+		Tel: +93 485 9900<br />
+		www.liceubarcelona.com<br />
+		www.loop-barcelona.com<br />
+		www.artprojx.com
+
+		<h5>Friday 22 October 2010</h5>
+		<h4>
+			Screened as part of Mikhail Karikis' 'Love Songs for Broken Machines', Kings Place, London
+		</h4>
+		<p>
+			This event is a spectacle of music and video bringing together the hitch and glitch of failed
+			technologies with the humour and romance of love songs. Contemporary vocal trio juice present
+			the English premiere of specially commissioned songs by leading composers and pop artists
+			including Gavin Bryars, Micachu, Dai Fujikura, Phillip Neil Martin, Anna Meredith, Damien
+			Harron, E.laine, Roxanna Panufnik, Errollyn Wallen and Jim Moray. They are joined by Ensemble
+			Scratch the Surface who feature, amongst others, an audiovisual performance for modified piano
+			by pinaist extrodinaire Leon Michener, a (re)construction of hybrid pianos by 'better known
+			as' aka Lemon Drizzle the alter egos of composer Claudia Moliter and pianist Sarah Nicolls and
+			films by visual artist Aura Satz and collective Flat-e.
+		</p>
+		<p>
+			This event is curated by Mikhail Karikis with Conall Gleeson and juice. Love Songs is a new
+			commission funded by Arts Council England.
+		</p>
+
+		Kings Place<br />
+		90 York Way<br />
+		London N1 9AG<br />
+		Tel: 020 7520 1490<br />
+		www.kingsplace.co.uk
+
+		<h5>31 Jan - 5 Feb 2012</h5>
+		<h4>
+			Automamusic screened with Q&A session as part of Transmediale 2012, In/Compatible video
+			programme, curated by Marcel Schwierin, Haus der Kulturen der Welt (HKW), Berlin
+		</h4>
+		Haus der Kulturen der Welt<br />
+		John-Foster-Dulles-Allee 10<br />
+		10557 Berlin<br />
+		Germany<br />
+		Tel 030 397870<br />
+		www.hkw.de/de/index.php<br />
+		www.transmediale.de/content/automamusic-0<br />
+		www.transmediale.de
+
+		<h5>18 March 2014</h5>
+		<h4>
+			Automamusic screened at RISK Cinema, alongside Jerome Hiler and John Smith, The Harn Museum,
+			Florida
+		</h4>
+		Samuel P. Harn Museum of Art<br />
+		3259 Hull Road<br />
+		Gainesville<br />
+		Florida 32611-2700<br />
+		http://www.harn.ufl.edu/
+	</section>
 </ProjectLayout>

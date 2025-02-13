@@ -1,73 +1,282 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="Aura-Satz-In&Out-of-synch-at-tate.jpg" caption="'In and Out of Synch' performed at The Tanks, Tate Modern. Photo: Gabrielle Fonseca Johnson/Tate Photography, 2012, copyright Tate Photography" />
-  <section>
-    <p>In and Out of Synch is a filmic performance which centres around the optical printing of soundtracks, committing to 16mm film a technology on the verge of extinction, entombing and encrypting its own language onto itself. Shot at the post-production facilities of Pinewood studios, London, the close-up sequences feature abstract patterns of sound encoded as light, printed onto the soundtrack area of the filmstrip. The film features the quivering light of a 16mm mono and a 35mm stereo optical sound camera, providing a seismic glimpse at a sound-wave in formation, on occasions flashing like a stroboscopic Rorschach inkblot.</p>
-    
-    <p>Both mesmerizing and assaulting the senses, the visually hypnotic patterns are disrupted by the voiceover, scripted in dialogue with the artist and filmmaker Lis Rhodes, whose expanded cinema installation using optical sound is on display in The Tanks. The two voices alternate and coincide, interrogating the sound-image synchronicity and correlation with poetic expressions. The film is accompanied by a live musical performance which animates a Ruben’s tube, a device which similarly modulates light in response to sound, creating spectacular waves of flames. In parallel to the film’s exploration of sound encoded as light, the event features sound encoded as fire; a more primal, dramatic, and almost pre-cinematic counterpart of the same principle of sound as light.</p>
-    
-    <p>For the inaugural version at the Tanks, the live performance features the vocals of interdisciplinary artist Mikhail Karikis and Anton Lukoszevieze on cello. This performance is linked to the symposium Playing in the Shadows, exploring the subterranean darkness of The Tanks and radical experiments in projection and performance.</p>
-    <p>Filmed, directed and edited by Aura Satz
-      
-      Scripted in dialogue with Lis Rhodes
-      
-      Voiceover Lis Rhodes and Aura Satz
-      
-      DP Bevis Bowden
-      
-      Dubbing mixer Gernot Fuhrmann
-      
-      Funded by Arts Council England, Tate Modern, Arnolfini and private donations
-      
-      Support in kind from Pinewood Studios
-      
-      Special thanks to Martin Sawyer, Jason Stevens, Simon Hill at Pinewood; Len Thornton and Tim Sidell, and Jackie and Peter Stewart.
-      
-    </p>  
-  </section>
-  <Image src="synch1.jpg" caption="Aura Satz, In and Out of Synch" />
-  <Title
-    date="4 Feb - 27 March 2022"
-    title="Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz"
-    subtitle="Showing as part of 'She Recalibrates'"
-  >
-    <p>
-      Aura Satz's film and sound works are made in conversation and use dialogue
-      as both method and subject matter.
-    </p>
-    <p>
-      *Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's
-      earlier films about women composers and inventors of electronic music,
-      this short film offers an intimate look into the studio of American
-      composer Laurie Spiegel (b. 1945).
-    </p>
-    <Link
-      url="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
-      label="artium.eus"
-    />
-  </Title>
-  <Title
-    date="22 Jan - 2 Feb 2020"
-    title="World Premiere, screening as part of Bright Future Shorts"
-    subtitle="IFFR (International Film Festival Rotterdam)"
-  />
-  <Address
-    name="Museum für Musikautomaten"
-    contact="Sammlung Dr.h c. H. Weiss-Stauffacher"
-    address1="Bollhübel 1"
-    address2="4206 Seewen, Switzerland"
-    tel="Tel. +41 61 915 98 80"
-    email="musikautomaten@bak.admin.ch"
-  />
+	<Image
+		src="Aura-Satz-In&Out-of-synch-at-tate.jpg"
+		caption="'In and Out of Synch' performed at The Tanks, Tate Modern. Photo: Gabrielle Fonseca Johnson/Tate Photography, 2012, copyright Tate Photography"
+	/>
+	<section>
+		<p>
+			In and Out of Synch is a filmic performance which centres around the optical printing of
+			soundtracks, committing to 16mm film a technology on the verge of extinction, entombing and
+			encrypting its own language onto itself. Shot at the post-production facilities of Pinewood
+			studios, London, the close-up sequences feature abstract patterns of sound encoded as light,
+			printed onto the soundtrack area of the filmstrip. The film features the quivering light of a
+			16mm mono and a 35mm stereo optical sound camera, providing a seismic glimpse at a sound-wave
+			in formation, on occasions flashing like a stroboscopic Rorschach inkblot.
+		</p>
+
+		<p>
+			Both mesmerizing and assaulting the senses, the visually hypnotic patterns are disrupted by
+			the voiceover, scripted in dialogue with the artist and filmmaker Lis Rhodes, whose expanded
+			cinema installation using optical sound is on display in The Tanks. The two voices alternate
+			and coincide, interrogating the sound-image synchronicity and correlation with poetic
+			expressions. The film is accompanied by a live musical performance which animates a Ruben’s
+			tube, a device which similarly modulates light in response to sound, creating spectacular
+			waves of flames. In parallel to the film’s exploration of sound encoded as light, the event
+			features sound encoded as fire; a more primal, dramatic, and almost pre-cinematic counterpart
+			of the same principle of sound as light.
+		</p>
+
+		<p>
+			For the inaugural version at the Tanks, the live performance features the vocals of
+			interdisciplinary artist Mikhail Karikis and Anton Lukoszevieze on cello. This performance is
+			linked to the symposium Playing in the Shadows, exploring the subterranean darkness of The
+			Tanks and radical experiments in projection and performance.
+		</p>
+		<p>
+			Filmed, directed and edited by Aura Satz Scripted in dialogue with Lis Rhodes Voiceover Lis
+			Rhodes and Aura Satz DP Bevis Bowden Dubbing mixer Gernot Fuhrmann Funded by Arts Council
+			England, Tate Modern, Arnolfini and private donations Support in kind from Pinewood Studios
+			Special thanks to Martin Sawyer, Jason Stevens, Simon Hill at Pinewood; Len Thornton and Tim
+			Sidell, and Jackie and Peter Stewart.
+		</p>
+	</section>
+	<Image src="synch1.jpg" caption="Aura Satz, In and Out of Synch" />
+	<section>
+		<h3>Performances and Screenings:</h3>
+		<h5>27 October 2012</h5>
+		<h4>Premiere at Tate OIL TANKS, as part of ‘Playing in the Shadows: Film Action’</h4>
+		<p>with live music by Anton Lukoszevieze and Mikhail Karikis</p>
+
+		http://www.tate.org.uk/whats-on/tate-modern-tanks-tate-modern/film-music-and-live-performance/aura-satz-and-out-synch
+
+		<h5>1 November 2012</h5>
+		<h4>Arnolfini, Bristol</h4>
+		<p>with live music by Anton Lukoszevieze</p>
+
+		http://www.arnolfini.org.uk/whatson/kode9-mfo-ms-haptic-aura-satz-ben-russell This evening
+		features the UK premier of Kode9, MFO & Ms. Haptic's Her Ghost - a powerful and provocative live
+		performance, reworking the late Chris Marker's La Jetee from the female character's perspective,
+		redressing its historical gender imbalance as they draw new narratives, a mounumental sound
+		composition from Kode9, and MFO's carefully reconfigured images, out of Marker's originals. Also
+		on the evening, a new filmic performance by Aura Satz encodes sound as light via synaesthetic
+		experiments with the image and optical tracks of 16mm film, with live music and a voice over
+		scripted in collaboration with Lis Rhodes, whose iconic work of expanded cinema, Light Music,
+		was a response to the under-representation of women in the musical avant-garde. Ben Russell's
+		Trypps film series is an ongoing study in trance, travel and psychedelic ethnographies.
+
+		<p>
+			Aura Satz was interviewed by Alastair Cameron on the occasion of her performance of 'In and
+			Out of Synch' at the four-day event Visionary Kingdom at Arnolfini, November 2012.
+		</p>
+		http://www.arnolfini.org.uk/blog/in-and-out-of-synch-aura-satz-in-dialogue
+
+		<h5>8 June 2013</h5>
+		<h4>Kunstnernes Hus, Oslo, Norway</h4>
+		<p>Machine Dreams, nyMusikk's annual festival of adventurous music</p>
+		with live music by Anton Lukoszevieze and Maja Ratkje Smooth Automators<br />
+		STEFAN GOLDMANN + PINQUINS<br />
+		AURA SATZ + MAJA S.K. RATKJE<br />
+		+ ANTON LUKOSZEVIEZE<br />
+		PEOPLE LIKE US
+
+		<p>
+			Machine Dreams is a festival exploring the machine in all its glory. Not only as a paean to
+			obsolete mechanisms and the soundscape that disappears with them, but as a celebration of the
+			machine as a model for thinking. Only Connect brings you celebrations of the vanishing white
+			noise between FM stations where voices are heard fading in and out of range; an examination of
+			the vocoder, a human-voice scrambling machine born within the US military which went on to
+			define the sound of electro; explorations of time machines; mechanical pianos; machines
+			transforming images into sound and vice versa; customised sonic tools as well as obsolete
+			technology which seemed to offer the possibility of communication with another world
+			altogether. The 'progress' which machines are said to bring has always had its supporters and
+			its critics. Through our diverse programme, we hope to examine the machine through multiple
+			perspectives: both as a utopian construction built to improve lives, and as a dehumanizing
+			force undermining something essential about society. Plus, we will look at ways in which
+			people and machines are learning to live together, creatively and inventively. And at Only
+			Connect, all of this, of course, is approached via the medium of music and sound, which,
+			perhaps more than any other art form, has been profoundly affected by the enormous
+			transformations of the machine age.
+		</p>
+
+		http://www.onlyconnect.no/<br />
+		http://nymusikk.no/en/hva-skjer/only-connect-2013-machine-dreams
+
+		<h5>22 September 2014</h5>
+		<h4>
+			Screened as part of ‘Transform: Lis Rhodes and Aura Satz’, Screenings and conversation at Tate
+			Britain, London
+		</h4>
+		<p>
+			Transform launches with an intimate dialogue between two innovative artists. Through existing
+			films and never-before-seen works in progress, Aura Satz and Lis Rhodes will discuss how their
+			respective practices explore the materiality of film alongside themes of notation,
+			experimentation and agency. Curated by Zoe Whitley.
+		</p>
+
+		<p>
+			Download the 'Transform: Lis Rhodes and Aura Satz' programme notes here
+			http://www.tate.org.uk/whats-on/tate-britain/film/transform-lis-rhodes-and-aura-satz
+		</p>
+
+		Tate Britain<br />
+		Millbank<br />
+		London SW1P 4RG<br />
+		http://www.tate.org.uk/whats-on/tate-britain/film/transform-lis-rhodes-and-aura-satz
+
+		<h5>3-7 October 2013</h5>
+		<h4>
+			Screened at the 51st New York Film Festival, 'Views from the Avant-garde', curated by Mark
+			McElhatten
+		</h4>
+
+		<p>
+			Our popular yearly touchstone for experimental film returns with 45 programs in glorious
+			Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's
+			slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura
+			Satz, Lois Patino, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes
+			to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema
+			that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.
+		</p>
+		The Film Society of Lincoln Center<br />
+		70 Lincoln Center Plaza<br />
+		New York, NY 10023-6595<br />
+		http://www.filmlinc.com/films/on-sale/program-i-aura-satz<br />
+		http://www.filmlinc.com/nyff2013<br />
+		http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant
+
+		<h5>13 May 2015</h5>
+		<h4>'Soundfigures: Films by Aura Satz'</h4>
+		<p>
+			A selection of films by Aura Satz, programmed by Michele Smith, DIM Cinema, Vancouver
+			Cinametheque
+		</p>
+
+		<p>
+			(Near) extinct technologies make sound visible in this program of shorts by London-based
+			artist Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni
+			Plate, a device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley
+			dancers, form intricate patterns in response to changing sound frequencies, their shapes
+			recalling the utopian quest for a 'pure,' onomatopoeic alphabet. Wax cylinder recordings
+			combine with modern scientific instruments to animate a text by Rainer Maria Rilke on the
+			possibility of hearing the dead by playing their skulls with a gramophone needle. A Ruben's
+			Tube translates a histrionic voice-over into a standing wave of small flames, provoking
+			unexpected associations, from the biblical burning bush to various acts of ventriloquism in
+			pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn compositions by
+			its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of
+			a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the
+			Technicolor era. Chromatic distortions in early colour-film tests are revealed through the
+			eyes of the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and
+			experimental filmmaker Lis Rhodes encode their voices as abstract light patterns on 16mm mono
+			and 35mm stereo filmstrips in a collaborative exploration of sound-image synchronicity.
+		</p>
+
+		DIM Cinema<br />
+		The Cinematheque<br />
+		1131 Howe St.<br />
+		Vancouver BC<br />
+		Canada<br />
+		http://www.dimcinema.ca/soundfigures-films-aura-satz
+
+		<h5>18 Feb 2016</h5>
+		<h4>
+			'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London
+		</h4>
+
+		<p>
+			Aura Satz presents the UK premiere of 'Between the Bullet and the Hole', her latest short film
+			which examines the role of women in ballistic research, early computing and pattern perception
+			in warfare. Presented alongside her works focusing on memory, notation, encryption and gender,
+			the event also features an in conversation with special guests Morgan Quaintance and David
+			Alan Grier.
+		</p>
+
+		Whitechapel Gallery<br />
+		77-82 Whitechapel High St<br />
+		London E1 7QX<br />
+		http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/
+
+		<h5>24 March 2016</h5>
+		<h4>
+			'In and Out of Synch', an evening of films and sound with Aura Satz, presented by Liquid
+			Architecture and Gertrude Contemporary
+		</h4>
+
+		<p>
+			Satz presents works that explore the relationship between esoteric technologies (Chladni
+			plate, Rubens' tube, theremin, mechanical music machines, phonographs, dial tones,
+			drawn/optical sound) and the human body (heightened perception, sensory disorientation,
+			psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed
+			by Q&A with Joel Stern.
+		</p>
+
+		Gertrude Contemporary<br />
+		200 Gertrude St, Fitzroy<br />
+		Melbourne VIC 3065<br />
+		Australia<br />
+		https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br />
+		https://liquidarchitecture.org.au/events/aura-satz-talk<br />
+		http://www.gertrude.org.au/
+
+		<h5>3 October 2016</h5>
+		<h4>
+			Screening as part of Flaherty NYC, curated by Genevieve Yue and Chris Stults, Anthology Film
+			Archives, New York
+		</h4>
+
+		<p>
+			FLAHERTY NYC: WILD SOUNDS, PROGRAM 1: VOICES FROM BEYOND (Carolyn Lazard, Sara Magenheimer,
+			Courtney Stephens, and Aura Satz in person).
+		</p>
+		<p>
+			Technology often 'speaks' in the voices of women, from virtual assistants like Siri and Alexa
+			to the affectless tones of automated phone services. The various technological devices in this
+			program, in turn, reshape what a woman's voice sounds like, from the Ruben's tube that
+			visualizes sound in Aura Satz's IN AND OUT OF SYNCH, to the hypnotically looped 16mm optical
+			track in Gunvor Nelson's MY NAME IS OONA, and the text-to-speech computer applications in Sara
+			Magenheimer's SEVEN SIGNS THAT MEAN SILENCE. In Martine Syms's A PILOT FOR A SHOW ABOUT
+			NOWHERE, Courtney Stephens's IDA WESTERN EXILE, and Carolyn Lazard's GET WELL SOON, the voices
+			of technology and mass media alternately torment, inspire, and indelibly shape the lives of
+			the filmmakers.
+		</p>
+
+		http://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=10&year=2016#showing-46368
+		http://flahertyseminar.org/flaherty-nyc/flaherty-fall-2016/
+
+		<h5>7th March 2017</h5>
+		<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
+
+		<p>Followed by Q&A with Chris Paul Daniels</p>
+
+		HOME Manchester<br />
+		2 Tony Wilson Place<br />
+		Manchester M15 4FN<br />
+		https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br />
+		Part of: Artist Talks https://homemcr.org/event/artist-talks/
+
+		<h3>Exhibitions:</h3>
+		<h5>5 Sep - 20 Oct 2013</h5>
+		<h4>
+			'In and Out of Synch' exhibited as a looped 16mm film installation in 'Nicola Ellis & Aura
+			Satz'
+		</h4>
+		Castlefield Gallery, Manchester<br />
+		2 Hewitt Street<br />
+		Manchester, M15 4GB<br />
+		T: 0161 832 8034<br />
+		info@castlefieldgallery.co.uk<br />
+		Gallery opening times during exhibitions: Wed-Sun, 1-6pm<br />
+		http://www.castlefieldgallery.co.uk/event/nicola-ellis-aura-satz/
+	</section>
 </ProjectLayout>
