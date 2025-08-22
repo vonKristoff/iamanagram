@@ -99,6 +99,16 @@ We have some basic styles set in the following files:
 - `src/styles/global.css`
 - `src/styles/fonts.css` - you can change sizes and core colours here
 
+_Where to edit the navigation menu_
+Find the `MainHeading` component `src/components/MainHeading.astro` and add or remove accordingly:
+
+```html
+<div class="alt-pages">
+	<a title="link 1 title" href="https://where.com" target="_blank"> Link 1</a>
+	<a title="link 2 title" href="https://where.com" target="_blank">Link 2</a>
+</div>
+```
+
 ## 🧞 Developer Commands
 
 All commands are run from the root of the project, from a terminal:
