@@ -1,9 +1,14 @@
 import { defineConfig } from 'astro/config';
-
-// // https://astro.build/config
 // import mdx from "@astrojs/mdx";
 
-// // https://astro.build/config
-// export default defineConfig({
-//   integrations: [mdx()]
-// });
+export default defineConfig({
+	//   integrations: [mdx()],
+	vite: {
+		// plugins: [tailwindcss()],
+		resolve: {
+			alias: {
+				$lib: '/src'
+			}
+		}
+	}
+});

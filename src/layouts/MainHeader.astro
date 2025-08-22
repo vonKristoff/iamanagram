@@ -1,285 +1,113 @@
 ---
+import '$lib/styles/global.css';
+import ProjectNavFilters from '../components/ProjectNavFilters.astro';
 const { title, bg = null, omit = null } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body class={bg ? "alt" : ""}>
-    <header>
-      <nav>
-        <ul>
-          {
-            omit !== "films" && (
-              <li>
-                <a href="/films">Films</a>
-              </li>
-            )
-          }
-          {
-            omit !== "soundworks" && (
-              <li>
-                <a href="/soundworks">Soundworks</a>
-              </li>
-            )
-          }
-          {
-            omit !== "performances" && (
-              <li>
-                <a href="/performances">Performances</a>
-              </li>
-            )
-          }
-          {
-            omit !== "other" && (
-              <li>
-                <a href="/other">Other</a>
-              </li>
-            )
-          }
-          <!-- <li class="email"><strong>aurasatz@onetel.com</strong></li> -->
-        </ul>
-      </nav>
-      <a class="nav-flex no-underline" href="/"
-        ><div id="title">AURA SATZ</div></a
-      >
-    </header>
-    <main>
-      <slot />
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class={bg ? 'alt' : ''}>
+		<header>
+			<nav>
+				<ProjectNavFilters {omit} />
+				<div class="alt-pages">
+					<a title="external link title" class="" href="/" target="_blank">Film Link</a>
+					<a title="external link title" class="" href="/" target="_blank">Film Link 2</a>
+				</div>
+			</nav>
+			<a title="home" class="nav-flex no-underline" href="/"><span id="title">AURA SATZ</span></a>
+		</header>
+		<main>
+			<slot />
+		</main>
+	</body>
 </html>
 <style>
-  html {
-    font-size: 18px;
-    font-family: system-ui, sans-serif;
-    background-color: var(--colour-base);
-    /* #efefef; */
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    /* margin: 0 var(--spacing-level-3); */
-    /* max-width: var(--width-page); */
-    overflow-x: hidden;
-  }
-  body.alt {
-    background-color: var(--colour-soft-violet);
-  }
-  header {
-    width: 100%;
-    /* max-width: 100vw; */
-    /* overflow-x: hidden; */
-    display: flex;
-    padding: var(--spacing-level-4) var(--spacing-level-3);
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav {
-    flex: 0 0.5 auto;
-    @media (max-width: 768px) {
-      width: 50%;
-    }
-  }
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 768px) {      
-      gap: 1em;
-      li {
-        margin: 0;
-      }
-    }
-  }
-  nav li {
-    list-style: none;
-    margin-left: 2em;
-  }
-  nav li:first-child {
-    margin-left: 0;
-  }
-  nav li strong {
-    color: var(--colour-violet);
-  }
-  @media (max-width: var(--width-mobile)) {
-    .email {
-      display: none;
-    }
-  }
-  nav ul a {
-    text-decoration: none;
-    color: var(--colour-soft);
-    transition: color 0.3s;
-    &:hover {
-      color: tomato;
-    }
-  }
-  main {
-    /* width: 100%; */
-    margin: 0 auto;
-    max-width: calc(var(--width-article) + var(--spacing-level-2));
-    margin-bottom: var(--spacing-level-1);
-  }
-  .nav-flex {
-    flex: 0 0.5 auto;
-  }
-  #title {
-    text-align: right;
-    position: fixed;
-    right: 1.5em;
-    top: 1em;
-    font-size: 1.5em;
-    z-index: 1;
-  }
-  a.no-underline {
-    text-decoration: none;
-  }
-  #title:before {
-    position: absolute;
-    content: "";
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      rgb(255 255 255 / 27%) 10%,
-      rgb(248 68 255 / 57%) 30%,
-      rgb(255 0 0 / 84%) 70%,
-      rgb(239 239 239 / 52%) 60%
-    );
-    /* background-color: var(--colour-crimson); */
-    width: 20em;
-    height: 20em;
-    filter: blur(2em);
-    inset: -9em 0 0 -1em;
-    z-index: 1;
-  }
-</style>
-
-<style is:global>
-  .project-title .hmm {
-    color: red;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  :root {
-    --colour-epic: #e5e8dd;
-    --colour-crimson: crimson;
-    --colour-red-burn: #bd6565;
-    --colour-violet: darkslateblue;
-    --colour-dark: #1a2e3b;
-    --colour-dark2: #1a3b24;
-    --colour-soft: #666;
-    --colour-slate: slategray;
-    --colour-soft-violet: #eee6f3;
-    --colour-soft-white: #ccc;
-    --colour-soft-green: rgb(255 253 241);
-    --colour-hard-green: #081b19;
-    --colour-base: var(--colour-soft-green);
-    --width-section: 70ch;
-    --width-article: 1024px;
-    --width-page: 1280px;
-    --width-mobile: 520px;
-    --spacing-level-1: 6em;
-    --spacing-level-2: 3em;
-    --spacing-level-3: 2em;
-    --spacing-level-4: 1.5em;
-    --size-smaller: 0.85em;
-  }
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  section:first-child {
-    margin-top: var(--spacing-level-2);
-  }
-  section {
-    max-width: var(--width-section);
-    margin: auto;
-    line-height: var(--spacing-level-4);
-    color: var(--colour-dark2);
-  }
-  hgroup {
-    display: flex;
-    justify-content: space-between;
-  }
-  h5 {
-    color: var(--colour-violet);
-  }
-  h4 {
-    color: var(--colour-crimson);
-  }
-  h3 {
-    color: var(--colour-red-burn);
-    font-size: x-large;
-  }
-  p {
-    color: var(--colour-dark2);
-  }
-  .side-content h3:first-child {
-    margin-top: 0;
-  }
-  .side-content h2:first-child {
-    margin-top: 0;
-  }
-  .side-content h4:first-child {
-    margin-top: 0;
-  }
-  .thumbnail-container {
-    overflow: hidden;
-  }
-
-  .thumbnail-container img {
-    transition: all 0.4s ease-out;
-    scale: 1.15;
-  }
-  .thumbnail-container:hover img {
-    scale: 1;
-  }
-
-  .thumbnail-container:before {
-    z-index: 1;
-    background: radial-gradient(
-      circle,
-      rgba(232, 221, 229, 0) 50%,
-      var(--colour-base) 70%
-    );
-  }
-  .thumbnail-container:hover::before {
-    /* animation: focuspull 2s ease; */
-    /* background-position: 50% 50%; */
-    /* background: radial-gradient(
-      circle,
-      rgba(232, 221, 229, 0) 40%,
-      var(--colour-base) 70%
-    ); */
-  }
-  @keyframes focuspull {
-    0% {
-      /* background-size: 100% 100%;
-      background-position: -50% 50%; */
-      background: radial-gradient(
-        circle,
-        rgba(232, 221, 229, 0) 40%,
-        var(--colour-base) 70%
-      );
-    }
-    100% {
-      background: radial-gradient(
-        circle,
-        rgba(232, 221, 229, 0) 10%,
-        var(--colour-base) 70%
-      );
-      /* background-size: 110% 110%;
-      background-position: 50% 50%; */
-    }
-  }
+	html {
+		font-size: 18px;
+		font-family: system-ui, sans-serif;
+		background-color: var(--bg-primary);
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body.alt {
+		background-color: var(--colour-soft-violet);
+	}
+	header {
+		width: 100%;
+		display: flex;
+		padding: var(--spacing-level-4) var(--spacing-level-3);
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav {
+		display: flex;
+		gap: 4em;
+		flex: 0 0.5 auto;
+		@media (max-width: 768px) {
+			gap: 2em;
+			width: 50%;
+		}
+		& > a {
+			text-decoration: none;
+		}
+		& > a:hover {
+			text-decoration: underline;
+		}
+	}
+	nav a {
+		text-decoration: none;
+		color: var(--colour-soft);
+		transition: color 0.3s;
+		&:hover {
+			color: var(--colour-crimson);
+		}
+	}
+	.alt-pages {
+		display: flex;
+		flex-wrap: wrap;
+		display: flex;
+		gap: 2em;
+		@media (min-width: 768px) {
+			gap: 1em;
+			flex-direction: row;
+		}
+	}
+	main {
+		margin: 0 auto;
+		max-width: calc(var(--width-article) + var(--spacing-level-2));
+		margin-bottom: var(--spacing-level-1);
+	}
+	.nav-flex {
+		flex: 0 0.5 auto;
+	}
+	#title {
+		text-align: right;
+		position: fixed;
+		right: 0;
+		top: 0;
+		font-size: 1.5em;
+		z-index: 1;
+		padding: calc(1.5em / 2) 1.5em;
+		color: var(--aura-black);
+		backdrop-filter: blur(1em);
+		border-radius: 0.25em;
+		transition: filter 0.3s;
+		&:hover {
+			filter: blur(0.25em);
+			color: var(--colour-crimson);
+		}
+	}
 </style>

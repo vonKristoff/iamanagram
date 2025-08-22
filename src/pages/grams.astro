@@ -1,7 +1,7 @@
 ---
-import { getCollection } from "astro:content";
-import MainHeader from "../layouts/MainHeader.astro";
-const projectList = await getCollection("projects");
+import { getCollection } from 'astro:content';
+import MainHeader from '../layouts/MainHeader.astro';
+const projectList = await getCollection('projects');
 ---
 
 <MainHeader title="AURA SATZ">
@@ -48,7 +48,7 @@ const projectList = await getCollection("projects");
 	}
 </style>
 <style is:global>
-	span.hmm {
+	span.active-text {
 		background-color: red;
 	}
 </style>

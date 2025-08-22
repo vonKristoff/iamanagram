@@ -1,38 +1,35 @@
 ---
 export interface Props {
-  title?: string
-  type?: "inherit" | "thanks" | "credit" | "address"
+	title?: string;
+	type?: 'inherit' | 'thanks' | 'credit' | 'address';
 }
-const { title = "", type = "inherit" } = Astro.props;
+const { title = '', type = 'inherit' } = Astro.props;
 ---
 
 <div class={`compact ${type}`}>
-  { !!title.length && (
-  <h4>{title}</h4>
-  )}
-  <slot />
+	{!!title.length && <h4>{title}</h4>}
+	<slot />
 </div>
 
 <style>
-  .address {
-    color: slategray;
-    font-family: monospace;
-    font-size: small;
-    line-height: 2em;
-  }
-  .credit {
-    font-size: small;
-    color: var(--colour-slate);
-    h4 {
-      font-size: 1rem;
-    }
-  }
-  .thanks {
-    font-size: small;
-    color: var(--colour-violet);
-    p {
-      
-      color: var(--colour-violet);
-    }
-  }
+	.address {
+		color: slategray;
+		font-family: monospace;
+		font-size: small;
+		line-height: 2em;
+	}
+	.credit {
+		font-size: small;
+		color: var(--colour-slate);
+		h4 {
+			font-size: 1rem;
+		}
+	}
+	.thanks {
+		font-size: small;
+		color: var(--colour-slate);
+		p {
+			color: var(--colour-slate);
+		}
+	}
 </style>

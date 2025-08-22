@@ -1,40 +1,40 @@
 ---
 export interface Props {
-  type: "inline" | "list";
-  title?: string;
+	type: 'inline' | 'list';
+	title?: string;
 }
 
-const { type, title = "" } = Astro.props;
+const { type, title = '' } = Astro.props;
 ---
 
 <aside class={type}>
-  {!!title && <h3>{title}</h3>}
-  <blockquote class={type}>
-    <slot />
-  </blockquote>
+	{!!title && <h3>{title}</h3>}
+	<blockquote class={type}>
+		<slot />
+	</blockquote>
 </aside>
 
 <style>
-  blockquote {
-    font-size: var(--size-smaller);
-    color: var(--colour-soft);
-    max-width: var(--width-article);
-    border-left: 0.5em solid var(--colour-red-burn);
-    padding-left: var(--spacing-level-2);
-    line-height: var(--spacing-level-4);
-  }
-  aside {
-    margin: var(--spacing-level-1) 0;
-  }
+	blockquote {
+		font-size: var(--size-smaller);
+		color: var(--colour-soft);
+		max-width: var(--width-article);
+		border-left: 0.25em solid var(--colour-crimson);
+		padding-left: var(--spacing-level-2);
+		line-height: var(--spacing-level-4);
+	}
+	aside {
+		/* margin: var(--spacing-level-1) 0; */
+	}
 </style>
 <style is:global>
-  aside .inline li {
-    list-style: none;
-  }
-  aside .list {
-    border: none;
-  }
-  aside.inline {
-    margin: 0;
-  }
+	aside .inline li {
+		list-style: none;
+	}
+	aside .list {
+		border: none;
+	}
+	/* aside.inline {
+		margin: 0;
+	} */
 </style>
