@@ -93,6 +93,12 @@ Replace `http://www.paradiserow.com/news/134/` with the following:
 - add `target="_blank"` to open in a new window
 - add `aria-label="accessible link title"`
 
+_How to update fonts_
+We have some basic styles set in the following files:
+
+- `src/styles/global.css`
+- `src/styles/fonts.css` - you can change sizes and core colours here
+
 ## 🧞 Developer Commands
 
 All commands are run from the root of the project, from a terminal:
