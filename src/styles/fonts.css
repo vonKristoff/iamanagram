@@ -1,0 +1,32 @@
+/* font sizing */
+h1 {
+	font-size: xx-large;
+}
+h2 {
+	font-size: x-large;
+}
+h3 {
+	font-size: x-large;
+}
+h4 {
+	font-size: large;
+}
+h5 {
+	font-size: medium;
+}
+p {
+	font-size: 100%;
+}
+/* main colour settings */
+h5 {
+	color: var(--aura-black);
+}
+h3 {
+	color: var(--colour-crimson);
+}
+h4 {
+	color: var(--colour-soft);
+}
+p {
+	color: var(--aura-black);
+}

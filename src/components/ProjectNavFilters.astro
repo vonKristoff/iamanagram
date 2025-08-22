@@ -1,0 +1,70 @@
+---
+const { omit = null } = Astro.props;
+---
+
+<ul>
+	{
+		omit !== 'films' && (
+			<li>
+				<a href="/films">Films</a>
+			</li>
+		)
+	}
+	{
+		omit !== 'soundworks' && (
+			<li>
+				<a href="/soundworks">Soundworks</a>
+			</li>
+		)
+	}
+	{
+		omit !== 'performances' && (
+			<li>
+				<a href="/performances">Performances</a>
+			</li>
+		)
+	}
+	{
+		omit !== 'other' && (
+			<li>
+				<a href="/other">Other</a>
+			</li>
+		)
+	}
+	<!-- <li class="email"><strong>aurasatz@onetel.com</strong></li> -->
+</ul>
+<style>
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: 768px) {
+			gap: 1em;
+			li {
+				margin: 0;
+			}
+		}
+	}
+	li {
+		list-style: none;
+		margin-left: 2em;
+	}
+	li:first-child {
+		margin-left: 0;
+	}
+	li strong {
+		color: var(--colour-violet);
+	}
+	@media (max-width: var(--width-mobile)) {
+		.email {
+			display: none;
+		}
+	}
+	ul a {
+		text-decoration: none;
+		color: var(--colour-soft);
+		transition: color 0.3s;
+		&:hover {
+			color: var(--colour-crimson);
+		}
+	}
+</style>
