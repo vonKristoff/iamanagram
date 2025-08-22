@@ -1,176 +1,157 @@
 ---
-import { getCollection } from "astro:content";
-import Thumbnail from "./Thumbnail.astro";
+import { getCollection } from 'astro:content';
+import Thumbnail from './Thumbnail.astro';
 export interface Props {
-  page?: string;
+	page?: string;
 }
-const GROUP = [
-  "installation",
-  "sculptures",
-  "drawings",
-  "photographs",
-  "other",
-];
-const projectList = await getCollection("projects");
+const GROUP = ['installation', 'sculptures', 'drawings', 'photographs', 'other'];
+const projectList = await getCollection('projects');
 const { page } = Astro.props;
-const filterByPage = page === "other" ? GROUP : [page];
+const filterByPage = page === 'other' ? GROUP : [page];
 ---
 
 <div class="projects">
-  {
-    projectList
-      .filter((item: any) => {
-        if (!page) return item;
-        return filterByPage
-          .filter((group) => item.data.category.includes(group))
-          .pop();
-      })
-      .map((item: any) => {
-        return (
-          <Thumbnail
-            src={item.data.thumbnail}
-            title={item.data.title}
-            slug={item.slug}
-          />
-        );
-      })
-  }
+	{
+		projectList
+			.filter((item: any) => {
+				if (!page) return item;
+				return filterByPage.filter((group) => item.data.category.includes(group)).pop();
+			})
+			.map((item: any) => {
+				return <Thumbnail src={item.data.thumbnail} title={item.data.title} slug={item.slug} />;
+			})
+	}
 </div>
 <style>
-  .projects {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 0 var(--spacing-level-3);
-    margin-top: var(--spacing-level-2);
-  }
+	.projects {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		margin: 0 var(--spacing-level-3);
+		margin-top: var(--spacing-level-2);
+	}
 </style>
 <script defer>
-  const aplhabet = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
+	const aplhabet = [
+		'a',
+		'b',
+		'c',
+		'd',
+		'e',
+		'f',
+		'g',
+		'h',
+		'i',
+		'j',
+		'k',
+		'l',
+		'm',
+		'n',
+		'o',
+		'p',
+		'q',
+		'r',
+		's',
+		't',
+		'u',
+		'v',
+		'w',
+		'x',
+		'y',
+		'z'
+	];
 
-  function unscramble(target, i) {
-    const jumbled = target.map((char) => {
-      if (char === " ") return char;
-      return aplhabet[Math.floor(Math.random() * aplhabet.length)];
-    });
-    // return [...jumbled.slice(0, target.length - i), ...target.slice(-i, -1)].join('')
-    const title = [
-      ...target.slice(0, i + 1),
-      ...jumbled.slice(0, target.length - i),
-    ].join("");
-    return `<span class="hmm">${title.substring(0, i)}</span>${title.substring(
-      i
-    )}`;
-  }
+	function unscramble(target, i) {
+		const jumbled = target.map((char) => {
+			if (char === ' ') return char;
+			return aplhabet[Math.floor(Math.random() * aplhabet.length)];
+		});
+		// return [...jumbled.slice(0, target.length - i), ...target.slice(-i, -1)].join('')
+		const title = [...target.slice(0, i + 1), ...jumbled.slice(0, target.length - i)].join('');
+		return `<span class="active-text">${title.substring(0, i)}</span>${title.substring(i)}`;
+	}
 
-  const manageAnimation = () => {
-    let currentId = 0;
-    const reset = () => {
-      cancelAnimationFrame(currentId);
-      currentId = 0;
-    };
-    const setId = (uid) => {
-      currentId = uid;
-    };
-    const getId = () => {
-      return currentId;
-    };
-    return [getId, reset, setId];
-  };
+	const manageAnimation = () => {
+		let currentId = 0;
+		const reset = () => {
+			cancelAnimationFrame(currentId);
+			currentId = 0;
+		};
+		const setId = (uid) => {
+			currentId = uid;
+		};
+		const getId = () => {
+			return currentId;
+		};
+		return [getId, reset, setId];
+	};
 
-  function initalise($el, focus) {
-    const t = Object.values($el.children).find(({ className }) => {
-      const options = className.split(" ");
-      return options.includes(focus);
-    });
-    const target = t.innerText.split("");
-    const animate = anagramise(t, target);
-    const useAnimationHook = manageAnimation();
-    // let over = false;
-    return (key) => {
-      const [getId, reset, setId] = useAnimationHook;
-      // if (!over) {
-      requestAnimationFrame((time) => animate(time, key));
-      // setId(true);
-      // over = true;
-      // }
-    };
-  }
-  const framerate = (speed) => {
-    let elapsed = 0;
-    let prev = 0;
-    return (timestamp) => {
-      if (!timestamp) {
-        elapsed = 0;
-        prev = 0;
-        return;
-      }
-      if (prev) elapsed += timestamp - prev;
-      prev = timestamp;
-      return elapsed > speed;
-    };
-  };
-  // runs on frame
-  function anagramise(el, tgt) {
-    let current = 0;
-    const nextRender = framerate(20);
-    const animate = (j, key) => {
-      if (nextRender(j)) {
-        el.innerHTML = unscramble(tgt, current);
-        current++;
-        nextRender(0);
-      }
-      if (current <= tgt.length) {
-        requestAnimationFrame((t) => animate(t, key));
-      } else {
-        action[key].over = false;
-        current = 0;
-      }
-    };
-    return animate;
-  }
+	function initalise($el, focus) {
+		const t = Object.values($el.children).find(({ className }) => {
+			const options = className.split(' ');
+			return options.includes(focus);
+		});
+		const target = t.innerText.split('');
+		const animate = anagramise(t, target);
+		const useAnimationHook = manageAnimation();
+		// let over = false;
+		return (key) => {
+			const [getId, reset, setId] = useAnimationHook;
+			// if (!over) {
+			requestAnimationFrame((time) => animate(time, key));
+			// setId(true);
+			// over = true;
+			// }
+		};
+	}
+	const framerate = (speed) => {
+		let elapsed = 0;
+		let prev = 0;
+		return (timestamp) => {
+			if (!timestamp) {
+				elapsed = 0;
+				prev = 0;
+				return;
+			}
+			if (prev) elapsed += timestamp - prev;
+			prev = timestamp;
+			return elapsed > speed;
+		};
+	};
+	// runs on frame
+	function anagramise(el, tgt) {
+		let current = 0;
+		const nextRender = framerate(2);
+		const animate = (j, key) => {
+			if (nextRender(j)) {
+				el.innerHTML = unscramble(tgt, current);
+				current++;
+				nextRender(0);
+			}
+			if (current <= tgt.length) {
+				requestAnimationFrame((t) => animate(t, key));
+			} else {
+				action[key].over = false;
+				current = 0;
+			}
+		};
+		return animate;
+	}
 
-  let action = {};
-  if (!("ontouchstart" in document.documentElement)) {
-    const list = document.querySelectorAll(".project-thumbnail");
-    list.forEach((node, index) => {
-      action[node.innerText] = {
-        fn: initalise(node, "project-title"),
-        over: false,
-      };
-      node.addEventListener("mouseenter", () => {
-        if (!action[node.innerText].over) {
-          action[node.innerText].over = true;
-          action[node.innerText].fn(node.innerText);
-        }
-      });
-    });
-  }
+	let action = {};
+	if (!('ontouchstart' in document.documentElement)) {
+		const list = document.querySelectorAll('.project-thumbnail');
+		list.forEach((node, index) => {
+			action[node.innerText] = {
+				fn: initalise(node, 'project-title'),
+				over: false
+			};
+			node.addEventListener('mouseenter', () => {
+				if (!action[node.innerText]?.over) {
+					action[node.innerText].over = true;
+					action[node.innerText].fn(node.innerText);
+				}
+			});
+		});
+	}
 </script>

@@ -1,65 +1,66 @@
 ---
 interface Url {
-  link: string;
-  label: string;
+	link: string;
+	label: string;
 }
 export interface Props {
-  name?: string;
-  contact?: string;
-  address1?: string;
-  address2?: string;
-  tel?: string;
-  email?: string;
-  url?: Url & boolean;
-  type?: string;
+	name?: string;
+	contact?: string;
+	address1?: string;
+	address2?: string;
+	tel?: string;
+	email?: string;
+	url?: Url & boolean;
+	type?: string;
 }
 
 const {
-  type = "",
-  name = "",
-  contact = "",
-  address1 = "",
-  address2 = "",
-  tel = "",
-  email = "",
-  url = false,
+	type = '',
+	name = '',
+	contact = '',
+	address1 = '',
+	address2 = '',
+	tel = '',
+	email = '',
+	url = false
 } = Astro.props;
 ---
 
 <aside class={`address ${type}`}>
-  {!!name && <li class="title">{name}</li>}
-  {!!contact && <li>{contact}</li>}
-  {!!address1 && <li>{address1}</li>}
-  {!!address2 && <li>{address2}</li>}
-  {!!tel && <li>Tel: {tel}</li>}
-  {!!email && <li>Email: {email}</li>}
-  {
-    !!url && (
-      <li>
-        <a href={url.link} target="_blank">
-          {url.label}
-        </a>
-      </li>
-    )
-  }
+	{!!name && <li class="title">{name}</li>}
+	{!!contact && <li>{contact}</li>}
+	{!!address1 && <li>{address1}</li>}
+	{!!address2 && <li>{address2}</li>}
+	{!!tel && <li>Tel: {tel}</li>}
+	{!!email && <li>Email: {email}</li>}
+	{
+		!!url && (
+			<li>
+				<a href={url.link} target="_blank">
+					{url.label}
+				</a>
+			</li>
+		)
+	}
 </aside>
 <style>
-  aside {
-    margin-left: var(--spacing-level-3);
-    font-size: var(--size-smaller);
-    color: var(--colour-soft);
-  }
-  li {
-    list-style: none;
-  }
-  .title {
-    font-weight: bold;
-    margin-bottom: 0.25em;
-  }
-  .margin-top {
-    margin-top: 1em;
-  }
-  .margin-bottom {
-    margin-bottom: 1em;
-  }
+	aside {
+		/* margin-left: var(--spacing-level-3); */
+		font-size: var(--size-smaller);
+		color: var(--colour-soft);
+		margin-bottom: 1em;
+	}
+	li {
+		list-style: none;
+	}
+	.title {
+		font-weight: bold;
+		margin-bottom: 0.25em;
+	}
+	.margin-top {
+		margin-top: 1em;
+	}
+	.margin-bottom {
+		margin-bottom: 1em;
+	}
 </style>

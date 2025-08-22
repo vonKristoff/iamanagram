@@ -1,74 +1,68 @@
 ---
-import MainHeader from "./MainHeader.astro";
-import Related from "../components/Related.astro";
+import MainHeader from './MainHeader.astro';
+import Related from '../components/Related.astro';
 export interface Props {
-  title?: string;
-  subtitle?: string;
-  meta1?: string;
-  meta2?: string;
-  related?: [];
-  bg?: boolean;
+	title?: string;
+	subtitle?: string;
+	meta1?: string;
+	meta2?: string;
+	related?: [];
+	bg?: boolean;
 }
-const {
-  title,
-  subtitle,
-  meta1,
-  meta2 = "",
-  related = [],
-  bg = false,
-} = Astro.props as Props;
+const { title, subtitle, meta1, meta2 = '', related = [], bg = false } = Astro.props as Props;
 ---
 
-<MainHeader title={title} bg={bg}>
-  <div class="page">
-    <header>
-      <h1>{title}</h1>
-      {!!subtitle && <h2>{subtitle}</h2>}
-      {
-        !!meta1 && (
-          <>
-            <h4 class="meta-1">{meta1}</h4>
-            <h4 class="meta-2">{meta2}</h4>
-          </>
-        )
-      }
-    </header>
-    <article>
-      <slot />
-    </article>
-    {!!related.length && <Related slugs={related} />}
-  </div>
+<MainHeader title={title} bg={false}>
+	<div class="page">
+		<header>
+			<h1>{title}</h1>
+			{!!subtitle && <h2>{subtitle}</h2>}
+			{
+				!!meta1 && (
+					<>
+						<h4 class="meta-1">{meta1}</h4>
+						<h4 class="meta-2">{meta2}</h4>
+					</>
+				)
+			}
+		</header>
+		<article>
+			<slot />
+		</article>
+		{!!related.length && <Related slugs={related} />}
+	</div>
 </MainHeader>
 <style>
-  .page {
-    margin: 0 var(--spacing-level-3);
-  }
-  h1 {
-    color: var(--colour-violet);
-  }
-  h2 {
-    color: var(--colour-dark2);
-  }
-  header {
-    margin: auto;
-    max-width: var(--width-section);
-  }
-  .meta-2 {
-    text-align: right;
-    margin-bottom: 0;
-    font-size: var(--size-smaller);
-  }
-  header h1 {
-    margin-bottom: 0;
-  }
-  header h2 {
-    margin-top: 0.25em;
-    font-size: large;
-  }
-  .meta-1 {
-    color: var(--colour-crimson);
-  }
-  /* aside:not(:last-child) {
+	.page {
+		margin: 0 var(--spacing-level-3);
+	}
+	h1,
+	h4 {
+		color: var(--colour-crimson);
+	}
+	h2 {
+		color: var(--aura-black);
+	}
+	header {
+		margin: auto;
+		max-width: var(--width-section);
+	}
+	.meta-2 {
+		text-align: right;
+		margin-bottom: 0;
+		font-size: var(--size-smaller);
+	}
+	header h1 {
+		margin-bottom: 0;
+	}
+	header h2 {
+		margin-top: 0.25em;
+		/* font-size: large; */
+	}
+	.meta-1 {
+		color: var(--colour-soft);
+	}
+	/* aside:not(:last-child) {
     background-color: red;
   } */
 </style>

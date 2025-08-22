@@ -1,34 +1,30 @@
 ---
 export interface Props {
-  url: string;
-  label?: string;
-  external?: boolean;
-  inline?: boolean;
+	url: string;
+	label?: string;
+	external?: boolean;
+	inline?: boolean;
 }
 
 const { url, label, external = true, inline = true } = Astro.props;
 ---
 
-<a
-  href={url}
-  class={inline ? "" : "as-block"}
-  target={external ? "_blank" : "_self"}
->
-  {label && label}
-  <slot />
+<a href={url} class={inline ? '' : 'as-block'} target={external ? '_blank' : '_self'}>
+	{label && label}
+	<slot />
 </a>
 
 <style>
-  .as-block {
-    display: block;
-  }
-  a {
-    color: darkmagenta;
-  }
-  a:hover {
-    cursor: pointer;
-  }
-  a:visited {
-    color: darkmagenta;
-  }
+	.as-block {
+		display: block;
+	}
+	a {
+		color: var(--aura-black);
+		transition: color 0.3s;
+		font-weight: bold;
+	}
+	a:hover {
+		color: var(--colour-crimson);
+		cursor: pointer;
+	}
 </style>
