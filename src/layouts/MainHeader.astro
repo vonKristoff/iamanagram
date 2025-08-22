@@ -1,5 +1,6 @@
 ---
 import '$lib/styles/global.css';
+import Footer from '../components/Footer.astro';
 import ProjectNavFilters from '../components/ProjectNavFilters.astro';
 const { title, bg = null, omit = null } = Astro.props;
 ---
@@ -28,6 +29,7 @@ const { title, bg = null, omit = null } = Astro.props;
 			<slot />
 		</main>
 	</body>
+	<Footer />
 </html>
 <style>
 	html {
