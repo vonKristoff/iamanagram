@@ -9,6 +9,7 @@ Goto https://github.com/vonKristoff/iamanagram whereby you have access to make d
 ## Images
 
 _Upload your images to the following directories_
+(use the gui interface and "add file" in the correct directory)
 
 - home pages: `/public/projects/_thumbnails`
 - project pages: `/public/projects`
