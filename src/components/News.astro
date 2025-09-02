@@ -16,11 +16,13 @@ const when = formatter.format(jsdate);
 
 <article>
 	<header>
-		<h2>{title}</h2>
+		<div class="text">
+			<h2>{title}</h2>
+			{subtitle && <h4>{subtitle}</h4>}
+		</div>
 		<small>{when}</small>
 	</header>
 	<div class="group">
-		{subtitle && <h4>{subtitle}</h4>}
 		{
 			address?.length && (
 				<ul>
@@ -37,7 +39,7 @@ const when = formatter.format(jsdate);
 <style>
 	.group {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		ul {
 			font-size: small;
 			text-align: right;
@@ -46,6 +48,7 @@ const when = formatter.format(jsdate);
 	}
 	h4 {
 		margin-top: 0;
+		color: azure;
 	}
 	header {
 		display: flex;

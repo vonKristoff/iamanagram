@@ -14,7 +14,7 @@ const { title, bg = null, omit = null } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class={bg ? 'alt' : ''}>
+	<body class={bg ? bg : ''}>
 		<header><Nav {omit} /></header>
 		<main>
 			<slot />
@@ -37,6 +37,9 @@ const { title, bg = null, omit = null } = Astro.props;
 	}
 	body.alt {
 		background-color: var(--colour-soft-violet);
+	}
+	body.dada {
+		background-color: #dadada;
 	}
 	header {
 		width: 100%;
