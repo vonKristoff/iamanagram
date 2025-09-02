@@ -1,0 +1,78 @@
+---
+import ProjectNavFilters from '../components/ProjectNavFilters.astro';
+const { omit = null } = Astro.props;
+---
+
+<nav>
+	<ProjectNavFilters {omit} />
+	<div class="v-divider"></div>
+	<div class="alt-pages">
+		{omit !== 'news' && <a href="/news">News</a>}
+		<a title="external link title" class="" href="/" target="_blank">Film Link</a>
+	</div>
+</nav>
+<a title="home" class="nav-flex no-underline" href="/"><span id="title">AURA SATZ</span></a>
+
+<style>
+	.v-divider {
+		height: inherit;
+		width: 1px;
+		background-color: var(--aura-black);
+		opacity: 0.75;
+	}
+	nav {
+		display: flex;
+		gap: 2em;
+		flex: 0 0.5 auto;
+		@media (max-width: 768px) {
+			gap: 2em;
+			width: 50%;
+		}
+		& > a {
+			text-decoration: none;
+		}
+		& > a:hover {
+			text-decoration: underline;
+		}
+	}
+	nav a {
+		text-decoration: none;
+		color: var(--colour-soft);
+		transition: color 0.3s;
+		&:hover {
+			color: var(--colour-crimson);
+		}
+	}
+	.alt-pages {
+		font-size: small;
+		display: flex;
+		flex-wrap: wrap;
+		display: flex;
+		gap: 2em;
+		@media (max-width: 768px) {
+			gap: 1em;
+			/* flex-direction: row; */
+		}
+	}
+	#title {
+		text-align: right;
+		position: fixed;
+		right: 0;
+		top: 0;
+		font-size: 1.5em;
+		z-index: 1;
+		padding: calc(1.5em / 2) 1.5em;
+		color: var(--aura-black);
+		backdrop-filter: blur(1em);
+		border-radius: 0.25em;
+		transition: filter 0.3s;
+		&:hover {
+			filter: blur(0.25em);
+			color: var(--colour-crimson);
+		}
+		@media (max-width: 1024px) {
+			top: 0.5em;
+			font-size: 1em;
+		}
+	}
+</style>

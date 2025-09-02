@@ -1,0 +1,39 @@
+---
+import MainHeader from '../layouts/MainHeader.astro';
+import News from '../components/News.astro';
+import { getCollection } from 'astro:content';
+const news = await getCollection('news');
+
+const renderedPosts = await Promise.all(
+	news
+		.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+		.map((post) => post.render())
+);
+---
+
+<MainHeader title={`AURA SATZ - News`} omit="news">
+	<section>
+		{
+			renderedPosts.map(({ Content, remarkPluginFrontmatter }) => {
+				return (
+					<News {...remarkPluginFrontmatter}>
+						<Content />
+					</News>
+				);
+			})
+		}
+	</section>
+</MainHeader>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 8em;
+	}
+	@media (max-width: 888px) {
+		section {
+			padding: 0 2em;
+		}
+	}
+</style>
