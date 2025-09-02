@@ -1,7 +1,7 @@
 ---
 import '$lib/styles/global.css';
 import Footer from '../components/Footer.astro';
-import ProjectNavFilters from '../components/ProjectNavFilters.astro';
+import Nav from '../components/Nav.astro';
 const { title, bg = null, omit = null } = Astro.props;
 ---
 
@@ -15,16 +15,7 @@ const { title, bg = null, omit = null } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class={bg ? 'alt' : ''}>
-		<header>
-			<nav>
-				<ProjectNavFilters {omit} />
-				<div class="alt-pages">
-					<a title="external link title" class="" href="/" target="_blank">Film Link</a>
-					<a title="external link title" class="" href="/" target="_blank">Film Link 2</a>
-				</div>
-			</nav>
-			<a title="home" class="nav-flex no-underline" href="/"><span id="title">AURA SATZ</span></a>
-		</header>
+		<header><Nav {omit} /></header>
 		<main>
 			<slot />
 		</main>
@@ -33,7 +24,7 @@ const { title, bg = null, omit = null } = Astro.props;
 </html>
 <style>
 	html {
-		font-size: 18px;
+		font-size: var(--base-font-size);
 		font-family: system-ui, sans-serif;
 		background-color: var(--bg-primary);
 		max-width: 100vw;
@@ -54,39 +45,7 @@ const { title, bg = null, omit = null } = Astro.props;
 		align-items: center;
 		justify-content: space-between;
 	}
-	nav {
-		display: flex;
-		gap: 4em;
-		flex: 0 0.5 auto;
-		@media (max-width: 768px) {
-			gap: 2em;
-			width: 50%;
-		}
-		& > a {
-			text-decoration: none;
-		}
-		& > a:hover {
-			text-decoration: underline;
-		}
-	}
-	nav a {
-		text-decoration: none;
-		color: var(--colour-soft);
-		transition: color 0.3s;
-		&:hover {
-			color: var(--colour-crimson);
-		}
-	}
-	.alt-pages {
-		display: flex;
-		flex-wrap: wrap;
-		display: flex;
-		gap: 2em;
-		@media (min-width: 768px) {
-			gap: 1em;
-			flex-direction: row;
-		}
-	}
+
 	main {
 		margin: 0 auto;
 		max-width: calc(var(--width-article) + var(--spacing-level-2));
@@ -94,22 +53,5 @@ const { title, bg = null, omit = null } = Astro.props;
 	}
 	.nav-flex {
 		flex: 0 0.5 auto;
-	}
-	#title {
-		text-align: right;
-		position: fixed;
-		right: 0;
-		top: 0;
-		font-size: 1.5em;
-		z-index: 1;
-		padding: calc(1.5em / 2) 1.5em;
-		color: var(--aura-black);
-		backdrop-filter: blur(1em);
-		border-radius: 0.25em;
-		transition: filter 0.3s;
-		&:hover {
-			filter: blur(0.25em);
-			color: var(--colour-crimson);
-		}
 	}
 </style>
