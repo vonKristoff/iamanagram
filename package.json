@@ -1,20 +1,21 @@
 {
-  "name": "@example/basics",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^0.16.0",
-    "astro": "^2.4.2"
-  },
-  "devDependencies": {
-    "prettier-plugin-astro": "^0.14.1"
-  }
+	"name": "@example/basics",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"get-csv-data": "curl -L -o xib.csv https://docs.google.com/spreadsheets/d/{{--REPLACE-WITH-GOOGLESHEET-ID--}}/export?format=csv&gid=0"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^0.16.0",
+		"astro": "^2.4.2"
+	},
+	"devDependencies": {
+		"prettier-plugin-astro": "^0.14.1"
+	}
 }

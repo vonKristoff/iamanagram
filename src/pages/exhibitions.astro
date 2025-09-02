@@ -1,0 +1,76 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import MainHeader from '../layouts/MainHeader.astro';
+import ExhibitionCard from '../components/ExhibitionCard.astro';
+import { getCollection } from 'astro:content';
+type Props = CollectionEntry<'exhibitions'>;
+
+function sortByDate(a: Props, b: Props) {
+	const a2 = a.data.date!;
+	const b2 = b.data.date!;
+	var aa = a2.split('/').reverse().join(),
+		bb = b2.split('/').reverse().join();
+	return aa < bb ? -1 : aa > bb ? 1 : 0;
+}
+const collection = (await getCollection('exhibitions')) as Props[];
+const exhibitions = collection.sort(sortByDate).reverse();
+
+const UPCOMING_EXHIBITIONS = exhibitions.filter(({ data }) => data.showing === 'SOON');
+const CURRENT_EXHIBITIONS = exhibitions.filter(({ data }) => data.showing === 'NOW');
+const PAST_EXHIBITIONS = exhibitions.filter(({ data }) => data.showing === 'PAST');
+---
+
+<MainHeader title={`AURA SATZ - News`} omit="exhibitions">
+	<section>
+		{!!UPCOMING_EXHIBITIONS.length && <h2>Upcoming</h2>}
+		{
+			!!UPCOMING_EXHIBITIONS.length &&
+				UPCOMING_EXHIBITIONS.map(({ data }) => <ExhibitionCard {data} />)
+		}
+
+		{!!CURRENT_EXHIBITIONS.length && <h2>Current</h2>}
+
+		{
+			!!CURRENT_EXHIBITIONS.length &&
+				CURRENT_EXHIBITIONS.map(({ data }) => <ExhibitionCard {data} />)
+		}
+
+		<div id="table" class="flex flex-col gap-12 md:gap-12 items-center">
+			<h2>Previous</h2>
+			<div class="flex flex-col gap-4 w-full">
+				{
+					PAST_EXHIBITIONS.map(({ data }) => (
+						<div class="grid grid-cols-5 gap-2 font-light text-xs md:text-sm border-b-2 lg:border-0 pb-1 md:pb-0">
+							<span class="col-span-2">
+								<a href={`/projects/${data.url}`}>{data.title}</a>
+							</span>
+							<div class="group col-span-2">
+								<span class="">{data.venue}</span>
+								<span class="">{data.location}</span>
+							</div>
+							<div class="flex gap-2 justify-end">
+								<span class="text-right w-12 xl:w-auto">{data.from} </span>
+								<span class="hidden xl:block">-</span>
+								<span class="text-right w-12 xl:w-auto"> {data.to}</span>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+</MainHeader>
+
+<!-- <div class="col">{getVenue(data.venue)}</div> -->
+<style>
+	:global(article:first-of-type) {
+		border-bottom: none;
+	}
+	#table {
+		width: 100%;
+		max-width: var(--width-table);
+	}
+	.border-b-thin {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	}
+</style>

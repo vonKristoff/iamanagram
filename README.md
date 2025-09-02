@@ -80,7 +80,7 @@ related: [] // use any existing <projectname>
 category: ['films'] // add more tags if you like
 ```
 
-### News page items
+## News page items
 
 You can create a new news page item from creating a post in the `src/content/news/*.md` folder. Create the frontmatter as follows:
 

@@ -7,7 +7,21 @@ const newsSchema = z.object({
 	link: z.array(z.string()),
 	archive: z.boolean().optional()
 });
+const exhibitionSchema = z.object({
+	showing: z.enum(['PAST', 'NOW', 'SOON']).optional(),
+	title: z.string(),
+	description: z.string().optional(),
+	venue: z.string(),
+	location: z.string(),
+	date: z.string(),
+	from: z.string(),
+	to: z.string(),
+	tickets: z.string().optional(),
+	url: z.string()
+});
 const newsPosts = defineCollection({ schema: newsSchema });
+const exhibitions = defineCollection({ schema: exhibitionSchema });
+export type ExhibitionSchema = z.infer<typeof exhibitionSchema>;
 export type NewsSchema = z.infer<typeof newsSchema>;
 const collection = defineCollection({
 	schema: z.object({
@@ -25,5 +39,6 @@ const collection = defineCollection({
 });
 export const collections = {
 	projects: collection,
-	news: newsPosts
+	news: newsPosts,
+	exhibitions
 };
