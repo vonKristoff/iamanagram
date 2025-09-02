@@ -71,15 +71,27 @@ Goto `templates/meta` and `templates/page` respectively and copy the blank conte
 
 Create a new file using the Github IDE.
 
-```
----
+```yaml
 title: The Future Waters of the storm surge..
 subtitle: A film featuring sound by BJ Nilsen
 date: 12/2/23
 thumbnail: JoanArc.jpg // place in public/_thumbnails
 related: [] // use any existing <projectname>
 category: ['films'] // add more tags if you like
----
+```
+
+### News page items
+
+You can create a new news page item from creating a post in the `src/content/news/*.md` folder. Create the frontmatter as follows:
+
+```yaml
+title: Tomorrows news
+subtitle: historical influence # optional
+date: '2025-09-01' # required in this format
+# optional
+address: ['Artprojx Space', '53 Beauchamp Place', 'London SW3 1NY', 'Tel: 020 7584 0717']
+link: ['my label', 'https://google.com']
+archive: false # disables post from showing
 ```
 
 ### FAQs
