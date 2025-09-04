@@ -4,7 +4,7 @@ const newsSchema = z.object({
 	subtitle: z.string().optional(),
 	address: z.array(z.string()).optional(),
 	date: z.string(),
-	link: z.array(z.string()),
+	link: z.array(z.string()).optional(),
 	archive: z.boolean().optional()
 });
 const exhibitionSchema = z.object({
