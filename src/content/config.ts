@@ -26,8 +26,8 @@ export type NewsSchema = z.infer<typeof newsSchema>;
 const collection = defineCollection({
 	schema: z.object({
 		title: z.string(),
-		subtitle: z.string(),
-		date: z.any(),
+		subtitle: z.string().optional(),
+		date: z.any().optional(),
 		meta1: z.string().nullable().optional(),
 		meta2: z.string().nullable().optional(),
 		gallery: z.string().optional(),
