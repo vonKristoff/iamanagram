@@ -1,0 +1,24 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+
+const props = await getProps(import.meta.url);
+---
+
+<ProjectLayout {...props}>
+	<Image
+		src="accordion.jpg"
+		caption="Automamusic, film still by Aura Satz, Cibachrome print, 2008"
+	/>
+	<section>
+
+
+
+
+	</section>
+</ProjectLayout>
