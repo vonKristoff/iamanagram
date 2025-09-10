@@ -33,7 +33,7 @@ const collection = defineCollection({
 		gallery: z.string().optional(),
 		exhibition: z.string().optional(),
 		thumbnail: z.string(),
-		related: z.array(z.string()),
+		related: z.array(z.string()).optional(),
 		category: z.array(z.string())
 	})
 });
