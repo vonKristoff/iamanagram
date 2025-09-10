@@ -1,6 +1,6 @@
 ---
 title: Automatic Ensemble
-subtitle: Using a mixture of mechanically amplified and automatic instruments and machines
+subtitle: 
 date: 12/2/23
 thumbnail: automatic_ensemble.jpg
 related: []
