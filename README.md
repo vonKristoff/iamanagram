@@ -47,7 +47,7 @@ This will hold the project's metadata (\*.md) that will configure the following:
 ---
 title:
 subtitle:
-date: 12/2/23 (currently any format tbc)
+date: 'YYYY-MM-DD'
 thumbnail: *.jpg // place in public/_thumbnails
 related: ['page-name'] // use any existing <projectname>
 category: ['films'] // add more tags if you like
