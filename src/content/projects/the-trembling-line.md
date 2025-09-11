@@ -1,7 +1,7 @@
 ---
 title: The Trembling Line
 subtitle: Film and multi-channel sound installation
-date: 12/2/23
+date: '2015-03-01'
 thumbnail: anechoic.jpg
 related: []
 category: ['films', 'other']

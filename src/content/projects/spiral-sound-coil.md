@@ -1,7 +1,7 @@
 ---
 title: Spiral Sound Coil
 subtitle: Sound Sculpture
-date: 12/2/23
+date: '2010-03-01'
 thumbnail: spiralsound.jpg
 related: []
 category: ['soundworks']

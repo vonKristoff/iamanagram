@@ -1,7 +1,7 @@
 ---
 title: Sound Seam
 subtitle: ...
-date: 12/2/23
+date: '2010-03-01'
 thumbnail: soundseam.jpg
 related: []
 category: ['films']
