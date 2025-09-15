@@ -17,6 +17,7 @@ const filterByPage = page === 'other' ? GROUP : [page];
 				if (!page) return item;
 				return filterByPage.filter((group) => item.data.category.includes(group)).pop();
 			})
+			.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 			.map((item: any) => {
 				return <Thumbnail src={item.data.thumbnail} title={item.data.title} slug={item.slug} />;
 			})

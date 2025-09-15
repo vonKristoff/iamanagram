@@ -1,14 +1,22 @@
 ---
 import ProjectNavFilters from '../components/ProjectNavFilters.astro';
 const { omit = null } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+function isActive(path) {
+	return currentPath === path ? 'active' : '';
+}
 ---
 
 <nav>
 	<ProjectNavFilters {omit} />
 	<div class="v-divider"></div>
 	<div class="alt-pages">
-		{omit !== 'news' && <a href="/news">News</a>}
-		<a title="external link title" class="" href="/" target="_blank">Film Link</a>
+		<a class={isActive('/news')} href="/news">News</a>
+		<a class={isActive('/info')} href="/info">Info</a>
+		<a title="preemptivelistening" class="" href="http://preemptivelistening.com" target="_blank"
+			>preemptivelistening.com</a
+		>
 	</div>
 </nav>
 <a title="home" class="nav-flex no-underline" href="/"><span id="title">AURA SATZ</span></a>
@@ -42,6 +50,9 @@ const { omit = null } = Astro.props;
 		&:hover {
 			color: var(--colour-crimson);
 		}
+	}
+	nav a.active {
+		color: var(--colour-crimson);
 	}
 	.alt-pages {
 		font-size: small;

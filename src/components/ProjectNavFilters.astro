@@ -1,42 +1,25 @@
 ---
 const { omit = null } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+function isActive(path) {
+	return currentPath === path ? 'active' : '';
+}
 ---
 
 <div class="relative">
-	<!-- <div class="filter-label">filter by</div> -->
 	<ul>
-		<!-- <li class="items-center">
-		<span class="label">Projects:</span>
-	</li> -->
-		{
-			omit !== 'films' && (
-				<li>
-					<a href="/films">Films</a>
-				</li>
-			)
-		}
-		{
-			omit !== 'soundworks' && (
-				<li>
-					<a href="/soundworks">Soundworks</a>
-				</li>
-			)
-		}
-		{
-			omit !== 'performances' && (
-				<li>
-					<a href="/performances">Performances</a>
-				</li>
-			)
-		}
-		<!-- {
-			omit !== 'other' && (
-				<li>
-					<a href="/other">Other</a>
-				</li>
-			)
-		} -->
-		<!-- <li class="email"><strong>aurasatz@onetel.com</strong></li> -->
+		<li>
+			<a class={isActive('/films')} href="/films">Films</a>
+		</li>
+
+		<li>
+			<a class={isActive('/soundworks')} href="/soundworks">Soundworks</a>
+		</li>
+
+		<li>
+			<a class={isActive('/serformances')} href="/performances">Performances</a>
+		</li>
 	</ul>
 </div>
 <style>
@@ -89,6 +72,9 @@ const { omit = null } = Astro.props;
 		color: var(--colour-soft);
 		transition: color 0.3s;
 		&:hover {
+			color: var(--colour-crimson);
+		}
+		&.active {
 			color: var(--colour-crimson);
 		}
 	}

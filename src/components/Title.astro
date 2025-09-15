@@ -7,20 +7,21 @@ export interface Props {
 const { date, title, subtitle } = Astro.props;
 ---
 
-<section>
+<article>
 	<div class="spacing nice-border">
-		<div class="border"></div>
+		{!!date && <time class="date">{date}</time>}
 		<heading>
-			<!-- <div class="spacer"></div> -->
 			{!!title && <h3>{title}</h3>}
-			{!!date && <p class="date">{date}</p>}
 		</heading>
 		{!!subtitle && <h4>{subtitle}</h4>}
 		<slot />
 	</div>
-</section>
+</article>
 
 <style>
+	article {
+		margin-top: 3em;
+	}
 	heading {
 		display: flex;
 		flex-direction: row;
@@ -28,8 +29,7 @@ const { date, title, subtitle } = Astro.props;
 		gap: 1em;
 		align-items: center;
 	}
-		position: relative;
-	}
+
 	.border {
 		margin: 4em 0;
 		height: 0.25em;
@@ -41,12 +41,11 @@ const { date, title, subtitle } = Astro.props;
 		flex: 1 4 150px;
 	}
 	h3 {
+		margin-top: 0;
 		flex: 1 2 800px;
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 	}
-	p.date {
-		flex: 1 0 200px;
-		text-align: right;
+	.date {
 		color: var(--colour-soft);
 		font-size: var(--size-smaller);
 	}
