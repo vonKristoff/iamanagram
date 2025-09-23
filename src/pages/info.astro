@@ -1,0 +1,37 @@
+---
+import MainHeader from '../layouts/MainHeader.astro';
+---
+
+<MainHeader title={`AURA SATZ - info`} bg="dada">
+	<div class="info-wrapper">
+		<article>
+			<p>For general enquiries contact <strong>aurasatz@onetel.com</strong></p>
+			<p>
+				For short films distribution contact: <strong>distribution@lux.org.uk</strong>
+			</p>
+			<a target="_blank" href="https://lux.org.uk/artist/aura-satz/"
+				>https://lux.org.uk/artist/aura-satz/</a
+			>
+			<p>
+				For Preemptive Listening distribution <strong>studio@lono.world</strong>
+			</p>
+			<a aria-label="preemptive listening film" href="https://preemptivelisteningfilm.com/"
+				>https://preemptivelisteningfilm.com/</a
+			>
+		</article>
+	</div>
+</MainHeader>
+
+<style>
+	.info-wrapper {
+		display: grid;
+		place-content: center;
+		min-height: calc(100dvh - var(--spacing-level-1) * 2);
+		height: inherit;
+		margin: 0;
+		padding: 0;
+	}
+	article {
+		padding: 0 4em;
+	}
+</style>

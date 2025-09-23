@@ -1,45 +1,82 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="IMG_5846.jpg" caption="Aura Satz, Skyquakes in Ear Trumpets, 2013" />
-  <section>
-    <p>In this multi-channel audio sculpture, ten hearing trumpets flower from the centre of a large brass concert phonograph horn like a cornocupia of sounds. While the phonograph horn represents a technology of amplification from the sound source outwards, i.e. the horn's 'throat' towards its 'mouth', the ear trumpets function in the opposite direction, capturing sounds inwardly, ear-like. Here both are merged at the service of multi-channel outputs, playing an intricate psychoacoustic composition which uses a sine-wave generator to produce tones both above and below the threshold of human hearing. The composition features eerie tinkling sounds that seem to oscillate within the inner ear, in addition to deeper sirens and drones that are evocative of the unexplained trumpet sounds which have been recorded across the skies of the world and are thought to mark the end of time according to the Book of Revelations. As the sculptural sonic experience spirals around and through the horn mouths, the sounds echo the biomorphic shapes of the horns, sliding in and out of the sculpture towards the listener's ear.</p>
-    
-    <h3>'Curiosity: Art and the Pleasures of Knowing' exhibition and performances as part of Hayward Touring exhibition in association with Cabinet Magazine, curated by Brian Dillon</h3>
-    <p>Curiosity is an ambiguous passion: the virtuous impulse behind the search for knowledge and at the same time a disreputable desire for novelty and strangeness. This exhibition, curated by Brian Dillon and organised in association with Cabinet magazine, concentrates on contemporary art's return to the intellectual and aesthetic freedom that emerged in seventeenth century art and science. Taking the cabinet of curiosities as its founding motif and through a combination of contemporary art and historical artefacts, Curiosity explores the pleasure that comes from the search for the wondrous and bizarre for their own sake and the contradictory nature of that pleasure.</p>
-    
-    <p>Artists include: Agency, Salvatore Arancio, Anna Atkins, Sir Joseph Banks, Leopold Blaschka and Rudolph Blaschka, Corinne May Botz, Pablo Bronstein, Adam Broomberg and Oliver Chanarin, Gerard Byrne, Collection of Roger Caillois, Nina Canell, The Center for Land Use Interpretation, Tacita Dean, John Dee, Albrecht Durer, Jimmie Durham, Gunda Forster, Aurelien Froment, Galileo Galilei, Philip Henry Gosse, Laurent Grasso, Thomas Grunfeld, Susan Hiller, Robert Hooke, Ferrante Imperato, Toril Johannessen, Nina Katchadourian, Elad Lassry, Leonardo da Vinci, Nicolaes Maes, Jeremy Millar, Matt Mullican, Jean Painleve, Katie Paterson, B. Picart, after Charles Le Brun, Francis Place, Aura Satz, Miroslav Tichy, J.M.W. Turner, Richard Wentworth</p>
-    
-    <p>http://ticketing.southbankcentre.co.uk/find/hayward-gallery-and-visual-arts/hayward-touring/future/curiosity-art-and-the-pleasures-of-knowing</p>
-  
-    <hgroup>
-      <h4>Turner Contemporary, Margate</h4>
-      <h5>25 May – 15 September 2013</h5>
-  </hgroup>
-http://www.turnercontemporary.org/
-<hgroup>
-  <h4>Castle Museum & Art Gallery, Norwich</h4>
-<h5>28 September 2013 - 5 January 2014</h5>
-</hgroup>
-http://www.museums.norfolk.gov.uk/
-<hgroup>
-  <h4>de Appel, Amsterdam</h4>
-<h5>27 June - 14 September 2014</h5>
-</hgroup>
-http://www.deappel.nl/
-  
-  </section>
-  <Image src="aura curiosity2.jpg" caption="Aura Satz, Auricles, ink on paper, 2013" />
-  
-</ProjectLayout>
+	<Image src="IMG_5846.jpg" caption="Aura Satz, Skyquakes in Ear Trumpets, 2013" />
+	<section>
+		<p>
+			In this multi-channel audio sculpture, ten hearing trumpets flower from the centre of a large
+			brass concert phonograph horn like a cornocupia of sounds. While the phonograph horn
+			represents a technology of amplification from the sound source outwards, i.e. the horn's
+			'throat' towards its 'mouth', the ear trumpets function in the opposite direction, capturing
+			sounds inwardly, ear-like. Here both are merged at the service of multi-channel outputs,
+			playing an intricate psychoacoustic composition which uses a sine-wave generator to produce
+			tones both above and below the threshold of human hearing. The composition features eerie
+			tinkling sounds that seem to oscillate within the inner ear, in addition to deeper sirens and
+			drones that are evocative of the unexplained trumpet sounds which have been recorded across
+			the skies of the world and are thought to mark the end of time according to the Book of
+			Revelations. As the sculptural sonic experience spirals around and through the horn mouths,
+			the sounds echo the biomorphic shapes of the horns, sliding in and out of the sculpture
+			towards the listener's ear.
+		</p>
 
+		<h3>
+			'Curiosity: Art and the Pleasures of Knowing' exhibition and performances as part of Hayward
+			Touring exhibition in association with Cabinet Magazine, curated by Brian Dillon
+		</h3>
+		<p>
+			Curiosity is an ambiguous passion: the virtuous impulse behind the search for knowledge and at
+			the same time a disreputable desire for novelty and strangeness. This exhibition, curated by
+			Brian Dillon and organised in association with Cabinet magazine, concentrates on contemporary
+			art's return to the intellectual and aesthetic freedom that emerged in seventeenth century art
+			and science. Taking the cabinet of curiosities as its founding motif and through a combination
+			of contemporary art and historical artefacts, Curiosity explores the pleasure that comes from
+			the search for the wondrous and bizarre for their own sake and the contradictory nature of
+			that pleasure.
+		</p>
+
+		<p>
+			Artists include: Agency, Salvatore Arancio, Anna Atkins, Sir Joseph Banks, Leopold Blaschka
+			and Rudolph Blaschka, Corinne May Botz, Pablo Bronstein, Adam Broomberg and Oliver Chanarin,
+			Gerard Byrne, Collection of Roger Caillois, Nina Canell, The Center for Land Use
+			Interpretation, Tacita Dean, John Dee, Albrecht Durer, Jimmie Durham, Gunda Forster, Aurelien
+			Froment, Galileo Galilei, Philip Henry Gosse, Laurent Grasso, Thomas Grunfeld, Susan Hiller,
+			Robert Hooke, Ferrante Imperato, Toril Johannessen, Nina Katchadourian, Elad Lassry, Leonardo
+			da Vinci, Nicolaes Maes, Jeremy Millar, Matt Mullican, Jean Painleve, Katie Paterson, B.
+			Picart, after Charles Le Brun, Francis Place, Aura Satz, Miroslav Tichy, J.M.W. Turner,
+			Richard Wentworth
+		</p>
+
+		<a
+			href="http://ticketing.southbankcentre.co.uk/find/hayward-gallery-and-visual-arts/hayward-touring/future/curiosity-art-and-the-pleasures-of-knowing"
+		>
+			http://ticketing.southbankcentre.co.uk/find/hayward-gallery-and-visual-arts/hayward-touring/future/curiosity-art-and-the-pleasures-of-knowing
+		</a>
+
+		<hgroup>
+			<h4>Turner Contemporary, Margate</h4>
+			<h5>25 May – 15 September 2013</h5>
+		</hgroup>
+		<a href="http://www.turnercontemporary.org/">http://www.turnercontemporary.org/</a>
+		<hgroup>
+			<h4>Castle Museum & Art Gallery, Norwich</h4>
+			<h5>28 September 2013 - 5 January 2014</h5>
+		</hgroup>
+		<a href="http://www.museums.norfolk.gov.uk/">http://www.museums.norfolk.gov.uk/</a>
+		<hgroup>
+			<h4>de Appel, Amsterdam</h4>
+			<h5>27 June - 14 September 2014</h5>
+		</hgroup>
+		<a href="http://www.deappel.nl/">http://www.deappel.nl/</a>
+	</section>
+	<Image src="aura curiosity2.jpg" caption="Aura Satz, Auricles, ink on paper, 2013" />
+</ProjectLayout>

@@ -1,262 +1,523 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
-import Compact from "../../components/compact.astro";
-import Quote from '../../components/Quote.astro'
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+import Compact from '../../components/compact.astro';
+import Quote from '../../components/Quote.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="Oramics.jpg" caption="Oramics film still, Aura Satz 2011" />
-  <section>
-    <Quote cite="Daphne Oram, An Individual Note of Music, Sound and Electronics (1971)">
-    "We will be entering a strange world where composers will be mingling with capacitors, computers will be controlling crotchets and, maybe, memory, music and magnetism will lead us towards metaphysics"
-    </Quote>
+	<Image src="Oramics.jpg" caption="Oramics film still, Aura Satz 2011" />
+	<section>
+		<Quote cite="Daphne Oram, An Individual Note of Music, Sound and Electronics (1971)">
+			"We will be entering a strange world where composers will be mingling with capacitors,
+			computers will be controlling crotchets and, maybe, memory, music and magnetism will lead us
+			towards metaphysics"
+		</Quote>
 
-    <p>Conceived of as an Artist's film in homage to Daphne Oram, the pioneer of British Electronic Music and co-founder of the BBC Radiophonic workshop in 1958, the film features a close-up encounter with her unique invention, the Oramics Machine, housed at the Science Museum in London.</p>
-<p>Oram used drawn sound principles to compose 'handwrought'electronic music, and yet the visual nature of her work remains largely unseen and unsung. The film brings this obsolete technological fantasy briefly to back to life, enabling the visualisation of the drawn sound material, re-interpreting and translating it into new filmic sequences.</p>
-<p>The soundtrack features electronic music composed by Oram, interlaced with her voicover reading excerpts from a first draft of her book "An Individual Note of Music, Sound and Electronics" (1971).</p>
+		<p>
+			Conceived of as an Artist's film in homage to Daphne Oram, the pioneer of British Electronic
+			Music and co-founder of the BBC Radiophonic workshop in 1958, the film features a close-up
+			encounter with her unique invention, the Oramics Machine, housed at the Science Museum in
+			London.
+		</p>
+		<p>
+			Oram used drawn sound principles to compose 'handwrought'electronic music, and yet the visual
+			nature of her work remains largely unseen and unsung. The film brings this obsolete
+			technological fantasy briefly to back to life, enabling the visualisation of the drawn sound
+			material, re-interpreting and translating it into new filmic sequences.
+		</p>
+		<p>
+			The soundtrack features electronic music composed by Oram, interlaced with her voicover
+			reading excerpts from a first draft of her book "An Individual Note of Music, Sound and
+			Electronics" (1971).
+		</p>
 
-<p>The film was co-commissioned by THE SCIENCE MUSEUM, THE LONDON CONSORTIUM, and SOUND & MUSIC.</p>
-<p>The 35mm films featured in the film are reproductions made by Aura Satz based on the strips which feature in documentation as well as scans of the originals found on the machine.</p>
-<p>They are currently laced up in the Oramics machine and are on display at the Science Museum.</p>
+		<p>
+			The film was co-commissioned by THE SCIENCE MUSEUM, THE LONDON CONSORTIUM, and SOUND & MUSIC.
+		</p>
+		<p>
+			The 35mm films featured in the film are reproductions made by Aura Satz based on the strips
+			which feature in documentation as well as scans of the originals found on the machine.
+		</p>
+		<p>
+			They are currently laced up in the Oramics machine and are on display at the Science Museum.
+		</p>
 
-<p>An excerpt of the film, named after Daphne Oram's futurological manifesto, can now be viewed on The Wire website.</p>
+		<p>
+			An excerpt of the film, named after Daphne Oram's futurological manifesto, can now be viewed
+			on The Wire website.
+		</p>
 
-<h5>29 Jul 2011 - 01 Dec 2014</h5>
-<h4>'Oramics to Electronica', The Science Museum London</h4>
-<p>The film premiered on the 10th October 2011 at the opening event, launched by Brian Eno.</p>
-<Compact type="address">
-The Science Museum<br>
-Exhibition Rd<br>
-South Kensington<br>
-London SW7 2DD<br>
-Tel: 0870 870 4868<br>
-https://group.sciencemuseum.org.uk/our-work/research-public-history/research-projects/past-research-projects/oramics-to-electronica/<br>
-http://daphneoram.org/event/oramics-at-the-science-museum/
-</Compact>
+		<h5>29 Jul 2011 - 01 Dec 2014</h5>
+		<h4>'Oramics to Electronica', The Science Museum London</h4>
+		<p>The film premiered on the 10th October 2011 at the opening event, launched by Brian Eno.</p>
+		<Compact type="address">
+			The Science Museum<br />
+			Exhibition Rd<br />
+			South Kensington<br />
+			London SW7 2DD<br />
+			Tel: 0870 870 4868<br />
+			<a
+				href="https://group.sciencemuseum.org.uk/our-work/research-public-history/research-projects/past-research-projects/oramics-to-electronica/"
+				>https://group.sciencemuseum.org.uk/our-work/research-public-history/research-projects/past-research-projects/oramics-to-electronica/</a
+			>
+			<br />
+			<a href="http://daphneoram.org/event/oramics-at-the-science-museum/"
+				>http://daphneoram.org/event/oramics-at-the-science-museum/</a
+			>
+		</Compact>
 
-Oramics: Atlantis Anew from The Wire Magazine on Vimeo.
+		Oramics: Atlantis Anew from The Wire Magazine on Vimeo.
 
- 
+		<h5>18-29 January 2012</h5>
+		<h4>g Art+ Prize, group exhibition at BFI Southbank, London</h4>
 
-<h5>18-29 January 2012</h5>
-<h4>g Art+ Prize, group exhibition at BFI Southbank, London</h4>
+		<p>
+			Samsung Electronics are delighted to present the UK’s first ever prize for new media art. A
+			shortlist of 10 emerging and established contemporary artists has been selected by a panel of
+			curators from leading arts organisations for a two-week exhibition at the BFI Southbank.
+			Opening on 18 January 2012, the exhibition will include new work as well as pieces that have
+			never been shown before in the UK.
+		</p>
+		<p>
+			The Samsung Art+ Prize aims to highlight artists who reveal the ways technologies can touch
+			our lives. All of the selected artists must be a citizen of, educated in or currently residing
+			in the UK and they have been nominated
+		</p>
+		<p>
+			for work they have created in the past three years. The shortlisted artists selected are: Neil
+			Cummings, Doug Fishbone, Iain Forsyth and Jane Pollard, Torsten Lauschmann, Lucky PDF, Aura
+			Satz, Hiraki Sawa, Semiconductor, Erika Tan and Thomsonand Craighead.
+		</p>
+		<p>
+			The resulting shortlist showcases the diverse range of practice offered by new media, and
+			includes artists working in screen friendly idioms as well as those exploring diverse
+			strategies of communication such as performance, sculpture and music.
+		</p>
+		<p>
+			The 10 nominated artists have been selected for their ability to expand and challenge our
+			understanding of the role of new media. In the era of smart media the prize will celebrate the
+			unique ways in which artists respond to the changing world and embrace the possibilities
+			offered by different media opportunities; not only as platforms of production and research but
+			also as new modes of communication beyond the traditional gallery.
+		</p>
 
-<p>Samsung Electronics are delighted to present the UK’s first ever prize for new media art. A shortlist of 10 emerging and established contemporary artists has been selected by a panel of curators from leading arts organisations for a two-week exhibition at the BFI Southbank. Opening on 18 January 2012, the exhibition will include new work as well as pieces that have never been shown before in the UK.</p>
-<p>The Samsung Art+ Prize aims to highlight artists who reveal the ways technologies can touch our lives. All of the selected artists must be a citizen of, educated in or currently residing in the UK and they have been nominated</p>
-<p>for work they have created in the past three years. The shortlisted artists selected are: Neil Cummings, Doug Fishbone, Iain Forsyth and Jane Pollard, Torsten Lauschmann, Lucky PDF, Aura Satz, Hiraki Sawa, Semiconductor, Erika Tan and Thomsonand Craighead.</p>
-<p>The resulting shortlist showcases the diverse range of practice offered by new media, and includes artists working in screen friendly idioms as well as those exploring diverse strategies of communication such as performance, sculpture and music.</p>
-<p>The 10 nominated artists have been selected for their ability to expand and challenge our understanding of the role of new media. In the era of smart media the prize will celebrate the unique ways in which artists respond to the changing world and embrace the possibilities offered by different media opportunities; not only as platforms of production and research but also as new modes of communication beyond the traditional gallery.</p>
- 
-The judges including Jan Dalley, Arts Editor at the Financial Times; Dr. Peter Weibel, Chairman and CEO of the ZKM Centre for Art and Media; Stuart Comer, Curator of Film, Tate Modern; Jiyoon Lee, Director of SUUM; and New York based media artist, Sooja Kim.
- 
-<Compact type="address">
-BFI Southbank<br>
-Belvedere Road<br>
-London SE1 8XT<br>
-Tel: 0871 971 5582<br>
-www.bfi.org<br>
-www.samsung.com
-</Compact>
- 
+		The judges including Jan Dalley, Arts Editor at the Financial Times; Dr. Peter Weibel, Chairman
+		and CEO of the ZKM Centre for Art and Media; Stuart Comer, Curator of Film, Tate Modern; Jiyoon
+		Lee, Director of SUUM; and New York based media artist, Sooja Kim.
 
-<h5>4–7 May 2012</h5>
-<h4>'The Sight of Sound', group exhibition</h4>
-<p>Deutsche Bank VIP Lounge, Frieze Art Fair</p>
-Performance on the 5th May 2pm
+		<Compact type="address">
+			BFI Southbank<br />
+			Belvedere Road<br />
+			London SE1 8XT<br />
+			Tel: 0871 971 5582<br />
+			www.bfi.org
+			<br />
+			www.samsung.com
+		</Compact>
 
-<p>Wherever we are, what we hear is mostly noise. When we ignore it, it disturbs us. When we listen to it, we find it fascinating.  </p>
-John Cage
+		<h5>4–7 May 2012</h5>
+		<h4>'The Sight of Sound', group exhibition</h4>
+		<p>Deutsche Bank VIP Lounge, Frieze Art Fair</p>
+		Performance on the 5th May 2pm
 
-<p>Selected works feature artists from the Deutsche Bank Collection who reference music in a variety of ways:  as a structural or notational device, a vehicle for chance and improvisation, or as a social platform for communicating identity.  These artists from different generations share a trajectory of using musical forms as a source and framework. The theme underscores Deutsche Bank’s global commitment to supporting art and music, and promoting cultural advancement through the intersecting worlds of ideas and practices. The historical influence of musical sound on visual artists is immeasurable, but its effect upon form, process, and conceptual art has clearly become more prevalent in modern times.  From Piet Mondrian’s painting, “Broadway Boogie Woogie,” his homage to jazz, to John Cage and Nam June Paik’s experiments with performance-driven work, to real-time musical interactions via satellite, video and digital interfaces, the relationship between the aural and visual arts are continually shape-shifting.  </p>
+		<p>
+			Wherever we are, what we hear is mostly noise. When we ignore it, it disturbs us. When we
+			listen to it, we find it fascinating.
+		</p>
+		John Cage
 
-<p>Group exhibition including John Cage, Christian Marclay, Jorge Macchi, Jenny C. Jones, David Ellis and Aura Satz.</p>
+		<p>
+			Selected works feature artists from the Deutsche Bank Collection who reference music in a
+			variety of ways: as a structural or notational device, a vehicle for chance and improvisation,
+			or as a social platform for communicating identity. These artists from different generations
+			share a trajectory of using musical forms as a source and framework. The theme underscores
+			Deutsche Bank’s global commitment to supporting art and music, and promoting cultural
+			advancement through the intersecting worlds of ideas and practices. The historical influence
+			of musical sound on visual artists is immeasurable, but its effect upon form, process, and
+			conceptual art has clearly become more prevalent in modern times. From Piet Mondrian’s
+			painting, “Broadway Boogie Woogie,” his homage to jazz, to John Cage and Nam June Paik’s
+			experiments with performance-driven work, to real-time musical interactions via satellite,
+			video and digital interfaces, the relationship between the aural and visual arts are
+			continually shape-shifting.
+		</p>
 
-<p>Frieze Art Fair on Randall's Island, Manhattan</p>
-www.friezenewyork.com
+		<p>
+			Group exhibition including John Cage, Christian Marclay, Jorge Macchi, Jenny C. Jones, David
+			Ellis and Aura Satz.
+		</p>
 
- 
+		<p>Frieze Art Fair on Randall's Island, Manhattan</p>
+		www.friezenewyork.com
 
-<h5>23 January - 3 February 2013</h5>
-<h4>'Soundfigures' exhibition</h4>
-<p>Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam</p>
-curated by Edwin Carels
-<p>Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics (2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube, an acoustic device that visualises sound as a standing wave of small flames, with music by Steven Severin (of Siouxsie and the Banshees).</p>
-<Compact type="address">
-Blaak 10 Gallery<br>
-Witte de Withstraat 7<br>
-3012 BL Rotterdam<br>
-The Netherlands<br>
-https://iffr.com/en/2013/films/soundfigures<br>
-https://iffr.com/en/persons/aura-satz
-</Compact>
+		<h5>23 January - 3 February 2013</h5>
+		<h4>'Soundfigures' exhibition</h4>
+		<p>Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam</p>
+		curated by Edwin Carels
+		<p>
+			Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks
+			at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the
+			Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos
+			characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses
+			microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying
+			music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics
+			(2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of
+			hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube,
+			an acoustic device that visualises sound as a standing wave of small flames, with music by
+			Steven Severin (of Siouxsie and the Banshees).
+		</p>
+		<Compact type="address">
+			Blaak 10 Gallery<br />
+			Witte de Withstraat 7<br />
+			3012 BL Rotterdam<br />
+			The Netherlands<br />
+			<a href="https://iffr.com/en/2013/films/soundfigures"
+				>https://iffr.com/en/2013/films/soundfigures</a
+			>
+			<br />
+			<a href="https://iffr.com/en/persons/aura-satz">https://iffr.com/en/persons/aura-satz</a>
+		</Compact>
 
+		<h5>3 Dec 2015 - 23 Jan 2016</h5>
+		<h4>'The Trembling Line'</h4>
+		<p>Solo exhibition at John Hansard Gallery, Southampton</p>
+		<p>
+			The Trembling Line is an exhibition of works by Aura Satz exploring acoustics, vibration,
+			sound visualisation and musical gesture with an aim to wrest the space between sound and
+			image, to see how far these can be stretched apart before they fold back into one another. The
+			title, The Trembling Line, refers in part to the basic principle of vibration, a disturbance
+			of equilibrium, such as the stimulated of motion and sound through friction, but also to the
+			possibility of challenging static notation systems and destabilizing the experience of seeing
+			and hearing.
+		</p>
 
-<h5>3 Dec 2015 - 23 Jan 2016</h5>
-<h4>'The Trembling Line'</h4>
-<p>Solo exhibition at John Hansard Gallery, Southampton</p>
-<p>The Trembling Line is an exhibition of works by Aura Satz exploring acoustics, vibration, sound visualisation and musical gesture with an aim to wrest the space between sound and image, to see how far these can be stretched apart before they fold back into one another. The title, The Trembling Line, refers in part to the basic principle of vibration, a disturbance of equilibrium, such as the stimulated of motion and sound through friction, but also to the possibility of challenging static notation systems and destabilizing the experience of seeing and hearing.</p>
+		<p>
+			The exhibition includes a series of photographs, The Absorbing Wall (2015), based on an
+			anechoic chamber, and five closely inter-connected films: Vocal Flame (2012); Oramics:
+			Atlantis Anew (2011); Onomatopoeic Alphabet (2010); Theremin (2009); Automamusic (2008). Some
+			of the works address the visualisation of sound as a morphing language in which patterns of
+			sand, salt or fire correspond to sounds in unexpected ways. Others address gesture-less
+			mechanical music or the compelling gesturality of a theremin, a sensitive instrument that is
+			played without physical contact, merely by waving hands in its proximity, affecting the sounds
+			produced by the electromagnetic field.
+		</p>
 
-<p>The exhibition includes a series of photographs, The Absorbing Wall (2015), based on an anechoic chamber, and five closely inter-connected films: Vocal Flame (2012); Oramics: Atlantis Anew (2011); Onomatopoeic Alphabet (2010); Theremin (2009); Automamusic (2008). Some of the works address the visualisation of sound as a morphing language in which patterns of sand, salt or fire correspond to sounds in unexpected ways. Others address gesture-less mechanical music or the compelling gesturality of a theremin, a sensitive instrument that is played without physical contact, merely by waving hands in its proximity, affecting the sounds produced by the electromagnetic field.</p>
+		<p>
+			Satz is also interested in female figures that are largely excluded from mainstream historical
+			discourse, in an ongoing engagement with the question of women's contributions to labour,
+			technological invention and scientific knowledge. Oramics: Atlantis Anew centres on the
+			invention of a new sound-generating machine and correlated notation system invented by British
+			electronic music pioneer Daphne Oram in 1957. Using principles of drawn-sound (the inverse of
+			the other works which look at sound visualisation), Oram invented a system for sonifying
+			graphic shapes and creating a new language of unheard electronic sounds. Similarly, Vocal
+			Flame addresses popular manifestations of the female disembodied voice, visualised as a wave
+			of flames using an acoustic device known as a 'Rubens' Tube'.
+		</p>
+		<Compact type="address">
+			John Hansard Gallery<br />
+			University of Southampton<br />
+			Highfield<br />
+			Southampton SO17 1BJ<br />
+			T +44 (0)23 8059 2158<br />
+			F +44 (023) 8059 4192<br />
+			E info@hansardgallery.org.uk<br />
+			<a href="http://www.hansardgallery.org.uk/visit/">http://www.hansardgallery.org.uk/visit/</a>
+			<br />
+			<a href="http://www.jhg.art/event-detail/199-aura-satz-the-trembling-line/"
+				>http://www.jhg.art/event-detail/199-aura-satz-the-trembling-line/</a
+			>
+		</Compact>
 
-<p>Satz is also interested in female figures that are largely excluded from mainstream historical discourse, in an ongoing engagement with the question of women's contributions to labour, technological invention and scientific knowledge. Oramics: Atlantis Anew centres on the invention of a new sound-generating machine and correlated notation system invented by British electronic music pioneer Daphne Oram in 1957. Using principles of drawn-sound (the inverse of the other works which look at sound visualisation), Oram invented a system for sonifying graphic shapes and creating a new language of unheard electronic sounds. Similarly, Vocal Flame addresses popular manifestations of the female disembodied voice, visualised as a wave of flames using an acoustic device known as a 'Rubens' Tube'.</p>
-<Compact type="address">
-John Hansard Gallery<br>
-University of Southampton<br>
-Highfield<br>
-Southampton SO17 1BJ<br>
-T +44 (0)23 8059 2158<br>
-F +44 (023) 8059 4192<br>
-E info@hansardgallery.org.uk<br>
-http://www.hansardgallery.org.uk/visit/<br>
-http://www.jhg.art/event-detail/199-aura-satz-the-trembling-line/
-</Compact>
- 
+		<h5>29th Sep 2018 - 08 March 2019</h5>
+		<h4>'Mappe Sonore'</h4>
+		<p>Three-person exhibition at KunstRaum Goethe-Institut, Rome</p>
+		Micol Assael, Christina Kubisch and Aura Satz
 
-<h5>29th Sep 2018 - 08 March 2019</h5>
-<h4>'Mappe Sonore'</h4>
-<p>Three-person exhibition at KunstRaum Goethe-Institut, Rome</p>
-Micol Assael, Christina Kubisch and Aura Satz
+		<p>
+			'Mappe sonore,' cosi si chiama la mostra che inaugurea il prossimo 29 settembre 2018 al
+			Kunstraum Goethe, lo spazio interdisciplinare del Goethe-Institut di Roma. A tentare di dare
+			concretezza visiva alle onde sonore, a creare visioni e nuovi immaginari, sono tre artiste fra
+			le piu interessanti protagoniste della scena della sound art contemporanea: Micol Assaal,
+			Christina Kubisch, Aura Satz. Tre artiste che sono anche l'esempio di una tendenza
+			preponderante nel mondo dell'arte: rendere visibile qualcosa che in apparenza si nasconde,
+			dare fisicita ad elementi pensati da sempre come intangibili. Suono e scienza applicata,
+			strumenti fai da te, software e algoritmi, le opere in mostra aspirano a dare forma
+			all'invisibile, un compito che oggi riesce grazie anche alla nascita di tecnologie e
+			intelligenze artificiali sempre piu evolute. Con incontri, perfomance e workshop, saranno
+			approfonditi i sempre piu labili confini tra reale e virtuale e come questi incidono sulla
+			nostra percezione del reale influenzando la nostra vita e gli spazi fisici in cui viviamo.
+		</p>
+		<Compact type="address">
+			Goethe-Institut Rom Via Savoia 13/15 00198 Roma Tel: +39 06 8440051 Email: info-rom@goethe.de
+			<a href="https://www.goethe.de/ins/it/it/sta/rom/ver/krg/map.html"
+				>https://www.goethe.de/ins/it/it/sta/rom/ver/krg/map.html</a
+			>
+		</Compact>
 
-<p>'Mappe sonore,' cosi si chiama la mostra che inaugurea il prossimo 29 settembre 2018 al Kunstraum Goethe, lo spazio interdisciplinare del Goethe-Institut di Roma. A tentare di dare concretezza visiva alle onde sonore, a creare visioni e nuovi immaginari, sono tre artiste fra le piu interessanti protagoniste della scena della sound art contemporanea: Micol Assaal, Christina Kubisch, Aura Satz. Tre artiste che sono anche l'esempio di una tendenza preponderante nel mondo dell'arte: rendere visibile qualcosa che in apparenza si nasconde, dare fisicita ad elementi pensati da sempre come intangibili. Suono e scienza applicata, strumenti fai da te, software e algoritmi, le opere in mostra aspirano a dare forma all'invisibile, un compito che oggi riesce grazie anche alla nascita di tecnologie e intelligenze artificiali sempre piu evolute. Con incontri, perfomance e workshop, saranno approfonditi i sempre piu labili confini tra reale e virtuale e come questi incidono sulla nostra percezione del reale influenzando la nostra vita e gli spazi fisici in cui viviamo.</p>
-<Compact type="address">
-Goethe-Institut Rom
-Via Savoia 13/15
-00198 Roma
-Tel: +39 06 8440051
-Email: info-rom@goethe.de
-https://www.goethe.de/ins/it/it/sta/rom/ver/krg/map.html
-</Compact>
- 
-<h5>4 Feb - 27 March 2022</h5>
-<h4>g as part of 'She Recalibrates' - Solo exhibition at ARTIUM, Museo Vasco de Arte Contemporáneo, Vitoria-Gasteiz</h4>Showin
-<p>Aura Satz's film and sound works are made in conversation and use dialogue as both method and subject matter. The works included in this show are part of a long-standing interest in compositional practices, in particular those of women in electronic and electroacoustic music. In addition to three film-sound portraits, the exhibition includes a series of drawings centred on early modular synthesizer compositional practices by women.</p>
+		<h5>4 Feb - 27 March 2022</h5>
+		<h4>
+			g as part of 'She Recalibrates' - Solo exhibition at ARTIUM, Museo Vasco de Arte
+			Contemporáneo, Vitoria-Gasteiz
+		</h4>Showin
+		<p>
+			Aura Satz's film and sound works are made in conversation and use dialogue as both method and
+			subject matter. The works included in this show are part of a long-standing interest in
+			compositional practices, in particular those of women in electronic and electroacoustic music.
+			In addition to three film-sound portraits, the exhibition includes a series of drawings
+			centred on early modular synthesizer compositional practices by women.
+		</p>
 
-<p>In Z Gallery programme, Aura Satz presents the films 'Oramics: Atlantis Anew,' 'Little Doorways to Paths Not Yet Take' and 'Hacer una diagonal con la musica,' three works based on three pioneers in the field of electronic music. 'She Recalibrates' (2018) are a series of drawin fine-tuning the sound in a listening feedback loop.</p>
-<p>*Hacer una diagonal con la musica*. 2019. 10 min. A short film about Argentine electroacoustic composer Beatriz Ferreyra, a pioneer of musique concrete together with Pierre Schaeffer during the 1950s and 1960s. Here she discusses her 'sound hunting' recording techniques, and other thoughts on sound montage and spatialization, illustrated through onomatopoeia and dynamic hand gestures. In the key opening scene, Ferreyra is seen listening to the miniscule creaks produced by a door, expanding the simple binary of open vs closed to encompass an entire sound universe, an expanded bandwidth of what can be heard and how we might listen.</p>
-<p>*Oramics: Atlantis Anew*. 2011. 7 min. Conceived as an artist's film that pays tribute to Daphne Oram, pioneer of British electronic music and co-founder of the BBC Radiophonic Workshop in 1958, the film depicts a close encounter with her unique Oramics machine invention, housed in the Science Museum in London.</p>
-<p>*Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's earlier films about women composers and inventors of electronic music, this short film offers an intimate look into the studio of American composer Laurie Spiegel (b. 1945). Renowned for her electronic music compositions and algorithmic composition software, the film also reveals all manner of musical and technological paraphernalia, ranging from sheet music to DIY inventions and collections of quirky toys. The soundtrack features electronic music composed by Spiegel and Laurie's voiceover reflecting on electronic music and the process of composing.</p>
-<p>The* Z Gallery* (Z for zinema, cinema in Basque) programme is neither a season of films nor an exhibition. It is a project that constructs an intermediate space from which to reflect on and draw attention to works by artists making the leap into the cinematographic field as well as filmmakers exploring the exhibition format. It is a programme arising from the determined gesture of thinking about the moving image in the museum. A programme that aims to bring to the public authors interested in searching for new narrative forms by questioning the genres that historically categorise cinematographic language.</p>
-<p>Curator: Garbine Ortega. Catalogue includes newly commissioned essays by Jo Hutton and Xabier Erkizia.</p>
-<p>https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery https://artium.eus/en/activities/item/61328-conversacion-con-aura-satz</p>
-<p>Interview in Elemmental Magazine https://elemmental.com/2022/02/18/aura-satz-entrevista/</p>
+		<p>
+			In Z Gallery programme, Aura Satz presents the films 'Oramics: Atlantis Anew,' 'Little
+			Doorways to Paths Not Yet Take' and 'Hacer una diagonal con la musica,' three works based on
+			three pioneers in the field of electronic music. 'She Recalibrates' (2018) are a series of
+			drawin fine-tuning the sound in a listening feedback loop.
+		</p>
+		<p>
+			*Hacer una diagonal con la musica*. 2019. 10 min. A short film about Argentine electroacoustic
+			composer Beatriz Ferreyra, a pioneer of musique concrete together with Pierre Schaeffer during
+			the 1950s and 1960s. Here she discusses her 'sound hunting' recording techniques, and other
+			thoughts on sound montage and spatialization, illustrated through onomatopoeia and dynamic
+			hand gestures. In the key opening scene, Ferreyra is seen listening to the miniscule creaks
+			produced by a door, expanding the simple binary of open vs closed to encompass an entire sound
+			universe, an expanded bandwidth of what can be heard and how we might listen.
+		</p>
+		<p>
+			*Oramics: Atlantis Anew*. 2011. 7 min. Conceived as an artist's film that pays tribute to
+			Daphne Oram, pioneer of British electronic music and co-founder of the BBC Radiophonic
+			Workshop in 1958, the film depicts a close encounter with her unique Oramics machine
+			invention, housed in the Science Museum in London.
+		</p>
+		<p>
+			*Little Doorways to Paths Not Yet Taken*. 2016. 8 min. Following Satz's earlier films about
+			women composers and inventors of electronic music, this short film offers an intimate look
+			into the studio of American composer Laurie Spiegel (b. 1945). Renowned for her electronic
+			music compositions and algorithmic composition software, the film also reveals all manner of
+			musical and technological paraphernalia, ranging from sheet music to DIY inventions and
+			collections of quirky toys. The soundtrack features electronic music composed by Spiegel and
+			Laurie's voiceover reflecting on electronic music and the process of composing.
+		</p>
+		<p>
+			The* Z Gallery* (Z for zinema, cinema in Basque) programme is neither a season of films nor an
+			exhibition. It is a project that constructs an intermediate space from which to reflect on and
+			draw attention to works by artists making the leap into the cinematographic field as well as
+			filmmakers exploring the exhibition format. It is a programme arising from the determined
+			gesture of thinking about the moving image in the museum. A programme that aims to bring to
+			the public authors interested in searching for new narrative forms by questioning the genres
+			that historically categorise cinematographic language.
+		</p>
+		<p>
+			Curator: Garbine Ortega. Catalogue includes newly commissioned essays by Jo Hutton and Xabier
+			Erkizia.
+		</p>
+		<p>
+			<a href="https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery"
+				>https://artium.eus/en/exhibitions/item/61329-aura-satz-she-recalibrates-z-gallery</a
+			>
+			<a href="https://artium.eus/en/activities/item/61328-conversacion-con-aura-satz"
+				>https://artium.eus/en/activities/item/61328-conversacion-con-aura-satz</a
+			>
+		</p>
+		<p>
+			Interview in Elemmental Magazine
+			<a href="https://elemmental.com/2022/02/18/aura-satz-entrevista/"
+				>https://elemmental.com/2022/02/18/aura-satz-entrevista/</a
+			>
+		</p>
 
- 
+		<h3>Screenings:</h3>
 
-<h3>Screenings:</h3>
- 
-<h5>20 April 2014</h5>
-<h4>Screened at the Ancienne Belgique as part of 'All Connected'</h4>
-<p>'All Connected' is a series in Huis23 which involves concerts, films, readings and instrument presentations with and about artists who play with the language of 'voltage control', who use the 'modular' as creative thought process and test musical limits with it, artists who work in the spirit of San Francisco Tape Music Centre: a collective that came into being when pioneers like Terry Riley, Morton Subotnick, Steve Reich, Ramon Sender, Pauline Oliveros, and many others connected their oscillators and tape-recorders together and from which the most progressive music of that period originated. Performances by Af Ursin, Baudouin Oosterlynck, and Joris De Laet.</p>
+		<h5>20 April 2014</h5>
+		<h4>Screened at the Ancienne Belgique as part of 'All Connected'</h4>
+		<p>
+			'All Connected' is a series in Huis23 which involves concerts, films, readings and instrument
+			presentations with and about artists who play with the language of 'voltage control', who use
+			the 'modular' as creative thought process and test musical limits with it, artists who work in
+			the spirit of San Francisco Tape Music Centre: a collective that came into being when pioneers
+			like Terry Riley, Morton Subotnick, Steve Reich, Ramon Sender, Pauline Oliveros, and many
+			others connected their oscillators and tape-recorders together and from which the most
+			progressive music of that period originated. Performances by Af Ursin, Baudouin Oosterlynck,
+			and Joris De Laet.
+		</p>
 
-Ancienne Belgique<br>
-Anspachlaan 110<br>
-1000 Brussels<br>
-Tel: +32 (0)2 548 24 84<br>
+		Ancienne Belgique<br />
+		Anspachlaan 110<br />
+		1000 Brussels<br />
+		Tel: +32 (0)2 548 24 84<br />
 
-http://www.abconcerts.be/en/concerts/p/detail/all-connected-3-arf-ursin-baudouin-osterlynck-joris-de-laet-20-04-2014
+		<a
+			href="http://www.abconcerts.be/en/concerts/p/detail/all-connected-3-arf-ursin-baudouin-osterlynck-joris-de-laet-20-04-2014"
+			>http://www.abconcerts.be/en/concerts/p/detail/all-connected-3-arf-ursin-baudouin-osterlynck-joris-de-laet-20-04-2014</a
+		>
 
- 
+		<h5>26 Oct - 04 Nov 2012</h5>
+		<h4>Screened as part of the WUNDERGRUND festival, Exploring Music and Sound, Copenhagen</h4>
+		<p>28th Oct, 8pm, Programme presented by Anne-Hilde Neset</p>
 
-<h5>26 Oct - 04 Nov 2012</h5>
-<h4>Screened as part of the WUNDERGRUND festival, Exploring Music and Sound, Copenhagen</h4>
-<p>28th Oct, 8pm, Programme presented by Anne-Hilde Neset</p>
+		<a
+			href="http://wundergrund.dk/kunstnere-3/radiofoniens-vidundere-daphne-oram-aura-satz-talk-ved-anne-hilde-neset-jonny-trunk/"
+			>http://wundergrund.dk/kunstnere-3/radiofoniens-vidundere-daphne-oram-aura-satz-talk-ved-anne-hilde-neset-jonny-trunk/</a
+		>
 
-http://wundergrund.dk/kunstnere-3/radiofoniens-vidundere-daphne-oram-aura-satz-talk-ved-anne-hilde-neset-jonny-trunk/
+		<h5>3-7 October 2013</h5>
+		<h4>
+			Screened at the 51st New York Film Festival 'Views from the Avant-garde', curated by Mark
+			McElhatten
+		</h4>
+		<p>
+			Our popular yearly touchstone for experimental film returns with 45 programs in glorious
+			Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's
+			slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura
+			Satz, Lois Patino, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes
+			to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema
+			that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.
+		</p>
+		The Film Society of Lincoln Center<br />
+		70 Lincoln Center Plaza<br />
+		New York, NY 10023-6595<br />
+		<a href="http://www.filmlinc.com/films/on-sale/program-i-aura-satz"
+			>http://www.filmlinc.com/films/on-sale/program-i-aura-satz</a
+		>
+		<br />
+		<a href="http://www.filmlinc.com/nyff2013">http://www.filmlinc.com/nyff2013</a>
+		<br />
+		<a
+			href="http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant"
+			>http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant</a
+		>
+		<br />
 
- 
+		<h5>13 May 2015</h5>
+		<h4>'Soundfigures: Films by Aura Satz'</h4>
+		<p>
+			A selection of films by Aura Satz, programmed by Michele Smith, DIM Cinema, Vancouver
+			Cinametheque
+		</p>
 
-<h5>3-7 October 2013</h5>
-<h4>Screened at the 51st New York Film Festival 'Views from the Avant-garde', curated by Mark McElhatten</h4>
-<p>
-Our popular yearly touchstone for experimental film returns with 45 programs in glorious Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura Satz, Lois Patino, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.</p>
-The Film Society of Lincoln Center<br>
-70 Lincoln Center Plaza<br>
-New York, NY 10023-6595<br>
-http://www.filmlinc.com/films/on-sale/program-i-aura-satz<br>
-http://www.filmlinc.com/nyff2013<br>
-http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant<br>
+		(Near) extinct technologies make sound visible in this program of shorts by London-based artist
+		Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni Plate, a
+		device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley dancers,
+		form intricate patterns in response to changing sound frequencies, their shapes recalling the
+		utopian quest for a 'pure,' onomatopoeic alphabet. Wax cylinder recordings combine with modern
+		scientific instruments to animate a text by Rainer Maria Rilke on the possibility of hearing the
+		dead by playing their skulls with a gramophone needle. A Ruben's Tube translates a histrionic
+		voice-over into a standing wave of small flames, provoking unexpected associations, from the
+		biblical burning bush to various acts of ventriloquism in pop culture. Breaking its long
+		silence, the Oramics Machine plays hand-drawn compositions by its inventor, electronic music
+		pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of a 35mm film printer honour
+		Natalie Kalmus, colour consultant on masterpieces of the Technicolor era. Chromatic distortions
+		in early colour-film tests are revealed through the eyes of the George Eastman family and old
+		Hollywood stars. In a dramatic finale, Satz and experimental filmmaker Lis Rhodes encode their
+		voices as abstract light patterns on 16mm mono and 35mm stereo filmstrips in a collaborative
+		exploration of sound-image synchronicity.
+		<br />
+		DIM Cinema<br />
+		The Cinematheque<br />
+		1131 Howe St.<br />
+		Vancouver BC<br />
+		Canada<br />
+		<a href="http://www.dimcinema.ca/soundfigures-films-aura-satz"
+			>http://www.dimcinema.ca/soundfigures-films-aura-satz</a
+		>
+		<br />
 
- 
+		<h5>18 Feb 2016</h5>
+		<h4>
+			'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London
+		</h4>
+		<p>
+			Aura Satz presents the UK premiere of 'Between the Bullet and the Hole', her latest short film
+			which examines the role of women in ballistic research, early computing and pattern perception
+			in warfare. Presented alongside her works focusing on memory, notation, encryption and gender,
+			the event also features an in conversation with special guests Morgan Quaintance and David
+			Alan Grier.
+		</p>
+		Whitechapel Gallery<br />
+		77-82 Whitechapel High St<br />
+		London E1 7QX<br />
+		<a href="http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/"
+			>http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/</a
+		>
+		<br />
 
-<h5>13 May 2015</h5>
-<h4>'Soundfigures: Films by Aura Satz'</h4>
-<p>A selection of films by Aura Satz, programmed by Michele Smith, DIM Cinema, Vancouver Cinametheque</p>
+		<h5>24 March 2016</h5>
+		<h4>
+			'In and Out of Synch', an evening of films and sound with Aura Satz, presented by Liquid
+			Architecture and Gertrude Contemporary
+		</h4>
+		<p>
+			Satz presents works that explore the relationship between esoteric technologies (Chladni
+			plate, Rubens' tube, theremin, mechanical music machines, phonographs, dial tones,
+			drawn/optical sound) and the human body (heightened perception, sensory disorientation,
+			psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed
+			by Q&A with Joel Stern.
+		</p>
+		Gertrude Contemporary<br />
+		200 Gertrude St, Fitzroy<br />
+		Melbourne VIC 3065<br />
+		Australia<br />
+		<a href="https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch"
+			>https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch</a
+		>
+		<br />
+		<a href="https://liquidarchitecture.org.au/events/aura-satz-talk"
+			>https://liquidarchitecture.org.au/events/aura-satz-talk</a
+		>
+		<br />
+		<a href="http://www.gertrude.org.au/">http://www.gertrude.org.au/</a>
 
-(Near) extinct technologies make sound visible in this program of shorts by London-based artist Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni Plate, a device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley dancers, form intricate patterns in response to changing sound frequencies, their shapes recalling the utopian quest for a 'pure,' onomatopoeic alphabet. Wax cylinder recordings combine with modern scientific instruments to animate a text by Rainer Maria Rilke on the possibility of hearing the dead by playing their skulls with a gramophone needle. A Ruben's Tube translates a histrionic voice-over into a standing wave of small flames, provoking unexpected associations, from the biblical burning bush to various acts of ventriloquism in pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn compositions by its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the Technicolor era. Chromatic distortions in early colour-film tests are revealed through the eyes of the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and experimental filmmaker Lis Rhodes encode their voices as abstract light patterns on 16mm mono and 35mm stereo filmstrips in a collaborative exploration of sound-image synchronicity.
-<br>
-DIM Cinema<br>
-The Cinematheque<br>
-1131 Howe St.<br>
-Vancouver BC<br>
-Canada<br>
-http://www.dimcinema.ca/soundfigures-films-aura-satz<br>
+		<h5>7th March 2017</h5>
+		<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
+		<p>Followed by Q&A with Chris Paul Daniels</p>
 
- 
+		HOME Manchester<br />
+		2 Tony Wilson Place<br />
+		Manchester M15 4FN<br />
+		<a href="https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/"
+			>https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/</a
+		>
+		<br />
+		Part of: Artist Talks
+		<a href="https://homemcr.org/event/artist-talks/">https://homemcr.org/event/artist-talks/</a>
 
-<h5>18 Feb 2016</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London</h4>
-<p> 
+		<h5>23-25 Aug 2019</h5>
+		<h4>i retrospective screening at Jupiter Rising at JupiterArtland, Scotland</h4>Min
+		<p>
+			<a href="http://www.jupiterrising.art/archive/2019"
+				>http://www.jupiterrising.art/archive/2019</a
+			>
+		</p>
 
-Aura Satz presents the UK premiere of 'Between the Bullet and the Hole', her latest short film which examines the role of women in ballistic research, early computing and pattern perception in warfare. Presented alongside her works focusing on memory, notation, encryption and gender, the event also features an in conversation with special guests Morgan Quaintance and David Alan Grier.
-</p>
-Whitechapel Gallery<br>
-77-82 Whitechapel High St<br>
-London E1 7QX<br>
-http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/<br>
+		<h5>2-10 October 2021</h5>
+		<h4>
+			t Special Focus screenings and live performance as part of VideoEx, Experimental film & Video
+			Festival Zurich
+		</h4>Artis
+		<p>
+			<a href="https://videoex.ch/videoex/festival-2021/programm-2021/artist-focus-aura-satz/"
+				>https://videoex.ch/videoex/festival-2021/programm-2021/artist-focus-aura-satz/</a
+			>
+		</p>
+		<a
+			href="https://videoex.ch/videoex/festival-2021/programm-2021/expanded-cinema-and-live-acts/aura-satz-performance/"
+			>https://videoex.ch/videoex/festival-2021/programm-2021/expanded-cinema-and-live-acts/aura-satz-performance/</a
+		>
 
-<h5>24 March 2016</h5>
-<h4>'In and Out of Synch', an evening of films and sound with Aura Satz, presented by Liquid Architecture and Gertrude Contemporary</h4>
-<p> 
-
-Satz presents works that explore the relationship between esoteric technologies (Chladni plate, Rubens' tube, theremin, mechanical music machines, phonographs, dial tones, drawn/optical sound) and the human body (heightened perception, sensory disorientation, psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed by Q&A with Joel Stern.
-</p>
-Gertrude Contemporary<br>
-200 Gertrude St, Fitzroy<br>
-Melbourne VIC 3065<br>
-Australia<br>
-https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br>
-https://liquidarchitecture.org.au/events/aura-satz-talk<br>
-http://www.gertrude.org.au/
-
- 
-
-<h5>7th March 2017</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
-<p> 
-
-Followed by Q&A with Chris Paul Daniels</p>
-
-HOME Manchester<br>
-2 Tony Wilson Place<br>
-Manchester M15 4FN<br>
-https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br>
-Part of: Artist Talks https://homemcr.org/event/artist-talks/<br>
-
- 
-
-<h5>23-25 Aug 2019</h5>
-<h4>i retrospective screening at Jupiter Rising at JupiterArtland, Scotland</h4>Min
-<p>http://www.jupiterrising.art/archive/2019</p>
- 
-
-<h5>2-10 October 2021</h5>
-<h4>t Special Focus screenings and live performance as part of VideoEx, Experimental film & Video Festival Zurich</h4>Artis
-<p>https://videoex.ch/videoex/festival-2021/programm-2021/artist-focus-aura-satz/</p>
-https://videoex.ch/videoex/festival-2021/programm-2021/expanded-cinema-and-live-acts/aura-satz-performance/
-
-<br>7-10 April 2022<br>
-Rewire festival, the Hague<br>
-https://www.rewirefestival.nl/event/rewire-2022<br>
-https://www.rewirefestival.nl/artist/shorts-aura-satz
-
-</section>
-  
+		<br />7-10 April 2022<br />
+		Rewire festival, the Hague<br />
+		<a href="https://www.rewirefestival.nl/event/rewire-2022"
+			>https://www.rewirefestival.nl/event/rewire-2022</a
+		>
+		<br />
+		<a href="https://www.rewirefestival.nl/artist/shorts-aura-satz"
+			>https://www.rewirefestival.nl/artist/shorts-aura-satz</a
+		>
+	</section>
 </ProjectLayout>

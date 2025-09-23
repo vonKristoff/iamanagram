@@ -1,208 +1,408 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image
-    src="Preemptive Listening 16mm still5.jpg"
-    caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
-  />
-  <section>
-    <p>
-      'Preemptive Listening (part 1: The Fork in the Road)' is a short 16mm film
-      which serves as part 1 of a larger research project on sonic obedience and
-      disobedience through the trope of the siren. It posits the siren's loud
-      glissando wail as a conditioned and learned signal, one that can
-      potentially be perceptually and musically rewired. For this first chapter
-      of the project, Lebanese trumpet improviser Mazen Kerbaj has composed a
-      new siren sound using circular breathing, alongside the actor and activist
-      Khalid Abdalla's account of the siren as the emblematic sound of
-      resistance, oppression, and lost futures during the Arab Spring. Shot on
-      16mm, the film is literally driven by its soundtrack, as the voice becomes
-      a beacon, activating emergency rotating lights.
-    </p>
-  </section>
-  <Blockquote title="Credits" type="inline">
-    <li><strong>Featuring Beatriz Ferreyra</strong></li>
-    <li><strong>Directed and edited by Aura Satz</strong></li>
-    <li>DOP: Sam Williams</li>
-    <li>Music: Beatriz Ferreyra</li>
-    <li>Dubbing Mix: Gernot Fuhrmann</li>
-    <li>English Subtitles: Aura Satz</li>
-    Special thanks to Jo Langton
-  </Blockquote>
-  <Image
-    src="Preemptive Listening 16mm still1.jpg"
-    caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
-  />
-  <h3>Exhibitions</h3>
-  <Title
-    date="7 Nov-21 Dec 2018"
-    title="'Listen, Recalibrate'"
-    subtitle="Solo show at Fridman Gallery, New York"
-  >
-    <p>
-      Exhibition catalogue with essays by Christoph Cox, David Crowley, Barbara
-      London, and Aura Satz in conversation with David Toop.
-    </p>
-    <Link
-      url="https://www.fridmangallery.com/aura-satz"
-      label="fridmangallery.com"
-    />
-    <Link
-      url="https://www.fridmangallery.com/listen-recalibrate"
-      label="fridmangallery.com/listen-recalibrate"
-    />
-  </Title>
+	<Image
+		src="Preemptive Listening 16mm still5.jpg"
+		caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
+	/>
+	<section>
+		<p>
+			'Preemptive Listening (part 1: The Fork in the Road)' is a short 16mm film which serves as
+			part 1 of a larger research project on sonic obedience and disobedience through the trope of
+			the siren. It posits the siren's loud glissando wail as a conditioned and learned signal, one
+			that can potentially be perceptually and musically rewired. For this first chapter of the
+			project, Lebanese trumpet improviser Mazen Kerbaj has composed a new siren sound using
+			circular breathing, alongside the actor and activist Khalid Abdalla's account of the siren as
+			the emblematic sound of resistance, oppression, and lost futures during the Arab Spring. Shot
+			on 16mm, the film is literally driven by its soundtrack, as the voice becomes a beacon,
+			activating emergency rotating lights.
+		</p>
 
-  <Title
-    date="19-22 Sep 2019"
-    title="'Preemptive Listening', film and sound installation"
-    subtitle="Gunpowder Magazine, Berwick Film and Media Arts Festival, Berwick upon Tweed"
-  >
-    <p>
-      An expanded version of the 16mm short film featuring the voice of Khalid
-      Abdalla and the trumpet by Mazen Kerbaj, this iteration installed in an
-      old Gunpowder Magazine, embeds further sound elements from the project.
-      Including Elaine Mitchener (voice), Laurie Spiegel (electronica), Anton
-      Lukoszevieze (cello), Maja Ratkje (voice), Nick Hallett (voice and
-      electronica), Rhodri Davies (harp), and Steve Goodman (electronica).
-    </p>
-    <Link
-      url="https://www.bfmaf.org/programme/2019/exhibitions/preemptive-listening-part-1-the-fork-in-the-road"
-      label="bfmaf.org/programme"
-    />
-  </Title>
-  <section>
-    <h5>4 May - 21 June 2020</h5>
-<p>'All at Once' online group show curated by Regine Basha, Fridman Gallery, NY.</p>
-<p>Including McArthur Binion, Yen Yen Chou, Julian Day, Heather Dewey-Hagborg, Tamar Ettun, Phylicia Ghee, Milford Graves, Jacob Kirkegaard + Katinka Fogh Vindelev, Nate Lewis, Julie Mehretu, Ana Prvacki, Public Assembly, Birgit Rathsmann, Aura Satz, Eric Schnell, Cauleen Smith.</p>
+		<Blockquote title="Credits" type="inline">
+			<li><strong>Featuring Beatriz Ferreyra</strong></li>
+			<li><strong>Directed and edited by Aura Satz</strong></li>
+			<li>DOP: Sam Williams</li>
+			<li>Music: Beatriz Ferreyra</li>
+			<li>Dubbing Mix: Gernot Fuhrmann</li>
+			<li>English Subtitles: Aura Satz</li>
+			Special thanks to Jo Langton
+		</Blockquote>
+		<Image
+			src="Preemptive Listening 16mm still1.jpg"
+			caption="Aura Satz, 'Preemptive Listening (part 1: The Fork in the Road)', film still, 2018"
+		/>
+		<h3>Exhibitions</h3>
+		<Title
+			date="7 Nov-21 Dec 2018"
+			title="'Listen, Recalibrate'"
+			subtitle="Solo show at Fridman Gallery, New York"
+		>
+			<p>
+				Exhibition catalogue with essays by Christoph Cox, David Crowley, Barbara London, and Aura
+				Satz in conversation with David Toop.
+			</p>
+			<Link url="https://www.fridmangallery.com/aura-satz" label="fridmangallery.com" />
+			<Link
+				url="https://www.fridmangallery.com/listen-recalibrate"
+				label="fridmangallery.com/listen-recalibrate"
+			/>
+		</Title>
 
-<p>The gallery's first online-only exhibition comes on the unusual occasion of new social distancing practices amidst a global pandemic. What has become most evident given the current Covid-19 crisis, is that we, as a human race, are undeniably all connected. Of course, the advent of the internet first excited this awareness of connectivity and we have been enjoying all kinds of points of contact, through shared interests and desires, as well as through consumer-driven synergy (albeit the connectivity still remains class- and race-based to some extent). More recently, greater awareness of the climate crisis has triggered another wave of global awakening about our species' shared responsibility to the planet's well-being. But most effective, so far, is this new level of climate emergency - this very "visceral" connection we are experiencing through invisible "respiratory droplets" that float between us, person-to-person, throughout the planet. People are now aware, more than ever, that touching one person means touching billions. This phenomena is a blunt reminder that there is such a thing as collective sickness and collective fear, but also, as we have seen, collective hope and collective resilience. Is collective psychic healing likely to follow? If bodies can be connected so instantly, could our consciousness be connected as well? A plethora of philosophers, artists, scientists, psychoanalysts, astrophysicists, shamans, writers, poets and mystics have been, over the past several decades, proposing and debating the recognition of "consciousness". Guru-like pop figures have emerged in recent years in the West, like Eckhart Tolle, David Lynch, Russell Brand, Oprah Winfrey and Deepak Chopra, who speak of 'Consciousness' as a vast singular source we are all able to tap into. In Carl Jung's 'collective unconscious' we are connected through a shared taxonomy of archetypes. Could we, as they suggest, be facing the very beginning of our final stage of evolution? Consider the works selected as a curated 'image bank' bringing images, video and sound relating to this meandering rumination about consciousness, collective consciousness, shared psychic trauma and speculative healing.</p>
+		<Title
+			date="19-22 Sep 2019"
+			title="'Preemptive Listening', film and sound installation"
+			subtitle="Gunpowder Magazine, Berwick Film and Media Arts Festival, Berwick upon Tweed"
+		>
+			<p>
+				An expanded version of the 16mm short film featuring the voice of Khalid Abdalla and the
+				trumpet by Mazen Kerbaj, this iteration installed in an old Gunpowder Magazine, embeds
+				further sound elements from the project. Including Elaine Mitchener (voice), Laurie Spiegel
+				(electronica), Anton Lukoszevieze (cello), Maja Ratkje (voice), Nick Hallett (voice and
+				electronica), Rhodri Davies (harp), and Steve Goodman (electronica).
+			</p>
+			<Link
+				url="https://www.bfmaf.org/programme/2019/exhibitions/preemptive-listening-part-1-the-fork-in-the-road"
+				label="bfmaf.org/programme"
+			/>
+		</Title>
 
-<p>https://www.fridmangallery.com/all-at-once</p>
-<p>https://9e6a243e-2eff-4765-a8af-7648f8204c6f.filesusr.com/ugd/710937_ef75ab4652a8427daf34b12922cf2bd7.pdf</p>
+		<h5>4 May - 21 June 2020</h5>
+		<p>'All at Once' online group show curated by Regine Basha, Fridman Gallery, NY.</p>
+		<p>
+			Including McArthur Binion, Yen Yen Chou, Julian Day, Heather Dewey-Hagborg, Tamar Ettun,
+			Phylicia Ghee, Milford Graves, Jacob Kirkegaard + Katinka Fogh Vindelev, Nate Lewis, Julie
+			Mehretu, Ana Prvacki, Public Assembly, Birgit Rathsmann, Aura Satz, Eric Schnell, Cauleen
+			Smith.
+		</p>
 
- 
+		<p>
+			The gallery's first online-only exhibition comes on the unusual occasion of new social
+			distancing practices amidst a global pandemic. What has become most evident given the current
+			Covid-19 crisis, is that we, as a human race, are undeniably all connected. Of course, the
+			advent of the internet first excited this awareness of connectivity and we have been enjoying
+			all kinds of points of contact, through shared interests and desires, as well as through
+			consumer-driven synergy (albeit the connectivity still remains class- and race-based to some
+			extent). More recently, greater awareness of the climate crisis has triggered another wave of
+			global awakening about our species' shared responsibility to the planet's well-being. But most
+			effective, so far, is this new level of climate emergency - this very "visceral" connection we
+			are experiencing through invisible "respiratory droplets" that float between us,
+			person-to-person, throughout the planet. People are now aware, more than ever, that touching
+			one person means touching billions. This phenomena is a blunt reminder that there is such a
+			thing as collective sickness and collective fear, but also, as we have seen, collective hope
+			and collective resilience. Is collective psychic healing likely to follow? If bodies can be
+			connected so instantly, could our consciousness be connected as well? A plethora of
+			philosophers, artists, scientists, psychoanalysts, astrophysicists, shamans, writers, poets
+			and mystics have been, over the past several decades, proposing and debating the recognition
+			of "consciousness". Guru-like pop figures have emerged in recent years in the West, like
+			Eckhart Tolle, David Lynch, Russell Brand, Oprah Winfrey and Deepak Chopra, who speak of
+			'Consciousness' as a vast singular source we are all able to tap into. In Carl Jung's
+			'collective unconscious' we are connected through a shared taxonomy of archetypes. Could we,
+			as they suggest, be facing the very beginning of our final stage of evolution? Consider the
+			works selected as a curated 'image bank' bringing images, video and sound relating to this
+			meandering rumination about consciousness, collective consciousness, shared psychic trauma and
+			speculative healing.
+		</p>
 
-<h5>15 Sep 2022 - 5 March 2023</h5>
-<p>'SIREN (some poetics)' curated by Quinn Latimer, AMANT, NY</p>
-<p>SIREN (some poetics) is a group exhibition (and a poetics) guest-curated by writer and poet Quinn Latimer, with work by Katja Aufleger, Patricia L. Boyd, Bia Davou, Sky Hopinka, Liliane Lijn, Bernadette Mayer, Rosemary Mayer, Nour Mobarak, Senga Nengudi, Rivane Neuenschwander, Mayra A. Rodriguez Castro, Aura Satz, Ser Serpas, Shanzhai Lyric, Jenna Sutela, Iris Touliatou, and Dena Yago.</p>
+		<a href="https://www.fridmangallery.com/all-at-once"
+			>https://www.fridmangallery.com/all-at-once</a
+		><br />
+		<a
+			href="https://9e6a243e-2eff-4765-a8af-7648f8204c6f.filesusr.com/ugd/710937_ef75ab4652a8427daf34b12922cf2bd7.pdf"
+			>https://9e6a243e-2eff-4765-a8af-7648f8204c6f.filesusr.com/ugd/710937_ef75ab4652a8427daf34b12922cf2bd7.pdf</a
+		>
 
-<p>Sirens are alarms: they signal harm. In an ancient world, sirens were figured as women (part bird or part fish but all witch) whose seductive song was an invitation to self-harm. Both siren songs, ancient and nascent, remain in the realm of danger, then. Still, if our conceptions of sirens have changed, our notions of control have not. We would still like to save ourselves in every instance, sweet song or not. Yet in the ancient poem that made them infamous, of the sirens who sang to some crew, no body was described just a voice. The seduction the siren offered was cognitive; it was knowledge. Its technology was some "honeyed song," emitted as if from a speaker over land across water indicating other ideological borders: between exile and home, foreign and familiar, female and male, nonhuman and human, danger and safety, transgression and normativity, sonic disobedience and sonic obedience, that is, language as noise and language as linguistic meaning. These borders-as-binaries, all pale, mineral shores, were unjust and untrue. But poetry is politics, always.</p>
+		<h5>15 Sep 2022 - 5 March 2023</h5>
+		<p>'SIREN (some poetics)' curated by Quinn Latimer, AMANT, NY</p>
+		<p>
+			SIREN (some poetics) is a group exhibition (and a poetics) guest-curated by writer and poet
+			Quinn Latimer, with work by Katja Aufleger, Patricia L. Boyd, Bia Davou, Sky Hopinka, Liliane
+			Lijn, Bernadette Mayer, Rosemary Mayer, Nour Mobarak, Senga Nengudi, Rivane Neuenschwander,
+			Mayra A. Rodriguez Castro, Aura Satz, Ser Serpas, Shanzhai Lyric, Jenna Sutela, Iris
+			Touliatou, and Dena Yago.
+		</p>
 
-<p>SIREN (some poetics) examines what lies beyond such borders and binaries - ancestral, technological, epistemological, literary, patriarchal, corporeal, emotional or otherwise. Devoted to the voice - as aesthetic signature or the production of self and sound - and the avatar-like bodies we build and break around it, the exhibition considers technologies of myth and mouth, earth and alarm, gender and poetics. Through the work of approximately seventeen artists and poets of various generations and geographies, the show posits practices that employ a grammar of sign and sound systems, at once figuring, resisting, writing, and voicing the visual field. Moving away from the cool, clinical, conceptual and mostly two-dimensional exhibitions that have so often stood for language and poetry as a visual art practice, in which the white cube stands in for the pale architectonic page, SIREN is situated in the dank earth and its kaleidoscopic ecosystems. Both human and nonhuman forms of language-making and poetics are put forth, from precolonial myth to ludic science fiction, the bootlegged oracular line to critical fabulation, fungal networks to gut bacteria, text to textile to poem to prism to algorithm. Indeed, the works on view often emit and evidence a kind of parapoetics: poetry as opaque metabolic structuring or as some wild surfacing. Questions we might ask (well): How to survey the siren as a figure of myth, mouth, earth, sound, silence, alarm, poetics, bacteria, and hyphae? How to understand it as a kind of technology: of gender, text, textile, machine, violence, security, and fiction? What of the poem's origin in song, and that song as medicine or epic, history or ideology, complicity or resistance? What of the poetics of alarm, and the authority and authoritarianism of language itself? To consider the siren as both ancient and contemporary warning system, one must examine in which forms its production occurs. For poetics, like violence, are inseparable from the technologies of their times. From the collectively composed and orally rehearsed Odyssey to contemporary art and poetry practices today, our poetics are entangled with the technologies and communications systems that condition their making and enable (or disable) their circulation. In all the works gathered here, such systems (of language, desire, cognition, violence, gender) and myths (of normativity and supremacy) are felt, articulated, critiqued, and channeled, as are the bodies continually fashioned out of them. No body but a voice, as the ancients might have said. To read or be read, as our contemporaries might reply. Each a kind of warning for those bound for and to a language-strewn future.</p>
+		<p>
+			Sirens are alarms: they signal harm. In an ancient world, sirens were figured as women (part
+			bird or part fish but all witch) whose seductive song was an invitation to self-harm. Both
+			siren songs, ancient and nascent, remain in the realm of danger, then. Still, if our
+			conceptions of sirens have changed, our notions of control have not. We would still like to
+			save ourselves in every instance, sweet song or not. Yet in the ancient poem that made them
+			infamous, of the sirens who sang to some crew, no body was described just a voice. The
+			seduction the siren offered was cognitive; it was knowledge. Its technology was some "honeyed
+			song," emitted as if from a speaker over land across water indicating other ideological
+			borders: between exile and home, foreign and familiar, female and male, nonhuman and human,
+			danger and safety, transgression and normativity, sonic disobedience and sonic obedience, that
+			is, language as noise and language as linguistic meaning. These borders-as-binaries, all pale,
+			mineral shores, were unjust and untrue. But poetry is politics, always.
+		</p>
 
-<p>SIREN (some poetics) is accompanied by a public program of readings, performances, and workshops over the course of the exhibition, as well as a publication, to be published by Dancing Foxes Press in early 2023.</p>
+		<p>
+			SIREN (some poetics) examines what lies beyond such borders and binaries - ancestral,
+			technological, epistemological, literary, patriarchal, corporeal, emotional or otherwise.
+			Devoted to the voice - as aesthetic signature or the production of self and sound - and the
+			avatar-like bodies we build and break around it, the exhibition considers technologies of myth
+			and mouth, earth and alarm, gender and poetics. Through the work of approximately seventeen
+			artists and poets of various generations and geographies, the show posits practices that
+			employ a grammar of sign and sound systems, at once figuring, resisting, writing, and voicing
+			the visual field. Moving away from the cool, clinical, conceptual and mostly two-dimensional
+			exhibitions that have so often stood for language and poetry as a visual art practice, in
+			which the white cube stands in for the pale architectonic page, SIREN is situated in the dank
+			earth and its kaleidoscopic ecosystems. Both human and nonhuman forms of language-making and
+			poetics are put forth, from precolonial myth to ludic science fiction, the bootlegged oracular
+			line to critical fabulation, fungal networks to gut bacteria, text to textile to poem to prism
+			to algorithm. Indeed, the works on view often emit and evidence a kind of parapoetics: poetry
+			as opaque metabolic structuring or as some wild surfacing. Questions we might ask (well): How
+			to survey the siren as a figure of myth, mouth, earth, sound, silence, alarm, poetics,
+			bacteria, and hyphae? How to understand it as a kind of technology: of gender, text, textile,
+			machine, violence, security, and fiction? What of the poem's origin in song, and that song as
+			medicine or epic, history or ideology, complicity or resistance? What of the poetics of alarm,
+			and the authority and authoritarianism of language itself? To consider the siren as both
+			ancient and contemporary warning system, one must examine in which forms its production
+			occurs. For poetics, like violence, are inseparable from the technologies of their times. From
+			the collectively composed and orally rehearsed Odyssey to contemporary art and poetry
+			practices today, our poetics are entangled with the technologies and communications systems
+			that condition their making and enable (or disable) their circulation. In all the works
+			gathered here, such systems (of language, desire, cognition, violence, gender) and myths (of
+			normativity and supremacy) are felt, articulated, critiqued, and channeled, as are the bodies
+			continually fashioned out of them. No body but a voice, as the ancients might have said. To
+			read or be read, as our contemporaries might reply. Each a kind of warning for those bound for
+			and to a language-strewn future.
+		</p>
 
-<h5>October 9, 2022, 4pm Artist Aura Satz in conversation with writer Daphne Carr</h5>
+		<p>
+			SIREN (some poetics) is accompanied by a public program of readings, performances, and
+			workshops over the course of the exhibition, as well as a publication, to be published by
+			Dancing Foxes Press in early 2023.
+		</p>
 
-<p>315 Maujer & 932 Grand, New York</p>
+		<h5>October 9, 2022, 4pm Artist Aura Satz in conversation with writer Daphne Carr</h5>
 
-<p>https://www.amant.org/programs/42-preemptive-listening</p>
-<p>https://www.amant.org/exhibitions/10-siren-an-exhibition</p>
+		<p>315 Maujer & 932 Grand, New York</p>
 
- 
+		<a href="https://www.amant.org/programs/42-preemptive-listening"
+			>https://www.amant.org/programs/42-preemptive-listening</a
+		>
+		<a href="https://www.amant.org/exhibitions/10-siren-an-exhibition"
+			>https://www.amant.org/exhibitions/10-siren-an-exhibition</a
+		>
 
- 
+		<h3>Screenings</h3>
+		<h5>18-26 January 2019</h5>
+		<p>Screened as part of the Sharjah Film Platform, Sharjah</p>
+		<a href="http://sharjahart.org/sharjah-art-foundation/programme/sharjah-film-platform"
+			>http://sharjahart.org/sharjah-art-foundation/programme/sharjah-film-platform</a
+		>
+		<a href="http://sharjahart.org/sharjah-art-foundation/events/sharjah-film-platform-programme-15"
+			>http://sharjahart.org/sharjah-art-foundation/events/sharjah-film-platform-programme-15</a
+		>
 
-<h3>Screenings</h3>
-<h5>18-26 January 2019</h5>
-<p>Screened as part of the Sharjah Film Platform, Sharjah</p>
-<p>http://sharjahart.org/sharjah-art-foundation/programme/sharjah-film-platform</p>
-<p>http://sharjahart.org/sharjah-art-foundation/events/sharjah-film-platform-programme-15</p>
+		<h5>22nd May 2019</h5>
+		<p>
+			'Siren Voices with Aura Satz: Rewiring Memories of Technology', in conversation with Marina
+			Warner, Birkbeck Artsweek
+		</p>
 
- 
+		<a
+			href="https://www.eventbrite.co.uk/e/siren-voices-with-aura-satz-rewiring-memories-of-technology-tickets-59047757432"
+			>https://www.eventbrite.co.uk/e/siren-voices-with-aura-satz-rewiring-memories-of-technology-tickets-59047757432</a
+		>
 
-<h5>22nd May 2019</h5>
-<p>'Siren Voices with Aura Satz: Rewiring Memories of Technology', in conversation with Marina Warner, Birkbeck Artsweek</p>
+		<h5>7–9 June 2019</h5>
+		<p>'Crossroads', San Francisco Cinematheque, SFMOMA, San Francisco</p>
 
-<p>https://www.eventbrite.co.uk/e/siren-voices-with-aura-satz-rewiring-memories-of-technology-tickets-59047757432</p>
+		<a href="http://www.sfcinematheque.org/screenings/crossroads-2019-program-6/"
+			>http://www.sfcinematheque.org/screenings/crossroads-2019-program-6/</a
+		>
+		<a href="https://sfmoma.org/event/program-6-our-minds-were-light-years-distant/"
+			>https://sfmoma.org/event/program-6-our-minds-were-light-years-distant/</a
+		>
 
-<h5>7–9 June 2019</h5>
-<p>'Crossroads', San Francisco Cinematheque, SFMOMA, San Francisco</p>
+		<h5>19 Sep 2019</h5>
+		<p>'Preemptive Listening', screening and illustrated talk</p>
+		<p>Gunpowder Magazine, Berwick Film and Media Arts Festival, Berwick upon Tweed</p>
+		<a href="https://www.bfmaf.org/programme/2019/specialevents/aura-satz"
+			>https://www.bfmaf.org/programme/2019/specialevents/aura-satz</a
+		>
 
-<p>http://www.sfcinematheque.org/screenings/crossroads-2019-program-6/</p>
-<p>https://sfmoma.org/event/program-6-our-minds-were-light-years-distant/</p>
+		<h5>9-20 October 2019</h5>
+		<p>Shortlisted for 'Les Nouveaux Alchemistes' prize, Festival du Nouveau Cinema, Montreal</p>
+		<a href="https://nouveaucinema.ca/fr/films/preemptive-listening-part-1-the-fork-in-the-road"
+			>https://nouveaucinema.ca/fr/films/preemptive-listening-part-1-the-fork-in-the-road</a
+		>
 
-<h5>19 Sep 2019</h5>
-<p>'Preemptive Listening', screening and illustrated talk</p>
-<p>Gunpowder Magazine, Berwick Film and Media Arts Festival, Berwick upon Tweed</p>
-<p>https://www.bfmaf.org/programme/2019/specialevents/aura-satz</p>
+		<h5>3-9 Dec 2019</h5>
+		<p>Shortlisted for 'Alteraciones' prize, Aguilar Film Festival, Palencia</p>
+		<a
+			href="https://www.aguilarfilmfestival.es/cortometraje/preemptive-listening-part-1-the-fork-in-the-road/"
+			>https://www.aguilarfilmfestival.es/cortometraje/preemptive-listening-part-1-the-fork-in-the-road/</a
+		>
 
-<h5>9-20 October 2019</h5>
-<p>Shortlisted for 'Les Nouveaux Alchemistes' prize, Festival du Nouveau Cinema, Montreal</p>
-<p>https://nouveaucinema.ca/fr/films/preemptive-listening-part-1-the-fork-in-the-road</p>
+		<h5>19-25 August 2020</h5>
+		<p>Screening at MIEFF (Moscow International Experimental Film Festival), Garage, Moscow</p>
+		<p>Screening as part of Fireworks, programmed by Dmitry Frolov.</p>
 
-<h5>3-9 Dec 2019</h5>
-<p>Shortlisted for 'Alteraciones' prize, Aguilar Film Festival, Palencia</p>
-<p>https://www.aguilarfilmfestival.es/cortometraje/preemptive-listening-part-1-the-fork-in-the-road/</p>
- 
+		<a href="https://mieff.com/events/liberation">https://mieff.com/events/liberation</a>
+		<a href="https://mieff.com/events/jKQhXNUoR">https://mieff.com/events/jKQhXNUoR</a>
 
-<h5>19-25 August 2020</h5>
-<p>Screening at MIEFF (Moscow International Experimental Film Festival), Garage, Moscow</p>
-<p>Screening as part of Fireworks, programmed by Dmitry Frolov.</p>
+		<h5>16-17 March 2022</h5>
+		<p>
+			Talk and screening as part of 'Ages of Receivership: On Generous Listening' at Institute Art
+			Gender Nature, FHNW, Academy of Art and Design in Basel, on site and online
+		</p>
+		<p>
+			With Caroline Bergvall, Merve Yesilada Caglar, Bill Dietz, Nina Emge, Jazmina Figueroa, Virna
+			Gulzari, Ayesha Hameed, Kate Lacey, Nour Mobarak, Dylan Robinson, Aura Satz, Stas Sharifullin,
+			Li Tavor & Nicolas Buzzi, and Hannah Weinberger. Moderated by
+		</p>
+		<p>Chus Martínez and Quinn Latimer. Research associate: Marion Ritzmann.</p>
 
-<p>https://mieff.com/events/liberation</p>
-<p>https://mieff.com/events/jKQhXNUoR</p>
- 
+		<p>
+			'Ages of Receivership: On Generous Listening' The podcast Promise No Promises! This chapter
+			emerges from the Spring 2022 Master Symposium at the Institute Art Gender Nature, moderated by
+			Chus Martínez and Quinn Latimer, in collaboration with Vuslat Foundation, which focuses its
+			activities on the act of generous listening - hearing beyond words - understanding it as an
+			essential element of each of our connections and constellations. Sirens, the second episode of
+			the series Ages of Receivership: On Generous Listening, is based on a talk by artist Aura
+			Satz. She speaks about the sound of sirens and emergency signals and about turning bodies and
+			things into speakers, transducers, antennaes or musical instruments.
+			https://open.spotify.com/episode/2b8Mit2Kbx47pAE8Nrgt0c?si=98c44c8cc15b4dc4https://podcasts.apple.com/ch/podcast/promise-no-promises/id1451208864?i=1000580894750
+		</p>
 
-<h5>16-17 March 2022</h5>
-<p>Talk and screening as part of 'Ages of Receivership: On Generous Listening' at Institute Art Gender Nature, FHNW, Academy of Art and Design in Basel, on site and online</p>
-<p>With Caroline Bergvall, Merve Yesilada Caglar, Bill Dietz, Nina Emge, Jazmina Figueroa, Virna Gulzari, Ayesha Hameed, Kate Lacey, Nour Mobarak, Dylan Robinson, Aura Satz, Stas Sharifullin, Li Tavor & Nicolas Buzzi, and Hannah Weinberger. Moderated by</p>
-<p>Chus Martínez and Quinn Latimer. Research associate: Marion Ritzmann.</p>
+		<a
+			href="https://www.artandeducation.net/announcements/451535/ages-of-receivership-on-generous-listening"
+			>https://www.artandeducation.net/announcements/451535/ages-of-receivership-on-generous-listening</a
+		>
+		<a href="https://dertank.ch/en/we-explore/gender/#ages-of-receivership"
+			>https://dertank.ch/en/we-explore/gender/#ages-of-receivership</a
+		>
 
-<p>'Ages of Receivership: On Generous Listening' The podcast Promise No Promises! This chapter emerges from the Spring 2022 Master Symposium at the Institute Art Gender Nature, moderated by Chus Martínez and Quinn Latimer, in collaboration with Vuslat Foundation, which focuses its activities on the act of generous listening - hearing beyond words - understanding it as an essential element of each of our connections and constellations. Sirens, the second episode of the series Ages of Receivership: On Generous Listening, is based on a talk by artist Aura Satz. She speaks about the sound of sirens and emergency signals and about turning bodies and things into speakers, transducers, antennaes or musical instruments. https://open.spotify.com/episode/2b8Mit2Kbx47pAE8Nrgt0c?si=98c44c8cc15b4dc4https://podcasts.apple.com/ch/podcast/promise-no-promises/id1451208864?i=1000580894750</p>
+		<h3>Live Performances</h3>
+		<h5>7 Dec 2019</h5>
+		<p>
+			'Preemptive Listening (Live)' performance as part of 'Resonant Frequencies' summit at
+			Goldsmiths College, curated by David Roberts Art Foundation, London
+		</p>
+		<p>
+			Preemptive Listening (Live) proposes a speculative re-imagining of emergency signals. Sirens
+			are recomposed through voice, electronica, chirps, whistles and bells, a trumpet, a harp, a
+			cello, cracking bamboo, infinitely rising tones and more—from loud and defiant to low,
+			mournful or nearly imperceptible. Featuring sounds by Mazen Kerbaj (trumpet); Khalid Abdalla
+			(spoken word); Rhodri Davies (harp); Maja Ratkje (voice, bells); Laurie Spiegel (Manatees or
+			Sirenia, a dog, cicadas, electronica); Anton Lukoszevieze (cello); Nick Hallett (voice,
+			electronica); Steve Goodman aka Kode 9 (Shepard Tone electronica); Elaine Mitchener (voice,
+			whistles).
+		</p>
 
-<p>https://www.artandeducation.net/announcements/451535/ages-of-receivership-on-generous-listening</p>
-<p>https://dertank.ch/en/we-explore/gender/#ages-of-receivership</p>
+		<p>
+			Engulfed in alarm fatigue, exhausted by the ever-rising cacophony, we have internalised the
+			siren. This vocalisation of the state is in us before we even hear it. Emergency recalibration
+			is urgent. These new sirens sounds are an antidote to Preemptive Listening. Speculate
+			alternative sounds for alternative relationships to power, re-tuning how power
+			instrumentalises emergency. Like an instructional score, we set the intention for our mode of
+			reception. Listen without yet knowing who is foreground signal, background noise, which voice
+			is warning, beacon, map. New sounds not only scored to immediacy, but signals set to a longer
+			temporal frame, to slow and systemic violence, sounding the alarm for the inaudible, the
+			remote, the unimaginable beyond this lifetime.
+		</p>
 
- 
+		<p>RESONANT FREQUENCIES WORKSHOP.</p>
+		<p>
+			DRAF has hosted a 6-day workshop programme, spread across multiple sessions, for artists Ain
+			Bailey, Benedict Drew, Anne Hardy, Tom Richards, Aura Satz and Imogen Stidworthy, selected due
+			to the ways in which they work with sound as their primary or supporting medium of production.
+			The programme offers the artists the opportunity to collaborate and develop their practice
+			enriched by guest speakers and sessions for experimentation. The initial two days took place
+			at Wysing Arts Centre, the first utilising the surrounding landscape with Jez Riley, and the
+			second Wysing’s impressive recording studio with Lottie Poulet. The following days covered
+			practical sessions on improvisation led by Steve Beresford; vocals with Elaine Mitchener;
+			theoretical sessions on binaural spatialisation with Dr Lorenzo Picanali; and aural diversity
+			with Professor John Drever. The final session will be on psychoacoustics with Brigitte Hart.
+		</p>
 
-<h3>Live Performances</h3>
-<h5>7 Dec 2019</h5>
-<p>'Preemptive Listening (Live)' performance as part of 'Resonant Frequencies' summit at Goldsmiths College, curated by David Roberts Art Foundation, London</p>
-<p>Preemptive Listening (Live) proposes a speculative re-imagining of emergency signals. Sirens are recomposed through voice, electronica, chirps, whistles and bells, a trumpet, a harp, a cello, cracking bamboo, infinitely rising tones and more—from loud and defiant to low, mournful or nearly imperceptible. Featuring sounds by Mazen Kerbaj (trumpet); Khalid Abdalla (spoken word); Rhodri Davies (harp); Maja Ratkje (voice, bells); Laurie Spiegel (Manatees or Sirenia, a dog, cicadas, electronica); Anton Lukoszevieze (cello); Nick Hallett (voice, electronica); Steve Goodman aka Kode 9 (Shepard Tone electronica); Elaine Mitchener (voice, whistles).</p>
+		<a
+			href="http://davidrobertsartfoundation.com/exhibition/draf-x-goldsmiths-resonant-frequencies-summit-7-dec-2019-at-draf-london/"
+			>http://davidrobertsartfoundation.com/exhibition/draf-x-goldsmiths-resonant-frequencies-summit-7-dec-2019-at-draf-london/</a
+		>
 
-<p>Engulfed in alarm fatigue, exhausted by the ever-rising cacophony, we have internalised the siren. This vocalisation of the state is in us before we even hear it. Emergency recalibration is urgent. These new sirens sounds are an antidote to Preemptive Listening. Speculate alternative sounds for alternative relationships to power, re-tuning how power instrumentalises emergency. Like an instructional score, we set the intention for our mode of reception. Listen without yet knowing who is foreground signal, background noise, which voice is warning, beacon, map. New sounds not only scored to immediacy, but signals set to a longer temporal frame, to slow and systemic violence, sounding the alarm for the inaudible, the remote, the unimaginable beyond this lifetime.</p>
+		<h5>
+			5 Dec 2021 Live film performance with Mazen Kerbaj at Onassis Foundation, Athens, as part of
+			Tectonics festival
+		</h5>
+		<a href="https://www.onassis.org/whats-on/tectonics-athens-21"
+			>https://www.onassis.org/whats-on/tectonics-athens-21</a
+		>
+		<a href="https://www.onassis.org/people/aura-satz">https://www.onassis.org/people/aura-satz</a>
 
-<p>RESONANT FREQUENCIES WORKSHOP.</p>
-<p>DRAF has hosted a 6-day workshop programme, spread across multiple sessions, for artists Ain Bailey, Benedict Drew, Anne Hardy, Tom Richards, Aura Satz and Imogen Stidworthy, selected due to the ways in which they work with sound as their primary or supporting medium of production. The programme offers the artists the opportunity to collaborate and develop their practice enriched by guest speakers and sessions for experimentation. The initial two days took place at Wysing Arts Centre, the first utilising the surrounding landscape with Jez Riley, and the second Wysing’s impressive recording studio with Lottie Poulet. The following days covered practical sessions on improvisation led by Steve Beresford; vocals with Elaine Mitchener; theoretical sessions on binaural spatialisation with Dr Lorenzo Picanali; and aural diversity with Professor John Drever. The final session will be on psychoacoustics with Brigitte Hart.</p>
+		<h5>
+			8 Oct 2022, Live film performance with Raven Chacon, as part of two year long-form Cinema
+			Residency at Walker Arts Center, Minneapolis
+		</h5>
+		<a href="http://walkerart.org/calendar/2022/preemptive-listening-by-aura-satz-with-raven-chacon"
+			>http://walkerart.org/calendar/2022/preemptive-listening-by-aura-satz-with-raven-chacon</a
+		>
 
-<p>http://davidrobertsartfoundation.com/exhibition/draf-x-goldsmiths-resonant-frequencies-summit-7-dec-2019-at-draf-london/</p>
+		<h3>Other news</h3>
+		<p>
+			Reviewed by Genevieve Yue in Art Agenda
+			<a
+				href="http://www.art-agenda.com/reviews/aura-satz%E2%80%99s-%E2%80%9Clisten-recalibrate%E2%80%9D/"
+				>http://www.art-agenda.com/reviews/aura-satz%E2%80%99s-%E2%80%9Clisten-recalibrate%E2%80%9D/</a
+			>
+		</p>
 
- 
+		<p>
+			Reviewed by Sasha Frere Jones in Artforum
+			<a href="https://www.artforum.com/print/reviews/201902/aura-satz-78455"
+				>https://www.artforum.com/print/reviews/201902/aura-satz-78455</a
+			>
+		</p>
 
-<h5>5 Dec 2021 Live film performance with Mazen Kerbaj at Onassis Foundation, Athens, as part of Tectonics festival</h5>
-<p>https://www.onassis.org/whats-on/tectonics-athens-21</p>
-<p>https://www.onassis.org/people/aura-satz</p>
- 
-<h5>8 Oct 2022, Live film performance with Raven Chacon, as part of two year long-form Cinema Residency at Walker Arts Center, Minneapolis</h5>
-<p>http://walkerart.org/calendar/2022/preemptive-listening-by-aura-satz-with-raven-chacon</p>
- 
+		<p>
+			Reviewed by Marius Hrdy in Brooklyn Rail
+			<a
+				href="https://brooklynrail.org/2019/11/film/Notes-on-Berwick-Why-this-passion-for-pictures-why-this-passion-for-darkness"
+				>https://brooklynrail.org/2019/11/film/Notes-on-Berwick-Why-this-passion-for-pictures-why-this-passion-for-darkness</a
+			>
+		</p>
 
-<h3>Other news</h3>
-<p>Reviewed by Genevieve Yue in Art Agenda http://www.art-agenda.com/reviews/aura-satz%E2%80%99s-%E2%80%9Clisten-recalibrate%E2%80%9D/</p>
+		<p>
+			2nd July 2021 Interview with Luke Fowler for EIP (Everything is Permitted), Clyde Built Radio
+		</p>
+		<a href="https://soundcloud.com/clydebuiltradio/sets/cbr-2-7-21"
+			>https://soundcloud.com/clydebuiltradio/sets/cbr-2-7-21</a
+		>
 
-<p>Reviewed by Sasha Frere Jones in Artforum https://www.artforum.com/print/reviews/201902/aura-satz-78455</p>
+		<p>'Barbara London Calling', podcast interview</p>
+		<p>
+			<a href="https://www.barbaralondon.net/barbara-london-calling-podcast/"
+				>https://www.barbaralondon.net/barbara-london-calling-podcast/</a
+			>
+		</p>
+		<p>
+			<a href="https://open.spotify.com/episode/4BvxYwy5boWcYfXHDIMREm"
+				>https://open.spotify.com/episode/4BvxYwy5boWcYfXHDIMREm</a
+			>
+		</p>
 
-<p>Reviewed by Marius Hrdy in Brooklyn Rail https://brooklynrail.org/2019/11/film/Notes-on-Berwick-Why-this-passion-for-pictures-why-this-passion-for-darkness</p>
-
-<p>2nd July 2021 Interview with Luke Fowler for EIP (Everything is Permitted), Clyde Built Radio</p>
-<p>https://soundcloud.com/clydebuiltradio/sets/cbr-2-7-21</p>
-
-<p>'Barbara London Calling', podcast interview</p>
-<p>https://www.barbaralondon.net/barbara-london-calling-podcast/</p>
-<p>https://open.spotify.com/episode/4BvxYwy5boWcYfXHDIMREm</p>
-
-<p>'Ages of Receivership: On Generous Listening' The podcast https://open.spotify.com/episode/2b8Mit2Kbx47pAE8Nrgt0c?si=98c44c8cc15b4dc4https://podcasts.apple.com/ch/podcast/promise-no-promises/id1451208864?i=1000580894750</p>
-  </section>
+		<p>
+			'Ages of Receivership: On Generous Listening' The podcast
+			<a href="https://open.spotify.com/episode/2b8Mit2Kbx47pAE8Nrgt0c?si=98c44c8cc15b4dc4"
+				>https://open.spotify.com/episode/2b8Mit2Kbx47pAE8Nrgt0c?si=98c44c8cc15b4dc4</a
+			>
+			<a
+				href="https://podcasts.apple.com/ch/podcast/promise-no-promises/id1451208864?i=1000580894750"
+				>https://podcasts.apple.com/ch/podcast/promise-no-promises/id1451208864?i=1000580894750</a
+			>
+		</p>
+	</section>
 </ProjectLayout>

@@ -1,62 +1,108 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
-import Compact from "../../components/compact.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+import Compact from '../../components/compact.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="Occam Delta XX.jpg" caption="'Occam Delta XX' Film still 2023" />
-  <section>
-    <p>Electronic music composer Éliane Radigue (born 1932 in Paris) stopped producing electronic music in 2001 and started creating collaborative works with instrumentalists under the name Occam Ocean in 2011. The creative process relies almost solely on oral and aural transmission: musicians visit Radigue at her home, to devise their parts collaboratively.</p>
+	<Image src="Occam Delta XX.jpg" caption="'Occam Delta XX' Film still 2023" />
+	<section>
+		<p>
+			Electronic music composer Éliane Radigue (born 1932 in Paris) stopped producing electronic
+			music in 2001 and started creating collaborative works with instrumentalists under the name
+			Occam Ocean in 2011. The creative process relies almost solely on oral and aural transmission:
+			musicians visit Radigue at her home, to devise their parts collaboratively.
+		</p>
 
-<p>Expanding the cycle of Radigue's Occam Ocean acoustic works, 'Occam Delta XX' is a newly commissioned trio composition featuring Aura Satz (film), Rhodri Davies (harp), and Julia Eckhardt (viola). Radigue transmitted a new score image (or 'living score' as she calls them), an image associated with water, to film-maker Satz and long-term musical collaborators Davies and Eckhardt. Rather than producing a film that documents the music and sits outside of it, the film participates in the logic of the score and is developed in an open weave with the composer and musicians. Exploring a cinematic language that enacts the rippling effects of Radigue’s sound, the film diffracts musical gesture and shadow play into acoustic moire.</p>
+		<p>
+			Expanding the cycle of Radigue's Occam Ocean acoustic works, 'Occam Delta XX' is a newly
+			commissioned trio composition featuring Aura Satz (film), Rhodri Davies (harp), and Julia
+			Eckhardt (viola). Radigue transmitted a new score image (or 'living score' as she calls them),
+			an image associated with water, to film-maker Satz and long-term musical collaborators Davies
+			and Eckhardt. Rather than producing a film that documents the music and sits outside of it,
+			the film participates in the logic of the score and is developed in an open weave with the
+			composer and musicians. Exploring a cinematic language that enacts the rippling effects of
+			Radigue’s sound, the film diffracts musical gesture and shadow play into acoustic moire.
+		</p>
 
-<p>The new score has multiple modular iterations: as a live music trio between harp, viola and film; as a self-standing film screening; and as a duet between harp and viola, which is titled 'Occam River XXX'.</p>
+		<p>
+			The new score has multiple modular iterations: as a live music trio between harp, viola and
+			film; as a self-standing film screening; and as a duet between harp and viola, which is titled
+			'Occam River XXX'.
+		</p>
 
-<Compact title="Credits" type="credit">
-Directed, produced and edited by Aura Satz<br>
-DP Kate McDonough<br>
-Sound recordist and Sound Mix Jo Hutton<br>
-Colorist Philipp Morozov<br>
-Light operators Louise Grey and Aura Satz<br>
-Support-in-kind and location Mission Gallery, Swansea<br>
-Co-Commissioned by Courtisane Festival (Ghent), REWIRE festival (The Hague) and Variations Festival at Le Lieu Unique (Nantes), 2021-2023
-</Compact>
+		<Compact title="Credits" type="credit">
+			Directed, produced and edited by Aura Satz<br />
+			DP Kate McDonough<br />
+			Sound recordist and Sound Mix Jo Hutton<br />
+			Colorist Philipp Morozov<br />
+			Light operators Louise Grey and Aura Satz<br />
+			Support-in-kind and location Mission Gallery, Swansea<br />
+			Co-Commissioned by Courtisane Festival (Ghent), REWIRE festival (The Hague) and Variations Festival
+			at Le Lieu Unique (Nantes), 2021-2023
+		</Compact>
 
-<Compact type="thanks">
-<p>Special thanks to Louise Grey, Jo Hutton, and Rhian Wyn Stone at Mission Gallery.</p>
-<p>Thanks also to Sarah Jackson's Crossed Lines commission ‘Tone Transmissions’ (2020), which features the voices of Éliane Radigue, Julia Eckhart and Rhodri Davies, with excerpts from Radigue’s electronic work Kyema (Intermediate States), and acoustic works Occam I and Occam IV performed by Davies and Eckhart. Available to listen here: https://crossedlines.co.uk/tone-transmissions/</p>
-</Compact>
-<h3>Screenings with Live Music</h3>
-<h4>7 April 2023 World Premiere at REWIRE festival, the Hague</h4><br>
-  <Link
-      url="(https://www.rewirefestival.nl/artist/aura-satz-rhodri-davies--julia-eckhardt)"
-  />    
+		<Compact type="thanks">
+			<p>Special thanks to Louise Grey, Jo Hutton, and Rhian Wyn Stone at Mission Gallery.</p>
+			<p>
+				Thanks also to Sarah Jackson's Crossed Lines commission ‘Tone Transmissions’ (2020), which
+				features the voices of Éliane Radigue, Julia Eckhart and Rhodri Davies, with excerpts from
+				Radigue’s electronic work Kyema (Intermediate States), and acoustic works Occam I and Occam
+				IV performed by Davies and Eckhart. Available to listen here:
+				https://crossedlines.co.uk/tone-transmissions/
+			</p>
+		</Compact>
+		<h3>Screenings with Live Music</h3>
+		<h4>7 April 2023 World Premiere at REWIRE festival, the Hague</h4>
+		<a
+			target="_blank"
+			href="https://www.rewirefestival.nl/artist/aura-satz-rhodri-davies--julia-eckhardt"
+		>
+			https://www.rewirefestival.nl/artist/aura-satz-rhodri-davies--julia-eckhardt
+		</a>
 
- 
+		<h4>9 April 2023 Variations Festival, Le Lieu Unique, Nantes</h4>
+		<a
+			target="_blank"
+			href="https://www.lelieuunique.com/evenement/festival-variations-portrait-eliane-radigue-frederic-blondy-rhodri-davies-julia-eckhardt-aura-satz/"
+		>
+			https://www.lelieuunique.com/evenement/festival-variations-portrait-eliane-radigue-frederic-blondy-rhodri-davies-julia-eckhardt-aura-satz/
+		</a>
 
-<h4>9 April 2023 Variations Festival, Le Lieu Unique, Nantes</h4>
- <Link
-      url="https://www.lelieuunique.com/evenement/festival-variations-portrait-eliane-radigue-frederic-blondy-rhodri-davies-julia-eckhardt-aura-satz/">
- />
-</section>
+		<h4>3 April 2025 Courtisane festival, Ghent</h4>
+		<p>'Undercurrents 6 - Interwoven Scores: A Symphony of Correspondence'</p>
+		An invitation to experience the resonance between cinematic scores and compositions by women composers.
+		<p>
+			Ferreyra, by Tamara García Iglesias and Xabier Erkizia, draws from Beatriz Ferreyra’s concrete
+			music compositions, transforming them into a visual script that places sound at the center of
+			the montage, where the image becomes a vessel for auditory exploration.
+		</p>
+		In Occam Delta XX, Éliane Radigue’s score, performed by Rhodri Davies (harp), Julia Eckhardt (viola)
+		and Aura Satz (film), transforms the cinematic form itself into an instrument, a complex mechanism
+		of translation where the surface of the film becomes as musical as the harp and viola that resonate
+		through it. In Light Music, Lis Rhodes offers a score not in the form of notes, but through the abstraction
+		of drawn patterns, black and white lines projected onto opposing screens, creating a visual symphony
+		of sound and image.
+		<p>
+			Each of these works encourage us to rethink scores as living codes, forms that resist
+			definitive readings, always in flux, and constantly shifting with every encounter. The scores
+			are not merely heard or seen; they are felt, experienced, and reimagined. In these
+			compositions, the spaces between sounds are as significant as the sounds themselves, urging us
+			to listen, see, and engage in a continuous dialogue.
+		</p>
+		Curated by Ana Júlia Silvino In collaboration with EQZE — Elías Querejeta Zine Eskola
 
-<h4>3 April 2025 Courtisane festival, Ghent</h4>
-'Undercurrents 6 - Interwoven Scores: A Symphony of Correspondence'<br>
-An invitation to experience the resonance between cinematic scores and compositions by women composers. Ferreyra, by Tamara García Iglesias and Xabier Erkizia, draws from Beatriz Ferreyra’s concrete music compositions, transforming them into a visual script that places sound at the center of the montage, where the image becomes a vessel for auditory exploration. In Occam Delta XX, Éliane Radigue’s score, performed by Rhodri Davies (harp), Julia Eckhardt (viola) and Aura Satz (film), transforms the cinematic form itself into an instrument, a complex mechanism of translation where the surface of the film becomes as musical as the harp and viola that resonate through it. In Light Music, Lis Rhodes offers a score not in the form of notes, but through the abstraction of drawn patterns, black and white lines projected onto opposing screens, creating a visual symphony of sound and image. Each of these works encourage us to rethink scores as living codes, forms that resist definitive readings, always in flux, and constantly shifting with every encounter. The scores are not merely heard or seen; they are felt, experienced, and reimagined. In these compositions, the spaces between sounds are as significant as the sounds themselves, urging us to listen, see, and engage in a continuous dialogue.
-
-Curated by Ana Júlia Silvino
-In collaboration with EQZE — Elías Querejeta Zine Eskola<br>
-
- <Link
-      url="https://www.courtisane.be/en/event/undercurrents-6-interwoven-scores-a-symphony-of-correspondence]"
- />
-  </section>
+		<a
+			target="_blank"
+			href="https://www.courtisane.be/en/event/undercurrents-6-interwoven-scores-a-symphony-of-correspondence"
+			>https://www.courtisane.be/en/event/undercurrents-6-interwoven-scores-a-symphony-of-correspondence
+		</a>
+	</section>
 </ProjectLayout>

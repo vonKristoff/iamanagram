@@ -1,41 +1,90 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="Listening Cobweb  smaller.jpg" caption="Aura Satz, Tuning Forks - The Listening Cobweb , watercolour and pencil on paper, 2021" />
-  <section>
-    <p>An offshoot of Satz's work on expanded listening through her long-term project 'Preemptive Listening', this new sound work continues her ongoing portraits of listening with percussionist Evelyn Glennie. Glennie has been profoundly deaf since the age of 12, and has taught herself to hear with parts of her body other than her ears.</p>
+	<Image
+		src="Listening Cobweb  smaller.jpg"
+		caption="Aura Satz, Tuning Forks - The Listening Cobweb , watercolour and pencil on paper, 2021"
+	/>
+	<section>
+		<p>
+			An offshoot of Satz's work on expanded listening through her long-term project 'Preemptive
+			Listening', this new sound work continues her ongoing portraits of listening with
+			percussionist Evelyn Glennie. Glennie has been profoundly deaf since the age of 12, and has
+			taught herself to hear with parts of her body other than her ears.
+		</p>
 
-<p>'Preemptive Listening' reimagines sirens and emergency signals in an age of intersecting manmade and ecological disasters - new sounds not only scored to immediacy, but signals set to a longer temporal frame, sounding the alarm for the inaudible, the remote, the unimaginable. In a time of increasing environmental noise and alarm fatigue, emergency signal recalibration is urgent. The project explores new inclusive ways of looking and listening, bringing in auraldiversity though a low-frequency and vibratory/haptic approach. The invitation is to listen to these new siren sounds on the thresholds of music, sound and vibration, as a call to attention, an instruction, alternating between signal and background noise, an invocation of mood and atmosphere. Glennie originally devised the percussive sequences underscoring this sound composition as new siren sounds, with the intention that they may also be fed through vibratory devices such as mobile phones in order to activate the other senses through vibration. Here the sounds punctuate her thinking around listening as a specialized form of touch, and as a multimodal form engaging all the senses - hearing through the soles of the feet, sight, smell, all woven into and alongside the inner acoustics of one's mind.</p>
+		<p>
+			'Preemptive Listening' reimagines sirens and emergency signals in an age of intersecting
+			manmade and ecological disasters - new sounds not only scored to immediacy, but signals set to
+			a longer temporal frame, sounding the alarm for the inaudible, the remote, the unimaginable.
+			In a time of increasing environmental noise and alarm fatigue, emergency signal recalibration
+			is urgent. The project explores new inclusive ways of looking and listening, bringing in
+			auraldiversity though a low-frequency and vibratory/haptic approach. The invitation is to
+			listen to these new siren sounds on the thresholds of music, sound and vibration, as a call to
+			attention, an instruction, alternating between signal and background noise, an invocation of
+			mood and atmosphere. Glennie originally devised the percussive sequences underscoring this
+			sound composition as new siren sounds, with the intention that they may also be fed through
+			vibratory devices such as mobile phones in order to activate the other senses through
+			vibration. Here the sounds punctuate her thinking around listening as a specialized form of
+			touch, and as a multimodal form engaging all the senses - hearing through the soles of the
+			feet, sight, smell, all woven into and alongside the inner acoustics of one's mind.
+		</p>
 
- 
-<h3>Shown as part of 'Sonic Continuum' at Nottingham Contemporary</h3>
-<p>This multi-platform, long-term research strand includes new issue of The Contemporary Journal, a rolling talks programme, symposia series and a writer in residence as well as new digital and movement-based commissions, study sessions and poetry that draw on sound to narrate historical and contemporary global processes. Imagining how listening might exceed existing frameworks of representation, Sonic Continuum brings together cross-disciplinary contributions towards another poetics of time. The sonic offers a multidirectional form of social experience against the law-like authority of clock-time, set alongside the evolutionary tempos and rhythms of extinction as well as everyday metabolic processes and broader socio-political chronologies. By assembling multiple, overlapping timeframes, it proposes rhythm as a relational language, and conjoins our senses with the unsound, the not-yet audible, and the silenced for imagining new solidarities, aural alliances and forms of attunement. Playing with notions of voice and address, it attends to the grammars that shape our differential experiences of the world, and asks: can sound restitute failures to listen? How might we listen to time affectively? What auditory imaginaries and possible futures can listening unfold? Sonic Continuum expands on the event series The Violence of Abstraction between March and July 2019, and questions how conjoining our hearing senses with the unsound, the not-yet audible, and the silent, projects imaginative modes of resistance, aural alliances and forms of attunement.</p>
+		<h3>Shown as part of 'Sonic Continuum' at Nottingham Contemporary</h3>
+		<p>
+			This multi-platform, long-term research strand includes new issue of The Contemporary Journal,
+			a rolling talks programme, symposia series and a writer in residence as well as new digital
+			and movement-based commissions, study sessions and poetry that draw on sound to narrate
+			historical and contemporary global processes. Imagining how listening might exceed existing
+			frameworks of representation, Sonic Continuum brings together cross-disciplinary contributions
+			towards another poetics of time. The sonic offers a multidirectional form of social experience
+			against the law-like authority of clock-time, set alongside the evolutionary tempos and
+			rhythms of extinction as well as everyday metabolic processes and broader socio-political
+			chronologies. By assembling multiple, overlapping timeframes, it proposes rhythm as a
+			relational language, and conjoins our senses with the unsound, the not-yet audible, and the
+			silenced for imagining new solidarities, aural alliances and forms of attunement. Playing with
+			notions of voice and address, it attends to the grammars that shape our differential
+			experiences of the world, and asks: can sound restitute failures to listen? How might we
+			listen to time affectively? What auditory imaginaries and possible futures can listening
+			unfold? Sonic Continuum expands on the event series The Violence of Abstraction between March
+			and July 2019, and questions how conjoining our hearing senses with the unsound, the not-yet
+			audible, and the silent, projects imaginative modes of resistance, aural alliances and forms
+			of attunement.
+		</p>
 
-<p>Due to concerns around COVID-19, the Sonic Continuum symposia series, planned to develop in four instalments over the course of 2020, has been moved online, reshaping as digital commissions that include audio-essays, podcasts, live talks and narrated broadcasts as well as poetry and essay on view in The Contemporary Journal.</p>
+		<p>
+			Due to concerns around COVID-19, the Sonic Continuum symposia series, planned to develop in
+			four instalments over the course of 2020, has been moved online, reshaping as digital
+			commissions that include audio-essays, podcasts, live talks and narrated broadcasts as well as
+			poetry and essay on view in The Contemporary Journal.
+		</p>
 
-<p>Sonic Continuum is curated by Sofia Lemos and assisted by Ryan Kearney.</p>
+		<p>Sonic Continuum is curated by Sofia Lemos and assisted by Ryan Kearney.</p>
 
-<p>https://www.nottinghamcontemporary.org/exchange/sonic-continuum/</p>
+		<a href="https://www.nottinghamcontemporary.org/exchange/sonic-continuum/"
+			>https://www.nottinghamcontemporary.org/exchange/sonic-continuum/</a
+		>
+		<br />
+		<a href="https://thecontemporaryjournal.org/issues/sonic-continuum"
+			>https://thecontemporaryjournal.org/issues/sonic-continuum</a
+		>
 
-<p>https://thecontemporaryjournal.org/issues/sonic-continuum</p>
-
-<p>
-  Featuring the voice of Evelyn Glennie<br>
-With excerpts from new siren sounds commissioned for Aura Satz's film 'Preemptive Listening'<br>
-Sound mix M.J. Harding<br>
-Commissioned by Nottingham Contemporary
-</p>
-
-  </section>
-
+		<p>
+			Featuring the voice of Evelyn Glennie<br />
+			With excerpts from new siren sounds commissioned for Aura Satz's film 'Preemptive Listening'<br
+			/>
+			Sound mix M.J. Harding<br />
+			Commissioned by Nottingham Contemporary
+		</p>
+	</section>
 </ProjectLayout>

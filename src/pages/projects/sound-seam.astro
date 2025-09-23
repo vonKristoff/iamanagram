@@ -1,225 +1,389 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
-import Compact from "../../components/compact.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
+import Compact from '../../components/compact.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="soundseam4.jpg" caption="Sound Seam, film still by Aura Satz, 2010" />
-  <section>
-    <p>'Sound Seam' is a film which gives voice to the idea that every surface, in particular parts of our anatomy, is potentially inscribed with an unheard sound or echoes of voices from the past. The soundtrack’s musical composition is interlaced with a voice-over which draws on Rainer Maria Rilke’s text 'Primal Sound', where he reflects on the possibility of playing the coronal suture of a skull with a phonograph needle. The overlapping voices of the narratives tell a forensic love story of yearning, encryption, inscription, decoding, memory and erasure. The film uses microscopic photography, scanning electron microscopy, and sounds of otoacoustic emissions to uncover haunting aural bonescapes. The voiceovers too are recorded using old sound technology as a filter - writing and over-writing of wax cylinder to create unexpected scratches, glitches, loops and echoes. The music is composed and recorded onto wax cylinder and acetate discs by composer and phonographer Aleks Kolkowski.</p>
-    <p>During 2009-2010 Aura was artist-in-residence at UCL's Ear Institute, where she undertook research into hearing anatomy and shot most of the microscopic footage, including a golden cochlea, an ear drum and inner ear hair cells. The horn sequences of the film were shot at the Museum for Music Automatons in Seewen (Switzerland), during their temporary exhibition "When Sound Still Came from the Horn". All close-ups of acetate discs and wax cylinder sound grooves are from the private collection of Aleks Kolkowski.</p>
-    <Compact type="credit">
-    Written, directed, filmed and edited by Aura Satz<br>
-    Music and sound recordings onto wax cylinder and acetate discs made by Aleks Kolkowski<br>
-    Voiceovers by Aleks Kolkowski and Aura Satz<br>
-    Otoacoustic emission recordings provided by Prof. David Kemp and recorded onto wax cylinder.<br>
-  </Compact>
-    <Compact type="thanks">
-      <p>Aura would like to thank all staff at the Ear institute, in particular David McAlpine, David Kemp, Andy Forge, Dan Jagger, Ruth Taylor, Jonathan Ashmore, Torsten Marquardt, Kate Lay, Neil Roberts and Bradford Backus. Special thanks also to Christoph E. Hanggi at the Museum for Music Automatons.</p>
-      <p>Aura would also like to thank Shira Hess, David Edelsztein and of course Leila for their patience and support throughout.</p>
+	<Image src="soundseam4.jpg" caption="Sound Seam, film still by Aura Satz, 2010" />
+	<section>
+		<p>
+			'Sound Seam' is a film which gives voice to the idea that every surface, in particular parts
+			of our anatomy, is potentially inscribed with an unheard sound or echoes of voices from the
+			past. The soundtrack’s musical composition is interlaced with a voice-over which draws on
+			Rainer Maria Rilke’s text 'Primal Sound', where he reflects on the possibility of playing the
+			coronal suture of a skull with a phonograph needle. The overlapping voices of the narratives
+			tell a forensic love story of yearning, encryption, inscription, decoding, memory and erasure.
+			The film uses microscopic photography, scanning electron microscopy, and sounds of otoacoustic
+			emissions to uncover haunting aural bonescapes. The voiceovers too are recorded using old
+			sound technology as a filter - writing and over-writing of wax cylinder to create unexpected
+			scratches, glitches, loops and echoes. The music is composed and recorded onto wax cylinder
+			and acetate discs by composer and phonographer Aleks Kolkowski.
+		</p>
+		<p>
+			During 2009-2010 Aura was artist-in-residence at UCL's Ear Institute, where she undertook
+			research into hearing anatomy and shot most of the microscopic footage, including a golden
+			cochlea, an ear drum and inner ear hair cells. The horn sequences of the film were shot at the
+			Museum for Music Automatons in Seewen (Switzerland), during their temporary exhibition "When
+			Sound Still Came from the Horn". All close-ups of acetate discs and wax cylinder sound grooves
+			are from the private collection of Aleks Kolkowski.
+		</p>
+		<Compact type="credit">
+			Written, directed, filmed and edited by Aura Satz<br />
+			Music and sound recordings onto wax cylinder and acetate discs made by Aleks Kolkowski<br />
+			Voiceovers by Aleks Kolkowski and Aura Satz<br />
+			Otoacoustic emission recordings provided by Prof. David Kemp and recorded onto wax cylinder.<br
+			/>
+		</Compact>
+		<Compact type="thanks">
+			<p>
+				Aura would like to thank all staff at the Ear institute, in particular David McAlpine, David
+				Kemp, Andy Forge, Dan Jagger, Ruth Taylor, Jonathan Ashmore, Torsten Marquardt, Kate Lay,
+				Neil Roberts and Bradford Backus. Special thanks also to Christoph E. Hanggi at the Museum
+				for Music Automatons.
+			</p>
+			<p>
+				Aura would also like to thank Shira Hess, David Edelsztein and of course Leila for their
+				patience and support throughout.
+			</p>
+		</Compact>
 
-    </Compact>
-  </section>
-  <Image collection={[{src:"stereocilia.jpg"}, {src:"soundseam4.gif"}]} caption="Stereocilia & Sound Inscriptions, Aura Satz, 2010"></Image>
-  <section>
-    <iframe width="640" height="360" src="
-https://www.youtube.com/embed/e9BL7nqHvG0" frameborder="0" allow="autoplay; 
-encrypted-media" allowfullscreen=""></iframe>
-<p>AV FESTIVAL 10: Energy presents the world premiere of Sound Seam, an atmospheric film installation by artist Aura Satz in collaboration with musician Aleks Kolkowski.</p>
-<p>The installation explores sound inscription, encryption, decoding and the material quality of memory. It draws on the German poet Rilke's 1919 text Primal Sound in which he proposes that the groove-like line of a skull (the coronal suture) could be played with a gramophone needle. The mesmeric film uses microscopic close-ups of gramophone grooves, wax and acetate shavings, phonograph cylinder recording and erasing technology, as well as footage of the anatomy of the ear, where inner ear hair cells have been animated to look like a sound groove, and a gold-plated cochlea spirals like a shellac disc. The musical soundtrack is derived from the analysis of sounds made by playing a gramophone needle across a skull and from otoacoustic sounds emitted by the ear. Every one of the hundred-odd recordings used has been individually cut onto a wax cylinder or disc record, some even over-written so as to create unexpected surface noises, scratches, glitches, loops and echoes. You are invited to listen to a magnificent array of original phonograph, gramophone horns and ear trumpets and piece together the various strands of this intriguing 'forensic love story' voice-over which draws on Rilke's text.</p>
-<p>Guided Exhibition Tour of Great North Museum: Hancock and Hatton Gallery, Saturday 6 March, 2.30-3.30pm. Tour starts with Sound Seam.</p>
-<p>Interview on the opening night at the AV fetival.</p>
-<p>Exhibition produced by AV Festival 10 in partnership with Great North Museum: Hancock. Funded by The Wellcome Trust and produced during an Artist Residency at the Ear Institute, UCL, London. Sound design produced with support from the AHRC.</p>
-<Compact type="address">
-Discovery Museum<br>
-Blandford Square, Newcastle upon Tyne NE1 4JA<br>
-www.avfestival.co.uk
-</Compact>
-  </section>
-  <Title date="9 December 2010 - 16 January 2011" title="Solo exhibition 'Sound Seam' at Wellcome Collection" subtitle="A small publication with contributions from cultural historian Steven Connor and novelist Tom McCarthy will be available during the exhibition.">
-    <Compact type="address">
-      Wellcome Collection<br>
-  215 Euston Road<br>
-  London NW1 2BE<br>
-  Tel: 020 7611 8888<br>
- <a href="https://web.archive.org/web/20101203021608/http://www.wellcomecollection.org:80/whats-on/exhibitions/sound-seam.aspx
- ">www.wellcomecollection.org</a>
-target="_blank" 
+		<Image
+			collection={[{ src: 'stereocilia.jpg' }, { src: 'soundseam4.gif' }]}
+			caption="Stereocilia & Sound Inscriptions, Aura Satz, 2010"
+		/>
 
-    </Compact>
-  </Title>
-  <Title date="23 January - 3 February 2013" title="'Soundfigures'" subtitle="Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam">
-    curated by Edwin Carels
-  Spiral Sound Coil (2010) is an immersive psychoacoustic installation. Automamusic (2008) looks at self-playing instruments such as the pianola, wind-up music boxes and organs, filmed at the Museum of Music Automatons in Switzerland. Theremin (2010) is part of a series of videos characterised by their unusual sculptural relation to their performer. Sound Seam (2010) uses microscopic close-ups of gramophone grooves and the anatomy of the ear, while the accompanying music includes wax cylinder recordings and otoacoustic sounds emitted by the ear. Oramics (2011) is a homage to Daphne Oram, pioneer of British Electronic Music and creator of hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a Ruben's Tube, an acoustic device that visualises sound as a standing wave of small flames, with music by Steven Severin (of Siouxsie and the Banshees).
-  <Compact type="address">
-  Blaak 10 Gallery<br>
-  Witte de Withstraat 7<br>
-  3012 BL Rotterdam<br>
-  The Netherlands<br>
-  <br>
-  <a href="https://iffr.com/en/iffr/2013/films/soundfigures">https://iffr.com/en/iffr/2013/films/soundfigures</a>https://iffr.com/en/iffr/2013/films/soundfigures
-</Compact>
-  </Title>
-  <Title date="18-29 January 2012" title="Samsung Art+ Prize" subtitle="Group exhibition at BFI Southbank, London">
-    
-    
-    <p>Samsung Electronics are delighted to present the UK’s first ever prize for new media art. A shortlist of 10 emerging and established contemporary artists has been selected by a panel of curators from leading arts organisations for a two-week exhibition at the BFI Southbank. Opening on 18 January 2012, the exhibition will include new work as well as pieces that have never been shown before in the UK.</p>
-    <p>The Samsung Art+ Prize aims to highlight artists who reveal the ways technologies can touch our lives. All of the selected artists must be a citizen of, educated in or currently residing in the UK and they have been nominated</p>
-    <p>for work they have created in the past three years. The shortlisted artists selected are: Neil Cummings, Doug Fishbone, Iain Forsyth and Jane Pollard, Torsten Lauschmann, Lucky PDF, Aura Satz, Hiraki Sawa, Semiconductor, Erika Tan and Thomsonand Craighead.</p>
-    <p>The resulting shortlist showcases the diverse range of practice offered by new media, and includes artists working in screen friendly idioms as well as those exploring diverse strategies of communication such as performance, sculpture and music.</p>
-    <p>The 10 nominated artists have been selected for their ability to expand and challenge our understanding of the role of new media. In the era of smart media the prize will celebrate the unique ways in which artists respond to the changing world and embrace the possibilities offered by different media opportunities; not only as platforms of production and research but also as new modes of communication beyond the traditional gallery.</p>
-     
-    The judges including Jan Dalley, Arts Editor at the Financial Times; Dr. Peter Weibel, Chairman and CEO of the ZKM Centre for Art and Media; Stuart Comer, Curator of Film, Tate Modern; Jiyoon Lee, Director of SUUM; and New York based media artist, Sooja Kim.
-     
-    <Compact type="address">
-    BFI Southbank<br>
-    Belvedere Road<br>
-    London SE1 8XT<br>
-    Tel: 0871 971 5582<br>
-    www.bfi.org<br>
-    www.samsung.com
-  </Compact>
-  </Title>
-  <Title date="14 March – 17 April 2014" title="Transcendence: A Suite" subtitle="Three-person show with Nell and Angelica Mesiti at Gertrude Contemporary, Melbourne">
-<Compact type="address">
-  Gertrude Contemporary<br>
-  200 Gertrude St, Fitzroy<br>
-  Melbourne VIC 3065<br>
-  Australia<br>
-  http://www.gertrude.org.au/exhibitions/gallery-11/past-14/trancendence--nell--angelica-mesiti--aura-satz.phps
-</Compact>
-  </Title>
+		<iframe
+			width="100%"
+			height="360"
+			src="https://www.youtube.com/embed/e9BL7nqHvG0"
+			frameborder="0"
+			allow="autoplay; 
+encrypted-media"
+			allowfullscreen=""></iframe>
+		<p>
+			AV FESTIVAL 10: Energy presents the world premiere of Sound Seam, an atmospheric film
+			installation by artist Aura Satz in collaboration with musician Aleks Kolkowski.
+		</p>
+		<p>
+			The installation explores sound inscription, encryption, decoding and the material quality of
+			memory. It draws on the German poet Rilke's 1919 text Primal Sound in which he proposes that
+			the groove-like line of a skull (the coronal suture) could be played with a gramophone needle.
+			The mesmeric film uses microscopic close-ups of gramophone grooves, wax and acetate shavings,
+			phonograph cylinder recording and erasing technology, as well as footage of the anatomy of the
+			ear, where inner ear hair cells have been animated to look like a sound groove, and a
+			gold-plated cochlea spirals like a shellac disc. The musical soundtrack is derived from the
+			analysis of sounds made by playing a gramophone needle across a skull and from otoacoustic
+			sounds emitted by the ear. Every one of the hundred-odd recordings used has been individually
+			cut onto a wax cylinder or disc record, some even over-written so as to create unexpected
+			surface noises, scratches, glitches, loops and echoes. You are invited to listen to a
+			magnificent array of original phonograph, gramophone horns and ear trumpets and piece together
+			the various strands of this intriguing 'forensic love story' voice-over which draws on Rilke's
+			text.
+		</p>
+		<p>
+			Guided Exhibition Tour of Great North Museum: Hancock and Hatton Gallery, Saturday 6 March,
+			2.30-3.30pm. Tour starts with Sound Seam.
+		</p>
+		<p>Interview on the opening night at the AV fetival.</p>
+		<p>
+			Exhibition produced by AV Festival 10 in partnership with Great North Museum: Hancock. Funded
+			by The Wellcome Trust and produced during an Artist Residency at the Ear Institute, UCL,
+			London. Sound design produced with support from the AHRC.
+		</p>
+		<Compact type="address">
+			Discovery Museum<br />
+			Blandford Square, Newcastle upon Tyne NE1 4JA<br />
+			www.avfestival.co.uk
+		</Compact>
 
-  <section>
-    <h3>Screenings
-    </h3>
- 
-<h5>1-6 March 2011</h5>
-<h4>Screened as part of a selection of artist's films curated by the Wellcome Collection</h4>
-<Compact type="address">
-Artprojx Cinema at the SVA Theatre, New York<br>
-in association with The Armory Show & VOLTA NY<br>
-Screenings of artists' films & videos<br>
-SVA Theatre<br>
-333 West 23rd Street between 8th & 9th Avenues<br>
-New York<br>
-www.svatheatre.com<br>
-www.artprojx.com
-</Compact>
+		<Title
+			date="9 December 2010 - 16 January 2011"
+			title="Solo exhibition 'Sound Seam' at Wellcome Collection"
+			subtitle="A small publication with contributions from cultural historian Steven Connor and novelist Tom McCarthy will be available during the exhibition."
+		>
+			<Compact type="address">
+				Wellcome Collection<br />
+				215 Euston Road<br />
+				London NW1 2BE<br />
+				Tel: 020 7611 8888<br />
+				<a
+					href="https://web.archive.org/web/20101203021608/http://www.wellcomecollection.org:80/whats-on/exhibitions/sound-seam.aspx
+ "
+					>www.wellcomecollection.org</a
+				>
+				target="_blank"
+			</Compact>
+		</Title>
+		<Title
+			date="23 January - 3 February 2013"
+			title="'Soundfigures'"
+			subtitle="Solo retrospective at Blaak 10, as part of the 42nd International Film Festival Rotterdam"
+		>
+			curated by Edwin Carels Spiral Sound Coil (2010) is an immersive psychoacoustic installation.
+			Automamusic (2008) looks at self-playing instruments such as the pianola, wind-up music boxes
+			and organs, filmed at the Museum of Music Automatons in Switzerland. Theremin (2010) is part
+			of a series of videos characterised by their unusual sculptural relation to their performer.
+			Sound Seam (2010) uses microscopic close-ups of gramophone grooves and the anatomy of the ear,
+			while the accompanying music includes wax cylinder recordings and otoacoustic sounds emitted
+			by the ear. Oramics (2011) is a homage to Daphne Oram, pioneer of British Electronic Music and
+			creator of hand-wrought, drawn sound. Vocal Flame (2012) is a sound sculpture made using a
+			Ruben's Tube, an acoustic device that visualises sound as a standing wave of small flames,
+			with music by Steven Severin (of Siouxsie and the Banshees).
+			<Compact type="address">
+				Blaak 10 Gallery<br />
+				Witte de Withstraat 7<br />
+				3012 BL Rotterdam<br />
+				The Netherlands<br />
+				<br />
+				<a href="https://iffr.com/en/iffr/2013/films/soundfigures"
+					>https://iffr.com/en/iffr/2013/films/soundfigures</a
+				>
+			</Compact>
+		</Title>
+		<Title
+			date="18-29 January 2012"
+			title="Samsung Art+ Prize"
+			subtitle="Group exhibition at BFI Southbank, London"
+		>
+			<p>
+				Samsung Electronics are delighted to present the UK’s first ever prize for new media art. A
+				shortlist of 10 emerging and established contemporary artists has been selected by a panel
+				of curators from leading arts organisations for a two-week exhibition at the BFI Southbank.
+				Opening on 18 January 2012, the exhibition will include new work as well as pieces that have
+				never been shown before in the UK.
+			</p>
+			<p>
+				The Samsung Art+ Prize aims to highlight artists who reveal the ways technologies can touch
+				our lives. All of the selected artists must be a citizen of, educated in or currently
+				residing in the UK and they have been nominated
+			</p>
+			<p>
+				for work they have created in the past three years. The shortlisted artists selected are:
+				Neil Cummings, Doug Fishbone, Iain Forsyth and Jane Pollard, Torsten Lauschmann, Lucky PDF,
+				Aura Satz, Hiraki Sawa, Semiconductor, Erika Tan and Thomsonand Craighead.
+			</p>
+			<p>
+				The resulting shortlist showcases the diverse range of practice offered by new media, and
+				includes artists working in screen friendly idioms as well as those exploring diverse
+				strategies of communication such as performance, sculpture and music.
+			</p>
+			<p>
+				The 10 nominated artists have been selected for their ability to expand and challenge our
+				understanding of the role of new media. In the era of smart media the prize will celebrate
+				the unique ways in which artists respond to the changing world and embrace the possibilities
+				offered by different media opportunities; not only as platforms of production and research
+				but also as new modes of communication beyond the traditional gallery.
+			</p>
 
-<Compact type="credit">
-Radio interview on 'Sound Seam' by Tim Dee as part of the programme '78 Revolutions'<br>
-BBC Radio4 5th May 2011 11:30-12:00<br>
-www.bbc.co.uk<br>
-www.bbc.co.uk/programmes/b010t6pb
-</Compact>
+			The judges including Jan Dalley, Arts Editor at the Financial Times; Dr. Peter Weibel,
+			Chairman and CEO of the ZKM Centre for Art and Media; Stuart Comer, Curator of Film, Tate
+			Modern; Jiyoon Lee, Director of SUUM; and New York based media artist, Sooja Kim.
 
-<h5>21-23 June 2012</h5>
-<h4>Pop-up Cinema at Christie’s South Kensington</h4>
-<p>with screenings of films by Aura Satz. Part of Supersonix Symposium, Exhibition Road, London</p>
+			<Compact type="address">
+				BFI Southbank<br />
+				Belvedere Road<br />
+				London SE1 8XT<br />
+				Tel: 0871 971 5582<br />
+				www.bfi.org<br />
+				www.samsung.com
+			</Compact>
+		</Title>
+		<Title
+			date="14 March – 17 April 2014"
+			title="Transcendence: A Suite"
+			subtitle="Three-person show with Nell and Angelica Mesiti at Gertrude Contemporary, Melbourne"
+		>
+			<Compact type="address">
+				Gertrude Contemporary<br />
+				200 Gertrude St, Fitzroy<br />
+				Melbourne VIC 3065<br />
+				Australia<br />
+				<a
+					href="http://www.gertrude.org.au/exhibitions/gallery-11/past-14/trancendence--nell--angelica-mesiti--aura-satz.phps"
+					>http://www.gertrude.org.au/exhibitions/gallery-11/past-14/trancendence--nell--angelica-mesiti--aura-satz.phps</a
+				>
+			</Compact>
+		</Title>
 
-<p>Thursday 21st and Friday 22nd: 11am to 6pm; and Saturday 23rd 11am to 1pm</p>
-Plus
-23rd June 2.45-4.45pm: A screening of an additional selection of films curated by Aura Satz, including films by Manon de Boer, Jayne Parker and Luke Fowler
+		<h3>Screenings</h3>
 
-<p>85 Old Brompton Rd, London SW7 3LD</p>
-http://www.exhibitionroad.com/7416/pop-up-cinema-at-christies-south-kensington-aura-satz
+		<h5>1-6 March 2011</h5>
+		<h4>Screened as part of a selection of artist's films curated by the Wellcome Collection</h4>
+		<Compact type="address">
+			Artprojx Cinema at the SVA Theatre, New York<br />
+			in association with The Armory Show & VOLTA NY<br />
+			Screenings of artists' films & videos<br />
+			SVA Theatre<br />
+			333 West 23rd Street between 8th & 9th Avenues<br />
+			New York<br />
+			www.svatheatre.com<br />
+			www.artprojx.com
+		</Compact>
 
- 
+		<Compact type="credit">
+			Radio interview on 'Sound Seam' by Tim Dee as part of the programme '78 Revolutions'<br />
+			BBC Radio4 5th May 2011 11:30-12:00<br />
+			www.bbc.co.uk<br />
+			www.bbc.co.uk/programmes/b010t6pb
+		</Compact>
 
-<h5>3-7 October 2013</h5>
-<h4>Screened at the 51st New York Film Festival</h4>
-'Views from the Avant-garde', curated by Mark McElhatten
- 
+		<h5>21-23 June 2012</h5>
+		<h4>Pop-up Cinema at Christie’s South Kensington</h4>
+		<p>
+			with screenings of films by Aura Satz. Part of Supersonix Symposium, Exhibition Road, London
+		</p>
 
-<p>Our popular yearly touchstone for experimental film returns with 45 programs in glorious Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura Satz, Lois Patiño, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.</p>
-<Compact type="address">
+		<p>Thursday 21st and Friday 22nd: 11am to 6pm; and Saturday 23rd 11am to 1pm</p>
+		Plus 23rd June 2.45-4.45pm: A screening of an additional selection of films curated by Aura Satz,
+		including films by Manon de Boer, Jayne Parker and Luke Fowler
 
-The Film Society of Lincoln Center<br>
-70 Lincoln Center Plaza<br>
-New York, NY 10023-6595<br>
-http://www.filmlinc.com/films/on-sale/program-i-aura-satz<br>
-http://www.filmlinc.com/nyff2013<br>
-http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant
-</Compact>
- 
+		<p>85 Old Brompton Rd, London SW7 3LD</p>
+		<a
+			href="http://www.exhibitionroad.com/7416/pop-up-cinema-at-christies-south-kensington-aura-satz"
+			>http://www.exhibitionroad.com/7416/pop-up-cinema-at-christies-south-kensington-aura-satz</a
+		>
 
-<h5>1st November 2013</h5>
-<h4>Screened with a live voiceover as part of ‘Unconscious Archives’: Malcolm Le Grice, Aura Satz, Sally Golding, Gideon Vein, Guy Edmonds, Cafe OTO</h4>
- 
+		<h5>3-7 October 2013</h5>
+		<h4>Screened at the 51st New York Film Festival</h4>
+		'Views from the Avant-garde', curated by Mark McElhatten
 
-http://unconscious-archives.org/UA11-Malcolm-Legrice-Guy-Edmonds-Aura-Satz
-http://www.cafeoto.co.uk/programme.shtm
+		<p>
+			Our popular yearly touchstone for experimental film returns with 45 programs in glorious
+			Super-8, 16mm and 35mm film and HD formats. Many familiar faces have returned and this year's
+			slate feature 45 new artists as well as several mini-retrospectives of artists including, Aura
+			Satz, Lois Patiño, Sandro Aguilar, and Jean-Paul Kelly. Views will also offer special tributes
+			to the late Stom Sogo and Anne Robertson, whose work is a testimony to the power of a cinema
+			that is fearless, confidential and inextinguishable. Curated by Mark McElhatten.
+		</p>
+		<Compact type="address">
+			The Film Society of Lincoln Center<br />
+			70 Lincoln Center Plaza<br />
+			New York, NY 10023-6595<br />
+			<a href="http://www.filmlinc.com/films/on-sale/program-i-aura-satz"
+				>http://www.filmlinc.com/films/on-sale/program-i-aura-satz</a
+			>
+			<br />
+			<a href="http://www.filmlinc.com/nyff2013">http://www.filmlinc.com/nyff2013</a>
+			<br />
+			<a
+				href="http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant"
+				>http://www.filmlinc.com/press/entry/fslc-announces-complete-lineup-for-the-17th-edition-of-views-from-the-avant</a
+			>
+		</Compact>
 
+		<h5>1st November 2013</h5>
+		<h4>
+			Screened with a live voiceover as part of ‘Unconscious Archives’: Malcolm Le Grice, Aura Satz,
+			Sally Golding, Gideon Vein, Guy Edmonds, Cafe OTO
+		</h4>
 
-<h5>13 May 2015</h5>
-<h4>'Soundfigures: Films by Aura Satz'</h4>
-A selection of films by Aura Satz, DIM Cinema, Vancouver Cinametheque, programmed by Michele Smith
+		<a href="http://unconscious-archives.org/UA11-Malcolm-Legrice-Guy-Edmonds-Aura-Satz"
+			>http://unconscious-archives.org/UA11-Malcolm-Legrice-Guy-Edmonds-Aura-Satz</a
+		>
+		<a href="http://www.cafeoto.co.uk/programme.shtm">http://www.cafeoto.co.uk/programme.shtm</a>
 
-(Near) extinct technologies make sound visible in this program of shorts by London-based artist Aura Satz that delve into ideas of knowledge, memory, and communication. On a Chladni Plate, a device that marked the birth of acoustics, grains of sand, moving like Busby Berkeley dancers, form intricate patterns in response to changing sound frequencies, their shapes recalling the utopian quest for a “pure,” onomatopoeic alphabet. Wax cylinder recordings combine with modern scientific instruments to animate a text by Rainer Maria Rilke on the possibility of hearing the dead by playing their skulls with a gramophone needle. A Ruben’s Tube translates a histrionic voice-over into a standing wave of small flames, provoking unexpected associations, from the biblical burning bush to various acts of ventriloquism in pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn compositions by its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the lamphouse of a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the Technicolor era. Chromatic distortions in early colour-film tests are revealed through the eyes of the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and experimental filmmaker Lis Rhodes encode their voices as abstract light patterns on 16mm mono and 35mm stereo filmstrips in a collaborative exploration of sound-image synchronicity.
-<Compact type="address">
-<br>
-DIM Cinema<br>
-The Cinematheque<br>
-1131 Howe St.<br>
-Vancouver BC<br>
-Canada<br>
-http://www.dimcinema.ca/soundfigures-films-aura-satz<br>
-</Compact>
- 
+		<h5>13 May 2015</h5>
+		<h4>'Soundfigures: Films by Aura Satz'</h4>
+		A selection of films by Aura Satz, DIM Cinema, Vancouver Cinametheque, programmed by Michele Smith
+		(Near) extinct technologies make sound visible in this program of shorts by London-based artist Aura
+		Satz that delve into ideas of knowledge, memory, and communication. On a Chladni Plate, a device
+		that marked the birth of acoustics, grains of sand, moving like Busby Berkeley dancers, form intricate
+		patterns in response to changing sound frequencies, their shapes recalling the utopian quest for
+		a “pure,” onomatopoeic alphabet. Wax cylinder recordings combine with modern scientific instruments
+		to animate a text by Rainer Maria Rilke on the possibility of hearing the dead by playing their skulls
+		with a gramophone needle. A Ruben’s Tube translates a histrionic voice-over into a standing wave
+		of small flames, provoking unexpected associations, from the biblical burning bush to various acts
+		of ventriloquism in pop culture. Breaking its long silence, the Oramics Machine plays hand-drawn
+		compositions by its inventor, electronic music pioneer Daphne Oram. Kaleidoscopic effects in the
+		lamphouse of a 35mm film printer honour Natalie Kalmus, colour consultant on masterpieces of the
+		Technicolor era. Chromatic distortions in early colour-film tests are revealed through the eyes of
+		the George Eastman family and old Hollywood stars. In a dramatic finale, Satz and experimental filmmaker
+		Lis Rhodes encode their voices as abstract light patterns on 16mm mono and 35mm stereo filmstrips
+		in a collaborative exploration of sound-image synchronicity.
+		<Compact type="address">
+			<br />
+			DIM Cinema<br />
+			The Cinematheque<br />
+			1131 Howe St.<br />
+			Vancouver BC<br />
+			Canada<br />
+			<a href="http://www.dimcinema.ca/soundfigures-films-aura-satz"
+				>http://www.dimcinema.ca/soundfigures-films-aura-satz</a
+			>
+			<br />
+		</Compact>
 
-<h5>18 Feb 2016</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London</h4>
- 
+		<h5>18 Feb 2016</h5>
+		<h4>
+			'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London
+		</h4>
 
-Aura Satz presents the UK première of 'Between the Bullet and the Hole', her latest short film which examines the role of women in ballistic research, early computing and pattern perception in warfare. Presented alongside her works focusing on memory, notation, encryption and gender, the event also features an in conversation with special guests Morgan Quaintance and David Alan Grier.
-<Compact type="address">
+		Aura Satz presents the UK première of 'Between the Bullet and the Hole', her latest short film
+		which examines the role of women in ballistic research, early computing and pattern perception
+		in warfare. Presented alongside her works focusing on memory, notation, encryption and gender,
+		the event also features an in conversation with special guests Morgan Quaintance and David Alan
+		Grier.
+		<Compact type="address">
+			Whitechapel Gallery<br />
+			77-82 Whitechapel High St<br />
+			London E1 7QX<br />
+			<a href="http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/"
+				>http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/</a
+			>
+			<br />
+		</Compact>
 
-Whitechapel Gallery<br>
-77-82 Whitechapel High St<br>
-London E1 7QX<br>
-http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/<br>
-</Compact>
- 
+		<h5>24 March 2016</h5>
+		<h4>
+			'In and Out of Synch', an evening of films and sound with Aura Satz presented by Liquid
+			Architecture and Gertrude Contemporary
+		</h4>
 
-<h5>24 March 2016</h5>
-<h4>'In and Out of Synch', an evening of films and sound with Aura Satz presented by Liquid Architecture and Gertrude Contemporary</h4>
- 
+		Satz presents works that explore the relationship between esoteric technologies (Chladni plate,
+		Rubens’ tube, theremin, mechan­i­cal music machines, phono­graphs, dial tones, drawn/optical
+		sound) and the human body (heightened perception, sensory disorientation, psychoacoustics) and
+		how these are mediated by notation systems, languages and codes. Followed by Q&A with Joel
+		Stern.
+		<Compact type="address">
+			Gertrude Contemporary<br />
+			200 Gertrude St, Fitzroy<br />
+			Melbourne VIC 3065<br />
+			Australia<br />
+			<a href="https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch "
+				>https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch
+			</a>
+			<a href="https://liquidarchitecture.org.au/events/aura-satz-talk"
+				>https://liquidarchitecture.org.au/events/aura-satz-talk</a
+			>
+			<br />
+			<a href="http://www.gertrude.org.au/">http://www.gertrude.org.au/</a>
+			<br />
+		</Compact>
 
-Satz presents works that explore the relationship between esoteric technologies (Chladni plate, Rubens’ tube, theremin, mechan­i­cal music machines, phono­graphs, dial tones, drawn/optical sound) and the human body (heightened perception, sensory disorientation, psychoacoustics) and how these are mediated by notation systems, languages and codes. Followed by Q&A with Joel Stern.
-<Compact type="address">
+		<h5>7th March 2017</h5>
+		<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
 
-Gertrude Contemporary<br>
-200 Gertrude St, Fitzroy<br>
-Melbourne VIC 3065<br>
-Australia<br>
-https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch https://liquidarchitecture.org.au/events/aura-satz-talk<br>
-http://www.gertrude.org.au/<br>
-</Compact>
- 
-
-<h5>7th March 2017</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) at HOME Manchester</h4>
- 
-
-Followed by Q&A with Chris Paul Daniels
-<Compact type="address">
-HOME Manchester<br>
-2 Tony Wilson Place<br>
-Manchester M15 4FN<br>
-https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br>
-Part of: Artist Talks https://homemcr.org/event/artist-talks/<br>
-</Compact>
-</section>
-  
-  
-  
+		Followed by Q&A with Chris Paul Daniels
+		<Compact type="address">
+			HOME Manchester<br />
+			2 Tony Wilson Place<br />
+			Manchester M15 4FN<br />
+			<a href="https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/"
+				>https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/</a
+			>
+			<br />
+			Part of: Artist Talks <a href="https://homemcr.org/event/artist-talks/"
+				>https://homemcr.org/event/artist-talks/</a
+			>
+			<br />
+		</Compact>
+	</section>
 </ProjectLayout>

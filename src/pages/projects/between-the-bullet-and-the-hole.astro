@@ -1,202 +1,330 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image src="SATZbetween-bullet-and-the-hole-1.jpg " caption="Aura Satz, 'Between the Bullet and the Hole', 2015" />
-  <section>
-    <p>
-      Between the Bullet and the Hole is a new film centred on the elusive and complex effects of war on women's role in ballistic research and early computing. The film features new and archival high speed bullet photography, schlieren and electric spark imagery, bullet sound wave imagery, forensic ballistic photography, slide rulers, punch cards, computer diagrams, and a soundtrack by Scanner. Like a frantic animation storyboard, it explores the flickering space between the frames, testing the perceptual mechanics of visual interpolation, the possibility of reading or deciphering the gap between before and after. Interpolation - the main task of the women studying ballistics in WW2 - is the construction or guessing of missing data using only two known data points. The film tries to unpack this gap, open it up to interrogation. It questions how we read, interpolate or construct the gaps between bullet and hole, perpetrator and victim, presence and absence.</p>
-    </section>
-    <Title
-    title="'Her Marks, a Measure'"
-    date="23rd Jan - 20 March 2016"
-    subtitle="Solo exhibition at Dallas Contemporary"
-    >
-    <p>'Her Marks, a Measure' is an exhibition exploring the role women's labour in astronomy and ballistics. In both these fields women made significant contributions to observation, data collection, and computation. Alongside the film Between the Bullet and the Hole, the show features Her Luminous Distance, a slide-based installation which uses a Blink Comparator, a device used by astronomers to detect small pattern differences between photographic plates by alternately switching between images, blinking back and forth between the two. The PROBLICOM (Projector Blink Comparator) was invented by amateur astronomer Ben Mayer, using two juxtaposed slide projectors and a rotating disc, alternately occulting the images at a stroboscopic pace. The accompanying binaural soundtrack is a pulsing rhythmic drone which plays on the perception of patterns.</p>
-    
-    <p>Developed from research on the pioneering deaf astronomer Henrietta Swan Leavitt (1868-1921), the project attends to the lesser known women who contributed to important astronomical discoveries, in particular the women known as 'Human Computers' at Harvard, who were engaged in painstaking astronomical observation and classification. In her extensive studies of Variable Stars, Leavitt discovered the period-luminosity relation, which ultimately helped calibrate a method to determine the size of the universe. The blinking slide sequence includes images drawn from Leavitt's original annotated photographic plates of Variable stars, archival images from the Human Computers' workplace, and a series of over 20 images of craters on the moon named after women astronomers. The Leavitt Crater is on the far side of the moon, and is also in honour of deaf scientists.</p>
-    
-    <p>In addition to the film and slide-based installation the exhibition features circular lenticular prints.</p>
-    
-    Dallas Contemporary<br>
-    161 Glass St<br>
-    Dallas, Texas<br>
-    TX 75207, USA<br>
-    <Link url="http://www.dallascontemporary.org/" label="dallascontemporary.org"></Link>
-  </Title>
-  <Image src="dallas1.jpg " caption="" />
-  <Image src="dallas2.jpg " caption="Installation views of 'Her Marks, a Measure' at Dallas Contemporary, 2016. Photo by Kevin Todara." />
+	<Image
+		src="SATZbetween-bullet-and-the-hole-1.jpg "
+		caption="Aura Satz, 'Between the Bullet and the Hole', 2015"
+	/>
+	<section>
+		<p>
+			Between the Bullet and the Hole is a new film centred on the elusive and complex effects of
+			war on women's role in ballistic research and early computing. The film features new and
+			archival high speed bullet photography, schlieren and electric spark imagery, bullet sound
+			wave imagery, forensic ballistic photography, slide rulers, punch cards, computer diagrams,
+			and a soundtrack by Scanner. Like a frantic animation storyboard, it explores the flickering
+			space between the frames, testing the perceptual mechanics of visual interpolation, the
+			possibility of reading or deciphering the gap between before and after. Interpolation - the
+			main task of the women studying ballistics in WW2 - is the construction or guessing of missing
+			data using only two known data points. The film tries to unpack this gap, open it up to
+			interrogation. It questions how we read, interpolate or construct the gaps between bullet and
+			hole, perpetrator and victim, presence and absence.
+		</p>
+	</section>
+	<Title
+		title="'Her Marks, a Measure'"
+		date="23rd Jan - 20 March 2016"
+		subtitle="Solo exhibition at Dallas Contemporary"
+	>
+		<p>
+			'Her Marks, a Measure' is an exhibition exploring the role women's labour in astronomy and
+			ballistics. In both these fields women made significant contributions to observation, data
+			collection, and computation. Alongside the film Between the Bullet and the Hole, the show
+			features Her Luminous Distance, a slide-based installation which uses a Blink Comparator, a
+			device used by astronomers to detect small pattern differences between photographic plates by
+			alternately switching between images, blinking back and forth between the two. The PROBLICOM
+			(Projector Blink Comparator) was invented by amateur astronomer Ben Mayer, using two
+			juxtaposed slide projectors and a rotating disc, alternately occulting the images at a
+			stroboscopic pace. The accompanying binaural soundtrack is a pulsing rhythmic drone which
+			plays on the perception of patterns.
+		</p>
 
- <section>
+		<p>
+			Developed from research on the pioneering deaf astronomer Henrietta Swan Leavitt (1868-1921),
+			the project attends to the lesser known women who contributed to important astronomical
+			discoveries, in particular the women known as 'Human Computers' at Harvard, who were engaged
+			in painstaking astronomical observation and classification. In her extensive studies of
+			Variable Stars, Leavitt discovered the period-luminosity relation, which ultimately helped
+			calibrate a method to determine the size of the universe. The blinking slide sequence includes
+			images drawn from Leavitt's original annotated photographic plates of Variable stars, archival
+			images from the Human Computers' workplace, and a series of over 20 images of craters on the
+			moon named after women astronomers. The Leavitt Crater is on the far side of the moon, and is
+			also in honour of deaf scientists.
+		</p>
 
-<Title
-title="'The future is already here - it's just not evenly distributed,' The Sydney Biennale"
-subtitle="curated by Stephanie Rosenthal"
-date="18 March - 6 June 2016"
->
-Carriage Works<br>
-245 Wilson St Eveleigh (cnr. Codrington St)<br>
-Redfern NSW<br>
-Australia<br>
-https://www.biennaleofsydney.com.au/20bos/artists/satz-aura/
-</Title>
+		<p>
+			In addition to the film and slide-based installation the exhibition features circular
+			lenticular prints.
+		</p>
 
+		Dallas Contemporary<br />
+		161 Glass St<br />
+		Dallas, Texas<br />
+		TX 75207, USA<br />
+		<a target="_blank" href="http://www.dallascontemporary.org/"
+			>http://www.dallascontemporary.org/"</a
+		>
+	</Title>
+	<Image src="dallas1.jpg " caption="" />
+	<Image
+		src="dallas2.jpg "
+		caption="Installation views of 'Her Marks, a Measure' at Dallas Contemporary, 2016. Photo by Kevin Todara."
+	/>
 
+	<section>
+		<Title
+			title="'The future is already here - it's just not evenly distributed,' The Sydney Biennale"
+			subtitle="curated by Stephanie Rosenthal"
+			date="18 March - 6 June 2016"
+		>
+			Carriage Works<br />
+			245 Wilson St Eveleigh (cnr. Codrington St)<br />
+			Redfern NSW<br />
+			Australia<br />
+			<a target="_blank" href="https://www.biennaleofsydney.com.au/20bos/artists/satz-aura/"
+				>https://www.biennaleofsydney.com.au/20bos/artists/satz-aura/</a
+			>
+		</Title>
 
+		<Title
+			title="'Her Marks, a Measure'"
+			subtitle="Solo exhibition at Fridman Gallery"
+			date="1 Oct - 5 Nov 2016"
+		>
+			<p>
+				Launch of exhibition catalogue with essays by Justine Ludwig, Erika Balsom and Omar Kohleif.
+				Aura Satz in conversation with Dallas Contemporary Senior Curator Justine Ludwig at 5pm.
+			</p>
+			287 Spring Street<br />
+			New York, NY 10013<br />
+			Telephone (646) 345 9851<br />
+			<a target="_blank" href="http://www.fridmangallery.com/<br>"
+				>http://www.fridmangallery.com/<br /></a
+			>
+			<a target="_blank" href="https://www.fridmangallery.com/aura-satz"
+				>https://www.fridmangallery.com/aura-satz</a
+			>
+		</Title>
 
-<Title
-title="'Her Marks, a Measure'"
-subtitle="Solo exhibition at Fridman Gallery"
-date="1 Oct - 5 Nov 2016"
->
-<p>Launch of exhibition catalogue with essays by Justine Ludwig, Erika Balsom and Omar Kohleif. Aura Satz in conversation with Dallas Contemporary Senior Curator Justine Ludwig at 5pm.</p>
-287 Spring Street<br>
-New York, NY 10013<br>
-Telephone (646) 345 9851<br>
-http://www.fridmangallery.com/<br>
-https://www.fridmangallery.com/aura-satz
-</Title>
+		<Title
+			title="'Open Space 2017: Re-envisioning the Future', Group exhibition at NTT InterCommunication Center (ICC), Tokyo"
+			subtitle="Including Ogata Hisato, Aura Satz, Sougwen Chung. Tokui Nao + Dozono Shoya, nor, Gregory Barsamian, Kyle McDonald, Mihara Soichiro, Yuan Goang-Ming. Curated by Minoru Hatanaka."
+			date="29 May 2017 - 11 March 2018"
+		>
+			<h4>Artist's talk on Sunday the 28th May, 4pm</h4>
+			<a
+				target="_blank"
+				href="http://www.ntticc.or.jp/en/exhibitions/2017/open-salon-artists-talk-aura-sats-may-28-2017/"
+				>http://www.ntticc.or.jp/en/exhibitions/2017/open-salon-artists-talk-aura-sats-may-28-2017/</a
+			>
 
-<Title
-title="'Open Space 2017: Re-envisioning the Future', Group exhibition at NTT InterCommunication Center (ICC), Tokyo"
-subtitle="Including Ogata Hisato, Aura Satz, Sougwen Chung. Tokui Nao + Dozono Shoya, nor, Gregory Barsamian, Kyle McDonald, Mihara Soichiro, Yuan Goang-Ming. Curated by Minoru Hatanaka."
-date="29 May 2017 - 11 March 2018"
->
+			<h4>Artist's podcast</h4>
+			<a target="_blank" href="http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz/"
+				>http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz/</a
+			>
 
-<h4>Artist's talk on Sunday the 28th May, 4pm</h4>
-http://www.ntticc.or.jp/en/exhibitions/2017/open-salon-artists-talk-aura-sats-may-28-2017/
+			<h4>NTT InterCommunication Center [ICC]</h4>
+			Tokyo Opera City Tower 4F<br />
+			3-20-2 Nishishinjyuku, Shinjuku-ku, Tokyo 163-1404<br />
+			E-mail: query@ntticc.or.jp<br />
+			<br />
+			<a
+				target="_blank"
+				href="http://www.ntticc.or.jp/en/exhibitions/2017/open-space-2017-re-envisioning-the-future/<br>"
+				>http://www.ntticc.or.jp/en/exhibitions/2017/open-space-2017-re-envisioning-the-future/<br
+				/></a
+			>
+			<a target="_blank" href="http://www.ntticc.or.jp/en/archive/participants/aura-satz/"
+				>http://www.ntticc.or.jp/en/archive/participants/aura-satz/</a
+			>
+		</Title>
 
-<h4>Artist's podcast</h4>
-http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz/
+		<Title
+			title="'Machines of Loving Grace'"
+			subtitle="Three-person exhibition at High Line Art, New York: Nat Castaneda, Aura Satz and Erica Scourti"
+			date="8 Oct 2018 - 2 Jan 2019"
+		>
+			<p>
+				'Machines of Loving Grace' is an exhibition in video format featuring three artists who
+				address contemporary and historical technologies, and humans' eerie and shifting
+				relationships with them. Curated by Melanie Kress.
+			</p>
 
-<h4>NTT InterCommunication Center [ICC]</h4>
-Tokyo Opera City Tower 4F<br>
-3-20-2 Nishishinjyuku, Shinjuku-ku, Tokyo 163-1404<br>
-E-mail: query@ntticc.or.jp<br>
-<br>
-http://www.ntticc.or.jp/en/exhibitions/2017/open-space-2017-re-envisioning-the-future/<br>
-http://www.ntticc.or.jp/en/archive/participants/aura-satz/
-</Title>
+			<p>
+				The High Line is an elevated freight rail line transformed into a public park on Manhattan's
+				West Side. The High Line is located on Manhattan's West Side, running from Gansevoort Street
+				in the Meatpacking District to West 34th Street, between 10th & 11th Avenues. Exhibition on
+				the High Line at 14th St. Daily, beginning at dusk
+			</p>
+			<a target="_blank" href="http://art.thehighline.org/project/machines-of-loving-grace/<br>"
+				>http://art.thehighline.org/project/machines-of-loving-grace/<br /></a
+			>
+			<a target="_blank" href="http://art.thehighline.org/">http://art.thehighline.org/</a>
+		</Title>
 
-<Title
-title="'Machines of Loving Grace'"
-subtitle="Three-person exhibition at High Line Art, New York: Nat Castaneda, Aura Satz and Erica Scourti"
-date="8 Oct 2018 - 2 Jan 2019"
->
-<p>'Machines of Loving Grace' is an exhibition in video format featuring three artists who address contemporary and historical technologies, and humans' eerie and shifting relationships with them. Curated by Melanie Kress.</p>
-
-<p>The High Line is an elevated freight rail line transformed into a public park on Manhattan's West Side. The High Line is located on Manhattan's West Side, running from Gansevoort Street in the Meatpacking District to West 34th Street, between 10th & 11th Avenues. Exhibition on the High Line at 14th St. Daily, beginning at dusk</p>
-http://art.thehighline.org/project/machines-of-loving-grace/<br>
-http://art.thehighline.org/
-</Title>
-
-<!-- <Title
+		<!-- <Title
 title=""
 subtitle=""
 date=""
 > -->
 
-<section>
-  <h2>Screenings:</h2>
+		<section>
+			<h3>Screenings:</h3>
 
+			<h5>27 Jan- 7 Feb 2016</h5>
+			<h4>European premiere at the International Film Festival Rotterdam, Rotterdam</h4>
 
+			<a target="_blank" href="https://iffr.com/en/2016/combinedprogrammes/on-target<br>"
+				>https://iffr.com/en/2016/combinedprogrammes/on-target<br /></a
+			>
+			<a target="_blank" href="https://iffr.com/en/2016/films/between-the-bullet-and-the-hole"
+				>https://iffr.com/en/2016/films/between-the-bullet-and-the-hole</a
+			>
 
-  <h5>27 Jan- 7 Feb 2016</h5>
-  <h4>European premiere at the International Film Festival Rotterdam, Rotterdam</h4>
- 
+			<h5>18 Feb 2016</h5>
+			<h4>
+				'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London
+			</h4>
 
-https://iffr.com/en/2016/combinedprogrammes/on-target<br>
-https://iffr.com/en/2016/films/between-the-bullet-and-the-hole
+			Followed by discussion with Morgan Quaintance and David Alan Grier<br />
+			Whitechapel Gallery<br />
+			77-82 Whitechapel High St<br />
+			London E1 7QX<br />
+			<a target="_blank" href="http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/"
+				>http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/</a
+			>
 
- 
+			<h5>24 March 2016</h5>
+			<h4>
+				'In and Out of Synch', Liquid Architecture and Gertrude Contemporary present an evening of
+				films and sound with Aura Satz
+			</h4>
 
-<h5>18 Feb 2016</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at Whitechapel Gallery, London</h4>
- 
+			<p>Followed by discussion with Joel Stern</p>
 
-Followed by discussion with Morgan Quaintance and David Alan Grier<br>
-Whitechapel Gallery<br>
-77-82 Whitechapel High St<br>
-London E1 7QX<br>
-http://www.whitechapelgallery.org/events/aura-satz-bullet-hole/
+			Gertrude Contemporary<br />
+			200 Gertrude St, Fitzroy<br />
+			Melbourne VIC 3065<br />
+			Australia<br />
+			<a
+				target="_blank"
+				href="https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br>"
+				>https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br /></a
+			>
+			<a target="_blank" href="https://liquidarchitecture.org.au/events/aura-satz-talk<br>"
+				>https://liquidarchitecture.org.au/events/aura-satz-talk<br /></a
+			>
+			<a target="_blank" href="http://www.gertrude.org.au/">http://www.gertrude.org.au/</a>
 
- 
+			<h5>21-31 July 2016</h5>
+			<h4>
+				Shortlisted for the EUROPEAN SHORTS Competition - New Horizons International Film Festival,
+				Wroclaw, Poland
+			</h4>
 
-<h5>24 March 2016</h5>
-<h4>'In and Out of Synch', Liquid Architecture and Gertrude Contemporary present an evening of films and sound with Aura Satz</h4>
- 
+			<a target="_blank" href="http://www.nowehoryzonty.pl/index.do?lang=en"
+				>http://www.nowehoryzonty.pl/index.do?lang=en</a
+			>
 
-<p>Followed by discussion with Joel Stern</p>
+			<h5>9 October 2016</h5>
+			<h4>Screening as part of Experimenta, London Film Festival, BFI Southbank, London</h4>
 
-Gertrude Contemporary<br>
-200 Gertrude St, Fitzroy<br>
-Melbourne VIC 3065<br>
-Australia<br>
-https://liquidarchitecture.org.au/events/aura-satz-in-and-out-of-synch<br>
-https://liquidarchitecture.org.au/events/aura-satz-talk<br>
-http://www.gertrude.org.au/
+			<a
+				target="_blank"
+				href="https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=reinterpretationsofform"
+				>https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=reinterpretationsofform</a
+			>
 
- 
+			<h5>7 March 2017</h5>
+			<h4>'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at HOME Manchester</h4>
 
-<h5>21-31 July 2016</h5>
-<h4>Shortlisted for the EUROPEAN SHORTS Competition - New Horizons International Film Festival, Wroclaw, Poland</h4>
+			HOME Manchester<br />
+			2 Tony Wilson Place<br />
+			Manchester M15 4FN<br />
+			<a
+				target="_blank"
+				href="https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br>"
+				>https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br /></a
+			>
+			<a target="_blank" href="Part of: Artist Talks https://homemcr.org/event/artist-talks/"
+				>Part of: Artist Talks https://homemcr.org/event/artist-talks/</a
+			>
 
-http://www.nowehoryzonty.pl/index.do?lang=en
+			<p>Acquired by Arts Council Collection in 2018</p>
+			<a
+				target="_blank"
+				href="http://www.artscouncilcollection.org.uk/artwork/between-bullet-and-hole"
+				>http://www.artscouncilcollection.org.uk/artwork/between-bullet-and-hole</a
+			>
 
+			<p>
+				Artforum 500 words, by Agnietszka Gratza <a
+					href="http://www.artforum.com/words/#entry57468"
+					target="_blank">http://www.artforum.com/words/#entry57468</a
+				><p>
+					Artforum 500 words, by Agnietszka Gratza <a
+						href="http://www.artforum.com/words/#entry57468"
+						>http://www.artforum.com/words/#entry57468</a
+					>
+				</p>
 
-<h5>9 October 2016</h5>
-<h4>Screening as part of Experimenta, London Film Festival, BFI Southbank, London</h4>
+				<p>
+					Studio International interview with Anna McNay <a
+						href="http://www.studiointernational.com/index.php/aura-satz-interview-the-trembling-line-women-computers-technology"
+						target="_blank"
+						>http://www.studiointernational.com/index.php/aura-satz-interview-the-trembling-line-women-computers-technology</a
+					>
+				</p>
 
-https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=reinterpretationsofform
+				<p>Mousse Magazine interview with Lis Rhodes and Agnietszka Gratza, February 2016 issue</p>
+				<a target="_blank" href="http://moussemagazine.it">http://moussemagazine.it/</a>
+				<p>Blouin Artinfo 20th Sydney Biennale Q&A with Nicholas Forrest May 2016</p>
 
-<h5>7 March 2017</h5>
-<h4>'Between the Bullet and the Hole' (Plus Other Shorts) + Q&A at HOME Manchester</h4>
+				<a
+					target="_blank"
+					href="http://uk.blouinartinfo.com/news/story/1414239/20th-sydney-biennale-qa-aura-satzs-bullet-and-the-hole"
+					>http://uk.blouinartinfo.com/news/story/1414239/20th-sydney-biennale-qa-aura-satzs-bullet-and-the-hole</a
+				>
+				<br /><br />
+				<a
+					target="_blank"
+					href="http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz"
+					>http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz/</a
+				>
 
-HOME Manchester<br>
-2 Tony Wilson Place<br>
-Manchester M15 4FN<br>
-https://homemcr.org/event/between-the-bullet-and-the-hole-plus-other-shorts-qa/<br>
-Part of: Artist Talks https://homemcr.org/event/artist-talks/
+				<h4>Credits:</h4>
 
- 
+				Directed, edited, and scripted by Aura Satz<br />
+				Music by Scanner<br />
+				Special thanks first and foremost to Lis Rhodes, for all the words and exchanges<br />
+				Thanks to David Alan Grier for his inspirational research and input<br />
+				Ballistic imagery shot at Cranfield University with Thierry Bal, special thanks to James Shackel<br
+				/>
+				Schlieren imagery and film clips provided by Aimed Research, thanks to Nathan Boor<br />
+				Electric spark photography from Dayton Clarence Miller, 'Sound Waves: Their Shape and Speed'
+				(1937)<br />
+				Comparison Microscope Forensic Ballistic imagery provided by Alison Quereau, Firearms Unit, Palm
+				Beach County Sheriff's office.<br />
+				Edgerton images courtesy Harold Edgerton Archive, Palm Press, Inc. and the Michael Hoppen Gallery.
+				Thanks to Simon Baker, Clemmie Cooke<br />
+				Punchcard scans provided by Computer History Museum, thanks to Chris Garcia<br />
+				Selected imagery from the Imperial War Museum, thanks to Martin Anthony<br />
+				Additional thanks to Stuart Croft, Shira Hess, Phoebe von Held, Thierry Bal, Brian Dillon, Daniel
+				Norwood, David Alan Grier, Andrew Davidhazy, Zoe Whitley, Justine Ludwig, and Jackie Stewart<br
+				/>
 
-<p>Acquired by Arts Council Collection in 2018</p>
-http://www.artscouncilcollection.org.uk/artwork/between-bullet-and-hole
- 
-
-<p>Artforum 500 words, by Agnietszka Gratza http://www.artforum.com/words/#entry57468<br>
-Studio International interview with Anna McNay http://www.studiointernational.com/index.php/aura-satz-interview-the-trembling-line-women-computers-technology<br>
-Mousse Magazine interview with Lis Rhodes and Agnietszka Gratza, February 2016 issue http://moussemagazine.it/<br>
-Blouin Artinfo 20th Sydney Biennale Q&A with Nicholas Forrest May 2016</p>
-http://uk.blouinartinfo.com/news/story/1414239/20th-sydney-biennale-qa-aura-satzs-bullet-and-the-hole http://www.ntticc.or.jp/en/channel-icc/podcast/icc-os2017-aura-satz/
-
-<h4>Credits:</h4>
-
-Directed, edited, and scripted by Aura Satz<br>
-Music by Scanner<br>
-Special thanks first and foremost to Lis Rhodes, for all the words and exchanges<br>
-Thanks to David Alan Grier for his inspirational research and input<br>
-Ballistic imagery shot at Cranfield University with Thierry Bal, special thanks to James Shackel<br>
-Schlieren imagery and film clips provided by Aimed Research, thanks to Nathan Boor<br>
-Electric spark photography from Dayton Clarence Miller, 'Sound Waves: Their Shape and Speed' (1937)<br>
-Comparison Microscope Forensic Ballistic imagery provided by Alison Quereau, Firearms Unit, Palm Beach County Sheriff's office.<br>
-Edgerton images courtesy Harold Edgerton Archive, Palm Press, Inc. and the Michael Hoppen Gallery. Thanks to Simon Baker, Clemmie Cooke<br>
-Punchcard scans provided by Computer History Museum, thanks to Chris Garcia<br>
-Selected imagery from the Imperial War Museum, thanks to Martin Anthony<br>
-Additional thanks to Stuart Croft, Shira Hess, Phoebe von Held, Thierry Bal, Brian Dillon, Daniel Norwood, David Alan Grier, Andrew Davidhazy, Zoe Whitley, Justine Ludwig, and Jackie Stewart<br>
-
-Funded by Arts Council England, Co-commissioned by Dallas Contemporary and the Sydney Biennale, with additional support from Peter and Jackie Stewart.
- 
-    
-  </section>
-  
+				Funded by Arts Council England, Co-commissioned by Dallas Contemporary and the Sydney
+				Biennale, with additional support from Peter and Jackie Stewart.
+			</p>
+		</section>
+	</section>
 </ProjectLayout>

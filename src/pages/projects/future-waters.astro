@@ -1,54 +1,74 @@
 ---
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { getProps } from "../../helpers/utils";
-import Image from "../../components/Image.astro";
-import Address from "../../components/Address.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Link from "../../components/Link.astro";
-import Title from "../../components/Title.astro";
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getProps } from '../../helpers/utils';
+import Image from '../../components/Image.astro';
+import Address from '../../components/Address.astro';
+import Blockquote from '../../components/Blockquote.astro';
+import Link from '../../components/Link.astro';
+import Title from '../../components/Title.astro';
 
 const props = await getProps(import.meta.url);
 const image1 = [
-  {
-    src: "fw-film-still 3.jpg",
-  },
-  { src: "the Future Waters film still 2(1).jpg" },
+	{
+		src: 'fw-film-still 3.jpg'
+	},
+	{ src: 'the Future Waters film still 2(1).jpg' }
 ];
 ---
 
 <ProjectLayout {...props}>
-  <section>
-    <p>Aura Satz collaborates with field recordist and electronic music composer BJ Nilsen to explore a wall of sirens framed within a storm surge barrier in the Netherlands. Measuring nearly eight kilometres in length, the Oosterscheldekering barrier, serving also as a bridge, is a special dam that connects the Zeeland islands of Schouwen-Duiveland and Noord-Beveland. The siren is embedded within this preventive architecture, an integral part of a complex web of infrastructures that imagine future threats. The sound of this siren forges an invisible line across an unstable horizon, speaking to the centrifugal chaos of storms to come.</p>
+	<section>
+		<p>
+			Aura Satz collaborates with field recordist and electronic music composer BJ Nilsen to explore
+			a wall of sirens framed within a storm surge barrier in the Netherlands. Measuring nearly
+			eight kilometres in length, the Oosterscheldekering barrier, serving also as a bridge, is a
+			special dam that connects the Zeeland islands of Schouwen-Duiveland and Noord-Beveland. The
+			siren is embedded within this preventive architecture, an integral part of a complex web of
+			infrastructures that imagine future threats. The sound of this siren forges an invisible line
+			across an unstable horizon, speaking to the centrifugal chaos of storms to come.
+		</p>
 
-https://sonicacts.com/biennial/biennial-2022/programme/preemptive-listening<br>
-https://sonicacts.com/news/news-futurewatersofthestormsurgepremiere
-  </section>
-  <Image collection={image1} caption="Aura Satz, Spiral Sound Coil - in the studio, 2010. Photo: Paul Winch-Furness" />
-  <Image src="the Future Waters film still 1.jpg" caption="The Future Waters of the Storm Surge, film still, 2022" />
-<Title date="7 Dec 2022" title="Screening at Kino Moviemento, Berlin as part of Kontraklang">
-<p>Films and music by Olivia Block, Gunilla Skold Feiler & Dror Feiler, Martin Grutter & Aron Kitzig, Christian Kesten, Patricia Martínez & Luis Paris, Makiko Nishikaze, Michiko Ogawa & Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz & BJ Nilsen</p>
+		<a href="https://sonicacts.com/biennial/biennial-2022/programme/preemptive-listening"
+			>https://sonicacts.com/biennial/biennial-2022/programme/preemptive-listening</a
+		>
+		<a href="https://sonicacts.com/news/news-futurewatersofthestormsurgepremiere"
+			>https://sonicacts.com/news/news-futurewatersofthestormsurgepremiere</a
+		>
+	</section>
+	<Image
+		collection={image1}
+		caption="Aura Satz, Spiral Sound Coil - in the studio, 2010. Photo: Paul Winch-Furness"
+	/>
+	<Image
+		src="the Future Waters film still 1.jpg"
+		caption="The Future Waters of the Storm Surge, film still, 2022"
+	/>
+	<Title date="7 Dec 2022" title="Screening at Kino Moviemento, Berlin as part of Kontraklang">
+		<p>
+			Films and music by Olivia Block, Gunilla Skold Feiler & Dror Feiler, Martin Grutter & Aron
+			Kitzig, Christian Kesten, Patricia Martínez & Luis Paris, Makiko Nishikaze, Michiko Ogawa &
+			Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz & BJ Nilsen
+		</p>
 
-https://kontraklang.de/concert/movie-night-nr-2/
- 
+		<a target="_blank" href="https://kontraklang.de/concert/movie-night-nr-2/"
+			>https://kontraklang.de/concert/movie-night-nr-2/</a
+		>
 
-<h4>CREDITS:</h4>
+		<h4>CREDITS:</h4>
 
-Directed, written and edited by Aura Satz<br>
-Music and site specific field recordings by BJ Nilsen<br>
-Drone operator Veerdonk Visuals<br>
-Produced by LONO studio<br>
-Production Assistant Erika Roux<br>
-Sonic Acts Researcher Victoria Douka-Doukopoulou<br>
-Colour grading Misha Kim<br>
-Special Thanks to Eric Vander Weegen and staff at Oosterscheldekering; Maud Seuntjens and Anne van Waveren at Sonic Acts<br>
-The film is commissioned by Sonic Acts
+		Directed, written and edited by Aura Satz<br />
+		Music and site specific field recordings by BJ Nilsen<br />
+		Drone operator Veerdonk Visuals<br />
+		Produced by LONO studio<br />
+		Production Assistant Erika Roux<br />
+		Sonic Acts Researcher Victoria Douka-Doukopoulou<br />
+		Colour grading Misha Kim<br />
+		Special Thanks to Eric Vander Weegen and staff at Oosterscheldekering; Maud Seuntjens and Anne van
+		Waveren at Sonic Acts<br />
+		The film is commissioned by Sonic Acts
+	</Title>
 
-
-</Title>
-  
-
-
-  <!-- <Image
+	<!-- <Image
     type="detail"
     collection={[{ src: "the Future Waters film still 1.jpg" }]}
   >
@@ -59,5 +79,4 @@ The film is commissioned by Sonic Acts
     Michiko Ogawa & Manuel Pessoa de Lima, Lis Rhodes, Julia Rommel, Aura Satz &
     BJ Nilsen
   </Image> -->
-
 </ProjectLayout>
