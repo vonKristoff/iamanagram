@@ -3,6 +3,7 @@ import MainHeader from '../layouts/MainHeader.astro';
 ---
 
 <MainHeader title={`AURA SATZ - info`} bg="dada">
+	<div class="aura-circle"></div>
 	<div class="info-wrapper">
 		<article>
 			<p>For general enquiries contact <strong>aurasatz@onetel.com</strong></p>
@@ -23,10 +24,23 @@ import MainHeader from '../layouts/MainHeader.astro';
 </MainHeader>
 
 <style>
+	.aura-circle {
+		z-index: 0;
+		width: 80vh;
+		height: 80vh;
+		position: absolute;
+		left: calc(50% - 40vh);
+		top: calc(50% - 40vh);
+		border-radius: 50%;
+		box-shadow: 0 0 15em black;
+		/* background-color: gray; */
+	}
 	.info-wrapper {
+		position: relative;
+		z-index: 1;
 		display: grid;
 		place-content: center;
-		min-height: calc(100dvh - var(--spacing-level-1) * 2);
+		min-height: calc(100dvh - var(--spacing-level-1) - 2em);
 		height: inherit;
 		margin: 0;
 		padding: 0;
