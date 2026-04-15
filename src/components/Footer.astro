@@ -15,7 +15,8 @@
 	footer {
 		margin: 1em 0;
 		padding: 1em 2em;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
@@ -23,8 +24,10 @@
 	.col {
 		font-size: small;
 		color: var(--colour-soft);
+		text-align: center;
 	}
 	.ssh {
 		opacity: 0.5;
+		text-align: right;
 	}
 </style>
