@@ -1,10 +1,18 @@
 ---
+import { getCollection } from 'astro:content';
 const { omit = null } = Astro.props;
 const currentPath = Astro.url.pathname;
+const allProjects = await getCollection('projects');
 
 function isActive(path) {
 	return currentPath === path ? 'active' : '';
 }
+
+const projectsData = allProjects.map((p) => ({
+	title: p.data.title,
+	slug: p.id,
+	category: p.data.category
+}));
 ---
 
 <div class="relative">
@@ -18,10 +26,26 @@ function isActive(path) {
 		</li>
 
 		<li>
-			<a class={isActive('/serformances')} href="/performances">Performances</a>
+			<a class={isActive('/performances')} href="/performances">Performances</a>
 		</li>
 	</ul>
 </div>
+
+<script define:vars={{ projectsData }}>
+	const searchInput = document.getElementById('project-search');
+
+	searchInput?.addEventListener('input', (e) => {
+		const query = e.target.value;
+
+		if (query.length >= 3) {
+			const regex = new RegExp(query, 'i');
+			const results = projectsData.filter(
+				(p) => regex.test(p.title) || regex.test(p.slug) || p.category.some((c) => regex.test(c))
+			);
+			console.log(results);
+		}
+	});
+</script>
 <style>
 	.relative {
 		display: flex;

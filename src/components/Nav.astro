@@ -1,5 +1,7 @@
 ---
 import ProjectNavFilters from '../components/ProjectNavFilters.astro';
+import SearchInput from '../components/SearchInput.astro';
+
 const { omit = null } = Astro.props;
 const currentPath = Astro.url.pathname;
 
@@ -9,8 +11,9 @@ function isActive(path) {
 ---
 
 <nav>
+	<SearchInput />
 	<ProjectNavFilters {omit} />
-	<div class="v-divider"></div>
+	<!-- <div class="v-divider"></div> -->
 	<div class="alt-pages">
 		<a class={isActive('/news')} href="/news">News</a>
 		<a class={isActive('/info')} href="/info">Info</a>
@@ -18,13 +21,17 @@ function isActive(path) {
 			title="preemptivelistening"
 			class=""
 			href="https://preemptivelisteningfilm.com/"
-			target="_blank">preemptivelisteningfilm.com</a
+			target="_blank">Preemptive Listening</a
 		>
 	</div>
+	<a title="home" class="nav-flex no-underline center" href="/"><span id="title">AURA SATZ</span></a
+	>
 </nav>
-<a title="home" class="nav-flex no-underline" href="/"><span id="title">AURA SATZ</span></a>
 
 <style>
+	.center {
+		text-align: center;
+	}
 	.v-divider {
 		height: inherit;
 		width: 1px;
@@ -33,12 +40,9 @@ function isActive(path) {
 	}
 	nav {
 		display: flex;
-		gap: 2em;
-		flex: 0 0.5 auto;
-		@media (max-width: 768px) {
-			gap: 2em;
-			width: 50%;
-		}
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
 		& > a {
 			text-decoration: none;
 		}
@@ -70,15 +74,7 @@ function isActive(path) {
 	}
 	#title {
 		text-align: right;
-		position: fixed;
-		right: 0;
-		top: 0;
-		font-size: 1.5em;
-		z-index: 1;
-		padding: calc(1.5em / 2) 1.5em;
 		color: var(--aura-black);
-		backdrop-filter: blur(1em);
-		border-radius: 0.25em;
 		transition: filter 0.3s;
 		&:hover {
 			filter: blur(0.25em);

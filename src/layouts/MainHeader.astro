@@ -50,6 +50,9 @@ const { title, bg = null, omit = null } = Astro.props;
 		padding: var(--spacing-level-4) var(--spacing-level-3);
 		align-items: center;
 		justify-content: space-between;
+		@media (max-width: 768px) {
+			padding: var(--spacing-level-4);
+		}
 	}
 
 	main {
