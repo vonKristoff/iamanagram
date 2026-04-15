@@ -12,8 +12,8 @@
 		"get-csv-data": "curl -L -o xib.csv https://docs.google.com/spreadsheets/d/{{--REPLACE-WITH-GOOGLESHEET-ID--}}/export?format=csv&gid=0"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^0.16.0",
-		"astro": "^2.4.2"
+		"@astrojs/mdx": "^5.0.3",
+		"astro": "^6.1.6"
 	},
 	"devDependencies": {
 		"prettier-plugin-astro": "^0.14.1"
