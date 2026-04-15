@@ -15,6 +15,11 @@ const projectsData = allProjects.map((p) => ({
 }));
 ---
 
+<dialog id="search-dialog">
+	<input type="text" id="dialog-search-input" autocomplete="off" />
+	<ul id="search-results"></ul>
+</dialog>
+
 <div class="relative">
 	<ul>
 		<li>
@@ -33,16 +38,69 @@ const projectsData = allProjects.map((p) => ({
 
 <script define:vars={{ projectsData }}>
 	const searchInput = document.getElementById('project-search');
+	const dialogSearchInput = document.getElementById('dialog-search-input');
+	const searchDialog = document.getElementById('search-dialog');
+	const searchResults = document.getElementById('search-results');
 
-	searchInput?.addEventListener('input', (e) => {
-		const query = e.target.value;
-
+	function performSearch(query) {
 		if (query.length >= 3) {
 			const regex = new RegExp(query, 'i');
 			const results = projectsData.filter(
 				(p) => regex.test(p.title) || regex.test(p.slug) || p.category.some((c) => regex.test(c))
 			);
-			console.log(results);
+			searchResults.innerHTML = results
+				.map((r) => `<li><a href="/projects/${r.slug}">${r.title}</a></li>`)
+				.join('');
+		} else {
+			searchResults.innerHTML = '';
+		}
+	}
+
+	function closeModal() {
+		searchDialog.close();
+		searchResults.innerHTML = '';
+		searchInput.value = '';
+		dialogSearchInput.value = '';
+	}
+
+	searchInput?.addEventListener('input', (e) => {
+		const query = e.target.value;
+		dialogSearchInput.value = query;
+		performSearch(query);
+		if (query.length >= 3 && !searchDialog.open) {
+			searchDialog.showModal();
+		} else if (query.length < 3 && searchDialog.open) {
+			closeModal();
+		}
+	});
+
+	dialogSearchInput?.addEventListener('input', (e) => {
+		const query = e.target.value;
+		searchInput.value = query;
+		performSearch(query);
+	});
+
+	searchDialog.addEventListener('click', (e) => {
+		const rect = searchDialog.getBoundingClientRect();
+		const isOutside =
+			e.clientX < rect.left ||
+			e.clientX > rect.right ||
+			e.clientY < rect.top ||
+			e.clientY > rect.bottom;
+		if (isOutside) {
+			closeModal();
+		}
+	});
+
+	searchDialog.addEventListener('close', () => {
+		searchResults.innerHTML = '';
+		searchInput.value = '';
+		dialogSearchInput.value = '';
+	});
+
+	searchResults?.addEventListener('click', (e) => {
+		if (e.target.tagName === 'A') {
+			closeModal();
 		}
 	});
 </script>
@@ -100,6 +158,59 @@ const projectsData = allProjects.map((p) => ({
 		}
 		&.active {
 			color: var(--colour-crimson);
+		}
+	}
+	#search-dialog {
+		place-items: center;
+		border: 1px solid var(--colour-soft);
+		border-radius: 0.5em;
+		padding: 2em;
+		background: white;
+		min-width: 200px;
+		max-width: 300px;
+		&::backdrop {
+			backdrop-filter: blur(0.5em);
+			background: rgba(0, 0, 0, 0.3);
+		}
+	}
+	#dialog-search-input {
+		width: 100%;
+		padding: 0.5em;
+		margin-bottom: 1em;
+		border: 1px solid var(--colour-soft);
+		border-radius: 0.25em;
+		font-family: inherit;
+		font-size: inherit;
+		outline: none;
+		&:focus {
+			border-color: var(--colour-crimson);
+		}
+	}
+	#search-results {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: start;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			width: 100%;
+			margin: 0;
+			padding: 0.5em 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: var(--aura-black);
+			&:hover {
+				color: var(--colour-crimson);
+			}
 		}
 	}
 </style>
