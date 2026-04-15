@@ -19,7 +19,8 @@ const filterByPage = page === 'other' ? GROUP : [page];
 			})
 			.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 			.map((item: any) => {
-				return <Thumbnail src={item.data.thumbnail} title={item.data.title} slug={item.slug} />;
+				console.log(item);
+				return <Thumbnail src={item.data.thumbnail} title={item.data.title} slug={item.id} />;
 			})
 	}
 </div>
@@ -120,6 +121,7 @@ const filterByPage = page === 'other' ? GROUP : [page];
 		};
 	};
 	// runs on frame
+	let action = {};
 	function anagramise(el, tgt) {
 		let current = 0;
 		const nextRender = framerate(2);
@@ -139,16 +141,16 @@ const filterByPage = page === 'other' ? GROUP : [page];
 		return animate;
 	}
 
-	let action = {};
 	if (!('ontouchstart' in document.documentElement)) {
 		const list = document.querySelectorAll('.project-thumbnail');
 		list.forEach((node, index) => {
+			node.setAttribute('name', node.innerText);
 			action[node.innerText] = {
 				fn: initalise(node, 'project-title'),
 				over: false
 			};
 			node.addEventListener('mouseenter', () => {
-				if (!action[node.innerText]?.over) {
+				if (node.innerText == node.getAttribute('name')) {
 					action[node.innerText].over = true;
 					action[node.innerText].fn(node.innerText);
 				}

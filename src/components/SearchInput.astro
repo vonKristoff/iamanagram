@@ -1,0 +1,60 @@
+<div class="search-item">
+	<label for="project-search">
+		<svg
+			class=""
+			width="1em"
+			height="1em"
+			stroke-linecap="round"
+			fill="none"
+			stroke-linejoin="round"
+		>
+			<use href="/sprites.svg#icon-search"></use>
+		</svg>
+	</label>
+	<input type="text" id="project-search" placeholder="Search" autocomplete="off" />
+</div>
+
+<style>
+	.search-item {
+		display: flex;
+		align-items: center;
+		gap: 0em;
+		padding: 0.25em 0.5em;
+		border-radius: 0.5em;
+		border: 0.1em solid;
+		border-color: transparent;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.search-item:has(input:focus) {
+		gap: 0.5em;
+		border-color: var(--colour-soft);
+		background: rgba(255, 255, 255, 0.35);
+	}
+	.search-item input {
+		background-color: transparent;
+		border: none;
+		/*border-bottom: 1px solid var(--colour-soft);*/
+		color: var(--colour-soft);
+		font-size: small;
+		font-family: inherit;
+		padding: 0.25em 0;
+		outline: none;
+		width: 0ch;
+		transition: width 0.3s;
+		&::placeholder {
+			color: var(--colour-soft);
+			opacity: 0.5;
+		}
+		&:focus {
+			/*border-color: var(--colour-crimson);*/
+			width: 7ch;
+		}
+	}
+	.search-item svg {
+		stroke: var(--aura-black);
+		stroke-width: 0.125em;
+		font-size: larger;
+	}
+</style>
