@@ -19,7 +19,6 @@ const filterByPage = page === 'other' ? GROUP : [page];
 			})
 			.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 			.map((item: any) => {
-				console.log(item);
 				return <Thumbnail src={item.data.thumbnail} title={item.data.title} slug={item.id} />;
 			})
 	}
