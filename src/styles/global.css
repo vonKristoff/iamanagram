@@ -38,6 +38,7 @@ li {
 section:first-child {
 	margin-top: var(--spacing-level-2);
 }
+.page,
 section,
 aside {
 	max-width: var(--width-section);
@@ -49,7 +50,11 @@ hgroup {
 	display: flex;
 	justify-content: space-between;
 }
-
+img[data-image-component='true'] {
+	object-fit: contain;
+	max-width: 100%;
+	height: auto;
+}
 .side-content h3:first-child {
 	margin-top: 0;
 }
