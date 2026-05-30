@@ -10,7 +10,7 @@ const { src, slug, title, related = false } = Astro.props;
 ---
 
 <div class={`project-thumbnail ${related ? 'related' : ''}`}>
-	<a href={`/projects/${slug}`}>
+	<a href={`/${slug}`}>
 		<div class="thumbnail-container">
 			<img src={`/projects/_thumbnails/${src}`} />
 		</div>
