@@ -11,9 +11,10 @@ type Data = {
  */
 
 export async function getProps(target: string): Promise<any> {
-  const [pagename] = target.split('/').pop()?.split('.') || ''
+  const match = target.match(/\/([^/]+?)\.\w+$/);
+  let pagename = match ? match[1] : '';
+  pagename = pagename.replace(/_[A-Za-z0-9_-]+$/, '');
   const projectList = await getCollection("projects");
-  const result = projectList.find(({ slug }) => slug === pagename)
-  // console.log(pagename, result)
+  const result = projectList.find(({ id }) => id === pagename)
   return result ? result.data : {}
 }

@@ -40,6 +40,7 @@ const projects = defineCollection({
 			date: z.string().optional(),
 			meta1: z.string().nullable().optional(),
 			meta2: z.string().nullable().optional(),
+			description: z.string().optional(),
 			gallery: z.string().optional(),
 			exhibition: z.string().optional(),
 			thumbnail: z.string(),

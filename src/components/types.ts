@@ -1,6 +1,7 @@
 export interface LayoutProps {
   title: string;
   image?: string;
+  description?: string;
   meta1?: string;
   meta2?: string;
   subtitle: string;

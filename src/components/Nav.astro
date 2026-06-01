@@ -6,6 +6,7 @@ const { omit = null } = Astro.props;
 const currentPath = Astro.url.pathname;
 
 function isActive(path) {
+	console.log(path, currentPath);
 	return currentPath === path ? 'active' : '';
 }
 ---
@@ -48,6 +49,10 @@ function isActive(path) {
 		}
 		& > a:hover {
 			text-decoration: underline;
+		}
+		@media (max-width: 600px) {
+			align-items: flex-start;
+			/* flex-direction: row; */
 		}
 	}
 	nav a {

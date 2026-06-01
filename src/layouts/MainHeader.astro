@@ -1,9 +1,10 @@
 ---
 import '$lib/styles/global.css';
 import Footer from '../components/Footer.astro';
-
 import Nav from '../components/Nav.astro';
-const { title, bg = null, omit = null } = Astro.props;
+import SEO from '../components/SEO.astro';
+
+const { title, bg = null, omit = null, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +14,7 @@ const { title, bg = null, omit = null } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<SEO {title} {description} />
 	</head>
 	<body class={bg ? bg : ''}>
 		<header><Nav {omit} /></header>

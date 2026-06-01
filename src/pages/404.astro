@@ -1,20 +1,18 @@
 ---
-
-
+import MainHeader from '../layouts/MainHeader.astro';
 ---
 
-
-  <div class="page-block grid place-content-center">
-    <div class="flex flex-col gap-8 items-center">
-      
-      <h1 class="text-4xl font-bold">404</h1>
-      <h3 class="text-sm">Unfortunately, the URL provided is invalid.</h3>
-    </div>
-  </div>
-
+<MainHeader title="404 — Page Not Found" description="The requested page could not be found.">
+	<div class="page-block grid place-content-center">
+		<div class="flex flex-col gap-8 items-center">
+			<h1 class="text-4xl font-bold">404</h1>
+			<h3 class="text-sm">Unfortunately, the URL provided is invalid.</h3>
+		</div>
+	</div>
+</MainHeader>
 
 <style>
-  .page-block {
-    min-height: 50vh;
-  }
+	.page-block {
+		min-height: 50vh;
+	}
 </style>
