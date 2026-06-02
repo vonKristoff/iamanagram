@@ -6,8 +6,8 @@ const { omit = null } = Astro.props;
 const currentPath = Astro.url.pathname;
 
 function isActive(path) {
-	console.log(path, currentPath);
-	return currentPath === path ? 'active' : '';
+	const normal = currentPath.replace(/\/+$/, '') || '/';
+	return normal === path ? 'active' : '';
 }
 ---
 
