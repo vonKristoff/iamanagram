@@ -1,118 +1,112 @@
 ---
-import ProjectLayout from "../layouts/ProjectLayout.astro";
-import { getProps } from "../helpers/utils";
-import Image from "../components/Image.astro";
-import Address from "../components/Address.astro";
-import Blockquote from "../components/Blockquote.astro";
-import Link from "../components/Link.astro";
-import Title from "../components/Title.astro";
-import Video from "../components/Video.astro";
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import { getProps } from '../helpers/utils';
+import Image from '../components/Image.astro';
+import Address from '../components/Address.astro';
+import Blockquote from '../components/Blockquote.astro';
+import Link from '../components/Link.astro';
+import Title from '../components/Title.astro';
+import Video from '../components/Video.astro';
 
 const props = await getProps(import.meta.url);
 ---
 
 <ProjectLayout {...props}>
-  <Image
-    collection={[
-      {
-        src: "Radigue Tone Transmissions.jpg",
-        caption: "Aura Satz, Tone Transmissions , 2020",
-      },
-    ]}
-  />
-  <section>
-    <p>
-      This sound piece draws inspiration from telephony and wave transmission as
-      a prompt to talk about circuits of communication, drones and a
-      compositional approach to sustained notes, interference patterns, tuning
-      and deep listening. Following on from a previous iteration of this project
-      for telephone which included composers Pauline Oliveros and Laurie
-      Spiegel, here Satz has invited composer Eliane Radigue to weave together
-      long-term conversations and compositional relationships with harpist
-      Rhodri Davies and violist Julia Eckhardt. Eliane Radigue (b 1932) is known
-      for her minimal electronic drone compositions produced on a large modular
-      synthesizer. Recorded during lockdown via telephone and skype calls, this
-      piece addresses Radigue's shift from electronic music to the recent
-      acoustic works she has devised since 2000, and the transmission of music
-      via conversation, mental images, living scores: non-notational sound
-      images. Structured as a dialogic composition, the piece both documents and
-      enacts a conversation about transmission and the circuitry of musical
-      communication.
-    </p>
-    <p>Available to listen here:</p>
-    <Link
-      url="https://crossedlines.co.uk/tone-transmissions/"
-      label="crossedlines.co.uk"
-      inline={false}
-    />
+	<Image
+		collection={[
+			{
+				src: 'Radigue Tone Transmissions.jpg',
+				caption: 'Aura Satz, Tone Transmissions , 2020'
+			}
+		]}
+	/>
+	<section>
+		<p>
+			This sound piece draws inspiration from telephony and wave transmission as a prompt to talk
+			about circuits of communication, drones and a compositional approach to sustained notes,
+			interference patterns, tuning and deep listening. Following on from a previous iteration of
+			this project for telephone which included composers Pauline Oliveros and Laurie Spiegel, here
+			Satz has invited composer Eliane Radigue to weave together long-term conversations and
+			compositional relationships with harpist Rhodri Davies and violist Julia Eckhardt. Eliane
+			Radigue (b 1932) is known for her minimal electronic drone compositions produced on a large
+			modular synthesizer. Recorded during lockdown via telephone and skype calls, this piece
+			addresses Radigue's shift from electronic music to the recent acoustic works she has devised
+			since 2000, and the transmission of music via conversation, mental images, living scores:
+			non-notational sound images. Structured as a dialogic composition, the piece both documents
+			and enacts a conversation about transmission and the circuitry of musical communication.
+		</p>
+		<p>Available to listen here:</p>
+		<Link
+			url="https://crossedlines.co.uk/tone-transmissions/"
+			label="crossedlines.co.uk"
+			inline={false}
+		/>
 
-    <Link
-      url="https://blog.sciencemuseum.org.uk/the-exchange/"
-      label="blog.sciencemuseum.org.uk"
-    />
-  </section>
-  <Title
-    date="11 Sep 2020 - 11 Sep 2021"
-    title="Shown as part of the Science Museum and Crossed Wires online exhibition:"
-    subtitle="The Exchange"
-  >
-    <p>
-      From fears of eavesdropping on the party line to alarm at rising rates of
-      'nomophobia', the telephone taps into some of the key social, cultural and
-      political concerns of the modern and contemporary age. But in what ways
-      can bringing together art and technology help us to understand the role of
-      the telephone in how we talk and listen across cultures?
-    </p>
+		<Link url="https://blog.sciencemuseum.org.uk/the-exchange/" label="blog.sciencemuseum.org.uk" />
+	</section>
+	<Title
+		date="11 Sep 2020 - 11 Sep 2021"
+		title="Shown as part of the Science Museum and Crossed Wires online exhibition:"
+		subtitle="The Exchange"
+	>
+		<p>
+			From fears of eavesdropping on the party line to alarm at rising rates of 'nomophobia', the
+			telephone taps into some of the key social, cultural and political concerns of the modern and
+			contemporary age. But in what ways can bringing together art and technology help us to
+			understand the role of the telephone in how we talk and listen across cultures?
+		</p>
 
-    <p>
-      Created for the Science Museum Group as part of the Crossed Lines project,
-      a diverse group of artists were commissioned to explore the role of the
-      telephone in cultural production and reception. Inspired by objects in the
-      Science Museum Group Collection, The Exchange features art, poetry and
-      spoken word by novelist and journalist Will Self, artist Maya Chowdhry,
-      beatboxer Danny Ladwa, poets Lisa Kelly, Serge Neptune, Nadia Nadarajah
-      and DL Williams, and sound artist Aura Satz.
-    </p>
+		<p>
+			Created for the Science Museum Group as part of the Crossed Lines project, a diverse group of
+			artists were commissioned to explore the role of the telephone in cultural production and
+			reception. Inspired by objects in the Science Museum Group Collection, The Exchange features
+			art, poetry and spoken word by novelist and journalist Will Self, artist Maya Chowdhry,
+			beatboxer Danny Ladwa, poets Lisa Kelly, Serge Neptune, Nadia Nadarajah and DL Williams, and
+			sound artist Aura Satz.
+		</p>
 
-    <p>
-      Commissioned during the COVID-19 pandemic, and reflecting a turn towards
-      calling in lockdown, the project takes inspiration from a long history of
-      creative engagement with the telephone: musicians, writers and artists
-      from Mark Twain to Lady Gaga have turned to the apparatus as way of
-      investigating notions of intimacy, voice, mobility, power and desire.
-    </p>
+		<p>
+			Commissioned during the COVID-19 pandemic, and reflecting a turn towards calling in lockdown,
+			the project takes inspiration from a long history of creative engagement with the telephone:
+			musicians, writers and artists from Mark Twain to Lady Gaga have turned to the apparatus as
+			way of investigating notions of intimacy, voice, mobility, power and desire.
+		</p>
 
-    <p>
-      But by responding directly to objects in the collection - including an
-      undersea cable, a manual switchboard, and a rotary dial - these artists
-      not only open up ways of interacting with our cultural heritage, but also
-      think through how, where and why communication takes place. In so doing,
-      the project demonstrates the value of fostering exchange between
-      technology and the arts in order to remember our pasts and imagine our
-      possible futures.
-    </p>
-<Title
+		<p>
+			But by responding directly to objects in the collection - including an undersea cable, a
+			manual switchboard, and a rotary dial - these artists not only open up ways of interacting
+			with our cultural heritage, but also think through how, where and why communication takes
+			place. In so doing, the project demonstrates the value of fostering exchange between
+			technology and the arts in order to remember our pasts and imagine our possible futures.
+		</p>
+		<Title
 			date="28 March 2026"
 			title="Tone Transmissions: Aura Satz & Sarah Shin on Éliane Radigue', as part of Assembly, Somerset House, London"
 		/>
 
-Tone Transmissions is a listening session led by Aura Satz, reflecting on the life and work of influential electronic composer Éliane Radigue (1932–2026).
-
-In this session for Assembly 2026, artist Aura Satz shares projects made in collaboration with the late minimalist pioneer, best known for her meditative electronic drone compositions produced on the ARP 2500 modular synthesizer. Satz is joined by publisher, writer, and curator Sarah Shin to reflect on Radigue’s philosophies and approaches to score, listening, and musical communication.
-
-Satz draws on two works created with Radigue and collaborating musicians Rhodri Davies and Julia Eckhardt: Tone Transmissions, a sound work addressing Radigue’s shift from electronic music to later acoustic works and the transmission of music through conversation, mental images, and non-notational scores; and Occam Delta XX, a trio for film, harp, and viola developed through Radigue’s oral “living score” process, in which Satz’s film participates directly in the logic of the composition.
-  </p>
-<Link
-      url="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
-      label="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
-
-  </Title>
-  <section>
- <Compact title="Credits" type="credit">
-    Featuring the voices of Eliane Radigue, Julia Eckhardt and Rhodri Davies.<br>
-With excerpts from Radigue's electronic work Kyema (Intermediate States), and acoustic works performed by Davies and Eckhart Occam I and Occam IV.<br>
-Sound mix M.J. Harding<br>
-Eliane Radigue recorded with the assistance of Sam Fakouhi.<br>
-Commissioned by AHRC-funded project 'Crossed Wires', for the Science Museum, London.
-  </section>
+		Tone Transmissions is a listening session led by Aura Satz, reflecting on the life and work of
+		influential electronic composer Éliane Radigue (1932–2026). In this session for Assembly 2026,
+		artist Aura Satz shares projects made in collaboration with the late minimalist pioneer, best
+		known for her meditative electronic drone compositions produced on the ARP 2500 modular
+		synthesizer. Satz is joined by publisher, writer, and curator Sarah Shin to reflect on Radigue’s
+		philosophies and approaches to score, listening, and musical communication. Satz draws on two
+		works created with Radigue and collaborating musicians Rhodri Davies and Julia Eckhardt: Tone
+		Transmissions, a sound work addressing Radigue’s shift from electronic music to later acoustic
+		works and the transmission of music through conversation, mental images, and non-notational
+		scores; and Occam Delta XX, a trio for film, harp, and viola developed through Radigue’s oral
+		“living score” process, in which Satz’s film participates directly in the logic of the
+		composition.
+	</Title>
+	<Link
+		url="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
+		label="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
+	/>
+	<section>
+		Featuring the voices of Eliane Radigue, Julia Eckhardt and Rhodri Davies.<br />
+		With excerpts from Radigue's electronic work Kyema (Intermediate States), and acoustic works performed
+		by Davies and Eckhart Occam I and Occam IV.<br />
+		Sound mix M.J. Harding<br />
+		Eliane Radigue recorded with the assistance of Sam Fakouhi.<br />
+		Commissioned by AHRC-funded project 'Crossed Wires', for the Science Museum, London.
+	</section>
 </ProjectLayout>
