@@ -6,6 +6,8 @@ import Address from '../components/Address.astro';
 import Blockquote from '../components/Blockquote.astro';
 import Link from '../components/Link.astro';
 import Title from '../components/Title.astro';
+import Compact from '../components/compact.astro';
+
 
 const props = await getProps(import.meta.url);
 ---
@@ -27,19 +29,24 @@ const props = await getProps(import.meta.url);
 		src="BeatrizRainbowHands.jpg"
 		caption="Aura Satz, 'Making a Diagonal with Music / Hacer Una Diagonal con la Musica', film still, 2019"
 	/>
-	<Blockquote title="Credits" type="inline">
-		<li><strong>Featuring Beatriz Ferreyra</strong></li>
+	<Compact title="Credits" type="credit">
+			
+			<li><strong>Featuring Beatriz Ferreyra</strong></li>
 		<li><strong>Directed and edited by Aura Satz</strong></li>
 		<li>DOP: Sam Williams</li>
 		<li>Music: Beatriz Ferreyra</li>
 		<li>Dubbing Mix: Gernot Fuhrmann</li>
 		<li>English Subtitles: Aura Satz</li>
 		Special thanks to Jo Langton
-		<Title
-			date="23 April - 7 June 2026"
-			title="'She Recalibrates', Solo exhibition at Auditorium Parco della Musica, Rome"
+		</Compact>
+	
+
+<Title
+date="23 April - 7 June 2026"
+title="'She Recalibrates', Solo exhibition at Auditorium Parco della Musica, Rome"
 		/>
-	</Blockquote>Aura Satz Lei ricalibra / She recalibrates a cura di / curated by Anna Cestelli Guidi
+	
+	Aura Satz Lei ricalibra / She recalibrates a cura di / curated by Anna Cestelli Guidi
 	Il 23 aprile si inaugura la mostra Lei ricalibra / She recalibrates, prima personale italiana
 	della film- maker e sound artist Aura Satz, che prosegue la rassegna dedicata all’arte del suono
 	in AuditoriumArte, One Space / One Sound. In mostra alcuni video ritratti delle pioniere della
