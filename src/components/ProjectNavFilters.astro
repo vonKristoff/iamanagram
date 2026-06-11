@@ -50,7 +50,7 @@ const projectsData = allProjects.map((p) => ({
 				(p) => regex.test(p.title) || regex.test(p.slug) || p.category.some((c) => regex.test(c))
 			);
 			searchResults.innerHTML = results
-				.map((r) => `<li><a href="/projects/${r.slug}">${r.title}</a></li>`)
+				.map((r) => `<li><a href="/${r.slug}">${r.title}</a></li>`)
 				.join('');
 		} else {
 			searchResults.innerHTML = '';
