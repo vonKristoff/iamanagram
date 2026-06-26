@@ -7,6 +7,7 @@ import Blockquote from '../components/Blockquote.astro';
 import Link from '../components/Link.astro';
 import Title from '../components/Title.astro';
 import Video from '../components/Video.astro';
+import Compact from '../components/compact.astro';
 
 const props = await getProps(import.meta.url);
 ---
@@ -97,19 +98,20 @@ const props = await getProps(import.meta.url);
 		“living score” process, in which Satz’s film participates directly in the logic of the
 		composition.
 	</Title>
-		<p>
-	<Link
-		url="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
-		label="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
-	/>	</p>
+	<p>
+		<Link
+			url="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
+			label="https://www.somersethouse.org.uk/whats-on/assembly-2026/tone-transmissions-aura-satz-sarah-shin-on-%C3%A9liane-radigue"
+		/>
+	</p>
 	<section>
-	<Compact title="Credits" type="credit">
-		Featuring the voices of Eliane Radigue, Julia Eckhardt and Rhodri Davies.<br />
-		With excerpts from Radigue's electronic work Kyema (Intermediate States), and acoustic works performed
-		by Davies and Eckhart Occam I and Occam IV.<br />
-		Sound mix M.J. Harding<br />
-		Eliane Radigue recorded with the assistance of Sam Fakouhi.<br />
-		Commissioned by AHRC-funded project 'Crossed Wires', for the Science Museum, London.
+		<Compact title="Credits" type="credit">
+			Featuring the voices of Eliane Radigue, Julia Eckhardt and Rhodri Davies.<br />
+			With excerpts from Radigue's electronic work Kyema (Intermediate States), and acoustic works performed
+			by Davies and Eckhart Occam I and Occam IV.<br />
+			Sound mix M.J. Harding<br />
+			Eliane Radigue recorded with the assistance of Sam Fakouhi.<br />
+			Commissioned by AHRC-funded project 'Crossed Wires', for the Science Museum, London.
 		</Compact>
 	</section>
 </ProjectLayout>
