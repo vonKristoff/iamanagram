@@ -1,18 +1,94 @@
 ---
 import MainHeader from '../layouts/MainHeader.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = await getCollection('projects');
+const projectsData = allProjects.map((p) => ({
+	title: p.data.title,
+	slug: p.id,
+	category: p.data.category
+}));
 ---
 
 <MainHeader title="404 — Page Not Found" description="The requested page could not be found.">
-	<div class="page-block grid place-content-center">
-		<div class="flex flex-col gap-8 items-center">
+	<div class="page-block">
+		<div class="lost">
 			<h1 class="text-4xl font-bold">404</h1>
 			<h3 class="text-sm">Unfortunately, the URL provided is invalid.</h3>
+			<div id="suggestions" class="suggestions"></div>
 		</div>
 	</div>
 </MainHeader>
 
+<script define:vars={{ projectsData }}>
+	const suggestions = document.getElementById('suggestions');
+
+	function findMatches(term) {
+		if (!term) return [];
+		const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+		const regex = new RegExp(escaped, 'i');
+		return projectsData.filter(
+			(p) => regex.test(p.title) || regex.test(p.slug) || p.category.some((c) => regex.test(c))
+		);
+	}
+
+	function stripExt(name) {
+		return name.replace(/\.(php|html?|asp|aspx|jsp|cgi|cfm)\/?$/i, '');
+	}
+
+	const path = window.location.pathname.replace(/\/$/, '');
+	const trimmed = stripExt(path.replace(/^\//, ''));
+	let results = findMatches(trimmed);
+
+	if (results.length === 0) {
+		const segments = path.split('/').filter(Boolean);
+		const last = stripExt(segments[segments.length - 1] || '');
+		if (last) results = findMatches(last);
+	}
+
+	if (results.length > 0) {
+		suggestions.innerHTML = `
+			<p class="suggestion-label">Did you mean?</p>
+			<div class="suggestion-list">
+				${results
+					.slice(0, 5)
+					.map((r) => `<a href="/${r.slug}">${r.title}</a>`)
+					.join('')}
+			</div>
+		`;
+	}
+</script>
+
 <style>
 	.page-block {
 		min-height: 50vh;
+	}
+	.lost {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content:;
+		gap: 1em;
+	}
+	.suggestions {
+		margin-top: 1em;
+		text-align: center;
+	}
+	.suggestion-label {
+		font-size: 0.875rem;
+		margin-bottom: 0.5em;
+		opacity: 0.7;
+	}
+	.suggestion-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.suggestion-list li {
+		margin: 0.25em 0;
+	}
+	.suggestion-list a {
+		color: var(--colour-violet);
+		text-decoration: underline;
 	}
 </style>
