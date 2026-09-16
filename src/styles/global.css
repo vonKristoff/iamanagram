@@ -55,6 +55,11 @@ img[data-image-component='true'] {
 	max-width: 100%;
 	height: auto;
 }
+article img {
+	object-fit: contain;
+	max-width: 100%;
+	height: auto;
+}
 .side-content h3:first-child {
 	margin-top: 0;
 }
